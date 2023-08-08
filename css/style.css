@@ -1,3 +1,4 @@
+
 /*!----RESET----/*/
 
 * {
@@ -6,8 +7,6 @@
     box-sizing: border-box;
 
 }
-
-
 
 
 /*!----TIPOGRAFÍA----/*/
@@ -93,8 +92,6 @@ header nav div #navbarSupportedContent ul li ul li .dropdown-item {
 }
 
 
-
-
 /*!----MAIN----/*/
 /*!----MAIN----/*/
 /*!----MAIN----/*/
@@ -107,7 +104,7 @@ main {
 
 
 /**----REBAJAS IMAGEN----*/
-
+/**----REBAJAS IMAGEN----*/
 
 
 .rebajas-img a .rebajas-60 {
@@ -198,7 +195,7 @@ main {
     text-align: center;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 
 }
@@ -207,9 +204,6 @@ main {
     width: 300px;
     height: auto;
     margin-top: 25px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
 }
 
 .recomendados .recomendados-contenedor div a {
@@ -217,7 +211,8 @@ main {
     color: black;
     text-align: center;
     justify-content: center;
-    
+    width: auto;
+    height: auto;
 }
 
 .recomendados .recomendados-contenedor div a img {
@@ -228,21 +223,19 @@ main {
 
 }
 
-.recomendados .recomendados-cotenedor div a h3 {
+.recomendados .recomendados-contenedor div a h3 {
     width: 300px;
-    height: auto;
+    height: 40px;
     text-align: center;
     justify-content: center;
-    font-family: 'Russo One', sans-serif;
-    
+    align-items: center;
+    font-size: 17px;
 }
 
 .recomendados .recomendados-contenedor .gorro-puma-archive-heather-beanie-verde a img {
     width: 140px;
     height: 140px;
 }
-
-
 
 .recomendados .recomendados-contenedor div a div {
     width: auto;
@@ -371,232 +364,301 @@ main {
 
 
 
+
+/*!----FOOTER----/*/
+/*!----FOOTER----/*/
+/*!----FOOTER----/*/
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #f9f9f9;
+    padding: 10px;
+    bottom: 0;
+}
+
+/**----SUSCRIPCION----**/
+/**----SUSCRIPCION----**/
+
+footer .suscripcion {
+    flex: 1 1 25%;
+    margin: 10px;
+
+}
+
+footer .suscripcion .suscripcion-titulo h2 {
+    font-size: 24px;
+    font-family: 'Russo One', sans-serif;
+    text-align: center;
+    justify-content: center;
+}
+
+footer .suscripcion .footer-contenedor {
+    justify-content: center;
+    align-items: center;
+}
+
+footer .suscripcion .footer-contenedor ul {
+    list-style: none;
+}
+
+footer .suscripcion .footer-contenedor ul li {
+    margin-bottom: 5px;
+}
+
+
+footer.suscripcion .footer-contenedor div ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+}
+
+footer.suscripcion .footer-contenedor div ul li a p {
+    font-size: 20px;
+}
+
+footer .suscripcion .footer-contenedor .redes h3 {
+    margin-right: 10px;
+    margin-bottom: 0;
+}
+
+footer .suscripcion .footer-contenedor .redes ul {
+    display: flex;
+    flex-direction: row;
+}
+
+footer .suscripcion .footer-contenedor .redes ul li{
+    justify-self: center;
+}
+
+footer .suscripcion .footer-contenedor .redes ul li img {
+    width: 20px;
+    height: 20px;
+    margin:5px;
+}
+
+footer .suscripcion .suscripcion-mail {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 19px;
+    font-family: 'Russo One', sans-serif;
+}
+
+footer .suscripcion .suscripcion-mail form ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    width: 100%;
+    justify-content: center;
+}
+
+footer .suscripcion .suscripcion-mail form ul li {
+    margin: 2px;
+    padding: 2px;
+    height: 45px;
+}
+
+
+footer .suscripcion .suscripcion-mail form ul li input {
+    height: 45px;
+    width: 380px;
+
+}
+
+footer .suscripcion .suscripcion-mail form ul li button {
+    height: 45px;
+    width: 120px;
+    background-color: #FF2931;
+    border: 2px black solid;
+    margin-left: 0
+}
+
+/**---- INFORMACIÓN ADICIONAL----**/
+/**----INFORMACIÓN ADICIONAL----**/
+
+footer .footer-contenedor {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat (4, 25%);
+    grid-template-areas:
+        "footer footer footer footer"
+        "footer footer footer footer"
+    ;
+    margin: 20px;
+    margin-bottom: 0;
+}
+
+footer .footer-contenedor div {
+    grid-area: "footer";
+    display: flex;
+    flex-direction: column;
+    font-family: 'Russo One', sans-serif;
+    padding: 5px;
+    margin: 10px;
+    justify-content: center;
+    align-items: start;
+    width: auto;
+    height: 280px;
+
+}
+
+footer .footer-contenedor div h3 {
+    margin-left: 12px;
+    font-size: 20px;
+}
+
+
+
+footer .footer-contenedor div ul {
+    list-style: none;
+    margin: 5px;
+    padding: 5px;
+
+}
+
+footer .footer-contenedor div ul li {
+    margin: 5px;
+}
+
+footer .footer-contenedor div ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+footer .footer-contenedor div ul li a p{
+    font-size: 16px;
+}
+
+
+/**----ICONOS----**/
+/**----ICONOS----**/
+
+footer .footer-contenedor .redes {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-right: 4px;
+}
+
+
+footer .footer-contenedor .redes ul li {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+
+}
+
+footer .footer-contenedor .redes ul li img {
+    margin: 5px;
+}
+
+footer .footer-contenedor .redes h3 {
+    font-family: 'Russo One', sans-serif;
+    width: auto;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+
+
 /*!----PAGINA CALZADO----*/
 /*!----PAGINA CALZADO----*/
 /*!----PAGINA CALZADO----*/
+
+.calzado-pag{
+    height: auto;
+    display: flex;
+    width: 100%;
+}
+
+
+/**----FILTRO----**/
+/**----FILTRO----**/
+.calzado-pag .calzado-catalogo{
+    display: flex;
+}
+
+
+
+
+/**---CONTENIDO----**/
+/**---CONTENIDO----**/
+
 
 
 .calzado-contenedor{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.calzado-contenedor div{
+    width: 340px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
     display: flex;
     flex-direction: column;
+    margin: 12px;
+    padding: 3px;
+}
 
-}   
+.calzado-contenedor div a{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    justify-content: center;
+    width: 270px;
+    height: auto;
+}
 
-.recomendados-contenedor div a img{
+.calzado-contenedor div a img{
     width: 250px;
     height: 250px;
-}
-
-
-
-
-
-
-
-/*!----FOOTER----/*/
-/*!----FOOTER----/*/
-/*!----FOOTER----/*/
-
-footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: #f9f9f9;
-    padding: 10px;
-    bottom: 0;
-}
-
-/**----SUSCRIPCION----**/
-/**----SUSCRIPCION----**/
-
-footer .suscripcion {
-    flex: 1 1 25%;
-    margin: 10px;
+    text-align: center;
+    justify-self;
 
 }
 
-footer .suscripcion .suscripcion-titulo h2 {
-    font-size: 24px;
-    font-family: 'Russo One', sans-serif;
+.calzado-contenedor div a h3{
     text-align: center;
     justify-content: center;
-}
-
-footer .suscripcion .footer-contenedor {
-    justify-content: center;
-    align-items: center;
-}
-
-footer .suscripcion .footer-contenedor ul {
-    list-style: none;
-}
-
-footer .suscripcion .footer-contenedor ul li {
-    margin-bottom: 5px;
-}
-
-
-footer.suscripcion .footer-contenedor div ul li a {
-    text-decoration: none;
-    color: #333;
-    font-size: 15px;
-}
-
-footer.suscripcion .footer-contenedor div ul li a p {
-    font-size: 20px;
-}
-
-footer .suscripcion .footer-contenedor .redes h3 {
-    margin-right: 10px;
-    margin-bottom: 0;
-}
-
-footer .suscripcion .footer-contenedor .redes ul {
-    display: flex;
-    flex-direction: row;
-}
-
-footer .suscripcion .footer-contenedor .redes ul li{
-    justify-self: center;
-}
-
-footer .suscripcion .footer-contenedor .redes ul li img {
-    width: 20px;
+    font-family: 'Russo One', sans-serif;
+    font-size: 16px;
+    width: 270px;
     height: 20px;
-    margin:5px;
 }
 
-
-
-
-footer .suscripcion .suscripcion-mail {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    font-size: 19px;
-    font-family: 'Russo One', sans-serif;
-}
-
-footer .suscripcion .suscripcion-mail form ul {
+.calzado-contenedor div a div {
+    width: 250px;
+    height: 20px;
     display: flex;
     flex-direction: row;
-    list-style: none;
-    width: 100%;
-    justify-content: center;
-}
-
-footer .suscripcion .suscripcion-mail form ul li {
-    margin: 2px;
-    padding: 2px;
-    height: 45px;
-
-
+    margin-bottom: 5px;
 
 }
 
-
-footer .suscripcion .suscripcion-mail form ul li input {
-    height: 45px;
-    width: 380px;
-
-}
-
-footer .suscripcion .suscripcion-mail form ul li button {
-    height: 45px;
-    width: 120px;
-    background-color: #FF2931;
-    border: 2px black solid;
-    margin-left: 0
-}
-
-/**---- INFORMACIÓN ADICIONAL----**/
-/**----INFORMACIÓN ADICIONAL----**/
-
-footer .footer-contenedor {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat (4, 25%);
-    grid-template-areas:
-        "footer footer footer footer"
-        "footer footer footer footer"
-    ;
-    margin: 20px;
-    margin-bottom: 0;
-}
-
-footer .footer-contenedor div {
-    grid-area: "footer";
-    display: flex;
-    flex-direction: column;
-    font-family: 'Russo One', sans-serif;
-    padding: 5px;
-    margin: 10px;
-    justify-content: center;
-    align-items: start;
-    width: auto;
-    height: 280px;
+.calzado-contenedor div a div strong {
+    font-size: 15px;
+    margin: 3px;
+    margin-top: 10px;
 
 }
 
-footer .footer-contenedor div h3 {
-    margin-left: 12px;
-    font-size: 20px;
-}
-
-
-
-footer .footer-contenedor div ul {
-    list-style: none;
-    margin: 5px;
-    padding: 5px;
+.calzado-contenedor div a div del {
+    font-size: 14px;
+    margin: 3px;
+    margin-top: 10px;
 
 }
-
-footer .footer-contenedor div ul li {
-    margin: 5px;
-}
-
-footer .footer-contenedor div ul li a {
-    text-decoration: none;
-    color: black;
-}
-
-
-/**----ICONOS----**/
-/**----ICONOS----**/
-
-footer .footer-contenedor .redes {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-right: 4px;
-}
-
-
-footer .footer-contenedor .redes ul li {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-
-
-}
-
-footer .footer-contenedor .redes ul li img {
-    margin: 5px;
-}
-
-footer .footer-contenedor .redes h3 {
-    font-family: 'Russo One', sans-serif;
-    width: auto;
-    position: relative;
-    text-align: center;
-    justify-content: center;
-    margin-bottom: 12px;
-}
-
-
-
 
 
 /*!----MEDIA QUERIES----!*/
@@ -713,7 +775,6 @@ footer .footer-contenedor .redes h3 {
         height: auto;
         margin-top: 10px;
     }
-}
 
 .recomendados .recomendados-contenedor div a {
     text-decoration: none;
@@ -748,6 +809,8 @@ footer .footer-contenedor .redes h3 {
 
 .recomendados .recomendados-contenedor div a div del {
     font-size: 10px;
+}
+
 }
 
 
@@ -1243,2520 +1306,15 @@ footer .footer-contenedor .redes h3 {
     }
 
 
+/**----PAGINA CALZADO----**/
+/**----PAGINA CALZADO----**/
 
 
+/**----FILTRO----**/
 
-/*!----RESET----/*/
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-}
-
-
-
-
-/*!----TIPOGRAFÍA----/*/
-
-
-@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
-
-
-
-/*!----HEADER----/*/
-/*!----HEADER----/*/
-/*!----HEADER----/*/
-
-header {
-    position: sticky;
-    top: 0;
-    background-color: #ffffff;
-    width: 100%;
-    z-index: 5;
-
-}
-
-header h2 {
-    color: white;
-    text-align: center;
-    font-size: 20px;
-    font-family: 'Russo One', sans-serif;
-    font-style: italic;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    height: 40px;
-
-}
-
-header div {
-    width: 100%;
-    height: 57px;
-    text-align: center;
-    justify-content: center;
-}
-
-header div a {
-    text-decoration: none;
-    font-size: 30px;
-
-}
-
-header div a h1 {
-    width: 100%;
-    height: auto;
-    font-weight: 600;
-    font-size: 50px;
-    font-family: 'Russo One', sans-serif;
-    color: black;
-}
-
-header nav div {
-    width: auto;
-    height: auto;
-
-}
-
-header nav div #navbarSupportedContent ul {
-    font-size: 18px;
-    color: black;
-}
-
-header nav div #navbarSupportedContent form input {
-    font-size: 18px;
-    color: black;
-}
-
-header nav div #navbarSupportedContent form button {
-    font-size: 18px;
-    color: black;
-    border-color: black;
-}
-
-header nav div #navbarSupportedContent ul li ul li .dropdown-item {
-    font-size: 15px;
-}
-
-
-
-
-/*!----MAIN----/*/
-/*!----MAIN----/*/
-/*!----MAIN----/*/
-
-
-main {
-    background-color: #ffffff;
-    width: 100%;
-}
-
-
-/**----REBAJAS IMAGEN----*/
-
-
-
-.rebajas-img a .rebajas-60 {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    height: auto;
-
-}
-
-.rebajas-img a .nuevas-rebajas {
-    display: none;
-    flex-wrap: wrap;
-    width: 100%;
-    height: auto;
-    align-items: center;
-    justify-content: center;
-}
-
-
-
-/**----MARCAS----*/
-/**----MARCAS----*/
-
-
-
-.marcas {
-    text-align: center;
-}
-
-
-.marcas div {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 35px;
-    margin-bottom: 35px;
-    width: 100%;
-    height: 370px;
-
-}
-
-.marcas div a {
-    width: auto;
-    height: auto;
-
-}
-
-.marcas div a img {
-    background-color: #ffffff;
-    width: 140px;
-    height: 115px;
-
-
-}
-
-
-
-
-/**----RECOMENDADOS----*/
-/**----RECOMENDADOS----*/
-
-.recomendados {
-    width: 100%;
-    margin-bottom: 20px;
-
-}
-
-.recomendados h2 {
-    display: flex;
-    width: 100%;
-    height: 70px;
-    color: rgb(0, 0, 0);
-    align-items: center;
-    justify-content: center;
-    font-family: 'Russo One', sans-serif;
-    font-size: 24px;
-    font-weight: 700;
-
-}
-
-
-.recomendados .recomendados-contenedor {
-    width: 100%;
-    background-color: white;
-    color: black;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-
-}
-
-.recomendados .recomendados-contenedor div {
-    width: 300px;
-    height: auto;
-    margin-top: 25px;
-}
-
-.recomendados .recomendados-contenedor div a {
-    text-decoration: none;
-    color: black;
-    text-align: center;
-    justify-content: center;
-}
-
-.recomendados .recomendados-contenedor div a img {
-    width: 190px;
-    height: 190px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-
-}
-
-.recomendados .recomendados-cotenedor div a h3 {
-    width: auto;
-    height: auto;
-}
-
-.recomendados .recomendados-contenedor .gorro-puma-archive-heather-beanie-verde a img {
-    width: 140px;
-    height: 140px;
-}
-
-.recomendados .recomendados-contenedor div a h3 {
-    font-size: 17px;
-    width: 150px;
-
-}
-
-.recomendados .recomendados-contenedor div a div {
-    width: auto;
-    height: auto;
-}
-
-.recomendados .recomendados-contenedor div a div strong {
-    font-size: 16px;
-}
-
-.recomendados .recomendados-contenedor div a div del {
-    font-size: 15px;
-}
-
-/**----MODA----**/
-/**----MODA----**/
-
-.moda {
-    width: 100%;
-    margin-top: 90px;
-}
-
-.moda div {
-    width: 100%;
-    margin-bottom: 30Spx;
-    height: auto;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
-
-.moda .moda-contenedor {
-    height: auto;
-}
-
-.moda div h2 {
-    font-size: 24px;
-    font-family: 'Russo One', sans-serif;
-    font-weight: 700;
-    margin: 20px 20px 40px;
-    margin: bottom 0;
-
-}
-
-.moda div div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 230px;
-}
-
-.moda div div a {
-    width: 230px;
-    text-align: center;
-    text-decoration: none;
-    color: black;
-}
-
-.moda div div a img {
-    width: 215px;
-    height: 215px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: top 0;
-    object-fit: cover;
-
-}
-
-.moda div div a h3 {
-    text-align: center;
-    font-size: 17px;
-    width: 100%;
-    height: 20px;
-    margin-bottom: 30px;
-    margin-top: 20px;
-    padding: 10px;
-
-
-}
-
-.moda div div a strong {
-    font-size: 14px;
-    margin-top: 3px;
-}
-
-/**----DISCIPLINAS----**/
-/**----DISCIPLINAS----**/
-
-.disciplinas .disciplinas-contenedor {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    margin-top: 60px;
-}
-
-.disciplinas .disciplinas-contenedor div {
-    justify-self: center;
-    align-items: center;
-    padding: 15px;
-
-}
-
-
-.disciplinas .disciplinas-contenedor div a {
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-
-}
-
-
-
-.disciplinas .disciplinas-contenedor div a img {
-    object-fit: cover;
-    padding: 10px;
-    justify-self: center;
-    align-items: center;
-    width: 550px;
-    height: 370px;
-
-}
-
-
-
-
-/*!----PAGINA CALZADO----*/
-/*!----PAGINA CALZADO----*/
-/*!----PAGINA CALZADO----*/
-
-
-/**----SECCION 1 CALZADO----**/
-
-
-
-
-
-
-
-
-
-/*!----FOOTER----/*/
-/*!----FOOTER----/*/
-/*!----FOOTER----/*/
-
-footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: #f9f9f9;
-    padding: 10px;
-    bottom: 0;
-}
-
-/**----SUSCRIPCION----**/
-/**----SUSCRIPCION----**/
-
-footer .suscripcion {
-    flex: 1 1 25%;
-    margin: 10px;
-
-}
-
-footer .suscripcion .suscripcion-titulo h2 {
-    font-size: 24px;
-    font-family: 'Russo One', sans-serif;
-    text-align: center;
-    justify-content: center;
-}
-
-footer .suscripcion .footer-contenedor {
-    justify-content: center;
-    align-items: center;
-}
-
-footer .suscripcion .footer-contenedor ul {
-    list-style: none;
-}
-
-footer .suscripcion .footer-contenedor ul li {
-    margin-bottom: 5px;
-}
-
-
-footer.suscripcion .footer-contenedor div ul li a {
-    text-decoration: none;
-    color: #333;
-    font-size: 15px;
-}
-
-footer.suscripcion .footer-contenedor div ul li a p {
-    font-size: 20px;
-}
-
-footer .suscripcion .footer-contenedor .redes h3 {
-    margin-right: 10px;
-    margin-bottom: 0;
-}
-
-footer .suscripcion .footer-contenedor .redes ul {
-    display: flex;
-    flex-direction: row;
-}
-
-footer .suscripcion .footer-contenedor .redes ul li{
-    justify-self: center;
-}
-
-footer .suscripcion .footer-contenedor .redes ul li img {
-    width: 20px;
-    height: 20px;
-    margin:5px;
-}
-
-
-
-
-footer .suscripcion .suscripcion-mail {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    font-size: 19px;
-    font-family: 'Russo One', sans-serif;
-}
-
-footer .suscripcion .suscripcion-mail form ul {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    width: 100%;
-    justify-content: center;
-}
-
-footer .suscripcion .suscripcion-mail form ul li {
-    margin: 2px;
-    padding: 2px;
-    height: 45px;
-
-
-
-}
-
-
-footer .suscripcion .suscripcion-mail form ul li input {
-    height: 45px;
-    width: 380px;
-
-}
-
-footer .suscripcion .suscripcion-mail form ul li button {
-    height: 45px;
-    width: 120px;
-    background-color: #FF2931;
-    border: 2px black solid;
-    margin-left: 0
-}
-
-/**---- INFORMACIÓN ADICIONAL----**/
-/**----INFORMACIÓN ADICIONAL----**/
-
-footer .footer-contenedor {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat (4, 25%);
-    grid-template-areas:
-        "footer footer footer footer"
-        "footer footer footer footer"
-    ;
-    margin: 20px;
-    margin-bottom: 0;
-}
-
-footer .footer-contenedor div {
-    grid-area: "footer";
-    display: flex;
-    flex-direction: column;
-    font-family: 'Russo One', sans-serif;
-    padding: 5px;
-    margin: 10px;
-    justify-content: center;
-    align-items: start;
-    width: auto;
-    height: 280px;
-
-}
-
-footer .footer-contenedor div h3 {
-    margin-left: 12px;
-    font-size: 20px;
-}
-
-
-
-footer .footer-contenedor div ul {
-    list-style: none;
-    margin: 5px;
-    padding: 5px;
-
-}
-
-footer .footer-contenedor div ul li {
-    margin: 5px;
-}
-
-footer .footer-contenedor div ul li a {
-    text-decoration: none;
-    color: black;
-    font-size: 14px;
-}
-
-
-/**----ICONOS----**/
-/**----ICONOS----**/
-
-footer .footer-contenedor .redes {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-right: 4px;
-}
-
-
-footer .footer-contenedor .redes ul li {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-
-
-}
-
-footer .footer-contenedor .redes ul li a img {
-    margin: 5px;
-    width: 42px;
-    height: 42px;
-
-}
-
-footer .footer-contenedor .redes h3 {
-    font-family: 'Russo One', sans-serif;
-    width: auto;
-    position: relative;
-    text-align: center;
-    justify-content: center;
-    margin-bottom: 12px;
-}
-
-
-
-
-
-/*!----MEDIA QUERIES----!*/
-/*!----MEDIA QUERIES----!*/
-/*!----MEDIA QUERIES----!*/
-
-/**----NAVBAR----**/
-/**----NAVBAR----**/
-
-@media screen and (max-width:1000px) {
-    .header nav div {
-        justify-content: space-between;
-    }
-}
-
-
-/**----REBAJAS----**/
-/**----REBAJAS----**/
-@media screen and (max-width:900px) {
-    .rebajas-img {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        width: auto;
-        height: auto;
-    }
-
-    .rebajas-img a .nuevas-rebajas {
-        display: flex;
-        flex-wrap: wrap;
-        width: 400px;
-        height: 400px;
-    }
-
-    .rebajas-img a .rebajas-60 {
+@media screen and (max-width:1370px) {
+    .calzado-pag .calzado-catalogo{
         display: none;
     }
-}
-
-@media screen and (max-width:750px) {
-    .rebajas-img a .nuevas-rebajas {
-        display: flex;
-        flex-wrap: wrap;
-        width: 300px;
-        height: 300px;
-    }
-
-}
-
-
-/**----MARCAS----**/
-/**----MARCAS----**/
-
-
-
-@media screen and (max-width:1400px) {
-
-
-    .marcas div {
-        width: auto;
-        height: 300px;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-}
-
-.marcas div a {
-    width: auto;
-    height: auto;
-}
-
-.marcas div a img {
-    width: 120px;
-    height: 95px;
-}
-
-
-
-@media screen and (max-width:800px) {
-    .marcas div a .logo-converse {
-        display: none;
-    }
-
-}
-
-
-@media screen and (max-width:500px) {
-    .marcas div {
-        width: auto;
-        height: auto;
-        align-items: center;
-        justify-content: space-evenly;
-        display: flex;
-        flex-direction: column;
-
-    }
-
-}
-
-.marcas div a img {
-    width: 120px;
-    height: 110px;
-    margin: 22px;
-}
-
-
-/**----RECOMENDADOS----**/
-/**----RECOMENDADOS----**/
-
-@media screen and (max-width:1230px) {
-    .recomendados .recomendados-contenedor div {
-        width: auto;
-        height: auto;
-        margin-top: 10px;
-    }
-}
-
-.recomendados .recomendados-contenedor div a {
-    text-decoration: none;
-    color: black;
-    justify-content: center;
-    align-items: center;
-    height: 280px;
-}
-
-.recomendados .recomendados-contenedor div a img {
-    width: 150px;
-    height: 150px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-
-}
-
-.recomendados .recomendados-contenedor div a h3 {
-    margin: 30px 20px 40px 20px;
-    font-size: 14px;
-    width: 200px;
-
-}
-
-.recomendados .recomendados-contenedor div a div {
-    height: auto;
-}
-
-.recomendados .recomendados-contenedor div a div strong {
-    font-size: 12px;
-}
-
-.recomendados .recomendados-contenedor div a div del {
-    font-size: 10px;
-}
-
-
-@media screen and (max-width:1050px) {
-    .recomendados .recomendados-contenedor {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .recomendados .recomendados-contenedor div {
-        width: auto;
-        height: auto;
-        margin-top: 10px;
-    }
-
-    .recomendados .recomendados-contenedor div a {
-        text-decoration: none;
-        color: black;
-        justify-content: center;
-        align-items: center;
-        height: 280px;
-    }
-
-    .recomendados .recomendados-contenedor div a img {
-        width: 200px;
-        height: 200px;
-        margin-bottom: 10px;
-        margin-top: 10px;
-
-    }
-
-    .recomendados .recomendados-contenedor div a h3 {
-        margin: 15px 10px 20px 10px;
-        font-size: 14px;
-        width: 200px;
-
-    }
-
-    .recomendados .recomendados-contenedor div a div {
-        height: auto;
-    }
-
-    .recomendados .recomendados-contenedor div a div strong {
-        font-size: 12px;
-    }
-
-    .recomendados .recomendados-contenedor div a div del {
-        font-size: 10px;
-    }
-
-}
-
-/**----MODA----**/
-/**----MODA----**/
-
-
-@media screen and (max-width:1200px) {
-    .moda {
-        margin-top: 50px;
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .moda .moda-contenedor {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-        align-items: center;
-    }
-
-    .moda .moda-contenedor div {
-        height: 250px;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 20px;
-
-
-    }
-
-    .moda .moda-contenedor div a {
-        justify-content: center;
-        align-items: center;
-
-    }
-
-    .moda .moda-contenedor div img {
-        height: 170px;
-        width: 170px;
-        align-items: center;
-        margin: 20px;
-    }
-
-    .moda .moda-contenedor div:nth-child(4) {
-        display: none;
-    }
-
-
-    .moda .moda-contenedor div h3 {
-        font-size: 13px;
-    }
-
-    .moda .moda-contenedor div {
-        width: auto;
-    }
-
-    .moda .moda-contenedor div strong {
-        font-size: 13px;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-
-@media screen and (max-width:500px) {
-    .moda {
-        margin-top: 20px;
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .moda .moda-contenedor {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 3px;
-        align-items: center;
-    }
-
-    .moda .moda-contenedor div {
-        height: 250px;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 20px;
-
-
-    }
-
-    .moda .moda-contenedor div a {
-        justify-content: center;
-        align-items: center;
-        width: auto;
-        height: auto;
-
-    }
-
-    .moda .moda-contenedor div a h3{
-        width: 140px;
-        height: 50px;
-        margin-bottom: 3px;
-    }
-
-    .moda .moda-contenedor div a img {
-        height: 120px;
-        width: 120px;
-        align-items: center;
-        margin: 10px;
-    }
-
-
-    .moda .moda-contenedor div:nth-child(4) {
-        display: none;
-    }
-
-
-    .moda .moda-contenedor div h3 {
-        font-size: 13px;
-    }
-
-    .moda .moda-contenedor div {
-        width: auto;
-    }
-
-    .moda .moda-contenedor div strong {
-        font-size: 13px;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-
-
-    /**----DISCIPLINAS----**/
-    /**----DISCIPLINAS----**/
-
-
-
-    @media screen and (max-width:1200px) {
-        .disciplinas .disciplinas-contenedor div a {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-
-    .disciplinas .disciplinas-contenedor div a img {
-        display: flex;
-        width: 380px;
-        height: 240px;
-        flex-wrap: wrap;
-    }
-}
-
-
-
-@media screen and (max-width:850px) {
-    .disciplinas .disciplinas-contenedor {
-        display: flex;
-        flex-direction: column;
-
-    }
-
-    .disciplinas .disciplinas-contenedor div a {
-        gap: 5px;
-    }
-
-    .disciplinas .disciplinas-contenedor div a img {
-        width: 340px;
-        height: 210px;
-        padding: 5px;
-    }
-}
-
-
-/**----FOOTER----**/
-/**----FOOTER----**/
-
-@media screen and (max-width: 1050px) {
-    footer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-
-    footer div {
-        flex: 1 1 50%;
-    }
-
-    footer .footer-contenedor {
-        width: 100%;
-    }
-
-    footer .footer-contenedor div {
-        height: 280px;
-    }
-
-    footer .redes {
-        margin-top: 20px;
-    }
-}
-
-
-@media screen and (max-width:991px) {
-
-    footer .footer-contenedor {
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat (2, 1fr);
-        grid-template-areas:
-            "footer footer"
-            "footer footer"
-        ;
-        margin: 10px;
-        margin-bottom: 0;
-    }
-
-    footer .footer-contenedor div {
-        grid-area: "footer";
-        display: flex;
-        flex-direction: column;
-        font-family: 'Russo One', sans-serif;
-        padding: 5px;
-        margin: 10px;
-        justify-content: center;
-        align-items: start;
-        width: auto;
-        height: 240px;
-    }
-
-    footer .footer-contenedor .redes {
-        margin-top: 12px;
-        justify-content: center;
-        align-items: start;
-        height: 150px;
-    }
-
-
-}
-
-
-@media screen and (max-width:700px) {
-
-    footer .suscripcion{
-        width: auto;
-        justify-content: center;
-        text-align: center;
-    }
     
-    footer .suscripcion .suscripcion-titulo h2 {
-        font-size: 16px;
-        width: auto;
-    }
-
-
-    footer .suscripcion .suscripcion-mail form ul {
-        display: flex;
-        flex-direction: column;
-        list-style: none;
-        align-items: center;
-        justify-content: center;
-        width: 400px;
-        margin: 0;
-        padding: 0;
-
-    }
-
-    footer .suscripcion .suscripcion-mail form ul li {
-        justify-content: center;
-        align-items: center;
-        width: 320px;
-        height: 35px;
-    }
-
-
-    footer .suscripcion .suscripcion-mail form ul li input {
-        height: 30px;
-        width: 300px;
-        font-size: 14px;
-        margin: 3px;
-        margin-right: 20px;
-
-    }
-
-
-    footer .suscripcion .suscripcion-mail form ul li button {
-        height: 30px;
-        width: 100px;
-        background-color: #FF2931;
-        border: 2px black solid;
-        font-size: 10px;
-        margin-right: 20px;
-    }
-
-
-    footer .footer-contenedor div h3{
-        font-size: 17px;
-    }
-
-
-    footer .footer-contenedor div ul li{
-        font-size: 20px;
-    }
 }
-
-
-
-
-@media screen and (max-width:480px) {
-    footer .suscripcion{
-        width: auto;
-        justify-content: center;
-        text-align: center;
-    }
-    
-    footer .suscripcion .suscripcion-titulo h2 {
-        font-size: 14px;
-        text-align: center;
-        width: 300px;
-    }
-
-    footer .suscripcion .suscripcion-mail form ul {
-        display: flex;
-        flex-direction: column;
-        list-style: none;
-        align-items: center;
-        justify-content: center;
-        width: 300px;
-        margin: 0;
-        padding: 0;
-
-    }
-
-    footer .suscripcion .suscripcion-mail form ul li {
-        justify-content: center;
-        align-items: center;
-        width: 250px;
-        height: 35px;
-    }
-
-
-    footer .suscripcion .suscripcion-mail form ul li input {
-        height: 30px;
-        width: 170px;
-        font-size: 14px;
-        margin: 3px;
-        
-    }
-
-
-    footer .suscripcion .suscripcion-mail form ul li button {
-        height: 30px;
-        width: 100px;
-        background-color: #FF2931;
-        border: 2px black solid;
-        font-size: 10px;
-    }
-    
-    footer .footer-contenedor {
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat (2, 1fr);
-        grid-template-areas:
-            "footer footer"
-            "footer footer"
-        ;
-        margin: 5px;
-        margin-bottom: 0;
-    }
-
-    footer .footer-contenedor div {
-        grid-area: "footer";
-        display: flex;
-        flex-direction: column;
-        font-family: 'Russo One', sans-serif;
-        justify-content: center;
-        align-items: start;
-        width: auto;
-        height: 220px;
-        font-size: 12px;
-        gap: 3px;
-        margin-bottom: 4px;
-        padding: 0;
-    }
-
-
-    footer .footer-contenedor div h3 {
-        font-size: 14px;
-        width: 100%;
-        height: auto;
-        margin-bottom: 0;
-    }
-
-    footer .footer-contenedor div ul {
-        padding: 2px;
-        margin: 2px;
-        margin-top: 0;
-    }
-
-    footer .footer-contenedor div ul li a p {
-        margin: 7px;
-    }
-
-
-    footer .footer-contenedor .redes {
-        margin-top: 12px;
-        justify-content: center;
-        align-items: start;
-        height: auto;
-    }
-
-
-}
-
-
-@media screen and (max-width:390px) {
-
-    
-    footer .footer-contenedor .redes h3 {
-        font-size: 14px;
-        text-align: center;
-    }
-
-}
-
-    footer .footer-contenedor .redes ul li img {
-        width: 35px;
-        height: 35px;
-    } 
-
-    footer .footer-contenedor div {
-        grid-area: "footer";
-        display: flex;
-        flex-direction: column;
-        font-family: 'Russo One', sans-serif;
-        justify-content: center;
-        align-items: start;
-        width: auto;
-        height: 240px;
-        font-size: 10px;
-        gap: 1px;
-        margin-bottom: 2px;
-        padding: 0;
-
-    }
-
-
-
-
-
-/*!----RESET----/*/
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-}
-
-
-
-
-/*!----TIPOGRAFÍA----/*/
-
-
-@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
-
-
-
-/*!----HEADER----/*/
-/*!----HEADER----/*/
-/*!----HEADER----/*/
-
-header {
-    position: sticky;
-    top: 0;
-    background-color: #ffffff;
-    width: 100%;
-    z-index: 5;
-
-}
-
-header h2 {
-    color: white;
-    text-align: center;
-    font-size: 20px;
-    font-family: 'Russo One', sans-serif;
-    font-style: italic;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    height: 40px;
-
-}
-
-header div {
-    width: 100%;
-    height: 57px;
-    text-align: center;
-    justify-content: center;
-}
-
-header div a {
-    text-decoration: none;
-    font-size: 30px;
-
-}
-
-header div a h1 {
-    width: 100%;
-    height: auto;
-    font-weight: 600;
-    font-size: 50px;
-    font-family: 'Russo One', sans-serif;
-    color: black;
-}
-
-header nav div {
-    width: auto;
-    height: auto;
-
-}
-
-header nav div #navbarSupportedContent ul {
-    font-size: 18px;
-    color: black;
-}
-
-header nav div #navbarSupportedContent form input {
-    font-size: 18px;
-    color: black;
-}
-
-header nav div #navbarSupportedContent form button {
-    font-size: 18px;
-    color: black;
-    border-color: black;
-}
-
-header nav div #navbarSupportedContent ul li ul li .dropdown-item {
-    font-size: 15px;
-}
-
-
-/*!----MAIN----/*/
-/*!----MAIN----/*/
-/*!----MAIN----/*/
-
-
-main {
-    background-color: #ffffff;
-    width: 100%;
-}
-
-
-/**----REBAJAS IMAGEN----*/
-
-
-
-.rebajas-img a .rebajas-60 {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    height: auto;
-
-}
-
-.rebajas-img a .nuevas-rebajas {
-    display: none;
-    flex-wrap: wrap;
-    width: 100%;
-    height: auto;
-    align-items: center;
-    justify-content: center;
-}
-
-
-
-/**----MARCAS----*/
-/**----MARCAS----*/
-
-
-
-.marcas {
-    text-align: center;
-}
-
-
-.marcas div {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 35px;
-    margin-bottom: 35px;
-    width: 100%;
-    height: 370px;
-
-}
-
-.marcas div a {
-    width: auto;
-    height: auto;
-
-}
-
-.marcas div a img {
-    background-color: #ffffff;
-    width: 140px;
-    height: 115px;
-
-
-}
-
-
-
-
-/**----RECOMENDADOS----*/
-/**----RECOMENDADOS----*/
-
-.recomendados {
-    width: 100%;
-    margin-bottom: 20px;
-
-}
-
-.recomendados h2 {
-    display: flex;
-    width: 100%;
-    height: 70px;
-    color: rgb(0, 0, 0);
-    align-items: center;
-    justify-content: center;
-    font-family: 'Russo One', sans-serif;
-    font-size: 24px;
-    font-weight: 700;
-
-}
-
-
-.recomendados .recomendados-contenedor {
-    width: 100%;
-    background-color: white;
-    color: black;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-
-}
-
-.recomendados .recomendados-contenedor div {
-    width: 300px;
-    height: auto;
-    margin-top: 25px;
-}
-
-.recomendados .recomendados-contenedor div a {
-    text-decoration: none;
-    color: black;
-    text-align: center;
-    justify-content: center;
-}
-
-.recomendados .recomendados-contenedor div a img {
-    width: 190px;
-    height: 190px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-
-}
-
-.recomendados .recomendados-cotenedor div a h3 {
-    width: auto;
-    height: auto;
-}
-
-.recomendados .recomendados-contenedor .gorro-puma-archive-heather-beanie-verde a img {
-    width: 140px;
-    height: 140px;
-}
-
-.recomendados .recomendados-contenedor div a h3 {
-    font-size: 17px;
-    width: 150px;
-
-}
-
-.recomendados .recomendados-contenedor div a div {
-    width: auto;
-    height: auto;
-}
-
-.recomendados .recomendados-contenedor div a div strong {
-    font-size: 16px;
-}
-
-.recomendados .recomendados-contenedor div a div del {
-    font-size: 15px;
-}
-
-/**----MODA----**/
-/**----MODA----**/
-
-.moda {
-    width: 100%;
-    margin-top: 90px;
-}
-
-.moda div {
-    width: 100%;
-    margin-bottom: 30Spx;
-    height: auto;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
-
-.moda .moda-contenedor {
-    height: auto;
-}
-
-.moda div h2 {
-    font-size: 24px;
-    font-family: 'Russo One', sans-serif;
-    font-weight: 700;
-    margin: 20px 20px 40px;
-    margin: bottom 0;
-
-}
-
-.moda div div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 230px;
-}
-
-.moda div div a {
-    width: 230px;
-    text-align: center;
-    text-decoration: none;
-    color: black;
-}
-
-.moda div div a img {
-    width: 215px;
-    height: 215px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: top 0;
-    object-fit: cover;
-
-}
-
-.moda div div a h3 {
-    text-align: center;
-    font-size: 17px;
-    width: 100%;
-    height: 20px;
-    margin-bottom: 30px;
-    margin-top: 20px;
-    padding: 10px;
-
-
-}
-
-.moda div div a strong {
-    font-size: 14px;
-    margin-top: 3px;
-}
-
-/**----DISCIPLINAS----**/
-/**----DISCIPLINAS----**/
-
-.disciplinas .disciplinas-contenedor {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    margin-top: 60px;
-}
-
-.disciplinas .disciplinas-contenedor div {
-    justify-self: center;
-    align-items: center;
-    padding: 15px;
-
-}
-
-
-.disciplinas .disciplinas-contenedor div a {
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-
-}
-
-
-
-.disciplinas .disciplinas-contenedor div a img {
-    object-fit: cover;
-    padding: 10px;
-    justify-self: center;
-    align-items: center;
-    width: 550px;
-    height: 370px;
-
-}
-
-
-
-
-/*!----PAGINA CALZADO----*/
-/*!----PAGINA CALZADO----*/
-/*!----PAGINA CALZADO----*/
-
-
-/**----SECCION 1 CALZADO----**/
-
-.pag-calzado .seccion1-calzado div {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 120px
-}
-
-.pag-calzado .seccion1-calzado div img {
-    height: 150px;
-    width: 150px;
-    border: 2px solid #cccccc;
-    background-color: #ffffff;
-    margin: 20px;
-}
-
-/**----SECCION 2 CALZADO----**/
-
-.pag-calzado .seccion2-calzado p {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    flex-wrap: wrap;
-    font-size: 30px;
-}
-
-
-/**----SECCION 3 CALZADO----**/
-
-.pag-calzado .seccion3-calzado div {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 120px
-}
-
-.pag-calzado .seccion3-calzado div img {
-    height: 150px;
-    width: 150px;
-    border: 2px solid #cccccc;
-    background-color: #ffffff;
-    margin: 20px;
-}
-
-
-
-
-
-
-
-/*!----FOOTER----/*/
-/*!----FOOTER----/*/
-/*!----FOOTER----/*/
-
-footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: #f9f9f9;
-    padding: 10px;
-    bottom: 0;
-}
-
-/**----SUSCRIPCION----**/
-/**----SUSCRIPCION----**/
-
-footer .suscripcion {
-    flex: 1 1 25%;
-    margin: 10px;
-
-}
-
-footer .suscripcion .suscripcion-titulo h2 {
-    font-size: 24px;
-    font-family: 'Russo One', sans-serif;
-    text-align: center;
-    justify-content: center;
-}
-
-footer .suscripcion .footer-contenedor {
-    justify-content: center;
-    align-items: center;
-}
-
-footer .suscripcion .footer-contenedor ul {
-    list-style: none;
-}
-
-footer .suscripcion .footer-contenedor ul li {
-    margin-bottom: 5px;
-}
-
-
-footer.suscripcion .footer-contenedor div ul li a {
-    text-decoration: none;
-    color: #333;
-    font-size: 15px;
-}
-
-footer.suscripcion .footer-contenedor div ul li a p {
-    font-size: 20px;
-}
-
-footer .suscripcion .footer-contenedor .redes h3 {
-    margin-right: 10px;
-    margin-bottom: 0;
-}
-
-footer .suscripcion .footer-contenedor .redes ul {
-    display: flex;
-    flex-direction: row;
-}
-
-footer .suscripcion .footer-contenedor .redes ul li{
-    justify-self: center;
-}
-
-footer .suscripcion .footer-contenedor .redes ul li img {
-    width: 20px;
-    height: 20px;
-    margin:5px;
-}
-
-
-
-
-footer .suscripcion .suscripcion-mail {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    font-size: 19px;
-    font-family: 'Russo One', sans-serif;
-}
-
-footer .suscripcion .suscripcion-mail form ul {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    width: 100%;
-    justify-content: center;
-}
-
-footer .suscripcion .suscripcion-mail form ul li {
-    margin: 2px;
-    padding: 2px;
-    height: 45px;
-
-
-
-}
-
-
-footer .suscripcion .suscripcion-mail form ul li input {
-    height: 45px;
-    width: 380px;
-
-}
-
-footer .suscripcion .suscripcion-mail form ul li button {
-    height: 45px;
-    width: 120px;
-    background-color: #FF2931;
-    border: 2px black solid;
-    margin-left: 0
-}
-
-/**---- INFORMACIÓN ADICIONAL----**/
-/**----INFORMACIÓN ADICIONAL----**/
-
-footer .footer-contenedor {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat (4, 25%);
-    grid-template-areas:
-        "footer footer footer footer"
-        "footer footer footer footer"
-    ;
-    margin: 20px;
-    margin-bottom: 0;
-}
-
-footer .footer-contenedor div {
-    grid-area: "footer";
-    display: flex;
-    flex-direction: column;
-    font-family: 'Russo One', sans-serif;
-    padding: 5px;
-    margin: 10px;
-    justify-content: center;
-    align-items: start;
-    width: auto;
-    height: 280px;
-
-}
-
-footer .footer-contenedor div h3 {
-    margin-left: 12px;
-    font-size: 20px;
-}
-
-
-
-footer .footer-contenedor div ul {
-    list-style: none;
-    margin: 5px;
-    padding: 5px;
-
-}
-
-footer .footer-contenedor div ul li {
-    margin: 5px;
-}
-
-footer .footer-contenedor div ul li a {
-    text-decoration: none;
-    color: black;
-}
-
-
-/**----ICONOS----**/
-/**----ICONOS----**/
-
-footer .footer-contenedor .redes {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-right: 4px;
-}
-
-
-footer .footer-contenedor .redes ul li {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-
-
-}
-
-footer .footer-contenedor .redes ul li img {
-    margin: 5px;
-}
-
-footer .footer-contenedor .redes h3 {
-    font-family: 'Russo One', sans-serif;
-    width: auto;
-    position: relative;
-    text-align: center;
-    justify-content: center;
-    margin-bottom: 12px;
-}
-
-
-
-
-
-/*!----MEDIA QUERIES----!*/
-/*!----MEDIA QUERIES----!*/
-/*!----MEDIA QUERIES----!*/
-
-/**----NAVBAR----**/
-/**----NAVBAR----**/
-
-@media screen and (max-width:1000px) {
-    .header nav div {
-        justify-content: space-between;
-    }
-}
-
-
-/**----REBAJAS----**/
-/**----REBAJAS----**/
-@media screen and (max-width:900px) {
-    .rebajas-img {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        width: auto;
-        height: auto;
-    }
-
-    .rebajas-img a .nuevas-rebajas {
-        display: flex;
-        flex-wrap: wrap;
-        width: 400px;
-        height: 400px;
-    }
-
-    .rebajas-img a .rebajas-60 {
-        display: none;
-    }
-}
-
-@media screen and (max-width:750px) {
-    .rebajas-img a .nuevas-rebajas {
-        display: flex;
-        flex-wrap: wrap;
-        width: 300px;
-        height: 300px;
-    }
-
-}
-
-
-/**----MARCAS----**/
-/**----MARCAS----**/
-
-
-
-@media screen and (max-width:1400px) {
-
-
-    .marcas div {
-        width: auto;
-        height: 300px;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-}
-
-.marcas div a {
-    width: auto;
-    height: auto;
-}
-
-.marcas div a img {
-    width: 120px;
-    height: 95px;
-}
-
-
-
-@media screen and (max-width:800px) {
-    .marcas div a .logo-converse {
-        display: none;
-    }
-
-}
-
-
-@media screen and (max-width:500px) {
-    .marcas div {
-        width: auto;
-        height: auto;
-        align-items: center;
-        justify-content: space-evenly;
-        display: flex;
-        flex-direction: column;
-
-    }
-
-}
-
-.marcas div a img {
-    width: 120px;
-    height: 110px;
-    margin: 22px;
-}
-
-
-/**----RECOMENDADOS----**/
-/**----RECOMENDADOS----**/
-
-@media screen and (max-width:1230px) {
-    .recomendados .recomendados-contenedor div {
-        width: auto;
-        height: auto;
-        margin-top: 10px;
-    }
-}
-
-.recomendados .recomendados-contenedor div a {
-    text-decoration: none;
-    color: black;
-    justify-content: center;
-    align-items: center;
-    height: 280px;
-}
-
-.recomendados .recomendados-contenedor div a img {
-    width: 150px;
-    height: 150px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-
-}
-
-.recomendados .recomendados-contenedor div a h3 {
-    margin: 30px 20px 40px 20px;
-    font-size: 14px;
-    width: 200px;
-
-}
-
-.recomendados .recomendados-contenedor div a div {
-    height: auto;
-}
-
-.recomendados .recomendados-contenedor div a div strong {
-    font-size: 12px;
-}
-
-.recomendados .recomendados-contenedor div a div del {
-    font-size: 10px;
-}
-
-
-@media screen and (max-width:1050px) {
-    .recomendados .recomendados-contenedor {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .recomendados .recomendados-contenedor div {
-        width: auto;
-        height: auto;
-        margin-top: 10px;
-    }
-
-    .recomendados .recomendados-contenedor div a {
-        text-decoration: none;
-        color: black;
-        justify-content: center;
-        align-items: center;
-        height: 280px;
-    }
-
-    .recomendados .recomendados-contenedor div a img {
-        width: 200px;
-        height: 200px;
-        margin-bottom: 10px;
-        margin-top: 10px;
-
-    }
-
-    .recomendados .recomendados-contenedor div a h3 {
-        margin: 15px 10px 20px 10px;
-        font-size: 14px;
-        width: 200px;
-
-    }
-
-    .recomendados .recomendados-contenedor div a div {
-        height: auto;
-    }
-
-    .recomendados .recomendados-contenedor div a div strong {
-        font-size: 12px;
-    }
-
-    .recomendados .recomendados-contenedor div a div del {
-        font-size: 10px;
-    }
-
-}
-
-/**----MODA----**/
-/**----MODA----**/
-
-
-@media screen and (max-width:1200px) {
-    .moda {
-        margin-top: 50px;
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .moda .moda-contenedor {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-        align-items: center;
-    }
-
-    .moda .moda-contenedor div {
-        height: 250px;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 20px;
-
-
-    }
-
-    .moda .moda-contenedor div a {
-        justify-content: center;
-        align-items: center;
-
-    }
-
-    .moda .moda-contenedor div img {
-        height: 170px;
-        width: 170px;
-        align-items: center;
-        margin: 20px;
-    }
-
-    .moda .moda-contenedor div:nth-child(4) {
-        display: none;
-    }
-
-
-    .moda .moda-contenedor div h3 {
-        font-size: 13px;
-    }
-
-    .moda .moda-contenedor div {
-        width: auto;
-    }
-
-    .moda .moda-contenedor div strong {
-        font-size: 13px;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-
-@media screen and (max-width:500px) {
-    .moda {
-        margin-top: 20px;
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .moda .moda-contenedor {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 3px;
-        align-items: center;
-    }
-
-    .moda .moda-contenedor div {
-        height: 250px;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 20px;
-
-
-    }
-
-    .moda .moda-contenedor div a {
-        justify-content: center;
-        align-items: center;
-        width: auto;
-        height: auto;
-
-    }
-
-    .moda .moda-contenedor div a h3{
-        width: 140px;
-        height: 50px;
-        margin-bottom: 3px;
-    }
-
-    .moda .moda-contenedor div a img {
-        height: 120px;
-        width: 120px;
-        align-items: center;
-        margin: 10px;
-    }
-
-
-    .moda .moda-contenedor div:nth-child(4) {
-        display: none;
-    }
-
-
-    .moda .moda-contenedor div h3 {
-        font-size: 13px;
-    }
-
-    .moda .moda-contenedor div {
-        width: auto;
-    }
-
-    .moda .moda-contenedor div strong {
-        font-size: 13px;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-
-
-    /**----DISCIPLINAS----**/
-    /**----DISCIPLINAS----**/
-
-
-
-    @media screen and (max-width:1200px) {
-        .disciplinas .disciplinas-contenedor div a {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-
-    .disciplinas .disciplinas-contenedor div a img {
-        display: flex;
-        width: 380px;
-        height: 240px;
-        flex-wrap: wrap;
-    }
-}
-
-
-
-@media screen and (max-width:850px) {
-    .disciplinas .disciplinas-contenedor {
-        display: flex;
-        flex-direction: column;
-
-    }
-
-    .disciplinas .disciplinas-contenedor div a {
-        gap: 5px;
-    }
-
-    .disciplinas .disciplinas-contenedor div a img {
-        width: 340px;
-        height: 210px;
-        padding: 5px;
-    }
-}
-
-
-/**----FOOTER----**/
-/**----FOOTER----**/
-
-@media screen and (max-width: 1050px) {
-    footer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-
-    footer div {
-        flex: 1 1 50%;
-    }
-
-    footer .footer-contenedor {
-        width: 100%;
-    }
-
-    footer .footer-contenedor div {
-        height: 280px;
-    }
-
-    footer .redes {
-        margin-top: 20px;
-    }
-}
-
-
-@media screen and (max-width:991px) {
-
-    footer .footer-contenedor {
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat (2, 1fr);
-        grid-template-areas:
-            "footer footer"
-            "footer footer"
-        ;
-        margin: 10px;
-        margin-bottom: 0;
-    }
-
-    footer .footer-contenedor div {
-        grid-area: "footer";
-        display: flex;
-        flex-direction: column;
-        font-family: 'Russo One', sans-serif;
-        padding: 5px;
-        margin: 10px;
-        justify-content: center;
-        align-items: start;
-        width: auto;
-        height: 240px;
-    }
-
-    footer .footer-contenedor .redes {
-        margin-top: 12px;
-        justify-content: center;
-        align-items: start;
-        height: 150px;
-    }
-
-
-}
-
-
-@media screen and (max-width:700px) {
-
-    footer .suscripcion{
-        width: auto;
-        justify-content: center;
-        text-align: center;
-    }
-    
-    footer .suscripcion .suscripcion-titulo h2 {
-        font-size: 16px;
-        width: auto;
-    }
-
-
-    footer .suscripcion .suscripcion-mail form ul {
-        display: flex;
-        flex-direction: column;
-        list-style: none;
-        align-items: center;
-        justify-content: center;
-        width: 400px;
-        margin: 0;
-        padding: 0;
-
-    }
-
-    footer .suscripcion .suscripcion-mail form ul li {
-        justify-content: center;
-        align-items: center;
-        width: 320px;
-        height: 35px;
-    }
-
-
-    footer .suscripcion .suscripcion-mail form ul li input {
-        height: 30px;
-        width: 300px;
-        font-size: 14px;
-        margin: 3px;
-        margin-right: 20px;
-
-    }
-
-
-    footer .suscripcion .suscripcion-mail form ul li button {
-        height: 30px;
-        width: 100px;
-        background-color: #FF2931;
-        border: 2px black solid;
-        font-size: 10px;
-        margin-right: 20px;
-    }
-
-
-    footer .footer-contenedor div h3{
-        font-size: 17px;
-    }
-
-
-    footer .footer-contenedor div ul li a p{
-        font-size: 12px;
-    }
-}
-
-
-
-
-@media screen and (max-width:480px) {
-    footer .suscripcion{
-        width: auto;
-        justify-content: center;
-        text-align: center;
-    }
-    
-    footer .suscripcion .suscripcion-titulo h2 {
-        font-size: 14px;
-        text-align: center;
-        width: 300px;
-    }
-
-    footer .suscripcion .suscripcion-mail form ul {
-        display: flex;
-        flex-direction: column;
-        list-style: none;
-        align-items: center;
-        justify-content: center;
-        width: 300px;
-        margin: 0;
-        padding: 0;
-
-    }
-
-    footer .suscripcion .suscripcion-mail form ul li {
-        justify-content: center;
-        align-items: center;
-        width: 250px;
-        height: 35px;
-    }
-
-
-    footer .suscripcion .suscripcion-mail form ul li input {
-        height: 30px;
-        width: 170px;
-        font-size: 14px;
-        margin: 3px;
-        
-    }
-
-
-    footer .suscripcion .suscripcion-mail form ul li button {
-        height: 30px;
-        width: 100px;
-        background-color: #FF2931;
-        border: 2px black solid;
-        font-size: 10px;
-    }
-    
-    footer .footer-contenedor {
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat (2, 1fr);
-        grid-template-areas:
-            "footer footer"
-            "footer footer"
-        ;
-        margin: 5px;
-        margin-bottom: 0;
-    }
-
-    footer .footer-contenedor div {
-        grid-area: "footer";
-        display: flex;
-        flex-direction: column;
-        font-family: 'Russo One', sans-serif;
-        justify-content: center;
-        align-items: start;
-        width: auto;
-        height: 220px;
-        font-size: 12px;
-        gap: 3px;
-        margin-bottom: 4px;
-        padding: 0;
-    }
-
-
-    footer .footer-contenedor div h3 {
-        font-size: 14px;
-        width: 100%;
-        height: auto;
-        margin-bottom: 0;
-    }
-
-    footer .footer-contenedor div ul {
-        padding: 2px;
-        margin: 2px;
-        margin-top: 0;
-    }
-
-    footer .footer-contenedor div ul li a p {
-        margin: 7px;
-    }
-
-
-    footer .footer-contenedor .redes {
-        margin-top: 12px;
-        justify-content: center;
-        align-items: start;
-        height: auto;
-    }
-
-
-}
-
-
-@media screen and (max-width:390px) {
-
-    
-    footer .footer-contenedor .redes h3 {
-        font-size: 14px;
-        text-align: center;
-    }
-
-}
-
-    footer .footer-contenedor .redes ul li img {
-        width: 35px;
-        height: 35px;
-    } 
-
-    footer .footer-contenedor div {
-        grid-area: "footer";
-        display: flex;
-        flex-direction: column;
-        font-family: 'Russo One', sans-serif;
-        justify-content: center;
-        align-items: start;
-        width: auto;
-        height: 240px;
-        font-size: 10px;
-        gap: 1px;
-        margin-bottom: 2px;
-        padding: 0;
-
-    }
