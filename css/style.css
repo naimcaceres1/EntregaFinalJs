@@ -552,8 +552,10 @@ footer .footer-contenedor .redes ul li {
 
 }
 
-footer .footer-contenedor .redes ul li img {
+footer .footer-contenedor .redes ul li a img {
     margin: 5px;
+    width: 45px;
+    height: 45px;
 }
 
 footer .footer-contenedor .redes h3 {
@@ -575,16 +577,42 @@ footer .footer-contenedor .redes h3 {
     height: auto;
     display: flex;
     width: 100%;
+    margin-top: 50px;
 }
 
 
 /**----FILTRO----**/
 /**----FILTRO----**/
-.calzado-pag .calzado-catalogo{
+.calzado-catalogo{
     display: flex;
+    flex-direction: column;
+    width: 20%;
+
 }
 
+.calzado-catalogo div{
+    width: 100%;
+    margin-bottom: 30px;
+}
 
+.calzado-catalogo div h3{
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+.calzado-catalogo div ul{
+    list-style: none;
+}
+
+.calzado-catalogo div ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.calzado-catalogo div ul li a p{
+    font-size: 15px;
+    margin: 3px;
+}
 
 
 /**---CONTENIDO----**/
@@ -1282,9 +1310,8 @@ footer .footer-contenedor .redes h3 {
         text-align: center;
     }
 
-}
 
-    footer .footer-contenedor .redes ul li img {
+    footer .footer-contenedor .redes ul li a img {
         width: 35px;
         height: 35px;
     } 
