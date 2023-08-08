@@ -652,7 +652,7 @@ footer .footer-contenedor .redes h3 {
     width: 250px;
     height: 250px;
     text-align: center;
-    justify-self;
+    justify-content: center;
 
 }
 
@@ -1331,7 +1331,7 @@ footer .footer-contenedor .redes h3 {
         padding: 0;
 
     }
-
+}
 
 /**----PAGINA CALZADO----**/
 /**----PAGINA CALZADO----**/
