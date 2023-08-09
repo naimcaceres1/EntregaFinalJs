@@ -615,8 +615,8 @@ footer .footer-contenedor .redes h3 {
 }
 
 
-/**---CONTENIDO----**/
-/**---CONTENIDO----**/
+/**---CATALOGO----**/
+/**---CATALOGO----**/
 
 
 
@@ -649,8 +649,8 @@ footer .footer-contenedor .redes h3 {
 }
 
 .calzado-contenedor div a img{
-    width: 250px;
-    height: 250px;
+    width: 220px;
+    height: 220px;
     text-align: center;
     justify-content: center;
 
@@ -1178,7 +1178,6 @@ footer .footer-contenedor .redes h3 {
         background-color: #FF2931;
         border: 2px black solid;
         font-size: 10px;
-        margin-right: 20px;
     }
 
 
@@ -1232,7 +1231,8 @@ footer .footer-contenedor .redes h3 {
         height: 30px;
         width: 170px;
         font-size: 14px;
-        margin: 3px;
+        margin: 5px;
+        text-align: center;
         
     }
 
@@ -1243,6 +1243,7 @@ footer .footer-contenedor .redes h3 {
         background-color: #FF2931;
         border: 2px black solid;
         font-size: 10px;
+        align-items: center;
     }
     
     footer .footer-contenedor {
@@ -1339,9 +1340,222 @@ footer .footer-contenedor .redes h3 {
 
 /**----FILTRO----**/
 
-@media screen and (max-width:1370px) {
+@media screen and (max-width:990px) {
     .calzado-pag .calzado-catalogo{
         display: none;
     }
     
+}
+
+
+/**----CATALOGO----**/
+@media screen and (max-width:1320px) {
+
+    
+    .calzado-contenedor{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+    }
+    
+    .calzado-contenedor div{
+        width: 280px;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin: 12px;
+        padding: 3px;
+    }
+    
+    .calzado-contenedor div a{
+        text-decoration: none;
+        color: black;
+        text-align: center;
+        justify-content: center;
+        width: 250px;
+        height: auto;
+    }
+    
+    .calzado-contenedor div a img{
+        width: 170px;
+        height: 170px;
+        text-align: center;
+        justify-content: center;
+    
+    }
+    
+    .calzado-contenedor div a h3{
+        text-align: center;
+        justify-content: center;
+        font-family: 'Russo One', sans-serif;
+        font-size: 12px;
+        width: 220px;
+        height: 10px;
+    }
+    
+    .calzado-contenedor div a div {
+        width: 200px;
+        height: 16px;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 5px;
+    
+    }
+    
+    .calzado-contenedor div a div strong {
+        font-size: 12px;
+    }
+    
+    .calzado-contenedor div a div del {
+        font-size: 11px;
+
+    
+    }
+    
+}
+
+@media screen and (max-width:1100px) {
+    .calzado-contenedor{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+    }
+    
+    .calzado-contenedor div{
+        width: 170px;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin: 12px;
+        padding: 3px;
+    }
+    
+    .calzado-contenedor div a{
+        text-decoration: none;
+        color: black;
+        text-align: center;
+        justify-content: center;
+        width: 170px;
+        height: auto;
+    }
+    
+    .calzado-contenedor div a img{
+        width: 130px;
+        height: 130px;
+    
+    }
+    
+    .calzado-contenedor div a h3{
+        text-align: center;
+        justify-content: center;
+        font-family: 'Russo One', sans-serif;
+        font-size: 8px;
+        width: 165px;
+        height: 10px;
+    }
+    
+    .calzado-contenedor div a div {
+        width: 165px;
+        height: 10px;
+        display: flex;
+        flex-direction: row;
+    
+    }
+    
+    .calzado-contenedor div a div strong {
+        font-size: 8px;
+        margin: 2px;
+        margin-top: 5px;
+        
+
+    
+    }
+    
+    .calzado-contenedor div a div del {
+        font-size: 8px;
+        margin: 2px;
+        margin-top: 5px;
+    
+    }
+    
+}
+
+@media screen and (max-width:600px) {
+    .calzado-contenedor{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
+    
+    .calzado-contenedor div{
+        width: 103px;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin: 6px;
+        padding: 1px;
+    }
+    
+    .calzado-contenedor div a{
+        text-decoration: none;
+        color: black;
+        text-align: center;
+        justify-content: center;
+        width: 75px;
+        height: auto;
+    }
+    
+    .calzado-contenedor div a img{
+        width: 75px;
+        height: 75px;
+        text-align: center;
+        justify-content: center;
+    
+    }
+    
+    .calzado-contenedor div a h3{
+        text-align: center;
+        justify-content: center;
+        font-family: 'Russo One', sans-serif;
+        font-size: 7px;
+        width: 75px;
+    }
+    
+    .calzado-contenedor div a div {
+        width: 75px;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 5px;
+        margin-top: 15px;
+    
+    }
+    
+    .calzado-contenedor div a div strong {
+        font-size: 6px;
+        margin: 2px;
+        margin-top: 6px;
+
+    
+    }
+    
+    .calzado-contenedor div a div del {
+        font-size: 6px;
+        margin: 2px;
+        margin-top: 6px;
+    
+    }
 }
