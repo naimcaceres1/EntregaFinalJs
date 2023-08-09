@@ -182,7 +182,7 @@ main {
     align-items: center;
     justify-content: center;
     font-family: 'Russo One', sans-serif;
-    font-size: 24px;
+    font-size: 26px;
     font-weight: 700;
 
 }
@@ -273,7 +273,7 @@ main {
 }
 
 .moda div h2 {
-    font-size: 24px;
+    font-size: 26px;
     font-family: 'Russo One', sans-serif;
     font-weight: 700;
     margin: 20px 20px 40px;
@@ -689,6 +689,368 @@ footer .footer-contenedor .redes h3 {
 }
 
 
+/*!----PAGINA INDUMENTARIA----*/
+/*!----PAGINA INDUMENTARIA----*/
+/*!----PAGINA INDUMENTARIA----*/
+
+
+
+.indumentaria-pag{
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+}
+
+
+/**----FILTRO----**/
+/**----FILTRO----**/
+.indumentaria-catalogo{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+
+}
+
+.indumentaria-catalogo div{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.indumentaria-catalogo div h3{
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+.indumentaria-catalogo div ul{
+    list-style: none;
+}
+
+.indumentaria-catalogo div ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.indumentaria-catalogo div ul li a p{
+    font-size: 15px;
+    margin: 3px;
+}
+
+
+/**---CATALOGO----**/
+/**---CATALOGO----**/
+
+
+
+.indumentaria-contenedor{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.indumentaria-contenedor div{
+    width: 340px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 12px;
+    padding: 3px;
+}
+
+.indumentaria-contenedor div a{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    justify-content: center;
+    width: 270px;
+    height: auto;
+}
+
+.indumentaria-contenedor div a img{
+    width: 220px;
+    height: 220px;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.indumentaria-contenedor div a h3{
+    text-align: center;
+    justify-content: center;
+    font-family: 'Russo One', sans-serif;
+    font-size: 16px;
+    width: 270px;
+    height: 20px;
+    margin-top: 7px;
+}
+
+.indumentaria-contenedor div a div {
+    width: 250px;
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+
+}
+
+.indumentaria-contenedor div a div strong {
+    font-size: 15px;
+    margin: 3px;
+    margin-top: 10px;
+
+}
+
+.indumentaria-contenedor div a div del {
+    font-size: 14px;
+    margin: 3px;
+    margin-top: 10px;
+
+}
+
+
+/*!----PAGINA ACCESORIOS----!*/
+/*!----PAGINA ACCESORIOS----!*/
+/*!----PAGINA ACCESORIOS----!*/
+
+.accesorios-pag{
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+}
+
+
+/**----FILTRO----**/
+/**----FILTRO----**/
+.accesorios-catalogo{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+
+}
+
+.accesorios-catalogo div{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.accesorios-catalogo div h3{
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+.accesorios-catalogo div ul{
+    list-style: none;
+}
+
+.accesorios-catalogo div ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.accesorios-catalogo div ul li a p{
+    font-size: 15px;
+    margin: 3px;
+}
+
+
+/**---CATALOGO----**/
+/**---CATALOGO----**/
+
+
+
+.accesorios-contenedor{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.accesorios-contenedor div{
+    width: 340px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 12px;
+    padding: 3px;
+}
+
+.accesorios-contenedor div a{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    justify-content: center;
+    width: 270px;
+    height: auto;
+}
+
+.accesorios-contenedor div a img{
+    width: 220px;
+    height: 220px;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.accesorios-contenedor div a h3{
+    text-align: center;
+    justify-content: center;
+    font-family: 'Russo One', sans-serif;
+    font-size: 16px;
+    width: 270px;
+    height: 20px;
+    margin-top: 7px;
+}
+
+.accesorios-contenedor div a div {
+    width: 250px;
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+
+}
+
+.accesorios-contenedor div a div strong {
+    font-size: 15px;
+    margin: 3px;
+    margin-top: 10px;
+
+}
+
+.accesorios-contenedor div a div del {
+    font-size: 14px;
+    margin: 3px;
+    margin-top: 10px;
+
+}
+
+
+/*!----REBAJAS----!*/
+/*!----REBAJAS----!*/
+/*!----REBAJAS----!*/
+
+.rebajas-pag{
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+}
+
+
+/**----FILTRO----**/
+/**----FILTRO----**/
+.rebajas-catalogo{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+
+}
+
+.rebajas-catalogo div{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.rebajas-catalogo div h3{
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+.rebajas-catalogo div ul{
+    list-style: none;
+}
+
+.rebajas-catalogo div ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.rebajas-catalogo div ul li a p{
+    font-size: 15px;
+    margin: 3px;
+}
+
+
+/**---CATALOGO----**/
+/**---CATALOGO----**/
+
+
+
+.rebajas-contenedor{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.rebajas-contenedor div{
+    width: 340px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 12px;
+    padding: 3px;
+}
+
+.rebajas-contenedor div a{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    justify-content: center;
+    width: 270px;
+    height: auto;
+}
+
+.rebajas-contenedor div a img{
+    width: 220px;
+    height: 220px;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.rebajas-contenedor div a h3{
+    text-align: center;
+    justify-content: center;
+    font-family: 'Russo One', sans-serif;
+    font-size: 16px;
+    width: 270px;
+    height: 20px;
+    margin-top: 7px;
+}
+
+.rebajas-contenedor div a div {
+    width: 250px;
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+
+}
+
+.rebajas-contenedor div a div strong {
+    font-size: 15px;
+    margin: 3px;
+    margin-top: 10px;
+
+}
+
+.rebajas-contenedor div a div del {
+    font-size: 14px;
+    margin: 3px;
+    margin-top: 10px;
+
+}
+
+
 /*!----MEDIA QUERIES----!*/
 /*!----MEDIA QUERIES----!*/
 /*!----MEDIA QUERIES----!*/
@@ -777,20 +1139,19 @@ footer .footer-contenedor .redes h3 {
 @media screen and (max-width:500px) {
     .marcas div {
         width: auto;
-        height: auto;
+        height: 220px;
         align-items: center;
         justify-content: space-evenly;
         display: flex;
-        flex-direction: column;
 
     }
 
 }
 
 .marcas div a img {
-    width: 120px;
-    height: 110px;
-    margin: 22px;
+    width: 85px;
+    height: 75px;
+    margin: 12px;
 }
 
 
@@ -843,6 +1204,10 @@ footer .footer-contenedor .redes h3 {
 
 
 @media screen and (max-width:1050px) {
+    .recomendados h2{
+        font-size: 24px;
+    }
+
     .recomendados .recomendados-contenedor {
         display: flex;
         flex-direction: column;
