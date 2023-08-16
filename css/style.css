@@ -260,7 +260,7 @@ main {
 
 .moda div {
     width: 100%;
-    margin-bottom: 30Spx;
+    margin-bottom: 30px;
     height: auto;
     display: flex;
     justify-content: space-evenly;
@@ -394,45 +394,45 @@ footer .suscripcion .suscripcion-titulo h2 {
     justify-content: center;
 }
 
-footer .suscripcion .footer-contenedor {
-    justify-content: center;
+footer .footer-contenedor {
+    justify-content: space-evenly;
     align-items: center;
 }
 
-footer .suscripcion .footer-contenedor ul {
+footer .footer-contenedor ul {
     list-style: none;
 }
 
-footer .suscripcion .footer-contenedor ul li {
+footer .footer-contenedor ul li {
     margin-bottom: 5px;
 }
 
 
-footer.suscripcion .footer-contenedor div ul li a {
+footer .footer-contenedor div ul li a {
     text-decoration: none;
     color: #333;
     font-size: 15px;
 }
 
-footer.suscripcion .footer-contenedor div ul li a p {
+footer .footer-contenedor div ul li a p {
     font-size: 20px;
 }
 
-footer .suscripcion .footer-contenedor .redes h3 {
+footer .footer-contenedor .redes h3 {
     margin-right: 10px;
     margin-bottom: 0;
 }
 
-footer .suscripcion .footer-contenedor .redes ul {
+footer .footer-contenedor .redes ul {
     display: flex;
     flex-direction: row;
 }
 
-footer .suscripcion .footer-contenedor .redes ul li{
+footer .footer-contenedor .redes ul li{
     justify-self: center;
 }
 
-footer .suscripcion .footer-contenedor .redes ul li img {
+footer .footer-contenedor .redes ul li img {
     width: 20px;
     height: 20px;
     margin:5px;
@@ -1143,7 +1143,6 @@ footer .footer-contenedor .redes h3 {
         align-items: center;
         justify-content: space-evenly;
         display: flex;
-
     }
 
 }
@@ -1840,16 +1839,12 @@ footer .footer-contenedor .redes h3 {
         font-size: 8px;
         margin: 2px;
         margin-top: 5px;
-        
-
-    
     }
     
     .calzado-contenedor div a div del {
         font-size: 8px;
         margin: 2px;
         margin-top: 5px;
-    
     }
     
 }

@@ -1,0 +1,553 @@
+main{
+    .rebajas-img{
+        a{
+            .rebajas-60{
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+                height: auto;
+            }
+            .nuevas-rebajas{
+                display: none;
+                flex-wrap: wrap;
+                width: 100%;
+                height: auto;
+                align-items: center;
+                justify-content: center;
+            }
+        } 
+    }
+    .marcas{
+        text-align: center;
+        div{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 35px;
+            margin-bottom: 35px;
+            width: 100%;
+            height: 370px;
+            a{
+                width: auto;
+                height: auto;
+                img{
+                    background-color: #ffffff;
+                    width: 140px;
+                    height: 115px;
+                }
+            }
+        }
+    }
+    .recomendados{
+        width: 100%;
+        margin-bottom: 20px;
+        h2{
+            display: flex;
+            width: 100%;
+            height: 70px;
+            color: rgb(0, 0, 0);
+            align-items: center;
+            justify-content: center;
+            font-family: 'Catamaran', sans-serif;            font-size: 26px;
+            font-weight: 700;
+        }
+        .recomendados-contenedor{
+            width: 100%;
+            background-color: white;
+            color: black;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            div{
+                width: 300px;
+                height: auto;
+                margin-top: 25px;
+                a{
+                    text-decoration: none;
+                    color: black;
+                    text-align: center;
+                    justify-content: center;
+                    width: auto;
+                    height: auto;
+                    img{
+                        width: 190px;
+                        height: 190px;
+                        margin-bottom: 10px;
+                        margin-top: 10px;
+                    }
+                    h3{
+                        width: 300px;
+                        height: 40px;
+                        text-align: center;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 17px;
+                    }
+                    div{
+                        width: auto;
+                        height: auto;
+                        strong{
+                            font-size: 16px;
+                        }
+                        del{
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+            .gorro-puma-archive-heather-beanie-verde{
+                a{
+                    img{
+                        width: 140px;
+                        height: 140px;
+                    }
+                }
+            }
+        }
+    }
+    .moda{
+        width: 100%;
+        margin-top: 90px;
+        div{
+            width: 100%;
+            margin-bottom: 30px;
+            height: auto;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            h2{
+                font-size: 26px;
+                font-family: 'Catamaran', sans-serif;
+                font-weight: 700;
+                margin: 20px 20px 40px;
+                margin: bottom 0;
+            }
+        }
+        .moda-contenedor{
+            height: auto;;
+            div{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+                width: 230px;
+                a{
+                    width: 230px;
+                    text-align: center;
+                    text-decoration: none;
+                    color: black;
+                    img{
+                        width: 215px;
+                        height: 215px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin: top 0;
+                        object-fit: cover;
+                        h3{
+                            text-align: center;
+                            font-size: 17px;
+                            width: 100%;
+                            height: 20px;
+                            margin-bottom: 30px;
+                            margin-top: 20px;
+                            padding: 10px;
+                        }
+                        strong{
+                            font-size: 14px;
+                            margin-top: 3px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .disciplinas{
+        .disciplinas-contenedor{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            margin-top: 60px;
+            div{
+                justify-self: center;
+                align-items: center;
+                padding: 15px;
+                a{
+                    gap: 10px;
+                    justify-content: center;
+                    align-items: center;
+                    img{
+                        object-fit: cover;
+                        padding: 10px;
+                        justify-self: center;
+                        align-items: center;
+                        width: 550px;
+                        height: 370px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/**----PAGINA CALZADO----**/
+
+.calzado-pag{
+    height: auto;
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+    .calzado-filtro{
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        div{
+            width: 100%;
+            margin-bottom: 30px;
+            h3{
+                font-size: 20px;
+                margin-left: 30px; 
+            }
+            ul{
+                list-style: none;
+                li{
+                    a{
+                        text-decoration: none;
+                        color: black;
+                        p{
+                            font-size: 15px;
+                            margin: 3px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .calzado-contenedor{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+        div{
+            width: 340px;
+            height: auto;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            margin: 12px;
+            padding: 3px;
+            a{
+                text-decoration: none;
+                color: black;
+                text-align: center;
+                justify-content: center;
+                width: 270px;
+                height: auto;
+                img{
+                    width: 220px;
+                    height: 220px;
+                    text-align: center;
+                    justify-content: center;
+                
+                }
+                h3{
+                    text-align: center;
+                    justify-content: center;
+                    font-family: 'Catamaran', sans-serif;
+                    font-size: 16px;
+                    width: 270px;
+                    height: 20px;
+                }
+                div{
+                    width: 250px;
+                    height: 20px;
+                    display: flex;
+                    flex-direction: row;
+                    margin-bottom: 5px;
+                    strong{
+                        font-size: 15px;
+                        margin: 3px;
+                        margin-top: 10px;
+                    }
+                    del{
+                        font-size: 14px;
+                        margin: 3px;
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/**----PAGINA INDUMENTARIA----**/
+
+.indumentaria-pag{
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+    .indumentaria-filtro{
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        div{
+            width: 100%;
+            margin-bottom: 30px;
+            h3{
+                font-size: 20px;
+                margin-left: 30px;
+            }
+            ul{
+                list-style: none;
+                li{
+                    a{
+                        text-decoration: none;
+                        color: black;
+                        p{
+                            font-size: 15px;
+                            margin: 3px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .indumentaria-contenedor{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+        div{
+            width: 340px;
+            height: auto;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            margin: 12px;
+            padding: 3px;
+            a{
+                text-decoration: none;
+                color: black;
+                text-align: center;
+                justify-content: center;
+                width: 270px;
+                height: auto;
+                img{
+                    width: 220px;
+                    height: 220px;
+                    text-align: center;
+                    justify-content: center;
+                h3{
+                    div{
+                        width: 250px;
+                        height: 20px;
+                        display: flex;
+                        flex-direction: row;
+                        margin-bottom: 5px;
+                        strong{
+                            font-size: 15px;
+                            margin: 3px;
+                            margin-top: 10px;
+                        }
+                        del{
+                            font-size: 14px;
+                            margin: 3px;
+                            margin-top: 10px;
+                        }
+                    }
+                }
+                }
+            }
+        }
+    }
+}
+
+
+/**----PAGINA ACCESORIOS----**/
+
+.accesorios-pag{
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+    .accesorios-filtro{
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        div{
+            width: 100%;
+            margin-bottom: 30px;
+            h3{
+                font-size: 20px;
+                margin-left: 30px;
+            }
+            ul{
+                list-style: none;
+                li{
+                    a{
+                        text-decoration: none;
+                        color: black;
+                        p{
+                            font-size: 15px;
+                            margin: 3px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .accesorios.contenedor{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+        div{
+            width: 340px;
+            height: auto;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            margin: 12px;
+            padding: 3px;
+            a{
+                text-decoration: none;
+                color: black;
+                text-align: center;
+                justify-content: center;
+                width: 270px;
+                height: auto;
+                img{
+                    width: 220px;
+                    height: 220px;
+                    text-align: center;
+                    justify-content: center;
+                }
+                h3{
+                    text-align: center;
+                    justify-content: center;
+                    font-family: 'Catamaran', sans-serif;
+                    font-size: 16px;
+                    width: 270px;
+                    height: 20px;
+                    margin-top: 7px;
+                }
+                div{
+                    width: 250px;
+                    height: 20px;
+                    display: flex;
+                    flex-direction: row;
+                    margin-bottom: 5px;
+                    strong{
+                        font-size: 15px;
+                        margin: 3px;
+                        margin-top: 10px;
+                    }
+                    del{
+                        font-size: 14px;
+                        margin: 3px;
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.rebajas-pag{
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+    .rebajas-filtro{
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        div{
+            width: 100%;
+            margin-bottom: 30px;
+            h3{
+                font-size: 20px;
+                margin-left: 30px;
+            }
+            ul{
+                list-style: none;
+                li{
+                    text-decoration: none;
+                    color: black;
+                    a{
+                        p{
+                            font-size: 15px;
+                            margin: 3px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .rebajas-contenedor{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+        div{
+            width: 340px;
+            height: auto;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            margin: 12px;
+            padding: 3px;
+            a{
+                text-decoration: none;
+                color: black;
+                text-align: center;
+                justify-content: center;
+                width: 270px;
+                height: auto;
+                img{
+                    width: 220px;
+                    height: 220px;
+                    text-align: center;
+                    justify-content: center;
+                }
+                h3{
+                    text-align: center;
+                    justify-content: center;
+                    font-family: 'Catamaran', sans-serif;
+                    font-size: 16px;
+                    width: 270px;
+                    height: 20px;
+                    margin-top: 7px;
+                }
+                div{
+                    width: 250px;
+                    height: 20px;
+                    display: flex;
+                    flex-direction: row;
+                    margin-bottom: 5px;
+                    strong{
+                        font-size: 15px;
+                        margin: 3px;
+                        margin-top: 10px;
+                    }
+                    div{
+                        font-size: 14px;
+                        margin: 3px;
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

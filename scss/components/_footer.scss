@@ -1,0 +1,120 @@
+footer{
+    .suscripcion{
+        flex: 1 1 25%;
+        margin: 10px;
+        .suscripcion-titulo{
+            h2{
+                font-size: 24px;
+                font-family: 'Catamaran', sans-serif;
+                text-align: center;
+                justify-content: center;  
+            }
+        }
+        .suscripcion-mail{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            font-size: 19px;
+            font-family: 'Catamaran', sans-serif;
+            form{
+                ul{
+                    display: flex;
+                    flex-direction: row;
+                    list-style: none;
+                    width: 100%;
+                    justify-content: center;
+                    li{
+                        margin: 2px;
+                        padding: 2px;
+                        height: 45px;
+                        input{
+                            height: 45px;
+                            width: 380px;
+                        }
+                        button{
+                            height: 45px;
+                            width: 120px;
+                            background-color: #FF2931;
+                            border: 2px $color-primario;
+                            margin-left: 0
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer-contenedor{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat (4, 25%);
+        grid-template-areas:
+            "footer footer footer footer"
+            "footer footer footer footer"
+        ;
+        margin: 20px;
+        margin-bottom: 0;
+        div{
+            grid-area: "footer";
+            display: flex;
+            flex-direction: column;
+            font-family: 'Catamaran', sans-serif;
+            padding: 5px;
+            margin: 10px;
+            justify-content: center;
+            align-items: start;
+            width: auto;
+            height: 280px;
+            h3{
+                margin-left: 12px;
+                font-size: 20px;
+            }
+            ul{
+                list-style: none;
+                margin: 5px;
+                padding: 5px;
+                li{
+                    margin: 5px;
+                    a{
+                        text-decoration: none;
+                        color:  $color-primario;
+                        p{
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+        .redes{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-right: 4px;
+            h3{
+                font-family: 'Catamaran', sans-serif;
+                width: auto;
+                position: relative;
+                text-align: center;
+                justify-content: center;
+                margin-bottom: 12px;
+            }
+            ul{
+                li{
+                    display: flex;
+                    align-items: center;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    a{
+                        img{
+                            margin: 5px;
+                            width: 45px;
+                            height: 45px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}   
+
+
+

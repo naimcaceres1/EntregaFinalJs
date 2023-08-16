@@ -1,0 +1,1341 @@
+/**----NAVBAR----**/
+@media screen and (max-width:1000px) {
+    .header nav div {
+        justify-content: space-between;
+    }
+}
+
+/**----REBAJAS----**/
+@media screen and (max-width:900px) {
+    .rebajas-img {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        height: auto;
+        a{
+            .nuevas-rebajas{
+                display: flex;
+                flex-wrap: wrap;
+                width: 400px;
+                height: 400px;
+            }
+            .rebajas-60{
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:750px) {
+    .rebajas-img a .nuevas-rebajas {
+        display: flex;
+        flex-wrap: wrap;
+        width: 300px;
+        height: 300px;
+    }
+}
+
+/**----MARCAS----**/
+
+@media screen and (max-width:1400px){
+    .marcas div{
+        width: auto;
+        height: 300px;
+        align-items: center;
+        justify-content: space-evenly;
+        a{
+            width: auto;
+            height: auto;
+            img{
+                width: 120px;
+                height: 95px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:800px) {
+    .marcas div a .logo-converse {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+    .marcas{
+        div{
+            width: auto;
+            height: 220px;
+            align-items: center;
+            justify-content: space-evenly;
+            display: flex;
+            a{
+                img{
+                    width: 85px;
+                    height: 75px;
+                    margin: 12px;
+                }
+            }
+        }
+        
+    }
+}
+
+/**----RECOMENDADOS----**/
+@media screen and (max-width:1230px) {
+    .recomendados .recomendados-contenedor div {
+        width: auto;
+        height: auto;
+        margin-top: 10px;
+        a{
+            text-decoration: none;
+            color: black;
+            justify-content: center;
+            align-items: center;
+            height: 280px;
+            img{
+                width: 150px;
+                height: 150px;
+                margin-bottom: 10px;
+                margin-top: 10px;
+            }
+            h3{
+                margin: 30px 20px 40px 20px;
+                font-size: 14px;
+                width: 200px;
+            }
+            div{
+                height: auto;
+                strong{
+                    font-size: 12px;
+                }
+                del{
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:1050px) {
+    .recomendados{
+        h2{
+            font-size:24px;
+        }
+        .recomendados-contenedor{
+            display: flex;
+            flex-direction: column;
+            div{
+                width: auto;
+                height: auto;
+                margin-top: 10px;
+                a{
+                    text-decoration: none;
+                    color: black;
+                    justify-content: center;
+                    align-items: center;
+                    height: 280px;
+                    img{
+                        width: 200px;
+                        height: 200px;
+                        margin-bottom: 10px;
+                        margin-top: 10px;
+                    }
+                    h3{
+                        margin: 15px 10px 20px 10px;
+                        font-size: 14px;
+                        width: 200px;
+                        div{
+                            height: auto;
+                            strong{
+                                font-size: 12px;
+                            }
+                            del{
+                                font-size: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/**----MODA----**/
+
+@media screen and (max-width:1200px) {
+    .moda {
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        .moda-contenedor{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            align-items: center;
+            div{
+                height: 250px;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 20px;
+                a{
+                    justify-content: center;
+                    align-items: center;
+                }
+                img{
+                    height: 170px;
+                    width: 170px;
+                    align-items: center;
+                    margin: 20px;
+                }
+            }
+            div:nth-child(4){
+                display: none;
+            }
+            div{
+                width: auto;
+                h3{
+                    font-size: 13px;
+                }
+                strong{
+                    font-size: 13px;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:500px) {
+    .moda {
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        .moda-contenedor{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 3px;
+            align-items: center;
+            div{
+                height: 250px;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 20px;
+                a{
+                    justify-content: center;
+                    align-items: center;
+                    width: auto;
+                    height: auto;
+                    h3{
+                        width: 140px;
+                        height: 50px;
+                        margin-bottom: 3px;
+                    }
+                    img{
+                        height: 120px;
+                        width: 120px;
+                        align-items: center;
+                        margin: 10px;
+                    }
+                }
+            }
+            div:nth-child(4){
+                display: none;
+                div{
+                    width: auto;
+                    h3{
+                        font-size: 13px;
+                    }
+                }
+                strong{
+                    font-size: 13px;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
+
+/**----DISCIPLINAS----**/
+
+@media screen and (max-width:1200px) {
+    .disciplinas{
+        .disciplinas-contendor{
+            div{
+                a{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    img{
+                        display: flex;
+                        width: 380px;
+                        height: 240px;
+                        flex-wrap: wrap;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:850px) {
+    .disciplinas{
+        .disciplinas-contendor{
+            display: flex;
+            flex-direction: column;
+            div{
+                a{
+                    gap: 5px;
+                    img{
+                        width: 340px;
+                        height: 210px;
+                        padding: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/**----FOOTER----**/
+
+@media screen and (max-width: 1050px) {
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        div{
+            flex: 1 1 50%;
+        }
+        .footer-contenedor{
+            div{
+                width: 100%;
+            }
+        }
+        .redes{
+            margin-top: 20px;
+        }
+    }
+}
+
+@media screen and (max-width:991px){
+    footer{
+        .footer-contenedor{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat (2, 1fr);
+            grid-template-areas:
+                "footer footer"
+                "footer footer"
+            ;
+            margin: 10px;
+            margin-bottom: 0;
+            div{
+                grid-area: "footer";
+                display: flex;
+                flex-direction: column;
+                font-family: 'Russo One', sans-serif;
+                padding: 5px;
+                margin: 10px;
+                justify-content: center;
+                align-items: start;
+                width: auto;
+                height: 240px;
+            }
+        }
+        .redes{
+            margin-top: 12px;
+            justify-content: center;
+            align-items: start;
+            height: 150px;
+        }
+    }
+}
+
+@media screen and (max-width:700px){
+    footer{
+        .suscripcion{
+            width: auto;
+            justify-content: center;
+            text-align: center;
+            .suscripcion-titulo{
+                h2{
+                    font-size: 16px;
+                    width: auto;
+                }
+            }
+            .suscripcion-mail{
+                form{
+                    ul{
+                        display: flex;
+                        flex-direction: column;
+                        list-style: none;
+                        align-items: center;
+                        justify-content: center;
+                        width: 400px;
+                        margin: 0;
+                        padding: 0;
+                        li{
+                            justify-content: center;
+                            align-items: center;
+                            width: 320px;
+                            height: 35px;
+                            input{
+                                height: 30px;
+                                width: 300px;
+                                font-size: 14px;
+                                margin: 3px;
+                                margin-right: 20px;
+                            }
+                            button{
+                                height: 30px;
+                                width: 100px;
+                                background-color: #FF2931;
+                                border: 2px black solid;
+                                font-size: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .footer-contenedor{
+            div{
+                h3{
+                    font-size: 17px;
+                }
+            }
+            ul{
+                li{
+                    a{
+                        p{
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:480px){
+    footer{
+        .suscripcion{
+            width: auto;
+            justify-content: center;
+            text-align: center;
+            .suscripcion-titulo{
+                h2{
+                    font-size: 14px;
+                    text-align: center;
+                    width: 300px;
+                }
+            }
+            .suscripcion-mail{
+                form{
+                    ul{
+                        display: flex;
+                        flex-direction: column;
+                        list-style: none;
+                        align-items: center;
+                        justify-content: center;
+                        width: 300px;
+                        margin: 0;
+                        padding: 0;
+                        li{
+                            justify-content: center;
+                            align-items: center;
+                            width: 250px;
+                            height: 35px;
+                            input{
+                                height: 30px;
+                                width: 170px;
+                                font-size: 14px;
+                                margin: 5px;
+                                text-align: center;
+                            }
+                            button{
+                                height: 30px;
+                                width: 100px;
+                                background-color: #FF2931;
+                                border: 2px black solid;
+                                font-size: 10px;
+                                align-items: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .footer-contenedor{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat (2, 1fr);
+            grid-template-areas:
+                "footer footer"
+                "footer footer"
+            ;
+            margin: 5px;
+            margin-bottom: 0;
+            div{
+                grid-area: "footer";
+                display: flex;
+                flex-direction: column;
+                font-family: 'Russo One', sans-serif;
+                justify-content: center;
+                align-items: start;
+                width: auto;
+                height: 220px;
+                font-size: 12px;
+                gap: 3px;
+                margin-bottom: 4px;
+                padding: 0;
+                h3{
+                    font-size: 14px;
+                    width: 100%;
+                    height: auto;
+                    margin-bottom: 0;
+                }
+                ul{
+                    padding: 2px;
+                    margin: 2px;
+                    margin-top: 0;
+                    li{
+                        a{
+                            p{
+                                margin: 7px;
+                            }
+                        }
+                    }
+                }
+                .redes{
+                    margin-top: 12px;
+                    justify-content: center;
+                    align-items: start;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:390px){
+    footer{
+        .footer-contenedor{
+            .redes{
+                h3{
+                    font-size: 14px;
+                    text-align: center;
+                }
+                ul{
+                    li{
+                        a{
+                            img{
+                                width: 35px;
+                                height: 35px;
+                            }
+                        }
+                    }
+                }
+                div{
+                    grid-area: "footer";
+                    display: flex;
+                    flex-direction: column;
+                    font-family: 'Russo One', sans-serif;
+                    justify-content: center;
+                    align-items: start;
+                    width: auto;
+                    height: 240px;
+                    font-size: 10px;
+                    gap: 1px;
+                    margin-bottom: 2px;
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
+
+
+/**----PAGINA CALZADO----**/
+
+/**----FILTRO----**/
+
+@media screen and (max-width:990px){
+    .calzado-pag{
+        .calzado-catalogo{
+            display: none;
+        }
+    }
+}
+
+
+/**----CATALOGO----**/
+
+@media screen and (max-width:1320px){
+    .calzado-pag{
+        .calzado-contenedor{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 50px;
+            div{
+                width: 280px;
+                height: auto;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                margin: 12px;
+                padding: 3px;
+                a{
+                    text-decoration: none;
+                    color: black;
+                    text-align: center;
+                    justify-content: center;
+                    width: 250px;
+                    height: auto;
+                    img{
+                        width: 170px;
+                        height: 170px;
+                        text-align: center;
+                        justify-content: center;
+                    }
+                    h3{
+                        text-align: center;
+                        justify-content: center;
+                        font-family: 'Russo One', sans-serif;
+                        font-size: 12px;
+                        width: 220px;
+                        height: 10px;
+                    }
+                    div{
+                        width: 200px;
+                        height: 16px;
+                        display: flex;
+                        flex-direction: row;
+                        margin-bottom: 5px;
+                        strong{
+                            font-size: 12px;
+                        }
+                        del{
+                            font-size: 11px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width:1100px){
+    .calzado-pag{
+        .calzado-contenedor{
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 50px;
+            div{
+                width: 170px;
+                height: auto;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                margin: 12px;
+                padding: 3px;
+                a{
+                    text-decoration: none;
+                    color: black;
+                    text-align: center;
+                    justify-content: center;
+                    width: 170px;
+                    height: auto;
+                    img{
+                        width: 130px;
+                        height: 130px;
+                    }
+                    h3{
+                        text-align: center;
+                        justify-content: center;
+                        font-family: 'Russo One', sans-serif;
+                        font-size: 8px;
+                        width: 165px;
+                        height: 10px;
+                    }
+                    div{
+                        width: 165px;
+                        height: 10px;
+                        display: flex;
+                        flex-direction: row;
+                        strong{
+                            font-size: 8px;
+                            margin: 2px;
+                            margin-top: 5px;
+                        }
+                        del{
+                            font-size: 8px;
+                            margin: 2px;
+                            margin-top: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:600px){
+    .calzado-pag{
+        .calzado-contenedor{
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+            div{
+                width: 103px;
+                height: auto;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                margin: 6px;
+                padding: 1px;
+                a{
+                    text-decoration: none;
+                    color: black;
+                    text-align: center;
+                    justify-content: center;
+                    width: 75px;
+                    height: auto;
+                    img{
+                        width: 75px;
+                        height: 75px;
+                        text-align: center;
+                        justify-content: center;
+                    }
+                    h3{
+                        text-align: center;
+                        justify-content: center;
+                        font-family: 'Russo One', sans-serif;
+                        font-size: 7px;
+                        width: 75px;
+                    }
+                    div{
+                        width: 75px;
+                        display: flex;
+                        flex-direction: row;
+                        margin-bottom: 5px;
+                        margin-top: 15px;
+                        strong{
+                            font-size: 6px;
+                            margin: 2px;
+                            margin-top: 6px;
+                        }
+                        del{
+                            font-size: 6px;
+                            margin: 2px;
+                            margin-top: 6px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/**----PAGINA INDUMENTARIA----**/
+
+/**----FILTRO----**/
+
+@media screen and (max-width:990px){
+    .indumentaria-pag{
+        .indumentaria-filtro{
+            display: none;
+        }
+    }
+}
+
+
+/**----CATALOGO----**/
+
+@media screen and (max-width:1320px){
+    .indumentaria-pag{
+        .indumentaria-contenedor{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 50px;
+            div{
+                width: 280px;
+                height: auto;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                margin: 12px;
+                padding: 3px;
+                a{
+                    text-decoration: none;
+                    color: black;
+                    text-align: center;
+                    justify-content: center;
+                    width: 250px;
+                    height: auto;
+                    img{
+                        width: 170px;
+                        height: 170px;
+                        text-align: center;
+                        justify-content: center;
+                    }
+                    h3{
+                        text-align: center;
+                        justify-content: center;
+                        font-family: 'Russo One', sans-serif;
+                        font-size: 12px;
+                        width: 220px;
+                        height: 10px;
+                    }
+                    div{
+                        width: 200px;
+                        height: 16px;
+                        display: flex;
+                        flex-direction: row;
+                        margin-bottom: 5px;
+                        strong{
+                            font-size: 12px;
+                        }
+                        del{
+                            font-size: 11px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width:1100px){
+    .indumentaria-pag{
+        .indumentaria-contenedor{
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 50px;
+            div{
+                width: 170px;
+                height: auto;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                margin: 12px;
+                padding: 3px;
+                a{
+                    text-decoration: none;
+                    color: black;
+                    text-align: center;
+                    justify-content: center;
+                    width: 170px;
+                    height: auto;
+                    img{
+                        width: 130px;
+                        height: 130px;
+                    }
+                    h3{
+                        text-align: center;
+                        justify-content: center;
+                        font-family: 'Russo One', sans-serif;
+                        font-size: 8px;
+                        width: 165px;
+                        height: 10px;
+                    }
+                    div{
+                        width: 165px;
+                        height: 10px;
+                        display: flex;
+                        flex-direction: row;
+                        strong{
+                            font-size: 8px;
+                            margin: 2px;
+                            margin-top: 5px;
+                        }
+                        del{
+                            font-size: 8px;
+                            margin: 2px;
+                            margin-top: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:600px){
+    .indumentaria-pag{
+        .indumentraria-contenedor{
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+            div{
+                width: 103px;
+                height: auto;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                margin: 6px;
+                padding: 1px;
+                a{
+                    text-decoration: none;
+                    color: black;
+                    text-align: center;
+                    justify-content: center;
+                    width: 75px;
+                    height: auto;
+                    img{
+                        width: 75px;
+                        height: 75px;
+                        text-align: center;
+                        justify-content: center;
+                    }
+                    h3{
+                        text-align: center;
+                        justify-content: center;
+                        font-family: 'Russo One', sans-serif;
+                        font-size: 7px;
+                        width: 75px;
+                    }
+                    div{
+                        width: 75px;
+                        display: flex;
+                        flex-direction: row;
+                        margin-bottom: 5px;
+                        margin-top: 15px;
+                        strong{
+                            font-size: 6px;
+                            margin: 2px;
+                            margin-top: 6px;
+                        }
+                        del{
+                            font-size: 6px;
+                            margin: 2px;
+                            margin-top: 6px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/**----PAGINA ACCESORIOS----**/
+
+/**----FILTRO----**/
+
+@media screen and (max-width:990px){
+    .accesorios-pag{
+        .accesorios-filtro{
+            display: none;
+        }
+    }
+}
+
+
+/**----CATALOGO----**/
+
+@media screen and (max-width:1320px){
+    .accesorios-pag{
+        .accesorios-contenedor{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 50px;
+            div{
+                width: 280px;
+                height: auto;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                margin: 12px;
+                padding: 3px;
+                a{
+                    text-decoration: none;
+                    color: black;
+                    text-align: center;
+                    justify-content: center;
+                    width: 250px;
+                    height: auto;
+                    img{
+                        width: 170px;
+                        height: 170px;
+                        text-align: center;
+                        justify-content: center;
+                    }
+                    h3{
+                        text-align: center;
+                        justify-content: center;
+                        font-family: 'Russo One', sans-serif;
+                        font-size: 12px;
+                        width: 220px;
+                        height: 10px;
+                    }
+                    div{
+                        width: 200px;
+                        height: 16px;
+                        display: flex;
+                        flex-direction: row;
+                        margin-bottom: 5px;
+                        strong{
+                            font-size: 12px;
+                        }
+                        del{
+                            font-size: 11px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width:1100px){
+    .accesorios-pag{
+        .accesorios-contenedor{
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 50px;
+            div{
+                width: 170px;
+                height: auto;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                margin: 12px;
+                padding: 3px;
+                a{
+                    text-decoration: none;
+                    color: black;
+                    text-align: center;
+                    justify-content: center;
+                    width: 170px;
+                    height: auto;
+                    img{
+                        width: 130px;
+                        height: 130px;
+                    }
+                    h3{
+                        text-align: center;
+                        justify-content: center;
+                        font-family: 'Russo One', sans-serif;
+                        font-size: 8px;
+                        width: 165px;
+                        height: 10px;
+                    }
+                    div{
+                        width: 165px;
+                        height: 10px;
+                        display: flex;
+                        flex-direction: row;
+                        strong{
+                            font-size: 8px;
+                            margin: 2px;
+                            margin-top: 5px;
+                        }
+                        del{
+                            font-size: 8px;
+                            margin: 2px;
+                            margin-top: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:600px){
+    .accesorios-pag{
+        .accesorios-contenedor{
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+            div{
+                width: 103px;
+                height: auto;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                margin: 6px;
+                padding: 1px;
+                a{
+                    text-decoration: none;
+                    color: black;
+                    text-align: center;
+                    justify-content: center;
+                    width: 75px;
+                    height: auto;
+                    img{
+                        width: 75px;
+                        height: 75px;
+                        text-align: center;
+                        justify-content: center;
+                    }
+                    h3{
+                        text-align: center;
+                        justify-content: center;
+                        font-family: 'Russo One', sans-serif;
+                        font-size: 7px;
+                        width: 75px;
+                    }
+                    div{
+                        width: 75px;
+                        display: flex;
+                        flex-direction: row;
+                        margin-bottom: 5px;
+                        margin-top: 15px;
+                        strong{
+                            font-size: 6px;
+                            margin: 2px;
+                            margin-top: 6px;
+                        }
+                        del{
+                            font-size: 6px;
+                            margin: 2px;
+                            margin-top: 6px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/**----PAGINA REBAJAS----**/
+
+/**----FILTRO----**/
+
+@media screen and (max-width:990px){
+    .rebajas-pag{
+        .rebajas-filtro{
+            display: none;
+        }
+    }
+}
+
+
+/**----CATALOGO----**/
+
+@media screen and (max-width:1320px){
+    .rebajas-pag{
+        .rebajas-contenedor{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 50px;
+            div{
+                width: 280px;
+                height: auto;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                margin: 12px;
+                padding: 3px;
+                a{
+                    text-decoration: none;
+                    color: black;
+                    text-align: center;
+                    justify-content: center;
+                    width: 250px;
+                    height: auto;
+                    img{
+                        width: 170px;
+                        height: 170px;
+                        text-align: center;
+                        justify-content: center;
+                    }
+                    h3{
+                        text-align: center;
+                        justify-content: center;
+                        font-family: 'Russo One', sans-serif;
+                        font-size: 12px;
+                        width: 220px;
+                        height: 10px;
+                    }
+                    div{
+                        width: 200px;
+                        height: 16px;
+                        display: flex;
+                        flex-direction: row;
+                        margin-bottom: 5px;
+                        strong{
+                            font-size: 12px;
+                        }
+                        del{
+                            font-size: 11px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width:1100px){
+    .rebajas-pag{
+        .rebajas-contenedor{
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 50px;
+            div{
+                width: 170px;
+                height: auto;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                margin: 12px;
+                padding: 3px;
+                a{
+                    text-decoration: none;
+                    color: black;
+                    text-align: center;
+                    justify-content: center;
+                    width: 170px;
+                    height: auto;
+                    img{
+                        width: 130px;
+                        height: 130px;
+                    }
+                    h3{
+                        text-align: center;
+                        justify-content: center;
+                        font-family: 'Russo One', sans-serif;
+                        font-size: 8px;
+                        width: 165px;
+                        height: 10px;
+                    }
+                    div{
+                        width: 165px;
+                        height: 10px;
+                        display: flex;
+                        flex-direction: row;
+                        strong{
+                            font-size: 8px;
+                            margin: 2px;
+                            margin-top: 5px;
+                        }
+                        del{
+                            font-size: 8px;
+                            margin: 2px;
+                            margin-top: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:600px){
+    .rebajas-pag{
+        .rebajas-contenedor{
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+            div{
+                width: 103px;
+                height: auto;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                margin: 6px;
+                padding: 1px;
+                a{
+                    text-decoration: none;
+                    color: black;
+                    text-align: center;
+                    justify-content: center;
+                    width: 75px;
+                    height: auto;
+                    img{
+                        width: 75px;
+                        height: 75px;
+                        text-align: center;
+                        justify-content: center;
+                    }
+                    h3{
+                        text-align: center;
+                        justify-content: center;
+                        font-family: 'Russo One', sans-serif;
+                        font-size: 7px;
+                        width: 75px;
+                    }
+                    div{
+                        width: 75px;
+                        display: flex;
+                        flex-direction: row;
+                        margin-bottom: 5px;
+                        margin-top: 15px;
+                        strong{
+                            font-size: 6px;
+                            margin: 2px;
+                            margin-top: 6px;
+                        }
+                        del{
+                            font-size: 6px;
+                            margin: 2px;
+                            margin-top: 6px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
