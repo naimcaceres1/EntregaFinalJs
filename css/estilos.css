@@ -1,7 +1,4 @@
-@charset "UTF-8";
-/*!----TIPOGRAFÍA----/*/
-@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@700&family=Russo+One&family=Signika:wght@700&display=swap");
-/*!----RESET----/*/
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500&family=Catamaran:wght@700&family=Lato:wght@300;400;700&family=Russo+One&family=Signika:wght@700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -17,7 +14,7 @@ header {
     color: white;
     text-align: center;
     font-size: 20px;
-    font-family: 'Catamaran', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-style: italic;
     display: flex;
     justify-content: center;
@@ -37,7 +34,7 @@ header {
         height: auto;
         font-weight: 600;
         font-size: 50px;
-        font-family: 'Catamaran', sans-serif;
+        font-family: 'Lato', sans-serif;
         color: black; }
   header nav div {
     width: auto;
@@ -98,8 +95,8 @@ main .recomendados {
     color: black;
     align-items: center;
     justify-content: center;
-    font-family: 'Catamaran', sans-serif;
-    font-size: 26px;
+    font-family: 'Lato', sans-serif;
+    font-size: 35px;
     font-weight: 700; }
   main .recomendados .recomendados-contenedor {
     width: 100%;
@@ -111,9 +108,8 @@ main .recomendados {
     justify-content: space-around;
     flex-wrap: wrap; }
     main .recomendados .recomendados-contenedor div {
-      width: 300px;
-      height: auto;
-      margin-top: 25px; }
+      width: 270px;
+      margin-top: 10px; }
       main .recomendados .recomendados-contenedor div a {
         text-decoration: none;
         color: black;
@@ -122,17 +118,17 @@ main .recomendados {
         width: auto;
         height: auto; }
         main .recomendados .recomendados-contenedor div a img {
-          width: 190px;
-          height: 190px;
+          width: 170px;
+          height: 170px;
           margin-bottom: 10px;
           margin-top: 10px; }
         main .recomendados .recomendados-contenedor div a h3 {
-          width: 300px;
-          height: 40px;
+          width: 270px;
+          height: 30px;
           text-align: center;
           justify-content: center;
           align-items: center;
-          font-size: 17px; }
+          font-size: 15px; }
         main .recomendados .recomendados-contenedor div a div {
           width: auto;
           height: auto; }
@@ -140,9 +136,6 @@ main .recomendados {
             font-size: 16px; }
           main .recomendados .recomendados-contenedor div a div del {
             font-size: 15px; }
-    main .recomendados .recomendados-contenedor .gorro-puma-archive-heather-beanie-verde a img {
-      width: 140px;
-      height: 140px; }
 
 main .moda {
   width: 100%;
@@ -155,8 +148,8 @@ main .moda {
     justify-content: space-evenly;
     flex-wrap: wrap; }
     main .moda div h2 {
-      font-size: 26px;
-      font-family: 'Catamaran', sans-serif;
+      font-size: 35px;
+      font-family: 'Lato', sans-serif;
       font-weight: 700;
       margin: 20px 20px 40px;
       margin: bottom 0; }
@@ -167,9 +160,9 @@ main .moda {
       flex-direction: column;
       align-items: center;
       justify-content: space-evenly;
-      width: 230px; }
+      width: 215px; }
       main .moda .moda-contenedor div a {
-        width: 230px;
+        width: 215px;
         text-align: center;
         text-decoration: none;
         color: black; }
@@ -181,17 +174,17 @@ main .moda {
           align-items: center;
           margin: top 0;
           object-fit: cover; }
-          main .moda .moda-contenedor div a img h3 {
-            text-align: center;
-            font-size: 17px;
-            width: 100%;
-            height: 20px;
-            margin-bottom: 30px;
-            margin-top: 20px;
-            padding: 10px; }
-          main .moda .moda-contenedor div a img strong {
-            font-size: 14px;
-            margin-top: 3px; }
+        main .moda .moda-contenedor div a h3 {
+          text-align: center;
+          font-size: 17px;
+          font-family: 'Lato', sans-serif;
+          height: 30px;
+          margin-bottom: 30px;
+          margin-top: 20px;
+          padding: 10px; }
+        main .moda .moda-contenedor div a strong {
+          font-size: 14px;
+          margin-top: 3px; }
 
 main .disciplinas .disciplinas-contenedor {
   display: grid;
@@ -214,28 +207,27 @@ main .disciplinas .disciplinas-contenedor {
         width: 550px;
         height: 370px; }
 
-/**----PAGINA CALZADO----**/
 .calzado-pag {
   height: auto;
   display: flex;
   width: 100%;
   margin-top: 50px; }
-  .calzado-pag .calzado-catalogo {
+  .calzado-pag .calzado-filtro {
     display: flex;
     flex-direction: column;
     width: 20%; }
-    .calzado-pag .calzado-catalogo div {
+    .calzado-pag .calzado-filtro div {
       width: 100%;
       margin-bottom: 30px; }
-      .calzado-pag .calzado-catalogo div h3 {
+      .calzado-pag .calzado-filtro div h3 {
         font-size: 20px;
         margin-left: 30px; }
-      .calzado-pag .calzado-catalogo div ul {
+      .calzado-pag .calzado-filtro div ul {
         list-style: none; }
-        .calzado-pag .calzado-catalogo div ul li a {
+        .calzado-pag .calzado-filtro div ul li a {
           text-decoration: none;
           color: black; }
-          .calzado-pag .calzado-catalogo div ul li a p {
+          .calzado-pag .calzado-filtro div ul li a p {
             font-size: 15px;
             margin: 3px; }
   .calzado-pag .calzado-contenedor {
@@ -268,7 +260,7 @@ main .disciplinas .disciplinas-contenedor {
         .calzado-pag .calzado-contenedor div a h3 {
           text-align: center;
           justify-content: center;
-          font-family: 'Catamaran', sans-serif;
+          font-family: 'Lato', sans-serif;
           font-size: 16px;
           width: 270px;
           height: 20px; }
@@ -287,7 +279,6 @@ main .disciplinas .disciplinas-contenedor {
             margin: 3px;
             margin-top: 10px; }
 
-/**----PAGINA INDUMENTARIA----**/
 .indumentaria-pag {
   display: flex;
   width: 100%;
@@ -310,13 +301,13 @@ main .disciplinas .disciplinas-contenedor {
           .indumentaria-pag .indumentaria-filtro div ul li a p {
             font-size: 15px;
             margin: 3px; }
-  .indumentaria-pag .indumenaria-contenedor {
+  .indumentaria-pag .indumentaria-contenedor {
     width: 100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin-bottom: 50px; }
-    .indumentaria-pag .indumenaria-contenedor div {
+    .indumentaria-pag .indumentaria-contenedor div {
       width: 340px;
       height: auto;
       justify-content: center;
@@ -325,102 +316,109 @@ main .disciplinas .disciplinas-contenedor {
       flex-direction: column;
       margin: 12px;
       padding: 3px; }
-      .indumentaria-pag .indumenaria-contenedor div a {
+      .indumentaria-pag .indumentaria-contenedor div a {
         text-decoration: none;
         color: black;
         text-align: center;
         justify-content: center;
         width: 270px;
         height: auto; }
-        .indumentaria-pag .indumenaria-contenedor div a img {
+        .indumentaria-pag .indumentaria-contenedor div a img {
           width: 220px;
           height: 220px;
           text-align: center;
           justify-content: center; }
-          .indumentaria-pag .indumenaria-contenedor div a img h3 div {
-            width: 250px;
-            height: 20px;
-            display: flex;
-            flex-direction: row;
-            margin-bottom: 5px; }
-            .indumentaria-pag .indumenaria-contenedor div a img h3 div strong {
-              font-size: 15px;
-              margin: 3px;
-              margin-top: 10px; }
-            .indumentaria-pag .indumenaria-contenedor div a img h3 div del {
-              font-size: 14px;
-              margin: 3px;
-              margin-top: 10px; }
-
-/**----PAGINA ACCESORIOS----**/
-.accesorios-pag {
-  display: flex;
-  width: 100%;
-  margin-top: 50px; }
-  .accesorios-pag .accesorios-catalogo {
-    display: flex;
-    flex-direction: column;
-    width: 20%; }
-    .accesorios-pag .accesorios-catalogo div {
-      width: 100%;
-      margin-bottom: 30px; }
-      .accesorios-pag .accesorios-catalogo div h3 {
-        font-size: 20px;
-        margin-left: 30px; }
-      .accesorios-pag .accesorios-catalogo div ul {
-        list-style: none; }
-        .accesorios-pag .accesorios-catalogo div ul li a {
-          text-decoration: none;
-          color: black; }
-          .accesorios-pag .accesorios-catalogo div ul li a p {
-            font-size: 15px;
-            margin: 3px; }
-  .accesorios-pag .accesorios.contenedor {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 50px; }
-    .accesorios-pag .accesorios.contenedor div {
-      width: 340px;
-      height: auto;
-      justify-content: center;
-      align-items: center;
-      display: flex;
-      flex-direction: column;
-      margin: 12px;
-      padding: 3px; }
-      .accesorios-pag .accesorios.contenedor div a {
-        text-decoration: none;
-        color: black;
-        text-align: center;
-        justify-content: center;
-        width: 270px;
-        height: auto; }
-        .accesorios-pag .accesorios.contenedor div a img {
-          width: 220px;
-          height: 220px;
-          text-align: center;
-          justify-content: center; }
-        .accesorios-pag .accesorios.contenedor div a h3 {
+        .indumentaria-pag .indumentaria-contenedor div a h3 {
           text-align: center;
           justify-content: center;
-          font-family: 'Catamaran', sans-serif;
+          font-family: 'Lato', sans-serif;
           font-size: 16px;
           width: 270px;
           height: 20px;
           margin-top: 7px; }
-        .accesorios-pag .accesorios.contenedor div a div {
+        .indumentaria-pag .indumentaria-contenedor div a div {
           width: 250px;
           height: 20px;
           display: flex;
           flex-direction: row;
           margin-bottom: 5px; }
-          .accesorios-pag .accesorios.contenedor div a div strong {
+          .indumentaria-pag .indumentaria-contenedor div a div strong {
             font-size: 15px;
             margin: 3px;
             margin-top: 10px; }
-          .accesorios-pag .accesorios.contenedor div a div del {
+          .indumentaria-pag .indumentaria-contenedor div a div del {
+            font-size: 14px;
+            margin: 3px;
+            margin-top: 10px; }
+
+.accesorios-pag {
+  display: flex;
+  width: 100%;
+  margin-top: 50px; }
+  .accesorios-pag .accesorios-filtro {
+    display: flex;
+    flex-direction: column;
+    width: 20%; }
+    .accesorios-pag .accesorios-filtro div {
+      width: 100%;
+      margin-bottom: 30px; }
+      .accesorios-pag .accesorios-filtro div h3 {
+        font-size: 20px;
+        margin-left: 30px; }
+      .accesorios-pag .accesorios-filtro div ul {
+        list-style: none; }
+        .accesorios-pag .accesorios-filtro div ul li a {
+          text-decoration: none;
+          color: black; }
+          .accesorios-pag .accesorios-filtro div ul li a p {
+            font-size: 15px;
+            margin: 3px; }
+  .accesorios-pag .accesorios-contenedor {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px; }
+    .accesorios-pag .accesorios-contenedor div {
+      width: 340px;
+      height: auto;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      margin: 12px;
+      padding: 3px; }
+      .accesorios-pag .accesorios-contenedor div a {
+        text-decoration: none;
+        color: black;
+        text-align: center;
+        justify-content: center;
+        width: 270px;
+        height: auto; }
+        .accesorios-pag .accesorios-contenedor div a img {
+          width: 220px;
+          height: 220px;
+          text-align: center;
+          justify-content: center; }
+        .accesorios-pag .accesorios-contenedor div a h3 {
+          text-align: center;
+          justify-content: center;
+          font-family: 'Lato', sans-serif;
+          font-size: 16px;
+          width: 270px;
+          height: 20px;
+          margin-top: 7px; }
+        .accesorios-pag .accesorios-contenedor div a div {
+          width: 250px;
+          height: 20px;
+          display: flex;
+          flex-direction: row;
+          margin-bottom: 5px; }
+          .accesorios-pag .accesorios-contenedor div a div strong {
+            font-size: 15px;
+            margin: 3px;
+            margin-top: 10px; }
+          .accesorios-pag .accesorios-contenedor div a div del {
             font-size: 14px;
             margin: 3px;
             margin-top: 10px; }
@@ -429,22 +427,22 @@ main .disciplinas .disciplinas-contenedor {
   display: flex;
   width: 100%;
   margin-top: 50px; }
-  .rebajas-pag .rebajas-catalogo {
+  .rebajas-pag .rebajas-filtro {
     display: flex;
     flex-direction: column;
     width: 20%; }
-    .rebajas-pag .rebajas-catalogo div {
+    .rebajas-pag .rebajas-filtro div {
       width: 100%;
       margin-bottom: 30px; }
-      .rebajas-pag .rebajas-catalogo div h3 {
+      .rebajas-pag .rebajas-filtro div h3 {
         font-size: 20px;
         margin-left: 30px; }
-      .rebajas-pag .rebajas-catalogo div ul {
+      .rebajas-pag .rebajas-filtro div ul li {
         list-style: none; }
-        .rebajas-pag .rebajas-catalogo div ul li {
+        .rebajas-pag .rebajas-filtro div ul li a {
           text-decoration: none;
           color: black; }
-          .rebajas-pag .rebajas-catalogo div ul li a p {
+          .rebajas-pag .rebajas-filtro div ul li a p {
             font-size: 15px;
             margin: 3px; }
   .rebajas-pag .rebajas-contenedor {
@@ -477,7 +475,7 @@ main .disciplinas .disciplinas-contenedor {
         .rebajas-pag .rebajas-contenedor div a h3 {
           text-align: center;
           justify-content: center;
-          font-family: 'Catamaran', sans-serif;
+          font-family: 'Lato', sans-serif;
           font-size: 16px;
           width: 270px;
           height: 20px;
@@ -492,7 +490,7 @@ main .disciplinas .disciplinas-contenedor {
             font-size: 15px;
             margin: 3px;
             margin-top: 10px; }
-          .rebajas-pag .rebajas-contenedor div a div div {
+          .rebajas-pag .rebajas-contenedor div a div del {
             font-size: 14px;
             margin: 3px;
             margin-top: 10px; }
@@ -502,7 +500,7 @@ footer .suscripcion {
   margin: 10px; }
   footer .suscripcion .suscripcion-titulo h2 {
     font-size: 24px;
-    font-family: 'Catamaran', sans-serif;
+    font-family: 'Lato', sans-serif;
     text-align: center;
     justify-content: center; }
   footer .suscripcion .suscripcion-mail {
@@ -510,7 +508,7 @@ footer .suscripcion {
     text-align: center;
     justify-content: center;
     font-size: 19px;
-    font-family: 'Catamaran', sans-serif; }
+    font-family: 'Lato', sans-serif; }
     footer .suscripcion .suscripcion-mail form ul {
       display: flex;
       flex-direction: row;
@@ -542,7 +540,7 @@ footer .footer-contenedor {
     grid-area: "footer";
     display: flex;
     flex-direction: column;
-    font-family: 'Catamaran', sans-serif;
+    font-family: 'Lato', sans-serif;
     padding: 5px;
     margin: 10px;
     justify-content: center;
@@ -569,7 +567,7 @@ footer .footer-contenedor {
     align-items: center;
     margin-right: 4px; }
     footer .footer-contenedor .redes h3 {
-      font-family: 'Catamaran', sans-serif;
+      font-family: 'Lato', sans-serif;
       width: auto;
       position: relative;
       text-align: center;
@@ -585,12 +583,10 @@ footer .footer-contenedor {
         width: 45px;
         height: 45px; }
 
-/**----NAVBAR----**/
 @media screen and (max-width: 1000px) {
   .header nav div {
     justify-content: space-between; } }
 
-/**----REBAJAS----**/
 @media screen and (max-width: 900px) {
   .rebajas-img {
     display: flex;
@@ -614,7 +610,6 @@ footer .footer-contenedor {
     width: 300px;
     height: 300px; } }
 
-/**----MARCAS----**/
 @media screen and (max-width: 1400px) {
   .marcas div {
     width: auto;
@@ -644,165 +639,159 @@ footer .footer-contenedor {
       height: 75px;
       margin: 12px; } }
 
-/**----RECOMENDADOS----**/
 @media screen and (max-width: 1230px) {
-  .recomendados .recomendados-contenedor div {
-    width: auto;
-    height: auto;
-    margin-top: 10px; }
-    .recomendados .recomendados-contenedor div a {
-      text-decoration: none;
-      color: black;
-      justify-content: center;
-      align-items: center;
-      height: 280px; }
-      .recomendados .recomendados-contenedor div a img {
-        width: 150px;
-        height: 150px;
-        margin-bottom: 10px;
-        margin-top: 10px; }
-      .recomendados .recomendados-contenedor div a h3 {
-        margin: 30px 20px 40px 20px;
-        font-size: 14px;
-        width: 200px; }
-      .recomendados .recomendados-contenedor div a div {
-        height: auto; }
-        .recomendados .recomendados-contenedor div a div strong {
-          font-size: 12px; }
-        .recomendados .recomendados-contenedor div a div del {
-          font-size: 10px; } }
+  main .recomendados .recomendados-contenedor {
+    margin-top: 30px; }
+    main .recomendados .recomendados-contenedor div {
+      width: auto;
+      height: auto; }
+      main .recomendados .recomendados-contenedor div a {
+        text-decoration: none;
+        color: black;
+        justify-content: center;
+        align-items: center;
+        height: 260px; }
+        main .recomendados .recomendados-contenedor div a img {
+          width: 130px;
+          height: 130px;
+          margin-bottom: 10px;
+          margin-top: 10px; }
+        main .recomendados .recomendados-contenedor div a h3 {
+          margin: 10px 10px 10px 10px;
+          font-size: 12px;
+          width: 180px; }
+        main .recomendados .recomendados-contenedor div a div {
+          height: auto; }
+          main .recomendados .recomendados-contenedor div a div strong {
+            font-size: 12px; }
+          main .recomendados .recomendados-contenedor div a div del {
+            font-size: 10px; } }
 
 @media screen and (max-width: 1050px) {
-  .recomendados h2 {
+  main .recomendados h2 {
     font-size: 24px; }
-  .recomendados .recomendados-contenedor {
+  main .recomendados .recomendados-contenedor {
     display: flex;
     flex-direction: column; }
-    .recomendados .recomendados-contenedor div {
+    main .recomendados .recomendados-contenedor div {
       width: auto;
-      height: auto;
       margin-top: 10px; }
-      .recomendados .recomendados-contenedor div a {
+      main .recomendados .recomendados-contenedor div a {
         text-decoration: none;
         color: black;
         justify-content: center;
         align-items: center;
         height: 280px; }
-        .recomendados .recomendados-contenedor div a img {
+        main .recomendados .recomendados-contenedor div a img {
           width: 200px;
           height: 200px;
           margin-bottom: 10px;
           margin-top: 10px; }
-        .recomendados .recomendados-contenedor div a h3 {
-          margin: 15px 10px 20px 10px;
+        main .recomendados .recomendados-contenedor div a h3 {
+          margin: 10px 10px 10px 10px;
           font-size: 14px;
-          width: 200px; }
-          .recomendados .recomendados-contenedor div a h3 div {
+          width: auto; }
+          main .recomendados .recomendados-contenedor div a h3 div {
             height: auto; }
-            .recomendados .recomendados-contenedor div a h3 div strong {
+            main .recomendados .recomendados-contenedor div a h3 div strong {
               font-size: 12px; }
-            .recomendados .recomendados-contenedor div a h3 div del {
+            main .recomendados .recomendados-contenedor div a h3 div del {
               font-size: 10px; } }
 
-/**----MODA----**/
 @media screen and (max-width: 1200px) {
-  .moda {
-    margin-top: 50px;
+  main .moda {
+    margin-top: 40px;
     display: flex;
     flex-wrap: wrap; }
-    .moda .moda-contenedor {
+    main .moda .moda-contenedor {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 10px;
-      align-items: center; }
-      .moda .moda-contenedor div {
-        height: 250px;
+      gap: 5px;
+      justify-content: center;
+      align-items: center;
+      width: 100%; }
+      main .moda .moda-contenedor div {
+        height: 320px;
+        margin-bottom: 5px;
         justify-content: center;
         align-items: center;
-        margin-bottom: 20px; }
-        .moda .moda-contenedor div a {
+        width: auto; }
+        main .moda .moda-contenedor div a {
           justify-content: center;
           align-items: center; }
-        .moda .moda-contenedor div img {
-          height: 170px;
-          width: 170px;
-          align-items: center;
-          margin: 20px; }
-      .moda .moda-contenedor div:nth-child(4) {
-        display: none; }
-      .moda .moda-contenedor div {
-        width: auto; }
-        .moda .moda-contenedor div h3 {
-          font-size: 13px; }
-        .moda .moda-contenedor div strong {
-          font-size: 13px;
-          justify-content: center;
-          align-items: center; } }
+          main .moda .moda-contenedor div a img {
+            height: 190px;
+            width: 190px; }
+          main .moda .moda-contenedor div a h3 {
+            text-align: center;
+            font-size: 14px;
+            height: 30px; }
+      main .moda .moda-contenedor div:nth-child(4) {
+        display: none; } }
 
 @media screen and (max-width: 500px) {
-  .moda {
+  main .moda {
     margin-top: 20px;
     display: flex;
     flex-wrap: wrap; }
-    .moda .moda-contenedor {
+    main .moda .moda-contenedor {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 3px;
+      gap: 5px;
       align-items: center; }
-      .moda .moda-contenedor div {
+      main .moda .moda-contenedor div {
         height: 250px;
         justify-content: center;
         align-items: center;
         margin-bottom: 20px; }
-        .moda .moda-contenedor div a {
+        main .moda .moda-contenedor div a {
           justify-content: center;
           align-items: center;
           width: auto;
           height: auto; }
-          .moda .moda-contenedor div a h3 {
+          main .moda .moda-contenedor div a h3 {
             width: 140px;
             height: 50px;
             margin-bottom: 3px; }
-          .moda .moda-contenedor div a img {
+          main .moda .moda-contenedor div a img {
             height: 120px;
             width: 120px;
             align-items: center;
             margin: 10px; }
-      .moda .moda-contenedor div:nth-child(4) {
+      main .moda .moda-contenedor div:nth-child(4) {
         display: none; }
-        .moda .moda-contenedor div:nth-child(4) div {
+        main .moda .moda-contenedor div:nth-child(4) div {
           width: auto; }
-          .moda .moda-contenedor div:nth-child(4) div h3 {
+          main .moda .moda-contenedor div:nth-child(4) div h3 {
             font-size: 13px; }
-        .moda .moda-contenedor div:nth-child(4) strong {
+        main .moda .moda-contenedor div:nth-child(4) strong {
           font-size: 13px;
           justify-content: center;
           align-items: center; } }
 
-/**----DISCIPLINAS----**/
 @media screen and (max-width: 1200px) {
-  .disciplinas .disciplinas-contendor div a {
+  main .disciplinas .disciplinas-contendor div a {
     display: flex;
     justify-content: center;
-    align-items: center; }
-    .disciplinas .disciplinas-contendor div a img {
+    align-items: center;
+    flex-wrap: wrap; }
+    main .disciplinas .disciplinas-contendor div a img {
       display: flex;
       width: 380px;
       height: 240px;
       flex-wrap: wrap; } }
 
 @media screen and (max-width: 850px) {
-  .disciplinas .disciplinas-contendor {
+  main .disciplinas .disciplinas-contendor {
     display: flex;
     flex-direction: column; }
-    .disciplinas .disciplinas-contendor div a {
+    main .disciplinas .disciplinas-contendor div a {
       gap: 5px; }
-      .disciplinas .disciplinas-contendor div a img {
+      main .disciplinas .disciplinas-contendor div a img {
         width: 340px;
         height: 210px;
         padding: 5px; } }
 
-/**----FOOTER----**/
 @media screen and (max-width: 1050px) {
   footer {
     display: flex;
@@ -828,7 +817,6 @@ footer .footer-contenedor {
       grid-area: "footer";
       display: flex;
       flex-direction: column;
-      font-family: 'Russo One', sans-serif;
       padding: 5px;
       margin: 10px;
       justify-content: center;
@@ -927,7 +915,6 @@ footer .footer-contenedor {
       grid-area: "footer";
       display: flex;
       flex-direction: column;
-      font-family: 'Russo One', sans-serif;
       justify-content: center;
       align-items: start;
       width: auto;
@@ -964,7 +951,6 @@ footer .footer-contenedor {
     grid-area: "footer";
     display: flex;
     flex-direction: column;
-    font-family: 'Russo One', sans-serif;
     justify-content: center;
     align-items: start;
     width: auto;
@@ -974,13 +960,10 @@ footer .footer-contenedor {
     margin-bottom: 2px;
     padding: 0; } }
 
-/**----PAGINA CALZADO----**/
-/**----FILTRO----**/
 @media screen and (max-width: 990px) {
   .calzado-pag .calzado-catalogo {
     display: none; } }
 
-/**----CATALOGO----**/
 @media screen and (max-width: 1320px) {
   .calzado-pag .calzado-contenedor {
     width: 100%;
@@ -1012,7 +995,6 @@ footer .footer-contenedor {
         .calzado-pag .calzado-contenedor div a h3 {
           text-align: center;
           justify-content: center;
-          font-family: 'Russo One', sans-serif;
           font-size: 12px;
           width: 220px;
           height: 10px; }
@@ -1057,7 +1039,6 @@ footer .footer-contenedor {
         .calzado-pag .calzado-contenedor div a h3 {
           text-align: center;
           justify-content: center;
-          font-family: 'Russo One', sans-serif;
           font-size: 8px;
           width: 165px;
           height: 10px; }
@@ -1107,7 +1088,6 @@ footer .footer-contenedor {
         .calzado-pag .calzado-contenedor div a h3 {
           text-align: center;
           justify-content: center;
-          font-family: 'Russo One', sans-serif;
           font-size: 7px;
           width: 75px; }
         .calzado-pag .calzado-contenedor div a div {
@@ -1125,13 +1105,10 @@ footer .footer-contenedor {
             margin: 2px;
             margin-top: 6px; } }
 
-/**----PAGINA INDUMENTARIA----**/
-/**----FILTRO----**/
 @media screen and (max-width: 990px) {
-  .indumentaria-pag .indumentaria-catalogo {
+  .indumentaria-pag .indumentaria-filtro {
     display: none; } }
 
-/**----CATALOGO----**/
 @media screen and (max-width: 1320px) {
   .indumentaria-pag .indumentaria-contenedor {
     width: 100%;
@@ -1163,7 +1140,6 @@ footer .footer-contenedor {
         .indumentaria-pag .indumentaria-contenedor div a h3 {
           text-align: center;
           justify-content: center;
-          font-family: 'Russo One', sans-serif;
           font-size: 12px;
           width: 220px;
           height: 10px; }
@@ -1208,7 +1184,6 @@ footer .footer-contenedor {
         .indumentaria-pag .indumentaria-contenedor div a h3 {
           text-align: center;
           justify-content: center;
-          font-family: 'Russo One', sans-serif;
           font-size: 8px;
           width: 165px;
           height: 10px; }
@@ -1258,7 +1233,6 @@ footer .footer-contenedor {
         .indumentaria-pag .indumentraria-contenedor div a h3 {
           text-align: center;
           justify-content: center;
-          font-family: 'Russo One', sans-serif;
           font-size: 7px;
           width: 75px; }
         .indumentaria-pag .indumentraria-contenedor div a div {
@@ -1276,13 +1250,10 @@ footer .footer-contenedor {
             margin: 2px;
             margin-top: 6px; } }
 
-/**----PAGINA ACCESORIOS----**/
-/**----FILTRO----**/
 @media screen and (max-width: 990px) {
-  .accesorios-pag .accesorios-catalogo {
+  .accesorios-pag .accesorios-filtro {
     display: none; } }
 
-/**----CATALOGO----**/
 @media screen and (max-width: 1320px) {
   .accesorios-pag .accesorios-contenedor {
     width: 100%;
@@ -1314,7 +1285,6 @@ footer .footer-contenedor {
         .accesorios-pag .accesorios-contenedor div a h3 {
           text-align: center;
           justify-content: center;
-          font-family: 'Russo One', sans-serif;
           font-size: 12px;
           width: 220px;
           height: 10px; }
@@ -1359,7 +1329,6 @@ footer .footer-contenedor {
         .accesorios-pag .accesorios-contenedor div a h3 {
           text-align: center;
           justify-content: center;
-          font-family: 'Russo One', sans-serif;
           font-size: 8px;
           width: 165px;
           height: 10px; }
@@ -1409,7 +1378,6 @@ footer .footer-contenedor {
         .accesorios-pag .accesorios-contenedor div a h3 {
           text-align: center;
           justify-content: center;
-          font-family: 'Russo One', sans-serif;
           font-size: 7px;
           width: 75px; }
         .accesorios-pag .accesorios-contenedor div a div {
@@ -1427,13 +1395,10 @@ footer .footer-contenedor {
             margin: 2px;
             margin-top: 6px; } }
 
-/**----PAGINA REBAJAS----**/
-/**----FILTRO----**/
 @media screen and (max-width: 990px) {
-  .rebajas-pag .rebajas-catalogo {
+  .rebajas-pag .rebajas-filtro {
     display: none; } }
 
-/**----CATALOGO----**/
 @media screen and (max-width: 1320px) {
   .rebajas-pag .rebajas-contenedor {
     width: 100%;
@@ -1465,7 +1430,6 @@ footer .footer-contenedor {
         .rebajas-pag .rebajas-contenedor div a h3 {
           text-align: center;
           justify-content: center;
-          font-family: 'Russo One', sans-serif;
           font-size: 12px;
           width: 220px;
           height: 10px; }
@@ -1510,7 +1474,6 @@ footer .footer-contenedor {
         .rebajas-pag .rebajas-contenedor div a h3 {
           text-align: center;
           justify-content: center;
-          font-family: 'Russo One', sans-serif;
           font-size: 8px;
           width: 165px;
           height: 10px; }
@@ -1560,7 +1523,6 @@ footer .footer-contenedor {
         .rebajas-pag .rebajas-contenedor div a h3 {
           text-align: center;
           justify-content: center;
-          font-family: 'Russo One', sans-serif;
           font-size: 7px;
           width: 75px; }
         .rebajas-pag .rebajas-contenedor div a div {

@@ -1,12 +1,11 @@
-/**----NAVBAR----**/
+
 @media screen and (max-width:1000px) {
     .header nav div {
         justify-content: space-between;
     }
 }
 
-/**----REBAJAS----**/
-@media screen and (max-width:900px) {
+@media screen and (max-width:900px){
     .rebajas-img {
         display: flex;
         flex-wrap: wrap;
@@ -37,9 +36,7 @@
     }
 }
 
-/**----MARCAS----**/
-
-@media screen and (max-width:1400px){
+@media screen and (max-width:1400px)  {
     .marcas div{
         width: auto;
         height: 300px;
@@ -83,71 +80,31 @@
     }
 }
 
-/**----RECOMENDADOS----**/
-@media screen and (max-width:1230px) {
-    .recomendados .recomendados-contenedor div {
-        width: auto;
-        height: auto;
-        margin-top: 10px;
-        a{
-            text-decoration: none;
-            color: black;
-            justify-content: center;
-            align-items: center;
-            height: 280px;
-            img{
-                width: 150px;
-                height: 150px;
-                margin-bottom: 10px;
-                margin-top: 10px;
-            }
-            h3{
-                margin: 30px 20px 40px 20px;
-                font-size: 14px;
-                width: 200px;
-            }
-            div{
-                height: auto;
-                strong{
-                    font-size: 12px;
-                }
-                del{
-                    font-size: 10px;
-                }
-            }
-        }
-    }
-}
-
-
-@media screen and (max-width:1050px) {
-    .recomendados{
-        h2{
-            font-size:24px;
-        }
-        .recomendados-contenedor{
-            display: flex;
-            flex-direction: column;
-            div{
-                width: auto;
-                height: auto;
-                margin-top: 10px;
-                a{
-                    text-decoration: none;
-                    color: black;
-                    justify-content: center;
-                    align-items: center;
-                    height: 280px;
-                    img{
-                        width: 200px;
-                        height: 200px;
-                        margin-bottom: 10px;
-                        margin-top: 10px;
-                    }
-                    h3{
-                        margin: 15px 10px 20px 10px;
-                        font-size: 14px;
-                        width: 200px;
+@media screen and (max-width:1230px){
+    main{
+        .recomendados{
+            .recomendados-contenedor{
+                margin-top: 30px;
+                div{
+                    width: auto;
+                    height: auto;
+                    a{
+                        text-decoration: none;
+                        color: black;
+                        justify-content: center;
+                        align-items: center;
+                        height: 260px;
+                        img{
+                            width: 130px;
+                            height: 130px;
+                            margin-bottom: 10px;
+                            margin-top: 10px;
+                        }
+                        h3{
+                            margin: 10px 10px 10px 10px;
+                            font-size: 12px;
+                            width:  180px;
+                        }
                         div{
                             height: auto;
                             strong{
@@ -164,47 +121,45 @@
     }
 }
 
-
-/**----MODA----**/
-
-@media screen and (max-width:1200px) {
-    .moda {
-        margin-top: 50px;
-        display: flex;
-        flex-wrap: wrap;
-        .moda-contenedor{
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 10px;
-            align-items: center;
-            div{
-                height: 250px;
-                justify-content: center;
-                align-items: center;
-                margin-bottom: 20px;
-                a{
-                    justify-content: center;
-                    align-items: center;
-                }
-                img{
-                    height: 170px;
-                    width: 170px;
-                    align-items: center;
-                    margin: 20px;
-                }
+@media screen and (max-width:1050px){
+    main{
+        .recomendados{
+            h2{
+                font-size:24px;
             }
-            div:nth-child(4){
-                display: none;
-            }
-            div{
-                width: auto;
-                h3{
-                    font-size: 13px;
-                }
-                strong{
-                    font-size: 13px;
-                    justify-content: center;
-                    align-items: center;
+            .recomendados-contenedor{
+                display: flex;
+                flex-direction: column;
+                div{
+                    width: auto;
+                    margin-top: 10px;
+                    a{
+                        text-decoration: none;
+                        color: black;
+                        justify-content: center;
+                        align-items: center;
+                        height: 280px;
+                        img{
+                            width: 200px;
+                            height: 200px;
+                            margin-bottom: 10px;
+                            margin-top: 10px;
+                        }
+                        h3{
+                            margin: 10px 10px 10px 10px;
+                            font-size: 14px;
+                            width: auto;
+                            div{
+                                height: auto;
+                                strong{
+                                    font-size: 12px;
+                                }
+                                del{
+                                    font-size: 10px;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -212,7 +167,49 @@
 }
 
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:1200px){
+main{   
+    .moda {
+        margin-top: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        .moda-contenedor{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 5px;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            div{
+                height: 320px;
+                margin-bottom: 5px;
+                justify-content: center;
+                align-items: center;
+                width: auto;
+                a{
+                    justify-content: center;
+                    align-items: center;
+                    img{
+                        height: 190px;
+                        width: 190px;
+                    }
+                    h3{
+                        text-align: center;
+                        font-size: 14px;
+                        height: 30px;
+                    }
+                }
+            }
+            div:nth-child(4){
+                display: none;
+            }
+        }
+    }
+}
+}            
+
+@media screen and (max-width:500px){
+main{
     .moda {
         margin-top: 20px;
         display: flex;
@@ -220,7 +217,7 @@
         .moda-contenedor{
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 3px;
+            gap: 5px;
             align-items: center;
             div{
                 height: 250px;
@@ -261,11 +258,11 @@
             }
         }
     }
+}    
 }
 
-/**----DISCIPLINAS----**/
-
-@media screen and (max-width:1200px) {
+@media screen and (max-width:1200px){
+main{
     .disciplinas{
         .disciplinas-contendor{
             div{
@@ -273,6 +270,7 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    flex-wrap: wrap;
                     img{
                         display: flex;
                         width: 380px;
@@ -284,9 +282,10 @@
         }
     }
 }
+}    
 
-
-@media screen and (max-width:850px) {
+@media screen and (max-width:850px){
+main{
     .disciplinas{
         .disciplinas-contendor{
             display: flex;
@@ -303,11 +302,10 @@
             }
         }
     }
+}    
 }
 
-/**----FOOTER----**/
-
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1050px){
     footer{
         display: flex;
         flex-direction: column;
@@ -343,7 +341,6 @@
                 grid-area: "footer";
                 display: flex;
                 flex-direction: column;
-                font-family: 'Russo One', sans-serif;
                 padding: 5px;
                 margin: 10px;
                 justify-content: center;
@@ -490,7 +487,6 @@
                 grid-area: "footer";
                 display: flex;
                 flex-direction: column;
-                font-family: 'Russo One', sans-serif;
                 justify-content: center;
                 align-items: start;
                 width: auto;
@@ -550,7 +546,6 @@
                     grid-area: "footer";
                     display: flex;
                     flex-direction: column;
-                    font-family: 'Russo One', sans-serif;
                     justify-content: center;
                     align-items: start;
                     width: auto;
@@ -565,12 +560,7 @@
     }
 }
 
-
-/**----PAGINA CALZADO----**/
-
-/**----FILTRO----**/
-
-@media screen and (max-width:990px){
+@media screen and (max-width:990px) {
     .calzado-pag{
         .calzado-catalogo{
             display: none;
@@ -578,10 +568,7 @@
     }
 }
 
-
-/**----CATALOGO----**/
-
-@media screen and (max-width:1320px){
+@media screen and (max-width:1320px) {
     .calzado-pag{
         .calzado-contenedor{
             width: 100%;
@@ -614,7 +601,6 @@
                     h3{
                         text-align: center;
                         justify-content: center;
-                        font-family: 'Russo One', sans-serif;
                         font-size: 12px;
                         width: 220px;
                         height: 10px;
@@ -671,7 +657,6 @@
                     h3{
                         text-align: center;
                         justify-content: center;
-                        font-family: 'Russo One', sans-serif;
                         font-size: 8px;
                         width: 165px;
                         height: 10px;
@@ -732,7 +717,6 @@
                     h3{
                         text-align: center;
                         justify-content: center;
-                        font-family: 'Russo One', sans-serif;
                         font-size: 7px;
                         width: 75px;
                     }
@@ -759,11 +743,7 @@
     }
 }
 
-/**----PAGINA INDUMENTARIA----**/
-
-/**----FILTRO----**/
-
-@media screen and (max-width:990px){
+@media screen and (max-width:990px) {
     .indumentaria-pag{
         .indumentaria-filtro{
             display: none;
@@ -771,10 +751,7 @@
     }
 }
 
-
-/**----CATALOGO----**/
-
-@media screen and (max-width:1320px){
+@media screen and (max-width:1320px) {
     .indumentaria-pag{
         .indumentaria-contenedor{
             width: 100%;
@@ -807,7 +784,6 @@
                     h3{
                         text-align: center;
                         justify-content: center;
-                        font-family: 'Russo One', sans-serif;
                         font-size: 12px;
                         width: 220px;
                         height: 10px;
@@ -864,7 +840,6 @@
                     h3{
                         text-align: center;
                         justify-content: center;
-                        font-family: 'Russo One', sans-serif;
                         font-size: 8px;
                         width: 165px;
                         height: 10px;
@@ -925,7 +900,6 @@
                     h3{
                         text-align: center;
                         justify-content: center;
-                        font-family: 'Russo One', sans-serif;
                         font-size: 7px;
                         width: 75px;
                     }
@@ -952,12 +926,7 @@
     }
 }
 
-
-/**----PAGINA ACCESORIOS----**/
-
-/**----FILTRO----**/
-
-@media screen and (max-width:990px){
+@media screen and (max-width:990px) {
     .accesorios-pag{
         .accesorios-filtro{
             display: none;
@@ -965,10 +934,7 @@
     }
 }
 
-
-/**----CATALOGO----**/
-
-@media screen and (max-width:1320px){
+@media screen and (max-width:1320px) {
     .accesorios-pag{
         .accesorios-contenedor{
             width: 100%;
@@ -1001,7 +967,6 @@
                     h3{
                         text-align: center;
                         justify-content: center;
-                        font-family: 'Russo One', sans-serif;
                         font-size: 12px;
                         width: 220px;
                         height: 10px;
@@ -1025,6 +990,7 @@
     }
 
 }
+
 
 @media screen and (max-width:1100px){
     .accesorios-pag{
@@ -1058,7 +1024,6 @@
                     h3{
                         text-align: center;
                         justify-content: center;
-                        font-family: 'Russo One', sans-serif;
                         font-size: 8px;
                         width: 165px;
                         height: 10px;
@@ -1119,7 +1084,6 @@
                     h3{
                         text-align: center;
                         justify-content: center;
-                        font-family: 'Russo One', sans-serif;
                         font-size: 7px;
                         width: 75px;
                     }
@@ -1146,12 +1110,7 @@
     }
 }
 
-
-/**----PAGINA REBAJAS----**/
-
-/**----FILTRO----**/
-
-@media screen and (max-width:990px){
+@media screen and (max-width:990px) {
     .rebajas-pag{
         .rebajas-filtro{
             display: none;
@@ -1159,10 +1118,7 @@
     }
 }
 
-
-/**----CATALOGO----**/
-
-@media screen and (max-width:1320px){
+@media screen and (max-width:1320px) {
     .rebajas-pag{
         .rebajas-contenedor{
             width: 100%;
@@ -1195,7 +1151,6 @@
                     h3{
                         text-align: center;
                         justify-content: center;
-                        font-family: 'Russo One', sans-serif;
                         font-size: 12px;
                         width: 220px;
                         height: 10px;
@@ -1252,7 +1207,6 @@
                     h3{
                         text-align: center;
                         justify-content: center;
-                        font-family: 'Russo One', sans-serif;
                         font-size: 8px;
                         width: 165px;
                         height: 10px;
@@ -1313,7 +1267,6 @@
                     h3{
                         text-align: center;
                         justify-content: center;
-                        font-family: 'Russo One', sans-serif;
                         font-size: 7px;
                         width: 75px;
                     }

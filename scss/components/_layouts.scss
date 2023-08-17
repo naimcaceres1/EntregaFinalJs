@@ -49,7 +49,8 @@ main{
             color: rgb(0, 0, 0);
             align-items: center;
             justify-content: center;
-            font-family: 'Catamaran', sans-serif;            font-size: 26px;
+            font-family: 'Lato', sans-serif;         
+            font-size: 35px;
             font-weight: 700;
         }
         .recomendados-contenedor{
@@ -62,9 +63,8 @@ main{
             justify-content: space-around;
             flex-wrap: wrap;
             div{
-                width: 300px;
-                height: auto;
-                margin-top: 25px;
+                width: 270px;
+                margin-top: 10px;
                 a{
                     text-decoration: none;
                     color: black;
@@ -73,18 +73,18 @@ main{
                     width: auto;
                     height: auto;
                     img{
-                        width: 190px;
-                        height: 190px;
+                        width: 170px;
+                        height: 170px;
                         margin-bottom: 10px;
                         margin-top: 10px;
                     }
                     h3{
-                        width: 300px;
-                        height: 40px;
+                        width: 270px;
+                        height: 30px;
                         text-align: center;
                         justify-content: center;
                         align-items: center;
-                        font-size: 17px;
+                        font-size: 15px;
                     }
                     div{
                         width: auto;
@@ -95,14 +95,6 @@ main{
                         del{
                             font-size: 15px;
                         }
-                    }
-                }
-            }
-            .gorro-puma-archive-heather-beanie-verde{
-                a{
-                    img{
-                        width: 140px;
-                        height: 140px;
                     }
                 }
             }
@@ -119,23 +111,23 @@ main{
             justify-content: space-evenly;
             flex-wrap: wrap;
             h2{
-                font-size: 26px;
-                font-family: 'Catamaran', sans-serif;
+                font-size: 35px;
+                font-family: 'Lato', sans-serif;
                 font-weight: 700;
                 margin: 20px 20px 40px;
                 margin: bottom 0;
             }
         }
         .moda-contenedor{
-            height: auto;;
+            height: auto;
             div{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: space-evenly;
-                width: 230px;
+                width: 215px;
                 a{
-                    width: 230px;
+                    width: 215px;
                     text-align: center;
                     text-decoration: none;
                     color: black;
@@ -147,19 +139,19 @@ main{
                         align-items: center;
                         margin: top 0;
                         object-fit: cover;
-                        h3{
-                            text-align: center;
-                            font-size: 17px;
-                            width: 100%;
-                            height: 20px;
-                            margin-bottom: 30px;
-                            margin-top: 20px;
-                            padding: 10px;
-                        }
-                        strong{
-                            font-size: 14px;
-                            margin-top: 3px;
-                        }
+                    }
+                    h3{
+                        text-align: center;
+                        font-size: 17px;
+                        font-family: 'Lato', sans-serif;
+                        height: 30px;
+                        margin-bottom: 30px;
+                        margin-top: 20px;
+                        padding: 10px;
+                    }
+                    strong{
+                        font-size: 14px;
+                        margin-top: 3px;
                     }
                 }
             }
@@ -193,9 +185,7 @@ main{
     }
 }
 
-/**----PAGINA CALZADO----**/
-
-.calzado-pag{
+.calzado-pag {
     height: auto;
     display: flex;
     width: 100%;
@@ -258,7 +248,7 @@ main{
                 h3{
                     text-align: center;
                     justify-content: center;
-                    font-family: 'Catamaran', sans-serif;
+                    font-family: 'Lato', sans-serif;
                     font-size: 16px;
                     width: 270px;
                     height: 20px;
@@ -285,10 +275,7 @@ main{
     }
 }
 
-
-/**----PAGINA INDUMENTARIA----**/
-
-.indumentaria-pag{
+.indumentaria-pag {
     display: flex;
     width: 100%;
     margin-top: 50px;
@@ -317,8 +304,7 @@ main{
                 }
             }
         }
-    }
-    
+    } 
     .indumentaria-contenedor{
         width: 100%;
         display: flex;
@@ -346,35 +332,39 @@ main{
                     height: 220px;
                     text-align: center;
                     justify-content: center;
-                h3{
-                    div{
-                        width: 250px;
-                        height: 20px;
-                        display: flex;
-                        flex-direction: row;
-                        margin-bottom: 5px;
-                        strong{
-                            font-size: 15px;
-                            margin: 3px;
-                            margin-top: 10px;
-                        }
-                        del{
-                            font-size: 14px;
-                            margin: 3px;
-                            margin-top: 10px;
-                        }
-                    }
                 }
+                h3{
+                    text-align: center;
+                    justify-content: center;
+                    font-family: 'Lato', sans-serif;
+                    font-size: 16px;
+                    width: 270px;
+                    height: 20px;
+                    margin-top: 7px;
+                }
+                div{
+                    width: 250px;
+                    height: 20px;
+                    display: flex;
+                    flex-direction: row;
+                    margin-bottom: 5px;
+                    strong{
+                        font-size: 15px;
+                        margin: 3px;
+                        margin-top: 10px;
+                    }
+                    del{
+                        font-size: 14px;
+                        margin: 3px;
+                        margin-top: 10px;
+                    }
                 }
             }
         }
     }
 }
 
-
-/**----PAGINA ACCESORIOS----**/
-
-.accesorios-pag{
+.accesorios-pag {
     display: flex;
     width: 100%;
     margin-top: 50px;
@@ -404,8 +394,8 @@ main{
             }
         }
     }
-    .accesorios.contenedor{
-        width: 100%;
+    .accesorios-contenedor{
+        width:100%;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
@@ -435,7 +425,7 @@ main{
                 h3{
                     text-align: center;
                     justify-content: center;
-                    font-family: 'Catamaran', sans-serif;
+                    font-family: 'Lato', sans-serif;
                     font-size: 16px;
                     width: 270px;
                     height: 20px;
@@ -479,11 +469,11 @@ main{
                 margin-left: 30px;
             }
             ul{
-                list-style: none;
                 li{
-                    text-decoration: none;
-                    color: black;
+                    list-style: none;
                     a{
+                        text-decoration: none;
+                        color: $color-primario;
                         p{
                             font-size: 15px;
                             margin: 3px;
@@ -524,7 +514,7 @@ main{
                 h3{
                     text-align: center;
                     justify-content: center;
-                    font-family: 'Catamaran', sans-serif;
+                    font-family: 'Lato', sans-serif;
                     font-size: 16px;
                     width: 270px;
                     height: 20px;
@@ -541,7 +531,7 @@ main{
                         margin: 3px;
                         margin-top: 10px;
                     }
-                    div{
+                    del{
                         font-size: 14px;
                         margin: 3px;
                         margin-top: 10px;
