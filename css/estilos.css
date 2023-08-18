@@ -457,7 +457,6 @@ main .disciplinas .disciplinas-contenedor {
       justify-content: center;
       align-items: center;
       display: flex;
-      flex-direction: column;
       margin: 12px;
       padding: 3px; }
       .rebajas-pag .rebajas-contenedor div a {
@@ -585,7 +584,7 @@ footer .footer-contenedor {
         height: 45px; }
 
 @media screen and (max-width: 1000px) {
-  header h2 div {
+  .header nav div {
     justify-content: space-between; } }
 
 @media screen and (max-width: 900px) {
@@ -820,7 +819,7 @@ footer .footer-contenedor {
     display: grid;
     grid-template-columns: repeat 2, 1fr;
     grid-template-areas: "footer footer"
-                          "footer footer";
+ "footer footer";
     margin: 10px;
     margin-bottom: 0; }
     footer .footer-contenedor div {
@@ -919,7 +918,7 @@ footer .footer-contenedor {
     display: grid;
     grid-template-columns: repeat 2, 1fr;
     grid-template-areas: "footer footer"
-                          "footer footer";
+ "footer footer";
     margin: 5px;
     margin-bottom: 0; }
     footer .footer-contenedor div {
