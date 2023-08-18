@@ -1,94 +1,109 @@
 
 @media screen and (max-width:1000px) {
-    .header nav div {
-        justify-content: space-between;
+    header{
+        h2{
+            div{
+                justify-content: space-between;
+            }
+        }
     }
 }
 
+
 @media screen and (max-width:900px){
-    .rebajas-img {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        width: auto;
-        height: auto;
-        a{
-            .nuevas-rebajas{
-                display: flex;
-                flex-wrap: wrap;
-                width: 400px;
-                height: 400px;
-            }
-            .rebajas-60{
-                display: none;
+    main{
+        .rebajas-img {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            width: auto;
+            height: auto;
+            a{
+                .nuevas-rebajas{
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 400px;
+                    height: 400px;
+                }
+                .rebajas-60{
+                    display: none;
+                }
             }
         }
     }
 }
 
 @media screen and (max-width:750px) {
-    .rebajas-img{
-        a{
-            .rebajas-60{
-                display: none;
-            }
-            .nuevas-rebajas{
-                display: flex;
-                flex-wrap: wrap;
-                width: 100%;
-                height: 400px;
+    main{
+        .rebajas-img{
+            a{
+                .rebajas-60{
+                    display: none;
+                }
+                .nuevas-rebajas{
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 100%;
+                    height: 400px;
+                }
             }
         }
     }
 }
 
 @media screen and (max-width:1400px) {
-    .marcas{
-        div{
-        width: auto;
-        height: 300px;
-        align-items: center;
-        justify-content: space-evenly;
-        a{
+    main{
+        .marcas{
+            div{
             width: auto;
-            height: auto;
-            img{
-                width: 120px;
-                height: 95px;
-                }
-            }   
-        }
-    } 
+            height: 300px;
+            align-items: center;
+            justify-content: space-evenly;
+            a{
+                width: auto;
+                height: auto;
+                img{
+                    width: 120px;
+                    height: 95px;
+                    }
+                }   
+            }
+        } 
+    }
 }
 
 @media screen and (max-width:800px) {
-    .marcas{        
-        div{
-            a{
-                .logo-converse {
-                    display: none;
-                }
-            } 
+    main{
+        .marcas{        
+            div{
+                a{
+                    .logo-converse {
+                        display:none;
+                    }
+                } 
+            }
         }
     }
 
 }
 
 @media screen and (max-width:500px) {
-    .marcas{
-        div{
-            width: auto;
-            height: 220px;
-            align-items: center;
-            justify-content: space-evenly;
-            display: flex;
-            flex-direction: column;
-            a{
-                img{
-                    width: 85px;
-                    height: 75px;
-                    margin: 12px;
+    main{
+        .marcas{
+            div{
+                width: auto;
+                height: 150px;
+                align-items: center;
+                justify-content: space-evenly;
+                display: flex;
+                flex-direction: column;
+                a{
+                    img{
+                        width: 85px;
+                        height: 75px;
+                        margin: 12px;
+                    }
                 }
             }
         }
@@ -434,7 +449,7 @@ main{
                 li{
                     a{
                         p{
-                            font-size: 12px;
+                            font-size: 11px;
                         }
                     }
                 }
@@ -549,7 +564,7 @@ main{
         .footer-contenedor{
             .redes{
                 h3{
-                    font-size: 14px;
+                    font-size: 11px;
                     text-align: center;
                 }
                 ul{

@@ -533,7 +533,8 @@ footer .footer-contenedor {
   width: 100%;
   display: grid;
   grid-template-columns: repeat 4, 25%;
-  grid-template-areas: "footer footer footer footer" "footer footer footer footer";
+  grid-template-areas: "footer footer footer footer"
+ "footer footer footer footer";
   margin: 20px;
   margin-bottom: 0; }
   footer .footer-contenedor div {
@@ -584,60 +585,60 @@ footer .footer-contenedor {
         height: 45px; }
 
 @media screen and (max-width: 1000px) {
-  .header nav div {
+  header h2 div {
     justify-content: space-between; } }
 
 @media screen and (max-width: 900px) {
-  .rebajas-img {
+  main .rebajas-img {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     width: auto;
     height: auto; }
-    .rebajas-img a .nuevas-rebajas {
+    main .rebajas-img a .nuevas-rebajas {
       display: flex;
       flex-wrap: wrap;
       width: 400px;
       height: 400px; }
-    .rebajas-img a .rebajas-60 {
+    main .rebajas-img a .rebajas-60 {
       display: none; } }
 
 @media screen and (max-width: 750px) {
-  .rebajas-img a .rebajas-60 {
+  main .rebajas-img a .rebajas-60 {
     display: none; }
-  .rebajas-img a .nuevas-rebajas {
+  main .rebajas-img a .nuevas-rebajas {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     height: 400px; } }
 
 @media screen and (max-width: 1400px) {
-  .marcas div {
+  main .marcas div {
     width: auto;
     height: 300px;
     align-items: center;
     justify-content: space-evenly; }
-    .marcas div a {
+    main .marcas div a {
       width: auto;
       height: auto; }
-      .marcas div a img {
+      main .marcas div a img {
         width: 120px;
         height: 95px; } }
 
 @media screen and (max-width: 800px) {
-  .marcas div a .logo-converse {
+  main .marcas div a .logo-converse {
     display: none; } }
 
 @media screen and (max-width: 500px) {
-  .marcas div {
+  main .marcas div {
     width: auto;
-    height: 220px;
+    height: 150px;
     align-items: center;
     justify-content: space-evenly;
     display: flex;
     flex-direction: column; }
-    .marcas div a img {
+    main .marcas div a img {
       width: 85px;
       height: 75px;
       margin: 12px; } }
@@ -818,7 +819,8 @@ footer .footer-contenedor {
     width: 100%;
     display: grid;
     grid-template-columns: repeat 2, 1fr;
-    grid-template-areas: "footer footer" "footer footer";
+    grid-template-areas: "footer footer"
+                          "footer footer";
     margin: 10px;
     margin-bottom: 0; }
     footer .footer-contenedor div {
@@ -874,7 +876,7 @@ footer .footer-contenedor {
   footer .footer-contenedor div h3 {
     font-size: 17px; }
   footer .footer-contenedor ul li a p {
-    font-size: 12px; } }
+    font-size: 11px; } }
 
 @media screen and (max-width: 480px) {
   footer .suscripcion {
@@ -916,7 +918,8 @@ footer .footer-contenedor {
     width: 100%;
     display: grid;
     grid-template-columns: repeat 2, 1fr;
-    grid-template-areas: "footer footer" "footer footer";
+    grid-template-areas: "footer footer"
+                          "footer footer";
     margin: 5px;
     margin-bottom: 0; }
     footer .footer-contenedor div {
@@ -951,7 +954,7 @@ footer .footer-contenedor {
 
 @media screen and (max-width: 390px) {
   footer .footer-contenedor .redes h3 {
-    font-size: 14px;
+    font-size: 11px;
     text-align: center; }
   footer .footer-contenedor .redes ul li a img {
     width: 35px;
