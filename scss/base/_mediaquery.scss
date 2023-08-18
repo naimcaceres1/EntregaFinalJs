@@ -1161,7 +1161,7 @@ main{
             justify-content: center;
             flex-wrap: wrap;
             margin-bottom: 50px;
-            div{
+            .imagenes-rebajas{
                 width: 280px;
                 height: auto;
                 justify-content: center;
@@ -1205,6 +1205,15 @@ main{
                     }
                 }
             }
+            .carousel-rebajas{
+                div{
+
+                    div{
+                        width: 250px;
+                        height: 250px;
+                    }
+                }
+            }
         }
     }
 
@@ -1219,7 +1228,7 @@ main{
             justify-content: center;
             flex-wrap: wrap;
             margin-bottom: 50px;
-            div{
+            .imagenes-rebajas{
                 width: 170px;
                 height: auto;
                 justify-content: center;
@@ -1277,7 +1286,7 @@ main{
             justify-content: center;
             flex-wrap: wrap;
             margin-bottom: 30px;
-            div{
+            .imagenes-rebajas{
                 width: 103px;
                 height: auto;
                 justify-content: center;
