@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500&family=Catamaran:wght@700&family=Lato:wght@300;400;700&family=Russo+One&family=Signika:wght@700&display=swap");
+header h2, main .recomendados h2, main .moda .moda-contenedor div a img, .calzado-pag .calzado-contenedor div, .indumentaria-pag .indumentaria-contenedor div, .accesorios-pag .accesorios-contenedor div, .rebajas-pag .rebajas-contenedor .imagenes-rebajas {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 * {
   margin: 0;
   padding: 0;
@@ -16,9 +21,6 @@ header {
     font-size: 20px;
     font-family: 'Lato', sans-serif;
     font-style: italic;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: black;
     height: 40px; }
   header div {
@@ -89,12 +91,9 @@ main .recomendados {
   width: 100%;
   margin-bottom: 20px; }
   main .recomendados h2 {
-    display: flex;
     width: 100%;
     height: 70px;
     color: black;
-    align-items: center;
-    justify-content: center;
     font-family: 'Lato', sans-serif;
     font-size: 35px;
     font-weight: 700; }
@@ -169,9 +168,6 @@ main .moda {
         main .moda .moda-contenedor div a img {
           width: 215px;
           height: 215px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
           margin: top 0;
           object-fit: cover; }
         main .moda .moda-contenedor div a h3 {
@@ -239,9 +235,6 @@ main .disciplinas .disciplinas-contenedor {
     .calzado-pag .calzado-contenedor div {
       width: 340px;
       height: auto;
-      justify-content: center;
-      align-items: center;
-      display: flex;
       flex-direction: column;
       margin: 12px;
       padding: 3px; }
@@ -310,9 +303,6 @@ main .disciplinas .disciplinas-contenedor {
     .indumentaria-pag .indumentaria-contenedor div {
       width: 340px;
       height: auto;
-      justify-content: center;
-      align-items: center;
-      display: flex;
       flex-direction: column;
       margin: 12px;
       padding: 3px; }
@@ -382,12 +372,10 @@ main .disciplinas .disciplinas-contenedor {
     .accesorios-pag .accesorios-contenedor div {
       width: 340px;
       height: auto;
-      justify-content: center;
-      align-items: center;
-      display: flex;
       flex-direction: column;
       margin: 12px;
-      padding: 3px; }
+      padding: 3px;
+      text-align: center; }
       .accesorios-pag .accesorios-contenedor div a {
         text-decoration: none;
         color: black;
@@ -405,7 +393,7 @@ main .disciplinas .disciplinas-contenedor {
           justify-content: center;
           font-family: 'Lato', sans-serif;
           font-size: 16px;
-          width: 270px;
+          width: auto;
           height: 20px;
           margin-top: 7px; }
         .accesorios-pag .accesorios-contenedor div a div {
@@ -454,9 +442,6 @@ main .disciplinas .disciplinas-contenedor {
     .rebajas-pag .rebajas-contenedor .imagenes-rebajas {
       width: 340px;
       height: auto;
-      justify-content: center;
-      align-items: center;
-      display: flex;
       margin: 12px;
       padding: 3px; }
       .rebajas-pag .rebajas-contenedor .imagenes-rebajas a {
@@ -470,29 +455,35 @@ main .disciplinas .disciplinas-contenedor {
           width: 220px;
           height: 220px;
           text-align: center;
+          justify-content: center;
+          margin-bottom: 10px; }
+        .rebajas-pag .rebajas-contenedor .imagenes-rebajas a .producto-rebaja {
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+          font-family: 'Lato', sans-serif;
+          font-size: 16px;
+          width: 270px;
+          height: 16px;
+          margin-top: 15px; }
+        .rebajas-pag .rebajas-contenedor .imagenes-rebajas a div {
+          width: 250px;
+          height: 20px;
+          display: flex;
+          flex-direction: row;
+          margin-bottom: 5px;
           justify-content: center; }
-          .rebajas-pag .rebajas-contenedor .imagenes-rebajas a img h3 {
-            text-align: center;
-            justify-content: center;
-            font-family: 'Lato', sans-serif;
-            font-size: 10px;
-            width: 270px;
-            height: 20px;
-            margin-top: 7px; }
-          .rebajas-pag .rebajas-contenedor .imagenes-rebajas a img div {
-            width: 250px;
-            height: 20px;
-            display: flex;
-            flex-direction: row;
-            margin-bottom: 5px; }
-            .rebajas-pag .rebajas-contenedor .imagenes-rebajas a img div strong {
-              font-size: 15px;
-              margin: 3px;
-              margin-top: 10px; }
-            .rebajas-pag .rebajas-contenedor .imagenes-rebajas a img div del {
-              font-size: 14px;
-              margin: 3px;
-              margin-top: 10px; }
+          .rebajas-pag .rebajas-contenedor .imagenes-rebajas a div strong {
+            font-size: 15px;
+            margin: 3px;
+            margin-top: 10px; }
+          .rebajas-pag .rebajas-contenedor .imagenes-rebajas a div del {
+            font-size: 14px;
+            margin: 3px;
+            margin-top: 10px; }
+    .rebajas-pag .rebajas-contenedor .carousel-rebajas {
+      width: 350px;
+      height: 350px; }
 
 footer .suscripcion {
   flex: 1 1 25%;
@@ -524,17 +515,20 @@ footer .suscripcion {
         footer .suscripcion .suscripcion-mail form ul li button {
           height: 45px;
           width: 120px;
+          margin-left: 0;
           background-color: #FF2931;
-          border: 2px black;
-          margin-left: 0; }
+          border: 1px solid black;
+          color: black; }
 
 footer .footer-contenedor {
-  width: 100%;
+  width: auto;
   display: grid;
   grid-template-columns: repeat 4, 25%;
-  grid-template-areas: "footer footer footer footer" "footer footer footer footer";
+  grid-template-areas: "footer footer footer footer"
+ "footer footer footer footer";
   margin: 20px;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  justify-content: space-around; }
   footer .footer-contenedor div {
     grid-area: "footer";
     display: flex;
@@ -543,8 +537,7 @@ footer .footer-contenedor {
     padding: 5px;
     margin: 10px;
     justify-content: center;
-    align-items: start;
-    width: auto;
+    width: 100%;
     height: 280px; }
     footer .footer-contenedor div h3 {
       margin-left: 12px;
@@ -571,7 +564,8 @@ footer .footer-contenedor {
       position: relative;
       text-align: center;
       justify-content: center;
-      margin-bottom: 12px; }
+      margin-bottom: 12px;
+      margin-right: 15px; }
     footer .footer-contenedor .redes ul li {
       display: flex;
       align-items: center;
@@ -581,35 +575,6 @@ footer .footer-contenedor {
         margin: 5px;
         width: 45px;
         height: 45px; }
-
-@media screen and (max-width: 1000px) {
-  header h2 div {
-    justify-content: space-between; } }
-
-@media screen and (max-width: 900px) {
-  main .rebajas-img {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    width: auto;
-    height: auto; }
-    main .rebajas-img a .nuevas-rebajas {
-      display: flex;
-      flex-wrap: wrap;
-      width: 400px;
-      height: 400px; }
-    main .rebajas-img a .rebajas-60 {
-      display: none; } }
-
-@media screen and (max-width: 750px) {
-  main .rebajas-img a .rebajas-60 {
-    display: none; }
-  main .rebajas-img a .nuevas-rebajas {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 400px; } }
 
 @media screen and (max-width: 1400px) {
   main .marcas div {
@@ -624,22 +589,181 @@ footer .footer-contenedor {
         width: 120px;
         height: 95px; } }
 
-@media screen and (max-width: 800px) {
-  main .marcas div a .logo-converse {
-    display: none; } }
-
-@media screen and (max-width: 500px) {
-  main .marcas div {
-    width: auto;
-    height: 150px;
-    align-items: center;
-    justify-content: space-evenly;
+@media screen and (max-width: 1320px) {
+  .calzado-pag .calzado-contenedor {
+    width: 100%;
     display: flex;
-    flex-direction: column; }
-    main .marcas div a img {
-      width: 85px;
-      height: 75px;
-      margin: 12px; } }
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px; }
+    .calzado-pag .calzado-contenedor div {
+      width: 280px;
+      height: auto;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      margin: 12px;
+      padding: 3px; }
+      .calzado-pag .calzado-contenedor div a {
+        text-decoration: none;
+        color: black;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 250px;
+        height: auto; }
+        .calzado-pag .calzado-contenedor div a img {
+          width: 170px;
+          height: 170px;
+          text-align: center;
+          justify-content: center; }
+        .calzado-pag .calzado-contenedor div a h3 {
+          text-align: center;
+          justify-content: center;
+          font-size: 12px;
+          width: 220px;
+          height: 10px; }
+        .calzado-pag .calzado-contenedor div a div {
+          width: 200px;
+          height: 16px;
+          display: flex;
+          flex-direction: row;
+          margin-bottom: 5px; }
+          .calzado-pag .calzado-contenedor div a div strong {
+            font-size: 12px; }
+          .calzado-pag .calzado-contenedor div a div del {
+            font-size: 11px; }
+  .indumentaria-pag .indumentaria-contenedor {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px; }
+    .indumentaria-pag .indumentaria-contenedor div {
+      width: 280px;
+      height: auto;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      margin: 12px;
+      padding: 3px; }
+      .indumentaria-pag .indumentaria-contenedor div a {
+        text-decoration: none;
+        color: black;
+        text-align: center;
+        justify-content: center;
+        width: 250px;
+        height: auto; }
+        .indumentaria-pag .indumentaria-contenedor div a img {
+          width: 170px;
+          height: 170px;
+          text-align: center;
+          justify-content: center; }
+        .indumentaria-pag .indumentaria-contenedor div a h3 {
+          text-align: center;
+          justify-content: center;
+          font-size: 12px;
+          width: 220px;
+          height: 10px; }
+        .indumentaria-pag .indumentaria-contenedor div a div {
+          width: 200px;
+          height: 16px;
+          display: flex;
+          flex-direction: row;
+          margin-bottom: 5px; }
+          .indumentaria-pag .indumentaria-contenedor div a div strong {
+            font-size: 12px; }
+          .indumentaria-pag .indumentaria-contenedor div a div del {
+            font-size: 11px; }
+  .rebajas-pag .rebajas-contenedor {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px; }
+    .rebajas-pag .rebajas-contenedor .imagenes-rebajas {
+      width: 280px;
+      height: auto;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      margin: 12px;
+      padding: 3px; }
+      .rebajas-pag .rebajas-contenedor .imagenes-rebajas a {
+        text-decoration: none;
+        color: black;
+        text-align: center;
+        justify-content: center;
+        width: 250px;
+        height: auto; }
+        .rebajas-pag .rebajas-contenedor .imagenes-rebajas a img {
+          width: 170px;
+          height: 170px;
+          text-align: center;
+          justify-content: center; }
+        .rebajas-pag .rebajas-contenedor .imagenes-rebajas a .producto-rebaja {
+          text-align: center;
+          justify-content: center;
+          font-size: 12px;
+          width: 220px;
+          height: 10px; }
+        .rebajas-pag .rebajas-contenedor .imagenes-rebajas a div {
+          width: 200px;
+          height: 16px;
+          display: flex;
+          flex-direction: row;
+          margin-bottom: 5px;
+          justify-content: center; }
+          .rebajas-pag .rebajas-contenedor .imagenes-rebajas a div strong {
+            font-size: 12px; }
+          .rebajas-pag .rebajas-contenedor .imagenes-rebajas a div del {
+            font-size: 11px; }
+  .accesorios-pag .accesorios-contenedor {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px; }
+    .accesorios-pag .accesorios-contenedor div {
+      width: 280px;
+      height: auto;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      margin: 12px;
+      padding: 3px; }
+      .accesorios-pag .accesorios-contenedor div a {
+        text-decoration: none;
+        color: black;
+        text-align: center;
+        justify-content: center;
+        width: 250px;
+        height: auto; }
+        .accesorios-pag .accesorios-contenedor div a img {
+          width: 170px;
+          height: 170px;
+          text-align: center;
+          justify-content: center; }
+        .accesorios-pag .accesorios-contenedor div a h3 {
+          text-align: center;
+          justify-content: center;
+          font-size: 12px;
+          width: 220px;
+          height: 10px; }
+        .accesorios-pag .accesorios-contenedor div a div {
+          width: 200px;
+          height: 16px;
+          display: flex;
+          flex-direction: row;
+          margin-bottom: 5px; }
+          .accesorios-pag .accesorios-contenedor div a div strong {
+            font-size: 12px; }
+          .accesorios-pag .accesorios-contenedor div a div del {
+            font-size: 11px; } }
 
 @media screen and (max-width: 1230px) {
   main .recomendados .recomendados-contenedor {
@@ -668,37 +792,6 @@ footer .footer-contenedor {
             font-size: 12px; }
           main .recomendados .recomendados-contenedor div a div del {
             font-size: 10px; } }
-
-@media screen and (max-width: 1050px) {
-  main .recomendados h2 {
-    font-size: 24px; }
-  main .recomendados .recomendados-contenedor {
-    display: flex;
-    flex-direction: column; }
-    main .recomendados .recomendados-contenedor div {
-      width: auto;
-      margin-top: 10px; }
-      main .recomendados .recomendados-contenedor div a {
-        text-decoration: none;
-        color: black;
-        justify-content: center;
-        align-items: center;
-        height: 280px; }
-        main .recomendados .recomendados-contenedor div a img {
-          width: 200px;
-          height: 200px;
-          margin-bottom: 10px;
-          margin-top: 10px; }
-        main .recomendados .recomendados-contenedor div a h3 {
-          margin: 10px 10px 10px 10px;
-          font-size: 14px;
-          width: auto; }
-          main .recomendados .recomendados-contenedor div a h3 div {
-            height: auto; }
-            main .recomendados .recomendados-contenedor div a h3 div strong {
-              font-size: 12px; }
-            main .recomendados .recomendados-contenedor div a h3 div del {
-              font-size: 10px; } }
 
 @media screen and (max-width: 1200px) {
   main .moda {
@@ -729,49 +822,7 @@ footer .footer-contenedor {
             font-size: 14px;
             height: 30px; }
       main .moda .moda-contenedor div:nth-child(4) {
-        display: none; } }
-
-@media screen and (max-width: 500px) {
-  main .moda {
-    margin-top: 20px;
-    display: flex;
-    flex-wrap: wrap; }
-    main .moda .moda-contenedor {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 5px;
-      align-items: center; }
-      main .moda .moda-contenedor div {
-        height: 250px;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 20px; }
-        main .moda .moda-contenedor div a {
-          justify-content: center;
-          align-items: center;
-          width: auto;
-          height: auto; }
-          main .moda .moda-contenedor div a h3 {
-            width: 140px;
-            height: 50px;
-            margin-bottom: 3px; }
-          main .moda .moda-contenedor div a img {
-            height: 120px;
-            width: 120px;
-            align-items: center;
-            margin: 10px; }
-      main .moda .moda-contenedor div:nth-child(4) {
         display: none; }
-        main .moda .moda-contenedor div:nth-child(4) div {
-          width: auto; }
-          main .moda .moda-contenedor div:nth-child(4) div h3 {
-            font-size: 13px; }
-        main .moda .moda-contenedor div:nth-child(4) strong {
-          font-size: 13px;
-          justify-content: center;
-          align-items: center; } }
-
-@media screen and (max-width: 1200px) {
   main .disciplinas .disciplinas-contenedor div {
     width: 380px;
     height: 240px; }
@@ -786,20 +837,222 @@ footer .footer-contenedor {
         height: 240px;
         flex-wrap: wrap; } }
 
-@media screen and (max-width: 850px) {
-  main .disciplinas .disciplinas-contenedor {
+@media screen and (max-width: 1100px) {
+  .calzado-pag .calzado-contenedor {
+    width: 100%;
+    height: auto;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center; }
-    main .disciplinas .disciplinas-contenedor div a {
-      gap: 5px; }
-      main .disciplinas .disciplinas-contenedor div a img {
-        width: 340px;
-        height: 210px;
-        padding: 5px; } }
+    flex-wrap: wrap;
+    margin-bottom: 50px; }
+    .calzado-pag .calzado-contenedor div {
+      width: 170px;
+      height: auto;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      margin: 12px;
+      padding: 3px; }
+      .calzado-pag .calzado-contenedor div a {
+        text-decoration: none;
+        color: black;
+        text-align: center;
+        justify-content: center;
+        width: 170px;
+        height: auto; }
+        .calzado-pag .calzado-contenedor div a img {
+          width: 130px;
+          height: 130px; }
+        .calzado-pag .calzado-contenedor div a h3 {
+          text-align: center;
+          justify-content: center;
+          font-size: 11px;
+          width: 165px;
+          height: 10px; }
+        .calzado-pag .calzado-contenedor div a div {
+          width: 165px;
+          height: 10px;
+          display: flex;
+          flex-direction: row; }
+          .calzado-pag .calzado-contenedor div a div strong {
+            font-size: 8px;
+            margin: 2px;
+            margin-top: 5px; }
+          .calzado-pag .calzado-contenedor div a div del {
+            font-size: 9px;
+            margin: 2px;
+            margin-top: 5px; }
+  .indumentaria-pag .indumentaria-contenedor {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px; }
+    .indumentaria-pag .indumentaria-contenedor div {
+      width: 170px;
+      height: auto;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      margin: 12px;
+      padding: 3px; }
+      .indumentaria-pag .indumentaria-contenedor div a {
+        text-decoration: none;
+        color: black;
+        text-align: center;
+        justify-content: center;
+        width: 170px;
+        height: auto; }
+        .indumentaria-pag .indumentaria-contenedor div a img {
+          width: 130px;
+          height: 130px; }
+        .indumentaria-pag .indumentaria-contenedor div a h3 {
+          text-align: center;
+          justify-content: center;
+          font-size: 11px;
+          width: 165px;
+          height: 10px; }
+        .indumentaria-pag .indumentaria-contenedor div a div {
+          width: 165px;
+          height: 10px;
+          display: flex;
+          flex-direction: row; }
+          .indumentaria-pag .indumentaria-contenedor div a div strong {
+            font-size: 9px;
+            margin: 2px;
+            margin-top: 5px; }
+          .indumentaria-pag .indumentaria-contenedor div a div del {
+            font-size: 8px;
+            margin: 2px;
+            margin-top: 5px; }
+  .accesorios-pag .accesorios-contenedor {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px; }
+    .accesorios-pag .accesorios-contenedor div {
+      width: 170px;
+      height: auto;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      margin: 12px;
+      padding: 3px; }
+      .accesorios-pag .accesorios-contenedor div a {
+        text-decoration: none;
+        color: black;
+        text-align: center;
+        justify-content: center;
+        width: 170px;
+        height: auto; }
+        .accesorios-pag .accesorios-contenedor div a img {
+          width: 130px;
+          height: 130px; }
+        .accesorios-pag .accesorios-contenedor div a h3 {
+          text-align: center;
+          justify-content: center;
+          font-size: 11px;
+          width: 165px;
+          height: 10px; }
+        .accesorios-pag .accesorios-contenedor div a div {
+          width: 165px;
+          height: 10px;
+          display: flex;
+          flex-direction: row; }
+          .accesorios-pag .accesorios-contenedor div a div strong {
+            font-size: 9px;
+            margin: 2px;
+            margin-top: 5px; }
+          .accesorios-pag .accesorios-contenedor div a div del {
+            font-size: 8px;
+            margin: 2px;
+            margin-top: 5px; }
+  .rebajas-pag .rebajas-contenedor {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px; }
+    .rebajas-pag .rebajas-contenedor .imagenes-rebajas {
+      width: 170px;
+      height: auto;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      margin: 12px;
+      padding: 3px; }
+      .rebajas-pag .rebajas-contenedor .imagenes-rebajas a {
+        text-decoration: none;
+        color: black;
+        text-align: center;
+        justify-content: center;
+        width: 200;
+        height: auto; }
+        .rebajas-pag .rebajas-contenedor .imagenes-rebajas a img {
+          width: 130px;
+          height: 130px; }
+        .rebajas-pag .rebajas-contenedor .imagenes-rebajas a .producto-rebaja {
+          text-align: center;
+          justify-content: center;
+          font-size: 11px;
+          width: 165px; }
+        .rebajas-pag .rebajas-contenedor .imagenes-rebajas a div {
+          margin-top: 5px;
+          width: 165px;
+          height: 15px;
+          display: flex;
+          flex-direction: row;
+          justify-content: center; }
+          .rebajas-pag .rebajas-contenedor .imagenes-rebajas a div strong {
+            font-size: 9px;
+            margin: 2px;
+            margin-top: 5px; }
+          .rebajas-pag .rebajas-contenedor .imagenes-rebajas a div del {
+            font-size: 9px;
+            margin: 2px;
+            margin-top: 5px; }
+    .rebajas-pag .rebajas-contenedor .carousel-rebajas {
+      width: 230px;
+      height: 230px; } }
 
 @media screen and (max-width: 1050px) {
+  main .recomendados h2 {
+    font-size: 24px; }
+  main .recomendados .recomendados-contenedor {
+    display: flex;
+    flex-direction: column; }
+    main .recomendados .recomendados-contenedor div {
+      width: auto;
+      margin-top: 10px; }
+      main .recomendados .recomendados-contenedor div a {
+        text-decoration: none;
+        color: black;
+        justify-content: center;
+        align-items: center;
+        height: 280px; }
+        main .recomendados .recomendados-contenedor div a img {
+          width: 200px;
+          height: 200px;
+          margin-bottom: 10px;
+          margin-top: 10px; }
+        main .recomendados .recomendados-contenedor div a h3 {
+          margin: 10px 10px 10px 10px;
+          font-size: 14px;
+          width: auto; }
+          main .recomendados .recomendados-contenedor div a h3 div {
+            height: auto; }
+            main .recomendados .recomendados-contenedor div a h3 div strong {
+              font-size: 12px; }
+            main .recomendados .recomendados-contenedor div a h3 div del {
+              font-size: 10px; }
   footer {
     display: flex;
     flex-direction: column;
@@ -812,12 +1065,17 @@ footer .footer-contenedor {
     footer .redes {
       margin-top: 20px; } }
 
+@media screen and (max-width: 1000px) {
+  header h2 div {
+    justify-content: space-between; } }
+
 @media screen and (max-width: 991px) {
   footer .footer-contenedor {
     width: 100%;
     display: grid;
     grid-template-columns: repeat 2, 1fr;
-    grid-template-areas: "footer footer" "footer footer";
+    grid-template-areas: "footer footer"
+ "footer footer";
     margin: 10px;
     margin-bottom: 0; }
     footer .footer-contenedor div {
@@ -834,7 +1092,65 @@ footer .footer-contenedor {
     margin-top: 12px;
     justify-content: center;
     align-items: start;
-    height: 150px; } }
+    height: 150px; }
+  .rebajas-pag .rebajas-contenedor .carousel-rebajas {
+    width: 250px;
+    height: 250px; } }
+
+@media screen and (max-width: 990px) {
+  .calzado-pag .calzado-filtro {
+    display: none; }
+  .indumentaria-pag .indumentaria-filtro {
+    display: none; }
+  .accesorios-pag .accesorios-filtro {
+    display: none; }
+  .rebajas-pag .rebajas-filtro {
+    display: none; }
+  .rebajas-pag .rebajas-contenedor .carousel-rebajas {
+    width: 200px;
+    height: 200px; } }
+
+@media screen and (max-width: 900px) {
+  main .rebajas-img {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto; }
+    main .rebajas-img a .nuevas-rebajas {
+      display: flex;
+      flex-wrap: wrap;
+      width: 500px;
+      height: 500px; }
+    main .rebajas-img a .rebajas-60 {
+      display: none; } }
+
+@media screen and (max-width: 850px) {
+  main .disciplinas .disciplinas-contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    main .disciplinas .disciplinas-contenedor div a {
+      gap: 5px; }
+      main .disciplinas .disciplinas-contenedor div a img {
+        width: 340px;
+        height: 210px;
+        padding: 5px; } }
+
+@media screen and (max-width: 800px) {
+  main .marcas div a .logo-converse {
+    display: none; } }
+
+@media screen and (max-width: 750px) {
+  main .rebajas-img a .rebajas-60 {
+    display: none; }
+  main .rebajas-img a .nuevas-rebajas {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 400px; } }
 
 @media screen and (max-width: 700px) {
   footer .suscripcion {
@@ -874,6 +1190,253 @@ footer .footer-contenedor {
     font-size: 17px; }
   footer .footer-contenedor ul li a p {
     font-size: 11px; } }
+
+@media screen and (max-width: 600px) {
+  .calzado-pag .calzado-contenedor {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px; }
+    .calzado-pag .calzado-contenedor div {
+      width: 103px;
+      height: auto;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      margin: 6px;
+      padding: 1px; }
+      .calzado-pag .calzado-contenedor div a {
+        text-decoration: none;
+        color: black;
+        text-align: center;
+        justify-content: center;
+        width: 75px;
+        height: auto; }
+        .calzado-pag .calzado-contenedor div a img {
+          width: 75px;
+          height: 75px;
+          text-align: center;
+          justify-content: center; }
+        .calzado-pag .calzado-contenedor div a h3 {
+          text-align: center;
+          justify-content: center;
+          font-size: 7px;
+          width: 75px; }
+        .calzado-pag .calzado-contenedor div a div {
+          width: 75px;
+          display: flex;
+          flex-direction: row;
+          margin-bottom: 5px;
+          margin-top: 15px; }
+          .calzado-pag .calzado-contenedor div a div strong {
+            font-size: 6px;
+            margin: 2px;
+            margin-top: 6px; }
+          .calzado-pag .calzado-contenedor div a div del {
+            font-size: 6px;
+            margin: 2px;
+            margin-top: 6px; } }
+
+@media screen and (max-width: 600px) {
+  .indumentaria-pag .indumentraria-contenedor {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px; }
+    .indumentaria-pag .indumentraria-contenedor div {
+      width: 103px;
+      height: auto;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      margin: 6px;
+      padding: 1px; }
+      .indumentaria-pag .indumentraria-contenedor div a {
+        text-decoration: none;
+        color: black;
+        text-align: center;
+        justify-content: center;
+        width: 75px;
+        height: auto; }
+        .indumentaria-pag .indumentraria-contenedor div a img {
+          width: 75px;
+          height: 75px;
+          text-align: center;
+          justify-content: center; }
+        .indumentaria-pag .indumentraria-contenedor div a h3 {
+          text-align: center;
+          justify-content: center;
+          font-size: 7px;
+          width: 75px; }
+        .indumentaria-pag .indumentraria-contenedor div a div {
+          width: 75px;
+          display: flex;
+          flex-direction: row;
+          margin-bottom: 5px;
+          margin-top: 15px; }
+          .indumentaria-pag .indumentraria-contenedor div a div strong {
+            font-size: 6px;
+            margin: 2px;
+            margin-top: 6px; }
+          .indumentaria-pag .indumentraria-contenedor div a div del {
+            font-size: 6px;
+            margin: 2px;
+            margin-top: 6px; } }
+
+@media screen and (max-width: 600px) {
+  .accesorios-pag .accesorios-contenedor {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px; }
+    .accesorios-pag .accesorios-contenedor div {
+      width: 103px;
+      height: auto;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      margin: 6px;
+      padding: 1px; }
+      .accesorios-pag .accesorios-contenedor div a {
+        text-decoration: none;
+        color: black;
+        text-align: center;
+        justify-content: center;
+        width: 75px;
+        height: auto; }
+        .accesorios-pag .accesorios-contenedor div a img {
+          width: 75px;
+          height: 75px;
+          text-align: center;
+          justify-content: center; }
+        .accesorios-pag .accesorios-contenedor div a h3 {
+          text-align: center;
+          justify-content: center;
+          font-size: 7px;
+          width: 75px; }
+        .accesorios-pag .accesorios-contenedor div a div {
+          width: 75px;
+          display: flex;
+          flex-direction: row;
+          margin-bottom: 5px;
+          margin-top: 15px; }
+          .accesorios-pag .accesorios-contenedor div a div strong {
+            font-size: 6px;
+            margin: 2px;
+            margin-top: 6px; }
+          .accesorios-pag .accesorios-contenedor div a div del {
+            font-size: 6px;
+            margin: 2px;
+            margin-top: 6px; }
+  .rebajas-pag .rebajas-contenedor {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px; }
+    .rebajas-pag .rebajas-contenedor .imagenes-rebajas {
+      width: 103px;
+      height: auto;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      margin: 6px;
+      padding: 1px; }
+      .rebajas-pag .rebajas-contenedor .imagenes-rebajas a {
+        text-decoration: none;
+        color: black;
+        text-align: center;
+        justify-content: center;
+        width: 75px;
+        height: auto; }
+        .rebajas-pag .rebajas-contenedor .imagenes-rebajas a img {
+          width: 75px;
+          height: 75px;
+          text-align: center;
+          justify-content: center; }
+        .rebajas-pag .rebajas-contenedor .imagenes-rebajas a .producto-rebaja {
+          text-align: center;
+          justify-content: center;
+          font-size: 7px;
+          width: 75px; }
+        .rebajas-pag .rebajas-contenedor .imagenes-rebajas a div {
+          width: 75px;
+          display: flex;
+          flex-direction: row;
+          margin-bottom: 5px;
+          margin-top: 15px;
+          justify-content: center; }
+          .rebajas-pag .rebajas-contenedor .imagenes-rebajas a div strong {
+            font-size: 6px;
+            margin: 2px;
+            margin-top: 6px; }
+          .rebajas-pag .rebajas-contenedor .imagenes-rebajas a div del {
+            font-size: 6px;
+            margin: 2px;
+            margin-top: 6px; } }
+
+@media screen and (max-width: 500px) {
+  main .marcas div {
+    width: auto;
+    height: 150px;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column; }
+    main .marcas div a img {
+      width: 85px;
+      height: 75px;
+      margin: 12px; }
+  main .moda {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap; }
+    main .moda .moda-contenedor {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 5px;
+      align-items: center; }
+      main .moda .moda-contenedor div {
+        height: 250px;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px; }
+        main .moda .moda-contenedor div a {
+          justify-content: center;
+          align-items: center;
+          width: auto;
+          height: auto; }
+          main .moda .moda-contenedor div a h3 {
+            width: 140px;
+            height: 50px;
+            margin-bottom: 3px; }
+          main .moda .moda-contenedor div a img {
+            height: 120px;
+            width: 120px;
+            align-items: center;
+            margin: 10px; }
+      main .moda .moda-contenedor div:nth-child(4) {
+        display: none; }
+        main .moda .moda-contenedor div:nth-child(4) div {
+          width: auto; }
+          main .moda .moda-contenedor div:nth-child(4) div h3 {
+            font-size: 13px; }
+        main .moda .moda-contenedor div:nth-child(4) strong {
+          font-size: 13px;
+          justify-content: center;
+          align-items: center; } }
 
 @media screen and (max-width: 480px) {
   footer .suscripcion {
@@ -915,7 +1478,8 @@ footer .footer-contenedor {
     width: 100%;
     display: grid;
     grid-template-columns: repeat 2, 1fr;
-    grid-template-areas: "footer footer" "footer footer";
+    grid-template-areas: "footer footer"
+ "footer footer";
     margin: 5px;
     margin-bottom: 0; }
     footer .footer-contenedor div {
@@ -967,586 +1531,3 @@ footer .footer-contenedor {
     gap: 1px;
     margin-bottom: 2px;
     padding: 0; } }
-
-@media screen and (max-width: 990px) {
-  .calzado-pag .calzado-catalogo {
-    display: none; } }
-
-@media screen and (max-width: 1320px) {
-  .calzado-pag .calzado-contenedor {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 50px; }
-    .calzado-pag .calzado-contenedor div {
-      width: 280px;
-      height: auto;
-      justify-content: center;
-      align-items: center;
-      display: flex;
-      flex-direction: column;
-      margin: 12px;
-      padding: 3px; }
-      .calzado-pag .calzado-contenedor div a {
-        text-decoration: none;
-        color: black;
-        text-align: center;
-        justify-content: center;
-        width: 250px;
-        height: auto; }
-        .calzado-pag .calzado-contenedor div a img {
-          width: 170px;
-          height: 170px;
-          text-align: center;
-          justify-content: center; }
-        .calzado-pag .calzado-contenedor div a h3 {
-          text-align: center;
-          justify-content: center;
-          font-size: 12px;
-          width: 220px;
-          height: 10px; }
-        .calzado-pag .calzado-contenedor div a div {
-          width: 200px;
-          height: 16px;
-          display: flex;
-          flex-direction: row;
-          margin-bottom: 5px; }
-          .calzado-pag .calzado-contenedor div a div strong {
-            font-size: 12px; }
-          .calzado-pag .calzado-contenedor div a div del {
-            font-size: 11px; } }
-
-@media screen and (max-width: 1100px) {
-  .calzado-pag .calzado-contenedor {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 50px; }
-    .calzado-pag .calzado-contenedor div {
-      width: 170px;
-      height: auto;
-      justify-content: center;
-      align-items: center;
-      display: flex;
-      flex-direction: column;
-      margin: 12px;
-      padding: 3px; }
-      .calzado-pag .calzado-contenedor div a {
-        text-decoration: none;
-        color: black;
-        text-align: center;
-        justify-content: center;
-        width: 170px;
-        height: auto; }
-        .calzado-pag .calzado-contenedor div a img {
-          width: 130px;
-          height: 130px; }
-        .calzado-pag .calzado-contenedor div a h3 {
-          text-align: center;
-          justify-content: center;
-          font-size: 8px;
-          width: 165px;
-          height: 10px; }
-        .calzado-pag .calzado-contenedor div a div {
-          width: 165px;
-          height: 10px;
-          display: flex;
-          flex-direction: row; }
-          .calzado-pag .calzado-contenedor div a div strong {
-            font-size: 8px;
-            margin: 2px;
-            margin-top: 5px; }
-          .calzado-pag .calzado-contenedor div a div del {
-            font-size: 8px;
-            margin: 2px;
-            margin-top: 5px; } }
-
-@media screen and (max-width: 600px) {
-  .calzado-pag .calzado-contenedor {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 30px; }
-    .calzado-pag .calzado-contenedor div {
-      width: 103px;
-      height: auto;
-      justify-content: center;
-      align-items: center;
-      display: flex;
-      flex-direction: column;
-      margin: 6px;
-      padding: 1px; }
-      .calzado-pag .calzado-contenedor div a {
-        text-decoration: none;
-        color: black;
-        text-align: center;
-        justify-content: center;
-        width: 75px;
-        height: auto; }
-        .calzado-pag .calzado-contenedor div a img {
-          width: 75px;
-          height: 75px;
-          text-align: center;
-          justify-content: center; }
-        .calzado-pag .calzado-contenedor div a h3 {
-          text-align: center;
-          justify-content: center;
-          font-size: 7px;
-          width: 75px; }
-        .calzado-pag .calzado-contenedor div a div {
-          width: 75px;
-          display: flex;
-          flex-direction: row;
-          margin-bottom: 5px;
-          margin-top: 15px; }
-          .calzado-pag .calzado-contenedor div a div strong {
-            font-size: 6px;
-            margin: 2px;
-            margin-top: 6px; }
-          .calzado-pag .calzado-contenedor div a div del {
-            font-size: 6px;
-            margin: 2px;
-            margin-top: 6px; } }
-
-@media screen and (max-width: 990px) {
-  .indumentaria-pag .indumentaria-filtro {
-    display: none; } }
-
-@media screen and (max-width: 1320px) {
-  .indumentaria-pag .indumentaria-contenedor {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 50px; }
-    .indumentaria-pag .indumentaria-contenedor div {
-      width: 280px;
-      height: auto;
-      justify-content: center;
-      align-items: center;
-      display: flex;
-      flex-direction: column;
-      margin: 12px;
-      padding: 3px; }
-      .indumentaria-pag .indumentaria-contenedor div a {
-        text-decoration: none;
-        color: black;
-        text-align: center;
-        justify-content: center;
-        width: 250px;
-        height: auto; }
-        .indumentaria-pag .indumentaria-contenedor div a img {
-          width: 170px;
-          height: 170px;
-          text-align: center;
-          justify-content: center; }
-        .indumentaria-pag .indumentaria-contenedor div a h3 {
-          text-align: center;
-          justify-content: center;
-          font-size: 12px;
-          width: 220px;
-          height: 10px; }
-        .indumentaria-pag .indumentaria-contenedor div a div {
-          width: 200px;
-          height: 16px;
-          display: flex;
-          flex-direction: row;
-          margin-bottom: 5px; }
-          .indumentaria-pag .indumentaria-contenedor div a div strong {
-            font-size: 12px; }
-          .indumentaria-pag .indumentaria-contenedor div a div del {
-            font-size: 11px; } }
-
-@media screen and (max-width: 1100px) {
-  .indumentaria-pag .indumentaria-contenedor {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 50px; }
-    .indumentaria-pag .indumentaria-contenedor div {
-      width: 170px;
-      height: auto;
-      justify-content: center;
-      align-items: center;
-      display: flex;
-      flex-direction: column;
-      margin: 12px;
-      padding: 3px; }
-      .indumentaria-pag .indumentaria-contenedor div a {
-        text-decoration: none;
-        color: black;
-        text-align: center;
-        justify-content: center;
-        width: 170px;
-        height: auto; }
-        .indumentaria-pag .indumentaria-contenedor div a img {
-          width: 130px;
-          height: 130px; }
-        .indumentaria-pag .indumentaria-contenedor div a h3 {
-          text-align: center;
-          justify-content: center;
-          font-size: 8px;
-          width: 165px;
-          height: 10px; }
-        .indumentaria-pag .indumentaria-contenedor div a div {
-          width: 165px;
-          height: 10px;
-          display: flex;
-          flex-direction: row; }
-          .indumentaria-pag .indumentaria-contenedor div a div strong {
-            font-size: 8px;
-            margin: 2px;
-            margin-top: 5px; }
-          .indumentaria-pag .indumentaria-contenedor div a div del {
-            font-size: 8px;
-            margin: 2px;
-            margin-top: 5px; } }
-
-@media screen and (max-width: 600px) {
-  .indumentaria-pag .indumentraria-contenedor {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 30px; }
-    .indumentaria-pag .indumentraria-contenedor div {
-      width: 103px;
-      height: auto;
-      justify-content: center;
-      align-items: center;
-      display: flex;
-      flex-direction: column;
-      margin: 6px;
-      padding: 1px; }
-      .indumentaria-pag .indumentraria-contenedor div a {
-        text-decoration: none;
-        color: black;
-        text-align: center;
-        justify-content: center;
-        width: 75px;
-        height: auto; }
-        .indumentaria-pag .indumentraria-contenedor div a img {
-          width: 75px;
-          height: 75px;
-          text-align: center;
-          justify-content: center; }
-        .indumentaria-pag .indumentraria-contenedor div a h3 {
-          text-align: center;
-          justify-content: center;
-          font-size: 7px;
-          width: 75px; }
-        .indumentaria-pag .indumentraria-contenedor div a div {
-          width: 75px;
-          display: flex;
-          flex-direction: row;
-          margin-bottom: 5px;
-          margin-top: 15px; }
-          .indumentaria-pag .indumentraria-contenedor div a div strong {
-            font-size: 6px;
-            margin: 2px;
-            margin-top: 6px; }
-          .indumentaria-pag .indumentraria-contenedor div a div del {
-            font-size: 6px;
-            margin: 2px;
-            margin-top: 6px; } }
-
-@media screen and (max-width: 990px) {
-  .accesorios-pag .accesorios-filtro {
-    display: none; } }
-
-@media screen and (max-width: 1320px) {
-  .accesorios-pag .accesorios-contenedor {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 50px; }
-    .accesorios-pag .accesorios-contenedor div {
-      width: 280px;
-      height: auto;
-      justify-content: center;
-      align-items: center;
-      display: flex;
-      flex-direction: column;
-      margin: 12px;
-      padding: 3px; }
-      .accesorios-pag .accesorios-contenedor div a {
-        text-decoration: none;
-        color: black;
-        text-align: center;
-        justify-content: center;
-        width: 250px;
-        height: auto; }
-        .accesorios-pag .accesorios-contenedor div a img {
-          width: 170px;
-          height: 170px;
-          text-align: center;
-          justify-content: center; }
-        .accesorios-pag .accesorios-contenedor div a h3 {
-          text-align: center;
-          justify-content: center;
-          font-size: 12px;
-          width: 220px;
-          height: 10px; }
-        .accesorios-pag .accesorios-contenedor div a div {
-          width: 200px;
-          height: 16px;
-          display: flex;
-          flex-direction: row;
-          margin-bottom: 5px; }
-          .accesorios-pag .accesorios-contenedor div a div strong {
-            font-size: 12px; }
-          .accesorios-pag .accesorios-contenedor div a div del {
-            font-size: 11px; } }
-
-@media screen and (max-width: 1100px) {
-  .accesorios-pag .accesorios-contenedor {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 50px; }
-    .accesorios-pag .accesorios-contenedor div {
-      width: 170px;
-      height: auto;
-      justify-content: center;
-      align-items: center;
-      display: flex;
-      flex-direction: column;
-      margin: 12px;
-      padding: 3px; }
-      .accesorios-pag .accesorios-contenedor div a {
-        text-decoration: none;
-        color: black;
-        text-align: center;
-        justify-content: center;
-        width: 170px;
-        height: auto; }
-        .accesorios-pag .accesorios-contenedor div a img {
-          width: 130px;
-          height: 130px; }
-        .accesorios-pag .accesorios-contenedor div a h3 {
-          text-align: center;
-          justify-content: center;
-          font-size: 8px;
-          width: 165px;
-          height: 10px; }
-        .accesorios-pag .accesorios-contenedor div a div {
-          width: 165px;
-          height: 10px;
-          display: flex;
-          flex-direction: row; }
-          .accesorios-pag .accesorios-contenedor div a div strong {
-            font-size: 8px;
-            margin: 2px;
-            margin-top: 5px; }
-          .accesorios-pag .accesorios-contenedor div a div del {
-            font-size: 8px;
-            margin: 2px;
-            margin-top: 5px; } }
-
-@media screen and (max-width: 600px) {
-  .accesorios-pag .accesorios-contenedor {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 30px; }
-    .accesorios-pag .accesorios-contenedor div {
-      width: 103px;
-      height: auto;
-      justify-content: center;
-      align-items: center;
-      display: flex;
-      flex-direction: column;
-      margin: 6px;
-      padding: 1px; }
-      .accesorios-pag .accesorios-contenedor div a {
-        text-decoration: none;
-        color: black;
-        text-align: center;
-        justify-content: center;
-        width: 75px;
-        height: auto; }
-        .accesorios-pag .accesorios-contenedor div a img {
-          width: 75px;
-          height: 75px;
-          text-align: center;
-          justify-content: center; }
-        .accesorios-pag .accesorios-contenedor div a h3 {
-          text-align: center;
-          justify-content: center;
-          font-size: 7px;
-          width: 75px; }
-        .accesorios-pag .accesorios-contenedor div a div {
-          width: 75px;
-          display: flex;
-          flex-direction: row;
-          margin-bottom: 5px;
-          margin-top: 15px; }
-          .accesorios-pag .accesorios-contenedor div a div strong {
-            font-size: 6px;
-            margin: 2px;
-            margin-top: 6px; }
-          .accesorios-pag .accesorios-contenedor div a div del {
-            font-size: 6px;
-            margin: 2px;
-            margin-top: 6px; } }
-
-@media screen and (max-width: 990px) {
-  .rebajas-pag .rebajas-filtro {
-    display: none; } }
-
-@media screen and (max-width: 1320px) {
-  .rebajas-pag .rebajas-contenedor {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 50px; }
-    .rebajas-pag .rebajas-contenedor .imagenes-rebajas {
-      width: 280px;
-      height: auto;
-      justify-content: center;
-      align-items: center;
-      display: flex;
-      flex-direction: column;
-      margin: 12px;
-      padding: 3px; }
-      .rebajas-pag .rebajas-contenedor .imagenes-rebajas a {
-        text-decoration: none;
-        color: black;
-        text-align: center;
-        justify-content: center;
-        width: 250px;
-        height: auto; }
-        .rebajas-pag .rebajas-contenedor .imagenes-rebajas a img {
-          width: 170px;
-          height: 170px;
-          text-align: center;
-          justify-content: center; }
-        .rebajas-pag .rebajas-contenedor .imagenes-rebajas a h3 {
-          text-align: center;
-          justify-content: center;
-          font-size: 12px;
-          width: 220px;
-          height: 10px; }
-        .rebajas-pag .rebajas-contenedor .imagenes-rebajas a div {
-          width: 200px;
-          height: 16px;
-          display: flex;
-          flex-direction: row;
-          margin-bottom: 5px; }
-          .rebajas-pag .rebajas-contenedor .imagenes-rebajas a div strong {
-            font-size: 12px; }
-          .rebajas-pag .rebajas-contenedor .imagenes-rebajas a div del {
-            font-size: 11px; }
-    .rebajas-pag .rebajas-contenedor .carousel-rebajas div div {
-      width: 250px;
-      height: 250px; } }
-
-@media screen and (max-width: 1100px) {
-  .rebajas-pag .rebajas-contenedor {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 50px; }
-    .rebajas-pag .rebajas-contenedor .imagenes-rebajas {
-      width: 170px;
-      height: auto;
-      justify-content: center;
-      align-items: center;
-      display: flex;
-      flex-direction: column;
-      margin: 12px;
-      padding: 3px; }
-      .rebajas-pag .rebajas-contenedor .imagenes-rebajas a {
-        text-decoration: none;
-        color: black;
-        text-align: center;
-        justify-content: center;
-        width: 170px;
-        height: auto; }
-        .rebajas-pag .rebajas-contenedor .imagenes-rebajas a img {
-          width: 130px;
-          height: 130px; }
-        .rebajas-pag .rebajas-contenedor .imagenes-rebajas a h3 {
-          text-align: center;
-          justify-content: center;
-          font-size: 8px;
-          width: 165px;
-          height: 10px; }
-        .rebajas-pag .rebajas-contenedor .imagenes-rebajas a div {
-          width: 165px;
-          height: 10px;
-          display: flex;
-          flex-direction: row; }
-          .rebajas-pag .rebajas-contenedor .imagenes-rebajas a div strong {
-            font-size: 8px;
-            margin: 2px;
-            margin-top: 5px; }
-          .rebajas-pag .rebajas-contenedor .imagenes-rebajas a div del {
-            font-size: 8px;
-            margin: 2px;
-            margin-top: 5px; } }
-
-@media screen and (max-width: 600px) {
-  .rebajas-pag .rebajas-contenedor {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 30px; }
-    .rebajas-pag .rebajas-contenedor .imagenes-rebajas {
-      width: 103px;
-      height: auto;
-      justify-content: center;
-      align-items: center;
-      display: flex;
-      flex-direction: column;
-      margin: 6px;
-      padding: 1px; }
-      .rebajas-pag .rebajas-contenedor .imagenes-rebajas a {
-        text-decoration: none;
-        color: black;
-        text-align: center;
-        justify-content: center;
-        width: 75px;
-        height: auto; }
-        .rebajas-pag .rebajas-contenedor .imagenes-rebajas a img {
-          width: 75px;
-          height: 75px;
-          text-align: center;
-          justify-content: center; }
-        .rebajas-pag .rebajas-contenedor .imagenes-rebajas a h3 {
-          text-align: center;
-          justify-content: center;
-          font-size: 7px;
-          width: 75px; }
-        .rebajas-pag .rebajas-contenedor .imagenes-rebajas a div {
-          width: 75px;
-          display: flex;
-          flex-direction: row;
-          margin-bottom: 5px;
-          margin-top: 15px; }
-          .rebajas-pag .rebajas-contenedor .imagenes-rebajas a div strong {
-            font-size: 6px;
-            margin: 2px;
-            margin-top: 6px; }
-          .rebajas-pag .rebajas-contenedor .imagenes-rebajas a div del {
-            font-size: 6px;
-            margin: 2px;
-            margin-top: 6px; } }

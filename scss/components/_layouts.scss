@@ -43,12 +43,10 @@ main{
         width: 100%;
         margin-bottom: 20px;
         h2{
-            display: flex;
+            @extend %flex;
             width: 100%;
             height: 70px;
-            color: rgb(0, 0, 0);
-            align-items: center;
-            justify-content: center;
+            color: rgb(0, 0, 0);;
             font-family: 'Lato', sans-serif;         
             font-size: 35px;
             font-weight: 700;
@@ -134,9 +132,7 @@ main{
                     img{
                         width: 215px;
                         height: 215px;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
+                        @extend %flex;
                         margin: top 0;
                         object-fit: cover;
                     }
@@ -225,9 +221,7 @@ main{
         div{
             width: 340px;
             height: auto;
-            justify-content: center;
-            align-items: center;
-            display: flex;
+            @extend %flex;
             flex-direction: column;
             margin: 12px;
             padding: 3px;
@@ -314,9 +308,7 @@ main{
         div{
             width: 340px;
             height: auto;
-            justify-content: center;
-            align-items: center;
-            display: flex;
+            @extend %flex;
             flex-direction: column;
             margin: 12px;
             padding: 3px;
@@ -403,12 +395,11 @@ main{
         div{
             width: 340px;
             height: auto;
-            justify-content: center;
-            align-items: center;
-            display: flex;
+            @extend %flex;
             flex-direction: column;
             margin: 12px;
             padding: 3px;
+            text-align: center;
             a{
                 text-decoration: none;
                 color: black;
@@ -427,7 +418,7 @@ main{
                     justify-content: center;
                     font-family: 'Lato', sans-serif;
                     font-size: 16px;
-                    width: 270px;
+                    width: auto;
                     height: 20px;
                     margin-top: 7px;
                 }
@@ -492,9 +483,7 @@ main{
         .imagenes-rebajas{
             width: 340px;
             height: auto;
-            justify-content: center;
-            align-items: center;
-            display: flex;
+            @extend %flex;
             margin: 12px;
             padding: 3px;
             a{
@@ -509,21 +498,25 @@ main{
                     height: 220px;
                     text-align: center;
                     justify-content: center;
-                h3{
+                    margin-bottom: 10px;
+                    }
+                .producto-rebaja{
                     text-align: center;
                     justify-content: center;
+                    align-items: center;
                     font-family: 'Lato', sans-serif;
-                    font-size: 10px;
+                    font-size: 16px;
                     width: 270px;
-                    height: 20px;
-                    margin-top: 7px;
-                }
+                    height: 16px;
+                    margin-top: 15px;
+                    }
                 div{
                     width: 250px;
                     height: 20px;
                     display: flex;
                     flex-direction: row;
                     margin-bottom: 5px;
+                    justify-content: center;                    
                     strong{
                         font-size: 15px;
                         margin: 3px;
@@ -536,8 +529,13 @@ main{
                         }
                     }
                 }
-            }   
+            }
+        .carousel-rebajas{
+            width: 350px;
+            height: 350px;
         }
     }
 }
+
+
 

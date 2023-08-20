@@ -1,108 +1,230 @@
-
-@media screen and (max-width:1000px) {
-    header{
-        h2{
-            div{
-                justify-content: space-between;
-            }
-        }
-    }
-}
-
-
-@media screen and (max-width:900px){
-    main{
-        .rebajas-img {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: center;
-            width: auto;
-            height: auto;
-            a{
-                .nuevas-rebajas{
-                    display: flex;
-                    flex-wrap: wrap;
-                    width: 400px;
-                    height: 400px;
-                }
-                .rebajas-60{
-                    display: none;
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width:750px) {
-    main{
-        .rebajas-img{
-            a{
-                .rebajas-60{
-                    display: none;
-                }
-                .nuevas-rebajas{
-                    display: flex;
-                    flex-wrap: wrap;
-                    width: 100%;
-                    height: 400px;
-                }
-            }
-        }
-    }
-}
-
 @media screen and (max-width:1400px) {
     main{
         .marcas{
             div{
-            width: auto;
-            height: 300px;
-            align-items: center;
-            justify-content: space-evenly;
-            a{
                 width: auto;
-                height: auto;
-                img{
-                    width: 120px;
-                    height: 95px;
+                height: 300px;
+                align-items: center;
+                justify-content: space-evenly;
+                a{
+                    width: auto;
+                    height: auto;
+                    img{
+                        width: 120px;
+                        height: 95px;
                     }
                 }   
             }
         } 
     }
 }
-
-@media screen and (max-width:800px) {
-    main{
-        .marcas{        
+@media screen and (max-width:1320px){
+    .calzado-pag{
+        .calzado-contenedor{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 50px;
             div{
+                width: 280px;
+                height: auto;
+                @extend %flex;
+                flex-direction: column;
+                margin: 12px;
+                padding: 3px;
                 a{
-                    .logo-converse {
-                        display:none;
+                    text-decoration: none;
+                    color: black;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    width: 250px;
+                    height: auto;
+                    img{
+                        width: 170px;
+                        height: 170px;
+                        text-align: center;
+                        justify-content: center;
                     }
-                } 
+                    h3{
+                        text-align: center;
+                        justify-content: center;
+                        font-family: 'Lato', sans-serif;
+                        font-size: 12px;
+                        width: 220px;
+                        height: 10px;
+                    }
+                    div{
+                        width: 200px;
+                        height: 16px;
+                        display: flex;
+                        flex-direction: row;
+                        margin-bottom: 5px;
+                        justify-content: center;
+                        strong{
+                            font-size: 12px;
+                        }
+                        del{
+                            font-size: 11px;
+                        }
+                    }
+                }
             }
         }
     }
-
-}
-
-@media screen and (max-width:500px) {
-    main{
-        .marcas{
+    .indumentaria-pag{
+        .indumentaria-contenedor{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 50px;
             div{
-                width: auto;
-                height: 150px;
-                align-items: center;
-                justify-content: space-evenly;
-                display: flex;
+                width: 280px;
+                height: auto;
+                @extend %flex;
                 flex-direction: column;
+                margin: 12px;
+                padding: 3px;
                 a{
+                    text-decoration: none;
+                    color: black;
+                    text-align: center;
+                    justify-content: center;
+                    width: 250px;
+                    height: auto;
                     img{
-                        width: 85px;
-                        height: 75px;
-                        margin: 12px;
+                        width: 170px;
+                        height: 170px;
+                        text-align: center;
+                        justify-content: center;
+                    }
+                    h3{
+                        text-align: center;
+                        justify-content: center;
+                        font-family: 'Lato', sans-serif;
+                        font-size: 12px;
+                        width: 220px;
+                        height: 10px;
+                    }
+                    div{
+                        width: 200px;
+                        height: 16px;
+                        display: flex;
+                        flex-direction: row;
+                        margin-bottom: 5px;
+                        strong{
+                            font-size: 12px;
+                        }
+                        del{
+                            font-size: 11px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .rebajas-pag{
+        .rebajas-contenedor{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 50px;
+            .imagenes-rebajas{
+                width: 280px;
+                height: auto;
+                @extend %flex;
+                flex-direction: column;
+                margin: 12px;
+                padding: 3px;
+                a{
+                    text-decoration: none;
+                    color: black;
+                    text-align: center;
+                    justify-content: center;
+                    width: 250px;
+                    height: auto;
+                    img{
+                        width: 170px;
+                        height: 170px;
+                        text-align: center;
+                        justify-content: center;
+                    }
+                    .producto-rebaja{
+                        text-align: center;
+                        justify-content: center;
+                        font-family: 'Lato', sans-serif;
+                        font-size: 12px;
+                        width: 220px;
+                        height: 10px;
+                    }
+                    div{
+                        width: 200px;
+                        height: 16px;
+                        display: flex;
+                        flex-direction: row;
+                        margin-bottom: 5px;
+                        justify-content: center;
+                        strong{
+                            font-size: 12px;
+                        }
+                        del{
+                            font-size: 11px;
+                        }
+                    }
+                }
+            }            
+        }
+        }
+    .accesorios-pag{
+        .accesorios-contenedor{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 50px;
+            div{
+                width: 280px;
+                height: auto;
+                @extend %flex;
+                flex-direction: column;
+                margin: 12px;
+                padding: 3px;
+                a{
+                    text-decoration: none;
+                    color: black;
+                    text-align: center;
+                    justify-content: center;
+                    width: 250px;
+                    height: auto;
+                    img{
+                        width: 170px;
+                        height: 170px;
+                        text-align: center;
+                        justify-content: center;
+                    }
+                    h3{
+                        text-align: center;
+                        justify-content: center;
+                        font-family: 'Lato', sans-serif;
+                        font-size: 12px;
+                        width: 220px;
+                        height: 10px;
+                    }
+                    div{
+                        width: 200px;
+                        height: 16px;
+                        display: flex;
+                        flex-direction: row;
+                        margin-bottom: 5px;
+                        strong{
+                            font-size: 12px;
+                        }
+                        del{
+                            font-size: 11px;
+                        }
                     }
                 }
             }
@@ -131,6 +253,7 @@
                             margin-top: 10px;
                         }
                         h3{
+                            font-family: 'Lato', sans-serif;
                             margin: 10px 10px 10px 10px;
                             font-size: 12px;
                             width:  180px;
@@ -147,6 +270,292 @@
                     }
                 }
             }
+        }
+    }
+}
+
+@media screen and (max-width:1200px){
+    main{   
+        .moda {
+            margin-top: 40px;
+            display: flex;
+            flex-wrap: wrap;
+            .moda-contenedor{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 5px;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                div{
+                    height: 320px;
+                    margin-bottom: 5px;
+                    justify-content: center;
+                    align-items: center;
+                    width: auto;
+                    a{
+                        justify-content: center;
+                        align-items: center;
+                        img{
+                            height: 190px;
+                            width: 190px;
+                        }
+                        h3{
+                            font-family: 'Lato', sans-serif;
+                            text-align: center;
+                            font-size: 14px;
+                            height: 30px;
+                        }
+                    }
+                }
+                div:nth-child(4){
+                    display: none;
+                }
+            }
+        }
+    }
+    main{
+        .disciplinas{
+            .disciplinas-contenedor{
+                div{
+                    width: 380px;
+                    height: 240px;
+                    a{
+                        @extend %flex;
+                        flex-wrap: wrap;
+                        img{
+                            display: flex;
+                            width: 380px;
+                            height: 240px;
+                            flex-wrap: wrap;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1100px){
+    .calzado-pag{
+        .calzado-contenedor{
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 50px;
+            div{
+                width: 170px;
+                height: auto;
+                @extend %flex;
+                flex-direction: column;
+                margin: 12px;
+                padding: 3px;
+                a{
+                    text-decoration: none;
+                    color: black;
+                    text-align: center;
+                    justify-content: center;
+                    width: 170px;
+                    height: auto;
+                    img{
+                        width: 130px;
+                        height: 130px;
+                    }
+                    h3{
+                        font-family: 'Lato', sans-serif;
+                        text-align: center;
+                        justify-content: center;
+                        font-size: 11px;
+                        width: 165px;
+                        height: 10px;
+                    }
+                    div{
+                        width: 165px;
+                        height: 10px;
+                        display: flex;
+                        flex-direction: row;
+                        strong{
+                            font-size: 8px;
+                            margin: 2px;
+                            margin-top: 5px;
+                        }
+                        del{
+                            font-size: 9px;
+                            margin: 2px;
+                            margin-top: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .indumentaria-pag{
+        .indumentaria-contenedor{
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 50px;
+            div{
+                width: 170px;
+                height: auto;
+                @extend %flex;
+                flex-direction: column;
+                margin: 12px;
+                padding: 3px;
+                a{
+                    text-decoration: none;
+                    color: black;
+                    text-align: center;
+                    justify-content: center;
+                    width: 170px;
+                    height: auto;
+                    img{
+                        width: 130px;
+                        height: 130px;
+                    }
+                    h3{
+                        font-family: 'Lato', sans-serif;
+                        text-align: center;
+                        justify-content: center;
+                        font-size: 11px;
+                        width: 165px;
+                        height: 10px;
+                    }
+                    div{
+                        width: 165px;
+                        height: 10px;
+                        display: flex;
+                        flex-direction: row;
+                        strong{
+                            font-size: 9px;
+                            margin: 2px;
+                            margin-top: 5px;
+                        }
+                        del{
+                            font-size: 8px;
+                            margin: 2px;
+                            margin-top: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .accesorios-pag{
+        .accesorios-contenedor{
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 50px;
+            div{
+                width: 170px;
+                height: auto;
+                @extend %flex;
+                flex-direction: column;
+                margin: 12px;
+                padding: 3px;
+                a{
+                    text-decoration: none;
+                    color: black;
+                    text-align: center;
+                    justify-content: center;
+                    width: 170px;
+                    height: auto;
+                    img{
+                        width: 130px;
+                        height: 130px;
+                    }
+                    h3{
+                        font-family: 'Lato', sans-serif;
+                        text-align: center;
+                        justify-content: center;
+                        font-size: 11px;
+                        width: 165px;
+                        height: 10px;
+                    }
+                    div{
+                        width: 165px;
+                        height: 10px;
+                        display: flex;
+                        flex-direction: row;
+                        strong{
+                            font-size: 9px;
+                            margin: 2px;
+                            margin-top: 5px;
+                        }
+                        del{
+                            font-size: 8px;
+                            margin: 2px;
+                            margin-top: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .rebajas-pag{
+        .rebajas-contenedor{
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 50px;
+            .imagenes-rebajas{
+                width: 170px;
+                height: auto;
+                @extend %flex;
+                flex-direction: column;
+                margin: 12px;
+                padding: 3px;
+                a{
+                    text-decoration: none;
+                    color: black;
+                    text-align: center;
+                    justify-content: center;
+                    width: 200;
+                    height: auto;
+                    img{
+                        width: 130px;
+                        height: 130px;
+                    }
+                    .producto-rebaja{
+                        font-family: 'Lato', sans-serif;
+                        text-align: center;
+                        justify-content: center;
+                        font-size: 11px;
+                        width: 165px;
+                    }
+                    div{
+                        margin-top: 5px;
+                        width: 165px;
+                        height: 15px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        strong{
+                            font-size: 9px;
+                            margin: 2px;
+                            margin-top: 5px;
+                        }
+                        del{
+                            font-size: 9px;
+                            margin: 2px;
+                            margin-top: 5px;
+                        }
+                    }
+                }
+            }
+            .carousel-rebajas{
+                width: 230px;
+                height: 230px;
+            } 
         }
     }
 }
@@ -176,6 +585,7 @@
                             margin-top: 10px;
                         }
                         h3{
+                            font-family: 'Lato', sans-serif;
                             margin: 10px 10px 10px 10px;
                             font-size: 14px;
                             width: auto;
@@ -194,152 +604,6 @@
             }
         }
     }
-}
-
-
-@media screen and (max-width:1200px){
-main{   
-    .moda {
-        margin-top: 40px;
-        display: flex;
-        flex-wrap: wrap;
-        .moda-contenedor{
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 5px;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            div{
-                height: 320px;
-                margin-bottom: 5px;
-                justify-content: center;
-                align-items: center;
-                width: auto;
-                a{
-                    justify-content: center;
-                    align-items: center;
-                    img{
-                        height: 190px;
-                        width: 190px;
-                    }
-                    h3{
-                        text-align: center;
-                        font-size: 14px;
-                        height: 30px;
-                    }
-                }
-            }
-            div:nth-child(4){
-                display: none;
-            }
-        }
-    }
-}
-}            
-
-@media screen and (max-width:500px){
-main{
-    .moda {
-        margin-top: 20px;
-        display: flex;
-        flex-wrap: wrap;
-        .moda-contenedor{
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 5px;
-            align-items: center;
-            div{
-                height: 250px;
-                justify-content: center;
-                align-items: center;
-                margin-bottom: 20px;
-                a{
-                    justify-content: center;
-                    align-items: center;
-                    width: auto;
-                    height: auto;
-                    h3{
-                        width: 140px;
-                        height: 50px;
-                        margin-bottom: 3px;
-                    }
-                    img{
-                        height: 120px;
-                        width: 120px;
-                        align-items: center;
-                        margin: 10px;
-                    }
-                }
-            }
-            div:nth-child(4){
-                display: none;
-                div{
-                    width: auto;
-                    h3{
-                        font-size: 13px;
-                    }
-                }
-                strong{
-                    font-size: 13px;
-                    justify-content: center;
-                    align-items: center;
-                }
-            }
-        }
-    }
-}    
-}
-
-@media screen and (max-width:1200px) {
-main{
-    .disciplinas{
-        .disciplinas-contenedor{
-            div{
-                width: 380px;
-                height: 240px;
-                a{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    flex-wrap: wrap;
-                    img{
-                        display: flex;
-                        width: 380px;
-                        height: 240px;
-                        flex-wrap: wrap;
-                    }
-                }
-            }
-        }
-    }
-}
-}    
-
-@media screen and (max-width:850px){
-main{
-    .disciplinas{
-        .disciplinas-contenedor{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            div{
-                a{
-                    gap: 5px;
-                    img{
-                        width: 340px;
-                        height: 210px;
-                        padding: 5px;
-                    }
-                }
-            }
-        }
-    }
-}    
-}
-
-@media screen and (max-width: 1050px){
     footer{
         display: flex;
         flex-direction: column;
@@ -355,6 +619,17 @@ main{
         }
         .redes{
             margin-top: 20px;
+        }
+    }
+}
+
+@media screen and (max-width:1000px) {
+    header{
+        h2{
+            font-family: 'Lato', sans-serif;
+            div{
+                justify-content: space-between;
+            }
         }
     }
 }
@@ -390,6 +665,120 @@ main{
             height: 150px;
         }
     }
+    .rebajas-pag{
+        .rebajas-contenedor{
+            .carousel-rebajas{
+                width: 250px;
+                height: 250px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:990px) {
+    .calzado-pag{
+        .calzado-filtro{
+            display: none;
+        }
+    }
+    .indumentaria-pag{
+        .indumentaria-filtro{
+            display: none;
+        }
+    }
+    .accesorios-pag{
+        .accesorios-filtro{
+            display: none;
+        }
+    }
+    .rebajas-pag{
+        .rebajas-filtro{
+            display: none;
+        }
+        .rebajas-contenedor{
+            .carousel-rebajas{
+                width: 200px;
+                height: 200px;
+            }
+        }
+    }    
+}
+
+@media screen and (max-width:900px){
+    main{
+        .rebajas-img {
+            @extend %flex;
+            flex-wrap: wrap;
+            width: auto;
+            height: auto;
+            a{
+                .nuevas-rebajas{
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 500px;
+                    height: 500px;
+                }
+                .rebajas-60{
+                    display: none;
+                    
+                }
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width:850px){
+    main{
+        .disciplinas{
+            .disciplinas-contenedor{
+                @extend %flex;
+                flex-direction: column;
+                div{
+                    a{
+                        gap: 5px;
+                        img{
+                            width: 340px;
+                            height: 210px;
+                            padding: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }    
+}
+
+@media screen and (max-width:800px) {
+    main{
+        .marcas{        
+            div{
+                a{
+                    .logo-converse {
+                        display:none;
+                    }
+                } 
+            }
+        }
+    }
+}
+
+@media screen and (max-width:750px) {
+    main{
+        .rebajas-img{
+            a{
+                .rebajas-60{
+                    display: none;
+                }
+                .nuevas-rebajas{
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 100%;
+                    height: 400px;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width:700px){
@@ -400,6 +789,7 @@ main{
             text-align: center;
             .suscripcion-titulo{
                 h2{
+                    font-family: 'Lato', sans-serif;
                     font-size: 16px;
                     width: auto;
                 }
@@ -407,11 +797,9 @@ main{
             .suscripcion-mail{
                 form{
                     ul{
-                        display: flex;
+                        @extend %flex;
                         flex-direction: column;
                         list-style: none;
-                        align-items: center;
-                        justify-content: center;
                         width: 400px;
                         margin: 0;
                         padding: 0;
@@ -442,6 +830,7 @@ main{
         .footer-contenedor{
             div{
                 h3{
+                    font-family: 'Lato', sans-serif;
                     font-size: 17px;
                 }
             }
@@ -449,6 +838,7 @@ main{
                 li{
                     a{
                         p{
+                            font-family: 'Lato', sans-serif;
                             font-size: 11px;
                         }
                     }
@@ -457,6 +847,319 @@ main{
         }
     }
 }
+
+
+@media screen and (max-width:600px){
+    .calzado-pag{
+        .calzado-contenedor{
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+            div{
+                width: 103px;
+                height: auto;
+                @extend %flex;
+                flex-direction: column;
+                margin: 6px;
+                padding: 1px;
+                a{
+                    text-decoration: none;
+                    color: black;
+                    text-align: center;
+                    justify-content: center;
+                    width: 75px;
+                    height: auto;
+                    img{
+                        width: 75px;
+                        height: 75px;
+                        text-align: center;
+                        justify-content: center;
+                    }
+                    h3{
+                        text-align: center;
+                        justify-content: center;
+                        font-size: 7px;
+                        width: 75px;
+                    }
+                    div{
+                        font-family: 'Lato', sans-serif;
+                        width: 75px;
+                        display: flex;
+                        flex-direction: row;
+                        margin-bottom: 5px;
+                        margin-top: 15px;
+                        strong{
+                            font-size: 6px;
+                            margin: 2px;
+                            margin-top: 6px;
+                        }
+                        del{
+                            font-size: 6px;
+                            margin: 2px;
+                            margin-top: 6px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width:600px){
+    .indumentaria-pag{
+        .indumentraria-contenedor{
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+            div{
+                width: 103px;
+                height: auto;
+                @extend %flex;
+                flex-direction: column;
+                margin: 6px;
+                padding: 1px;
+                a{
+                    text-decoration: none;
+                    color: black;
+                    text-align: center;
+                    justify-content: center;
+                    width: 75px;
+                    height: auto;
+                    img{
+                        width: 75px;
+                        height: 75px;
+                        text-align: center;
+                        justify-content: center;
+                    }
+                    h3{
+                        font-family: 'Lato', sans-serif;
+                        text-align: center;
+                        justify-content: center;
+                        font-size: 7px;
+                        width: 75px;
+                    }
+                    div{
+                        width: 75px;
+                        display: flex;
+                        flex-direction: row;
+                        margin-bottom: 5px;
+                        margin-top: 15px;
+                        strong{
+                            font-size: 6px;
+                            margin: 2px;
+                            margin-top: 6px;
+                        }
+                        del{
+                            font-size: 6px;
+                            margin: 2px;
+                            margin-top: 6px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:600px){
+    .accesorios-pag{
+        .accesorios-contenedor{
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+            div{
+                width: 103px;
+                height: auto;
+                @extend %flex;
+                flex-direction: column;
+                margin: 6px;
+                padding: 1px;
+                a{
+                    text-decoration: none;
+                    color: black;
+                    text-align: center;
+                    justify-content: center;
+                    width: 75px;
+                    height: auto;
+                    img{
+                        width: 75px;
+                        height: 75px;
+                        text-align: center;
+                        justify-content: center;
+                    }
+                    h3{
+                        font-family: 'Lato', sans-serif;
+                        text-align: center;
+                        justify-content: center;
+                        font-size: 7px;
+                        width: 75px;
+                    }
+                    div{
+                        width: 75px;
+                        display: flex;
+                        flex-direction: row;
+                        margin-bottom: 5px;
+                        margin-top: 15px;
+                        strong{
+                            font-size: 6px;
+                            margin: 2px;
+                            margin-top: 6px;
+                        }
+                        del{
+                            font-size: 6px;
+                            margin: 2px;
+                            margin-top: 6px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .rebajas-pag{
+        .rebajas-contenedor{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+            .imagenes-rebajas{
+                width: 103px;
+                height: auto;
+                @extend %flex;
+                flex-direction: column;
+                margin: 6px;
+                padding: 1px;
+                a{
+                    text-decoration: none;
+                    color: black;
+                    text-align: center;
+                    justify-content: center;
+                    width: 75px;
+                    height: auto;
+                    img{
+                        width: 75px;
+                        height: 75px;
+                        text-align: center;
+                        justify-content: center;
+                    }
+                    .producto-rebaja{
+                        font-family: 'Lato', sans-serif;
+                        text-align: center;
+                        justify-content: center;
+                        font-size: 7px;
+                        width: 75px;
+                    }
+                    div{
+                        width: 75px;
+                        display: flex;
+                        flex-direction: row;
+                        margin-bottom: 5px;
+                        margin-top: 15px;
+                        justify-content: center;
+                        strong{
+                            font-size: 6px;
+                            margin: 2px;
+                            margin-top: 6px;
+                        }
+                        del{
+                            font-size: 6px;
+                            margin: 2px;
+                            margin-top: 6px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:500px) {
+    main{
+        .marcas{
+            div{
+                width: auto;
+                height: 150px;
+                align-items: center;
+                justify-content: space-evenly;
+                display: flex;
+                flex-direction: column;
+                a{
+                    img{
+                        width: 85px;
+                        height: 75px;
+                        margin: 12px;
+                    }
+                }
+            }
+        }
+        .moda {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            .moda-contenedor{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 5px;
+                align-items: center;
+                div{
+                    height: 250px;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 20px;
+                    a{
+                        justify-content: center;
+                        align-items: center;
+                        width: auto;
+                        height: auto;
+                        h3{
+                            font-family: 'Lato', sans-serif;
+                            width: 140px;
+                            height: 50px;
+                            margin-bottom: 3px;
+                        }
+                        img{
+                            height: 120px;
+                            width: 120px;
+                            align-items: center;
+                            margin: 10px;
+                        }
+                    }
+                }
+                div:nth-child(4){
+                    display: none;
+                    div{
+                        width: auto;
+                        h3{
+                            font-size: 13px;
+                        }
+                    }
+                    strong{
+                        font-size: 13px;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
 
 @media screen and (max-width:480px){
     footer{
@@ -474,11 +1177,9 @@ main{
             .suscripcion-mail{
                 form{
                     ul{
-                        display: flex;
+                        @extend %flex;
                         flex-direction: column;
                         list-style: none;
-                        align-items: center;
-                        justify-content: center;
                         width: 300px;
                         margin: 0;
                         padding: 0;
@@ -530,6 +1231,7 @@ main{
                 margin-bottom: 4px;
                 padding: 0;
                 h3{
+                    font-family: 'Lato', sans-serif;
                     font-size: 11px;
                     width: 100%;
                     height: auto;
@@ -564,6 +1266,7 @@ main{
         .footer-contenedor{
             .redes{
                 h3{
+                    font-family: 'Lato', sans-serif;
                     font-size: 11px;
                     text-align: center;
                 }
@@ -579,9 +1282,7 @@ main{
                 }
                 div{
                     grid-area: "footer";
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
+                    @extend %flex;
                     align-items: start;
                     width: auto;
                     height: 240px;
@@ -595,744 +1296,6 @@ main{
     }
 }
 
-@media screen and (max-width:990px) {
-    .calzado-pag{
-        .calzado-catalogo{
-            display: none;
-        }
-    }
-}
-
-@media screen and (max-width:1320px) {
-    .calzado-pag{
-        .calzado-contenedor{
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-bottom: 50px;
-            div{
-                width: 280px;
-                height: auto;
-                justify-content: center;
-                align-items: center;
-                display: flex;
-                flex-direction: column;
-                margin: 12px;
-                padding: 3px;
-                a{
-                    text-decoration: none;
-                    color: black;
-                    text-align: center;
-                    justify-content: center;
-                    width: 250px;
-                    height: auto;
-                    img{
-                        width: 170px;
-                        height: 170px;
-                        text-align: center;
-                        justify-content: center;
-                    }
-                    h3{
-                        text-align: center;
-                        justify-content: center;
-                        font-size: 12px;
-                        width: 220px;
-                        height: 10px;
-                    }
-                    div{
-                        width: 200px;
-                        height: 16px;
-                        display: flex;
-                        flex-direction: row;
-                        margin-bottom: 5px;
-                        strong{
-                            font-size: 12px;
-                        }
-                        del{
-                            font-size: 11px;
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-}
-
-@media screen and (max-width:1100px){
-    .calzado-pag{
-        .calzado-contenedor{
-            width: 100%;
-            height: auto;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-bottom: 50px;
-            div{
-                width: 170px;
-                height: auto;
-                justify-content: center;
-                align-items: center;
-                display: flex;
-                flex-direction: column;
-                margin: 12px;
-                padding: 3px;
-                a{
-                    text-decoration: none;
-                    color: black;
-                    text-align: center;
-                    justify-content: center;
-                    width: 170px;
-                    height: auto;
-                    img{
-                        width: 130px;
-                        height: 130px;
-                    }
-                    h3{
-                        text-align: center;
-                        justify-content: center;
-                        font-size: 8px;
-                        width: 165px;
-                        height: 10px;
-                    }
-                    div{
-                        width: 165px;
-                        height: 10px;
-                        display: flex;
-                        flex-direction: row;
-                        strong{
-                            font-size: 8px;
-                            margin: 2px;
-                            margin-top: 5px;
-                        }
-                        del{
-                            font-size: 8px;
-                            margin: 2px;
-                            margin-top: 5px;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width:600px){
-    .calzado-pag{
-        .calzado-contenedor{
-            width: 100%;
-            height: auto;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-bottom: 30px;
-            div{
-                width: 103px;
-                height: auto;
-                justify-content: center;
-                align-items: center;
-                display: flex;
-                flex-direction: column;
-                margin: 6px;
-                padding: 1px;
-                a{
-                    text-decoration: none;
-                    color: black;
-                    text-align: center;
-                    justify-content: center;
-                    width: 75px;
-                    height: auto;
-                    img{
-                        width: 75px;
-                        height: 75px;
-                        text-align: center;
-                        justify-content: center;
-                    }
-                    h3{
-                        text-align: center;
-                        justify-content: center;
-                        font-size: 7px;
-                        width: 75px;
-                    }
-                    div{
-                        width: 75px;
-                        display: flex;
-                        flex-direction: row;
-                        margin-bottom: 5px;
-                        margin-top: 15px;
-                        strong{
-                            font-size: 6px;
-                            margin: 2px;
-                            margin-top: 6px;
-                        }
-                        del{
-                            font-size: 6px;
-                            margin: 2px;
-                            margin-top: 6px;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width:990px) {
-    .indumentaria-pag{
-        .indumentaria-filtro{
-            display: none;
-        }
-    }
-}
-
-@media screen and (max-width:1320px) {
-    .indumentaria-pag{
-        .indumentaria-contenedor{
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-bottom: 50px;
-            div{
-                width: 280px;
-                height: auto;
-                justify-content: center;
-                align-items: center;
-                display: flex;
-                flex-direction: column;
-                margin: 12px;
-                padding: 3px;
-                a{
-                    text-decoration: none;
-                    color: black;
-                    text-align: center;
-                    justify-content: center;
-                    width: 250px;
-                    height: auto;
-                    img{
-                        width: 170px;
-                        height: 170px;
-                        text-align: center;
-                        justify-content: center;
-                    }
-                    h3{
-                        text-align: center;
-                        justify-content: center;
-                        font-size: 12px;
-                        width: 220px;
-                        height: 10px;
-                    }
-                    div{
-                        width: 200px;
-                        height: 16px;
-                        display: flex;
-                        flex-direction: row;
-                        margin-bottom: 5px;
-                        strong{
-                            font-size: 12px;
-                        }
-                        del{
-                            font-size: 11px;
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-}
-
-@media screen and (max-width:1100px){
-    .indumentaria-pag{
-        .indumentaria-contenedor{
-            width: 100%;
-            height: auto;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-bottom: 50px;
-            div{
-                width: 170px;
-                height: auto;
-                justify-content: center;
-                align-items: center;
-                display: flex;
-                flex-direction: column;
-                margin: 12px;
-                padding: 3px;
-                a{
-                    text-decoration: none;
-                    color: black;
-                    text-align: center;
-                    justify-content: center;
-                    width: 170px;
-                    height: auto;
-                    img{
-                        width: 130px;
-                        height: 130px;
-                    }
-                    h3{
-                        text-align: center;
-                        justify-content: center;
-                        font-size: 8px;
-                        width: 165px;
-                        height: 10px;
-                    }
-                    div{
-                        width: 165px;
-                        height: 10px;
-                        display: flex;
-                        flex-direction: row;
-                        strong{
-                            font-size: 8px;
-                            margin: 2px;
-                            margin-top: 5px;
-                        }
-                        del{
-                            font-size: 8px;
-                            margin: 2px;
-                            margin-top: 5px;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width:600px){
-    .indumentaria-pag{
-        .indumentraria-contenedor{
-            width: 100%;
-            height: auto;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-bottom: 30px;
-            div{
-                width: 103px;
-                height: auto;
-                justify-content: center;
-                align-items: center;
-                display: flex;
-                flex-direction: column;
-                margin: 6px;
-                padding: 1px;
-                a{
-                    text-decoration: none;
-                    color: black;
-                    text-align: center;
-                    justify-content: center;
-                    width: 75px;
-                    height: auto;
-                    img{
-                        width: 75px;
-                        height: 75px;
-                        text-align: center;
-                        justify-content: center;
-                    }
-                    h3{
-                        text-align: center;
-                        justify-content: center;
-                        font-size: 7px;
-                        width: 75px;
-                    }
-                    div{
-                        width: 75px;
-                        display: flex;
-                        flex-direction: row;
-                        margin-bottom: 5px;
-                        margin-top: 15px;
-                        strong{
-                            font-size: 6px;
-                            margin: 2px;
-                            margin-top: 6px;
-                        }
-                        del{
-                            font-size: 6px;
-                            margin: 2px;
-                            margin-top: 6px;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width:990px) {
-    .accesorios-pag{
-        .accesorios-filtro{
-            display: none;
-        }
-    }
-}
-
-@media screen and (max-width:1320px) {
-    .accesorios-pag{
-        .accesorios-contenedor{
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-bottom: 50px;
-            div{
-                width: 280px;
-                height: auto;
-                justify-content: center;
-                align-items: center;
-                display: flex;
-                flex-direction: column;
-                margin: 12px;
-                padding: 3px;
-                a{
-                    text-decoration: none;
-                    color: black;
-                    text-align: center;
-                    justify-content: center;
-                    width: 250px;
-                    height: auto;
-                    img{
-                        width: 170px;
-                        height: 170px;
-                        text-align: center;
-                        justify-content: center;
-                    }
-                    h3{
-                        text-align: center;
-                        justify-content: center;
-                        font-size: 12px;
-                        width: 220px;
-                        height: 10px;
-                    }
-                    div{
-                        width: 200px;
-                        height: 16px;
-                        display: flex;
-                        flex-direction: row;
-                        margin-bottom: 5px;
-                        strong{
-                            font-size: 12px;
-                        }
-                        del{
-                            font-size: 11px;
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-}
 
 
-@media screen and (max-width:1100px){
-    .accesorios-pag{
-        .accesorios-contenedor{
-            width: 100%;
-            height: auto;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-bottom: 50px;
-            div{
-                width: 170px;
-                height: auto;
-                justify-content: center;
-                align-items: center;
-                display: flex;
-                flex-direction: column;
-                margin: 12px;
-                padding: 3px;
-                a{
-                    text-decoration: none;
-                    color: black;
-                    text-align: center;
-                    justify-content: center;
-                    width: 170px;
-                    height: auto;
-                    img{
-                        width: 130px;
-                        height: 130px;
-                    }
-                    h3{
-                        text-align: center;
-                        justify-content: center;
-                        font-size: 8px;
-                        width: 165px;
-                        height: 10px;
-                    }
-                    div{
-                        width: 165px;
-                        height: 10px;
-                        display: flex;
-                        flex-direction: row;
-                        strong{
-                            font-size: 8px;
-                            margin: 2px;
-                            margin-top: 5px;
-                        }
-                        del{
-                            font-size: 8px;
-                            margin: 2px;
-                            margin-top: 5px;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
 
-@media screen and (max-width:600px){
-    .accesorios-pag{
-        .accesorios-contenedor{
-            width: 100%;
-            height: auto;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-bottom: 30px;
-            div{
-                width: 103px;
-                height: auto;
-                justify-content: center;
-                align-items: center;
-                display: flex;
-                flex-direction: column;
-                margin: 6px;
-                padding: 1px;
-                a{
-                    text-decoration: none;
-                    color: black;
-                    text-align: center;
-                    justify-content: center;
-                    width: 75px;
-                    height: auto;
-                    img{
-                        width: 75px;
-                        height: 75px;
-                        text-align: center;
-                        justify-content: center;
-                    }
-                    h3{
-                        text-align: center;
-                        justify-content: center;
-                        font-size: 7px;
-                        width: 75px;
-                    }
-                    div{
-                        width: 75px;
-                        display: flex;
-                        flex-direction: row;
-                        margin-bottom: 5px;
-                        margin-top: 15px;
-                        strong{
-                            font-size: 6px;
-                            margin: 2px;
-                            margin-top: 6px;
-                        }
-                        del{
-                            font-size: 6px;
-                            margin: 2px;
-                            margin-top: 6px;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width:990px) {
-    .rebajas-pag{
-        .rebajas-filtro{
-            display: none;
-        }
-    }
-}
-
-@media screen and (max-width:1320px) {
-    .rebajas-pag{
-        .rebajas-contenedor{
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-bottom: 50px;
-            .imagenes-rebajas{
-                width: 280px;
-                height: auto;
-                justify-content: center;
-                align-items: center;
-                display: flex;
-                flex-direction: column;
-                margin: 12px;
-                padding: 3px;
-                a{
-                    text-decoration: none;
-                    color: black;
-                    text-align: center;
-                    justify-content: center;
-                    width: 250px;
-                    height: auto;
-                    img{
-                        width: 170px;
-                        height: 170px;
-                        text-align: center;
-                        justify-content: center;
-                    }
-                    h3{
-                        text-align: center;
-                        justify-content: center;
-                        font-size: 12px;
-                        width: 220px;
-                        height: 10px;
-                    }
-                    div{
-                        width: 200px;
-                        height: 16px;
-                        display: flex;
-                        flex-direction: row;
-                        margin-bottom: 5px;
-                        strong{
-                            font-size: 12px;
-                        }
-                        del{
-                            font-size: 11px;
-                        }
-                    }
-                }
-            }
-            .carousel-rebajas{
-                div{
-
-                    div{
-                        width: 250px;
-                        height: 250px;
-                    }
-                }
-            }
-        }
-    }
-
-}
-
-@media screen and (max-width:1100px){
-    .rebajas-pag{
-        .rebajas-contenedor{
-            width: 100%;
-            height: auto;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-bottom: 50px;
-            .imagenes-rebajas{
-                width: 170px;
-                height: auto;
-                justify-content: center;
-                align-items: center;
-                display: flex;
-                flex-direction: column;
-                margin: 12px;
-                padding: 3px;
-                a{
-                    text-decoration: none;
-                    color: black;
-                    text-align: center;
-                    justify-content: center;
-                    width: 170px;
-                    height: auto;
-                    img{
-                        width: 130px;
-                        height: 130px;
-                    }
-                    h3{
-                        text-align: center;
-                        justify-content: center;
-                        font-size: 8px;
-                        width: 165px;
-                        height: 10px;
-                    }
-                    div{
-                        width: 165px;
-                        height: 10px;
-                        display: flex;
-                        flex-direction: row;
-                        strong{
-                            font-size: 8px;
-                            margin: 2px;
-                            margin-top: 5px;
-                        }
-                        del{
-                            font-size: 8px;
-                            margin: 2px;
-                            margin-top: 5px;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width:600px){
-    .rebajas-pag{
-        .rebajas-contenedor{
-            width: 100%;
-            height: auto;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-bottom: 30px;
-            .imagenes-rebajas{
-                width: 103px;
-                height: auto;
-                justify-content: center;
-                align-items: center;
-                display: flex;
-                flex-direction: column;
-                margin: 6px;
-                padding: 1px;
-                a{
-                    text-decoration: none;
-                    color: black;
-                    text-align: center;
-                    justify-content: center;
-                    width: 75px;
-                    height: auto;
-                    img{
-                        width: 75px;
-                        height: 75px;
-                        text-align: center;
-                        justify-content: center;
-                    }
-                    h3{
-                        text-align: center;
-                        justify-content: center;
-                        font-size: 7px;
-                        width: 75px;
-                    }
-                    div{
-                        width: 75px;
-                        display: flex;
-                        flex-direction: row;
-                        margin-bottom: 5px;
-                        margin-top: 15px;
-                        strong{
-                            font-size: 6px;
-                            margin: 2px;
-                            margin-top: 6px;
-                        }
-                        del{
-                            font-size: 6px;
-                            margin: 2px;
-                            margin-top: 6px;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}

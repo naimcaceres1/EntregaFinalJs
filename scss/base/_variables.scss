@@ -1,3 +1,25 @@
+
+//*COLORES
+
 $color-primario:black;
 $color-secundario:white;
 $color-tercierario: #FF2931;
+
+
+//*MAPAS
+
+$boton:(
+    bg-boton: #FF2931,
+    border-boton: 1px solid black,
+    color-text: black,
+);
+
+
+//*EXTEND
+
+%flex{    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
