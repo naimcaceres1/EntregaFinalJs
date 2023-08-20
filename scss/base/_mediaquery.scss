@@ -82,7 +82,7 @@
             justify-content: center;
             flex-wrap: wrap;
             margin-bottom: 50px;
-            div{
+            .indumentaria-productos{
                 width: 280px;
                 height: auto;
                 display: flex;
@@ -112,7 +112,7 @@
                         width: 220px;
                         height: 10px;
                     }
-                    div{
+                    .precios-contenedor{
                         width: 200px;
                         height: 16px;
                         display: flex;
@@ -411,12 +411,13 @@
             justify-content: center;
             flex-wrap: wrap;
             margin-bottom: 50px;
-            div{
+            .indumentaria-productos{
                 width: 170px;
                 display: flex;
-                justify-content: center;
                 align-items: center;
+                justify-content: center;
                 flex-direction: column;
+                text-align: center;
                 margin: 12px;
                 padding: 3px;
                 a{
@@ -438,11 +439,12 @@
                         width: 165px;
                         height: 10px;
                     }
-                    div{
+                    .precios-contenedor{
                         width: 165px;
                         height: 10px;
                         display: flex;
                         flex-direction: row;
+
                         strong{
                             font-size: 9px;
                             margin: 2px;
@@ -937,7 +939,7 @@
 
 @media screen and (max-width:600px){
     .indumentaria-pag{
-        .indumentraria-contenedor{
+        .indumentaria-contenedor{
             width: 100%;
             height: auto;
             display: flex;
@@ -1061,7 +1063,6 @@
             width: 100%;
             height: auto;
             display: flex;
-            flex-direction: column;
             justify-content: center;
             flex-wrap: wrap;
             margin-bottom: 30px;
