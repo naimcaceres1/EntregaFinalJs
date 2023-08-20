@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500&family=Catamaran:wght@700&family=Lato:wght@300;400;700&family=Russo+One&family=Signika:wght@700&display=swap");
-header h2, main .recomendados h2, main .moda .moda-contenedor div a img, .calzado-pag .calzado-contenedor div, .indumentaria-pag .indumentaria-contenedor div, .accesorios-pag .accesorios-contenedor div, .rebajas-pag .rebajas-contenedor .imagenes-rebajas, footer .suscripcion .suscripcion-mail {
+header h2, main .recomendados h2, main .moda .moda-contenedor div a img, .calzado-pag .calzado-contenedor div, .indumentaria-pag .indumentaria-contenedor .indumentaria-productos, .accesorios-pag .accesorios-contenedor div, .rebajas-pag .rebajas-contenedor .imagenes-rebajas, footer .suscripcion .suscripcion-mail {
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -300,25 +300,25 @@ main .disciplinas .disciplinas-contenedor {
     justify-content: center;
     flex-wrap: wrap;
     margin-bottom: 50px; }
-    .indumentaria-pag .indumentaria-contenedor div {
+    .indumentaria-pag .indumentaria-contenedor .indumentaria-productos {
       width: 340px;
       height: auto;
       flex-direction: column;
       margin: 12px;
       padding: 3px; }
-      .indumentaria-pag .indumentaria-contenedor div a {
+      .indumentaria-pag .indumentaria-contenedor .indumentaria-productos a {
         text-decoration: none;
         color: black;
         text-align: center;
         justify-content: center;
         width: 270px;
         height: auto; }
-        .indumentaria-pag .indumentaria-contenedor div a img {
+        .indumentaria-pag .indumentaria-contenedor .indumentaria-productos a img {
           width: 220px;
           height: 220px;
           text-align: center;
           justify-content: center; }
-        .indumentaria-pag .indumentaria-contenedor div a h3 {
+        .indumentaria-pag .indumentaria-contenedor .indumentaria-productos a h3 {
           text-align: center;
           justify-content: center;
           font-family: 'Lato', sans-serif;
@@ -326,17 +326,17 @@ main .disciplinas .disciplinas-contenedor {
           width: 270px;
           height: 20px;
           margin-top: 7px; }
-        .indumentaria-pag .indumentaria-contenedor div a div {
+        .indumentaria-pag .indumentaria-contenedor .indumentaria-productos a .precios-contenedor {
           width: 250px;
           height: 20px;
           display: flex;
           flex-direction: row;
           margin-bottom: 5px; }
-          .indumentaria-pag .indumentaria-contenedor div a div strong {
+          .indumentaria-pag .indumentaria-contenedor .indumentaria-productos a .precios-contenedor strong {
             font-size: 15px;
             margin: 3px;
             margin-top: 10px; }
-          .indumentaria-pag .indumentaria-contenedor div a div del {
+          .indumentaria-pag .indumentaria-contenedor .indumentaria-productos a .precios-contenedor del {
             font-size: 14px;
             margin: 3px;
             margin-top: 10px; }
@@ -639,8 +639,6 @@ footer .footer-contenedor {
     flex-wrap: wrap;
     margin-bottom: 50px; }
     .indumentaria-pag .indumentaria-contenedor .indumentaria-productos {
-      width: 280px;
-      height: auto;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -667,8 +665,6 @@ footer .footer-contenedor {
           width: 220px;
           height: 10px; }
         .indumentaria-pag .indumentaria-contenedor .indumentaria-productos a .precios-contenedor {
-          width: 200px;
-          height: 16px;
           display: flex;
           flex-direction: row;
           margin-bottom: 5px; }
@@ -1249,9 +1245,7 @@ footer .footer-contenedor {
           .calzado-pag .calzado-contenedor div a div del {
             font-size: 6px;
             margin: 2px;
-            margin-top: 6px; } }
-
-@media screen and (max-width: 600px) {
+            margin-top: 6px; }
   .indumentaria-pag .indumentaria-contenedor {
     width: 100%;
     height: auto;
@@ -1259,49 +1253,44 @@ footer .footer-contenedor {
     justify-content: center;
     flex-wrap: wrap;
     margin-bottom: 30px; }
-    .indumentaria-pag .indumentaria-contenedor div {
-      width: 103px;
-      height: auto;
+    .indumentaria-pag .indumentaria-contenedor .indumentaria-productos {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
       margin: 6px;
       padding: 1px; }
-      .indumentaria-pag .indumentaria-contenedor div a {
+      .indumentaria-pag .indumentaria-contenedor .indumentaria-productos a {
         text-decoration: none;
         color: black;
         text-align: center;
         justify-content: center;
         width: 75px;
         height: auto; }
-        .indumentaria-pag .indumentaria-contenedor div a img {
+        .indumentaria-pag .indumentaria-contenedor .indumentaria-productos a img {
           width: 75px;
           height: 75px;
           text-align: center;
           justify-content: center; }
-        .indumentaria-pag .indumentaria-contenedor div a h3 {
+        .indumentaria-pag .indumentaria-contenedor .indumentaria-productos a h3 {
           font-family: 'Lato', sans-serif;
           text-align: center;
           justify-content: center;
           font-size: 7px;
           width: 75px; }
-        .indumentaria-pag .indumentaria-contenedor div a div {
-          width: 75px;
+        .indumentaria-pag .indumentaria-contenedor .indumentaria-productos a .precios-contenedor {
           display: flex;
           flex-direction: row;
           margin-bottom: 5px;
           margin-top: 15px; }
-          .indumentaria-pag .indumentaria-contenedor div a div strong {
+          .indumentaria-pag .indumentaria-contenedor .indumentaria-productos a .precios-contenedor strong {
             font-size: 6px;
             margin: 2px;
             margin-top: 6px; }
-          .indumentaria-pag .indumentaria-contenedor div a div del {
+          .indumentaria-pag .indumentaria-contenedor .indumentaria-productos a .precios-contenedor del {
             font-size: 6px;
             margin: 2px;
-            margin-top: 6px; } }
-
-@media screen and (max-width: 600px) {
+            margin-top: 6px; }
   .accesorios-pag .accesorios-contenedor {
     width: 100%;
     height: auto;

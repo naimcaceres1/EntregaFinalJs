@@ -83,8 +83,6 @@
             flex-wrap: wrap;
             margin-bottom: 50px;
             .indumentaria-productos{
-                width: 280px;
-                height: auto;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -113,8 +111,6 @@
                         height: 10px;
                     }
                     .precios-contenedor{
-                        width: 200px;
-                        height: 16px;
                         display: flex;
                         flex-direction: row;
                         margin-bottom: 5px;
@@ -930,11 +926,6 @@
             }
         }
     }
-}
-
-
-
-@media screen and (max-width:600px){
     .indumentaria-pag{
         .indumentaria-contenedor{
             width: 100%;
@@ -943,9 +934,7 @@
             justify-content: center;
             flex-wrap: wrap;
             margin-bottom: 30px;
-            div{
-                width: 103px;
-                height: auto;
+            .indumentaria-productos{
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -972,8 +961,7 @@
                         font-size: 7px;
                         width: 75px;
                     }
-                    div{
-                        width: 75px;
+                    .precios-contenedor{
                         display: flex;
                         flex-direction: row;
                         margin-bottom: 5px;
@@ -993,10 +981,6 @@
             }
         }
     }
-}
-
-
-@media screen and (max-width:600px){
     .accesorios-pag{
         .accesorios-contenedor{
             width: 100%;
@@ -1115,6 +1099,7 @@
         }
     }
 }
+
 
 
 @media screen and (max-width:500px) {
