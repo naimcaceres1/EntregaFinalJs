@@ -11,9 +11,7 @@ footer{
             }
         }
         .suscripcion-mail{
-            display: flex;
-            text-align: center;
-            justify-content: center;
+            @extend %flex;
             font-size: 19px;
             font-family: 'Lato', sans-serif;
             form{

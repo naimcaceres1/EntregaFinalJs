@@ -8,12 +8,10 @@ main{
                 height: auto;
             }
             .nuevas-rebajas{
-                display: none;
+                @include flex (none, center, center);
                 flex-wrap: wrap;
                 width: 100%;
                 height: auto;
-                align-items: center;
-                justify-content: center;
             }
         } 
     }

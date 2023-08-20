@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500&family=Catamaran:wght@700&family=Lato:wght@300;400;700&family=Russo+One&family=Signika:wght@700&display=swap");
-header h2, main .recomendados h2, main .moda .moda-contenedor div a img, .calzado-pag .calzado-contenedor div, .indumentaria-pag .indumentaria-contenedor div, .accesorios-pag .accesorios-contenedor div, .rebajas-pag .rebajas-contenedor .imagenes-rebajas {
+header h2, main .recomendados h2, main .moda .moda-contenedor div a img, .calzado-pag .calzado-contenedor div, .indumentaria-pag .indumentaria-contenedor div, .accesorios-pag .accesorios-contenedor div, .rebajas-pag .rebajas-contenedor .imagenes-rebajas, footer .suscripcion .suscripcion-mail {
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -62,11 +62,11 @@ main .rebajas-img a .rebajas-60 {
 
 main .rebajas-img a .nuevas-rebajas {
   display: none;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   width: 100%;
-  height: auto;
-  align-items: center;
-  justify-content: center; }
+  height: auto; }
 
 main .marcas {
   text-align: center; }
@@ -494,9 +494,6 @@ footer .suscripcion {
     text-align: center;
     justify-content: center; }
   footer .suscripcion .suscripcion-mail {
-    display: flex;
-    text-align: center;
-    justify-content: center;
     font-size: 19px;
     font-family: 'Lato', sans-serif; }
     footer .suscripcion .suscripcion-mail form ul {
@@ -524,8 +521,7 @@ footer .footer-contenedor {
   width: auto;
   display: grid;
   grid-template-columns: repeat 4, 25%;
-  grid-template-areas: "footer footer footer footer"
- "footer footer footer footer";
+  grid-template-areas: "footer footer footer footer" "footer footer footer footer";
   margin: 20px;
   margin-bottom: 0;
   justify-content: space-around; }
@@ -599,18 +595,18 @@ footer .footer-contenedor {
     .calzado-pag .calzado-contenedor div {
       width: 280px;
       height: auto;
+      display: flex;
       justify-content: center;
       align-items: center;
-      display: flex;
       flex-direction: column;
       margin: 12px;
       padding: 3px; }
       .calzado-pag .calzado-contenedor div a {
         text-decoration: none;
         color: black;
-        text-align: center;
-        justify-content: center;
         align-items: center;
+        justify-content: center;
+        text-align: center;
         width: 250px;
         height: auto; }
         .calzado-pag .calzado-contenedor div a img {
@@ -621,6 +617,7 @@ footer .footer-contenedor {
         .calzado-pag .calzado-contenedor div a h3 {
           text-align: center;
           justify-content: center;
+          font-family: 'Lato', sans-serif;
           font-size: 12px;
           width: 220px;
           height: 10px; }
@@ -629,7 +626,8 @@ footer .footer-contenedor {
           height: 16px;
           display: flex;
           flex-direction: row;
-          margin-bottom: 5px; }
+          margin-bottom: 5px;
+          justify-content: center; }
           .calzado-pag .calzado-contenedor div a div strong {
             font-size: 12px; }
           .calzado-pag .calzado-contenedor div a div del {
@@ -643,9 +641,9 @@ footer .footer-contenedor {
     .indumentaria-pag .indumentaria-contenedor div {
       width: 280px;
       height: auto;
+      display: flex;
       justify-content: center;
       align-items: center;
-      display: flex;
       flex-direction: column;
       margin: 12px;
       padding: 3px; }
@@ -664,6 +662,7 @@ footer .footer-contenedor {
         .indumentaria-pag .indumentaria-contenedor div a h3 {
           text-align: center;
           justify-content: center;
+          font-family: 'Lato', sans-serif;
           font-size: 12px;
           width: 220px;
           height: 10px; }
@@ -686,9 +685,9 @@ footer .footer-contenedor {
     .rebajas-pag .rebajas-contenedor .imagenes-rebajas {
       width: 280px;
       height: auto;
+      display: flex;
       justify-content: center;
       align-items: center;
-      display: flex;
       flex-direction: column;
       margin: 12px;
       padding: 3px; }
@@ -707,6 +706,7 @@ footer .footer-contenedor {
         .rebajas-pag .rebajas-contenedor .imagenes-rebajas a .producto-rebaja {
           text-align: center;
           justify-content: center;
+          font-family: 'Lato', sans-serif;
           font-size: 12px;
           width: 220px;
           height: 10px; }
@@ -730,9 +730,9 @@ footer .footer-contenedor {
     .accesorios-pag .accesorios-contenedor div {
       width: 280px;
       height: auto;
+      display: flex;
       justify-content: center;
       align-items: center;
-      display: flex;
       flex-direction: column;
       margin: 12px;
       padding: 3px; }
@@ -751,6 +751,7 @@ footer .footer-contenedor {
         .accesorios-pag .accesorios-contenedor div a h3 {
           text-align: center;
           justify-content: center;
+          font-family: 'Lato', sans-serif;
           font-size: 12px;
           width: 220px;
           height: 10px; }
@@ -783,6 +784,7 @@ footer .footer-contenedor {
           margin-bottom: 10px;
           margin-top: 10px; }
         main .recomendados .recomendados-contenedor div a h3 {
+          font-family: 'Lato', sans-serif;
           margin: 10px 10px 10px 10px;
           font-size: 12px;
           width: 180px; }
@@ -818,6 +820,7 @@ footer .footer-contenedor {
             height: 190px;
             width: 190px; }
           main .moda .moda-contenedor div a h3 {
+            font-family: 'Lato', sans-serif;
             text-align: center;
             font-size: 14px;
             height: 30px; }
@@ -848,9 +851,9 @@ footer .footer-contenedor {
     .calzado-pag .calzado-contenedor div {
       width: 170px;
       height: auto;
+      display: flex;
       justify-content: center;
       align-items: center;
-      display: flex;
       flex-direction: column;
       margin: 12px;
       padding: 3px; }
@@ -865,6 +868,7 @@ footer .footer-contenedor {
           width: 130px;
           height: 130px; }
         .calzado-pag .calzado-contenedor div a h3 {
+          font-family: 'Lato', sans-serif;
           text-align: center;
           justify-content: center;
           font-size: 11px;
@@ -892,10 +896,9 @@ footer .footer-contenedor {
     margin-bottom: 50px; }
     .indumentaria-pag .indumentaria-contenedor div {
       width: 170px;
-      height: auto;
+      display: flex;
       justify-content: center;
       align-items: center;
-      display: flex;
       flex-direction: column;
       margin: 12px;
       padding: 3px; }
@@ -910,6 +913,7 @@ footer .footer-contenedor {
           width: 130px;
           height: 130px; }
         .indumentaria-pag .indumentaria-contenedor div a h3 {
+          font-family: 'Lato', sans-serif;
           text-align: center;
           justify-content: center;
           font-size: 11px;
@@ -938,9 +942,9 @@ footer .footer-contenedor {
     .accesorios-pag .accesorios-contenedor div {
       width: 170px;
       height: auto;
+      display: flex;
       justify-content: center;
       align-items: center;
-      display: flex;
       flex-direction: column;
       margin: 12px;
       padding: 3px; }
@@ -955,6 +959,7 @@ footer .footer-contenedor {
           width: 130px;
           height: 130px; }
         .accesorios-pag .accesorios-contenedor div a h3 {
+          font-family: 'Lato', sans-serif;
           text-align: center;
           justify-content: center;
           font-size: 11px;
@@ -983,9 +988,9 @@ footer .footer-contenedor {
     .rebajas-pag .rebajas-contenedor .imagenes-rebajas {
       width: 170px;
       height: auto;
+      display: flex;
       justify-content: center;
       align-items: center;
-      display: flex;
       flex-direction: column;
       margin: 12px;
       padding: 3px; }
@@ -1000,6 +1005,7 @@ footer .footer-contenedor {
           width: 130px;
           height: 130px; }
         .rebajas-pag .rebajas-contenedor .imagenes-rebajas a .producto-rebaja {
+          font-family: 'Lato', sans-serif;
           text-align: center;
           justify-content: center;
           font-size: 11px;
@@ -1044,6 +1050,7 @@ footer .footer-contenedor {
           margin-bottom: 10px;
           margin-top: 10px; }
         main .recomendados .recomendados-contenedor div a h3 {
+          font-family: 'Lato', sans-serif;
           margin: 10px 10px 10px 10px;
           font-size: 14px;
           width: auto; }
@@ -1066,16 +1073,17 @@ footer .footer-contenedor {
       margin-top: 20px; } }
 
 @media screen and (max-width: 1000px) {
-  header h2 div {
-    justify-content: space-between; } }
+  header h2 {
+    font-family: 'Lato', sans-serif; }
+    header h2 div {
+      justify-content: space-between; } }
 
 @media screen and (max-width: 991px) {
   footer .footer-contenedor {
     width: 100%;
     display: grid;
     grid-template-columns: repeat 2, 1fr;
-    grid-template-areas: "footer footer"
- "footer footer";
+    grid-template-areas: "footer footer" "footer footer";
     margin: 10px;
     margin-bottom: 0; }
     footer .footer-contenedor div {
@@ -1113,9 +1121,9 @@ footer .footer-contenedor {
 @media screen and (max-width: 900px) {
   main .rebajas-img {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     width: auto;
     height: auto; }
     main .rebajas-img a .nuevas-rebajas {
@@ -1129,9 +1137,9 @@ footer .footer-contenedor {
 @media screen and (max-width: 850px) {
   main .disciplinas .disciplinas-contenedor {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    flex-direction: column; }
     main .disciplinas .disciplinas-contenedor div a {
       gap: 5px; }
       main .disciplinas .disciplinas-contenedor div a img {
@@ -1158,14 +1166,15 @@ footer .footer-contenedor {
     justify-content: center;
     text-align: center; }
     footer .suscripcion .suscripcion-titulo h2 {
+      font-family: 'Lato', sans-serif;
       font-size: 16px;
       width: auto; }
     footer .suscripcion .suscripcion-mail form ul {
       display: flex;
+      justify-content: center;
+      align-items: center;
       flex-direction: column;
       list-style: none;
-      align-items: center;
-      justify-content: center;
       width: 400px;
       margin: 0;
       padding: 0; }
@@ -1187,8 +1196,10 @@ footer .footer-contenedor {
           border: 2px black solid;
           font-size: 10px; }
   footer .footer-contenedor div h3 {
+    font-family: 'Lato', sans-serif;
     font-size: 17px; }
   footer .footer-contenedor ul li a p {
+    font-family: 'Lato', sans-serif;
     font-size: 11px; } }
 
 @media screen and (max-width: 600px) {
@@ -1202,9 +1213,9 @@ footer .footer-contenedor {
     .calzado-pag .calzado-contenedor div {
       width: 103px;
       height: auto;
+      display: flex;
       justify-content: center;
       align-items: center;
-      display: flex;
       flex-direction: column;
       margin: 6px;
       padding: 1px; }
@@ -1226,6 +1237,7 @@ footer .footer-contenedor {
           font-size: 7px;
           width: 75px; }
         .calzado-pag .calzado-contenedor div a div {
+          font-family: 'Lato', sans-serif;
           width: 75px;
           display: flex;
           flex-direction: row;
@@ -1251,9 +1263,9 @@ footer .footer-contenedor {
     .indumentaria-pag .indumentraria-contenedor div {
       width: 103px;
       height: auto;
+      display: flex;
       justify-content: center;
       align-items: center;
-      display: flex;
       flex-direction: column;
       margin: 6px;
       padding: 1px; }
@@ -1270,6 +1282,7 @@ footer .footer-contenedor {
           text-align: center;
           justify-content: center; }
         .indumentaria-pag .indumentraria-contenedor div a h3 {
+          font-family: 'Lato', sans-serif;
           text-align: center;
           justify-content: center;
           font-size: 7px;
@@ -1300,9 +1313,9 @@ footer .footer-contenedor {
     .accesorios-pag .accesorios-contenedor div {
       width: 103px;
       height: auto;
+      display: flex;
       justify-content: center;
       align-items: center;
-      display: flex;
       flex-direction: column;
       margin: 6px;
       padding: 1px; }
@@ -1319,6 +1332,7 @@ footer .footer-contenedor {
           text-align: center;
           justify-content: center; }
         .accesorios-pag .accesorios-contenedor div a h3 {
+          font-family: 'Lato', sans-serif;
           text-align: center;
           justify-content: center;
           font-size: 7px;
@@ -1348,9 +1362,9 @@ footer .footer-contenedor {
     .rebajas-pag .rebajas-contenedor .imagenes-rebajas {
       width: 103px;
       height: auto;
+      display: flex;
       justify-content: center;
       align-items: center;
-      display: flex;
       flex-direction: column;
       margin: 6px;
       padding: 1px; }
@@ -1367,6 +1381,7 @@ footer .footer-contenedor {
           text-align: center;
           justify-content: center; }
         .rebajas-pag .rebajas-contenedor .imagenes-rebajas a .producto-rebaja {
+          font-family: 'Lato', sans-serif;
           text-align: center;
           justify-content: center;
           font-size: 7px;
@@ -1419,6 +1434,7 @@ footer .footer-contenedor {
           width: auto;
           height: auto; }
           main .moda .moda-contenedor div a h3 {
+            font-family: 'Lato', sans-serif;
             width: 140px;
             height: 50px;
             margin-bottom: 3px; }
@@ -1449,10 +1465,10 @@ footer .footer-contenedor {
       width: 300px; }
     footer .suscripcion .suscripcion-mail form ul {
       display: flex;
+      justify-content: center;
+      align-items: center;
       flex-direction: column;
       list-style: none;
-      align-items: center;
-      justify-content: center;
       width: 300px;
       margin: 0;
       padding: 0; }
@@ -1478,8 +1494,7 @@ footer .footer-contenedor {
     width: 100%;
     display: grid;
     grid-template-columns: repeat 2, 1fr;
-    grid-template-areas: "footer footer"
- "footer footer";
+    grid-template-areas: "footer footer" "footer footer";
     margin: 5px;
     margin-bottom: 0; }
     footer .footer-contenedor div {
@@ -1495,6 +1510,7 @@ footer .footer-contenedor {
       margin-bottom: 4px;
       padding: 0; }
       footer .footer-contenedor div h3 {
+        font-family: 'Lato', sans-serif;
         font-size: 11px;
         width: 100%;
         height: auto;
@@ -1514,6 +1530,7 @@ footer .footer-contenedor {
 
 @media screen and (max-width: 390px) {
   footer .footer-contenedor .redes h3 {
+    font-family: 'Lato', sans-serif;
     font-size: 11px;
     text-align: center; }
   footer .footer-contenedor .redes ul li a img {
@@ -1522,8 +1539,8 @@ footer .footer-contenedor {
   footer .footer-contenedor .redes div {
     grid-area: "footer";
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    align-items: center;
     align-items: start;
     width: auto;
     height: 240px;

@@ -29,7 +29,9 @@
             div{
                 width: 280px;
                 height: auto;
-                @extend %flex;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 flex-direction: column;
                 margin: 12px;
                 padding: 3px;
@@ -83,7 +85,9 @@
             div{
                 width: 280px;
                 height: auto;
-                @extend %flex;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 flex-direction: column;
                 margin: 12px;
                 padding: 3px;
@@ -135,7 +139,9 @@
             .imagenes-rebajas{
                 width: 280px;
                 height: auto;
-                @extend %flex;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 flex-direction: column;
                 margin: 12px;
                 padding: 3px;
@@ -188,7 +194,9 @@
             div{
                 width: 280px;
                 height: auto;
-                @extend %flex;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 flex-direction: column;
                 margin: 12px;
                 padding: 3px;
@@ -276,7 +284,7 @@
 
 @media screen and (max-width:1200px){
     main{   
-        .moda {
+        .moda{
             margin-top: 40px;
             display: flex;
             flex-wrap: wrap;
@@ -321,7 +329,9 @@
                     width: 380px;
                     height: 240px;
                     a{
-                        @extend %flex;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
                         flex-wrap: wrap;
                         img{
                             display: flex;
@@ -348,7 +358,9 @@
             div{
                 width: 170px;
                 height: auto;
-                @extend %flex;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 flex-direction: column;
                 margin: 12px;
                 padding: 3px;
@@ -401,8 +413,9 @@
             margin-bottom: 50px;
             div{
                 width: 170px;
-                height: auto;
-                @extend %flex;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 flex-direction: column;
                 margin: 12px;
                 padding: 3px;
@@ -456,7 +469,9 @@
             div{
                 width: 170px;
                 height: auto;
-                @extend %flex;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 flex-direction: column;
                 margin: 12px;
                 padding: 3px;
@@ -510,7 +525,9 @@
             .imagenes-rebajas{
                 width: 170px;
                 height: auto;
-                @extend %flex;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 flex-direction: column;
                 margin: 12px;
                 padding: 3px;
@@ -707,7 +724,9 @@
 @media screen and (max-width:900px){
     main{
         .rebajas-img {
-            @extend %flex;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             flex-wrap: wrap;
             width: auto;
             height: auto;
@@ -732,7 +751,9 @@
     main{
         .disciplinas{
             .disciplinas-contenedor{
-                @extend %flex;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 flex-direction: column;
                 div{
                     a{
@@ -797,7 +818,9 @@
             .suscripcion-mail{
                 form{
                     ul{
-                        @extend %flex;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
                         flex-direction: column;
                         list-style: none;
                         width: 400px;
@@ -861,7 +884,9 @@
             div{
                 width: 103px;
                 height: auto;
-                @extend %flex;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 flex-direction: column;
                 margin: 6px;
                 padding: 1px;
@@ -922,7 +947,9 @@
             div{
                 width: 103px;
                 height: auto;
-                @extend %flex;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 flex-direction: column;
                 margin: 6px;
                 padding: 1px;
@@ -982,7 +1009,9 @@
             div{
                 width: 103px;
                 height: auto;
-                @extend %flex;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 flex-direction: column;
                 margin: 6px;
                 padding: 1px;
@@ -1039,7 +1068,9 @@
             .imagenes-rebajas{
                 width: 103px;
                 height: auto;
-                @extend %flex;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 flex-direction: column;
                 margin: 6px;
                 padding: 1px;
@@ -1177,7 +1208,9 @@
             .suscripcion-mail{
                 form{
                     ul{
-                        @extend %flex;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
                         flex-direction: column;
                         list-style: none;
                         width: 300px;
@@ -1282,7 +1315,9 @@
                 }
                 div{
                     grid-area: "footer";
-                    @extend %flex;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                     align-items: start;
                     width: auto;
                     height: 240px;
