@@ -414,10 +414,9 @@
             .indumentaria-productos{
                 width: 170px;
                 display: flex;
-                align-items: center;
                 justify-content: center;
+                align-items: center;
                 flex-direction: column;
-                text-align: center;
                 margin: 12px;
                 padding: 3px;
                 a{
@@ -440,11 +439,9 @@
                         height: 10px;
                     }
                     .precios-contenedor{
-                        width: 165px;
-                        height: 10px;
                         display: flex;
                         flex-direction: row;
-
+                        align-items: center;
                         strong{
                             font-size: 9px;
                             margin: 2px;

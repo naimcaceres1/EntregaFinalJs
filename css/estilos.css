@@ -897,10 +897,9 @@ footer .footer-contenedor {
     .indumentaria-pag .indumentaria-contenedor .indumentaria-productos {
       width: 170px;
       display: flex;
-      align-items: center;
       justify-content: center;
+      align-items: center;
       flex-direction: column;
-      text-align: center;
       margin: 12px;
       padding: 3px; }
       .indumentaria-pag .indumentaria-contenedor .indumentaria-productos a {
@@ -921,10 +920,9 @@ footer .footer-contenedor {
           width: 165px;
           height: 10px; }
         .indumentaria-pag .indumentaria-contenedor .indumentaria-productos a .precios-contenedor {
-          width: 165px;
-          height: 10px;
           display: flex;
-          flex-direction: row; }
+          flex-direction: row;
+          align-items: center; }
           .indumentaria-pag .indumentaria-contenedor .indumentaria-productos a .precios-contenedor strong {
             font-size: 9px;
             margin: 2px;
