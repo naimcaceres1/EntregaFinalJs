@@ -26,9 +26,7 @@
             justify-content: center;
             flex-wrap: wrap;
             margin-bottom: 50px;
-            div{
-                width: 280px;
-                height: auto;
+            .productos{
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -38,9 +36,8 @@
                 a{
                     text-decoration: none;
                     color: black;
-                    align-items: center;
-                    justify-content: center;
                     text-align: center;
+                    justify-content: center;
                     width: 250px;
                     height: auto;
                     img{
@@ -53,17 +50,14 @@
                         text-align: center;
                         justify-content: center;
                         font-family: 'Lato', sans-serif;
-                        font-size: 12px;
+                        font-size: 13px;
                         width: 220px;
                         height: 10px;
                     }
-                    div{
-                        width: 200px;
-                        height: 16px;
+                    .precios-contenedor{
                         display: flex;
                         flex-direction: row;
                         margin-bottom: 5px;
-                        justify-content: center;
                         strong{
                             font-size: 12px;
                         }
@@ -82,7 +76,7 @@
             justify-content: center;
             flex-wrap: wrap;
             margin-bottom: 50px;
-            .indumentaria-productos{
+            .productos{
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -106,7 +100,7 @@
                         text-align: center;
                         justify-content: center;
                         font-family: 'Lato', sans-serif;
-                        font-size: 12px;
+                        font-size: 13px;
                         width: 220px;
                         height: 10px;
                     }
@@ -133,8 +127,6 @@
             flex-wrap: wrap;
             margin-bottom: 50px;
             .imagenes-rebajas{
-                width: 280px;
-                height: auto;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -158,17 +150,14 @@
                         text-align: center;
                         justify-content: center;
                         font-family: 'Lato', sans-serif;
-                        font-size: 12px;
+                        font-size: 13px;
                         width: 220px;
                         height: 10px;
                     }
-                    div{
-                        width: 200px;
-                        height: 16px;
+                    .precios-contenedor{
                         display: flex;
                         flex-direction: row;
                         margin-bottom: 5px;
-                        justify-content: center;
                         strong{
                             font-size: 12px;
                         }
@@ -187,9 +176,7 @@
             justify-content: center;
             flex-wrap: wrap;
             margin-bottom: 50px;
-            div{
-                width: 280px;
-                height: auto;
+            .productos{
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -213,13 +200,11 @@
                         text-align: center;
                         justify-content: center;
                         font-family: 'Lato', sans-serif;
-                        font-size: 12px;
+                        font-size: 13px;
                         width: 220px;
                         height: 10px;
                     }
-                    div{
-                        width: 200px;
-                        height: 16px;
+                    .precios-contenedor{
                         display: flex;
                         flex-direction: row;
                         margin-bottom: 5px;
@@ -251,24 +236,24 @@
                         align-items: center;
                         height: 260px;
                         img{
-                            width: 130px;
-                            height: 130px;
+                            width: 160px;
+                            height: 160px;
                             margin-bottom: 10px;
                             margin-top: 10px;
                         }
                         h3{
                             font-family: 'Lato', sans-serif;
                             margin: 10px 10px 10px 10px;
-                            font-size: 12px;
-                            width:  180px;
+                            font-size: 14px;
+                            width:  160px;
                         }
                         div{
                             height: auto;
                             strong{
-                                font-size: 12px;
+                                font-size: 13px;
                             }
                             del{
-                                font-size: 10px;
+                                font-size: 12px;
                             }
                         }
                     }
@@ -300,15 +285,21 @@
                     a{
                         justify-content: center;
                         align-items: center;
+                        text-align: center;
                         img{
-                            height: 190px;
-                            width: 190px;
+                            height: 210px;
+                            width: 210px;
                         }
                         h3{
                             font-family: 'Lato', sans-serif;
                             text-align: center;
                             font-size: 14px;
-                            height: 30px;
+                            height: 15px;
+                        }
+                        div{
+                            justify-content: center;
+                            align-items: center;
+                            margin-top: 0;
                         }
                     }
                 }
@@ -317,8 +308,6 @@
                 }
             }
         }
-    }
-    main{
         .disciplinas{
             .disciplinas-contenedor{
                 div{
@@ -351,9 +340,8 @@
             justify-content: center;
             flex-wrap: wrap;
             margin-bottom: 50px;
-            div{
+            .productos{
                 width: 170px;
-                height: auto;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -379,18 +367,17 @@
                         width: 165px;
                         height: 10px;
                     }
-                    div{
-                        width: 165px;
-                        height: 10px;
+                    .precios-contenedor{
                         display: flex;
                         flex-direction: row;
+                        align-items: center;
                         strong{
-                            font-size: 8px;
+                            font-size: 9px;
                             margin: 2px;
                             margin-top: 5px;
                         }
                         del{
-                            font-size: 9px;
+                            font-size: 8px;
                             margin: 2px;
                             margin-top: 5px;
                         }
@@ -407,7 +394,7 @@
             justify-content: center;
             flex-wrap: wrap;
             margin-bottom: 50px;
-            .indumentaria-productos{
+            .productos{
                 width: 170px;
                 display: flex;
                 justify-content: center;
@@ -461,9 +448,8 @@
             justify-content: center;
             flex-wrap: wrap;
             margin-bottom: 50px;
-            div{
+            .productos{
                 width: 170px;
-                height: auto;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -489,11 +475,10 @@
                         width: 165px;
                         height: 10px;
                     }
-                    div{
-                        width: 165px;
-                        height: 10px;
+                    .precios-contenedor{
                         display: flex;
                         flex-direction: row;
+                        align-items: center;
                         strong{
                             font-size: 9px;
                             margin: 2px;
@@ -519,7 +504,6 @@
             margin-bottom: 50px;
             .imagenes-rebajas{
                 width: 170px;
-                height: auto;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -531,7 +515,7 @@
                     color: black;
                     text-align: center;
                     justify-content: center;
-                    width: 200;
+                    width: 170px;
                     height: auto;
                     img{
                         width: 130px;
@@ -543,21 +527,19 @@
                         justify-content: center;
                         font-size: 11px;
                         width: 165px;
+                        height: 10px;
                     }
-                    div{
-                        margin-top: 5px;
-                        width: 165px;
-                        height: 15px;
+                    .precios-contenedor{
                         display: flex;
                         flex-direction: row;
-                        justify-content: center;
+                        align-items: center;
                         strong{
                             font-size: 9px;
                             margin: 2px;
                             margin-top: 5px;
                         }
                         del{
-                            font-size: 9px;
+                            font-size: 8px;
                             margin: 2px;
                             margin-top: 5px;
                         }
@@ -876,9 +858,7 @@
             justify-content: center;
             flex-wrap: wrap;
             margin-bottom: 30px;
-            div{
-                width: 103px;
-                height: auto;
+            .productos{
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -890,35 +870,36 @@
                     color: black;
                     text-align: center;
                     justify-content: center;
-                    width: 75px;
+                    width: 110px;
                     height: auto;
                     img{
-                        width: 75px;
-                        height: 75px;
+                        width: 110px;
+                        height: 110px;
                         text-align: center;
                         justify-content: center;
                     }
                     h3{
+                        font-family: 'Lato', sans-serif;
                         text-align: center;
                         justify-content: center;
-                        font-size: 7px;
-                        width: 75px;
+                        font-size: 10px;
+                        width: 110px;
+                        height: 15px;
+                        margin-bottom: 4px;
                     }
-                    div{
-                        font-family: 'Lato', sans-serif;
-                        width: 75px;
+                    .precios-contenedor{
                         display: flex;
                         flex-direction: row;
                         margin-bottom: 5px;
                         margin-top: 15px;
                         strong{
-                            font-size: 6px;
-                            margin: 2px;
+                            font-size: 9px;
+                            margin: 4px;
                             margin-top: 6px;
                         }
                         del{
-                            font-size: 6px;
-                            margin: 2px;
+                            font-size: 8px;
+                            margin: 4px;
                             margin-top: 6px;
                         }
                     }
@@ -934,7 +915,7 @@
             justify-content: center;
             flex-wrap: wrap;
             margin-bottom: 30px;
-            .indumentaria-productos{
+            .productos{
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -946,11 +927,11 @@
                     color: black;
                     text-align: center;
                     justify-content: center;
-                    width: 75px;
+                    width: 110px;
                     height: auto;
                     img{
-                        width: 75px;
-                        height: 75px;
+                        width: 110px;
+                        height: 110px;
                         text-align: center;
                         justify-content: center;
                     }
@@ -958,8 +939,10 @@
                         font-family: 'Lato', sans-serif;
                         text-align: center;
                         justify-content: center;
-                        font-size: 7px;
-                        width: 75px;
+                        font-size: 10px;
+                        width: 110px;
+                        height: 15px;
+                        margin-bottom: 4px;
                     }
                     .precios-contenedor{
                         display: flex;
@@ -967,13 +950,13 @@
                         margin-bottom: 5px;
                         margin-top: 15px;
                         strong{
-                            font-size: 6px;
-                            margin: 2px;
+                            font-size: 9px;
+                            margin: 4px;
                             margin-top: 6px;
                         }
                         del{
-                            font-size: 6px;
-                            margin: 2px;
+                            font-size: 8px;
+                            margin: 4px;
                             margin-top: 6px;
                         }
                     }
@@ -989,9 +972,7 @@
             justify-content: center;
             flex-wrap: wrap;
             margin-bottom: 30px;
-            div{
-                width: 103px;
-                height: auto;
+            .productos{
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -1003,11 +984,11 @@
                     color: black;
                     text-align: center;
                     justify-content: center;
-                    width: 75px;
+                    width: 110px;
                     height: auto;
                     img{
-                        width: 75px;
-                        height: 75px;
+                        width: 110px;
+                        height: 110px;
                         text-align: center;
                         justify-content: center;
                     }
@@ -1015,23 +996,24 @@
                         font-family: 'Lato', sans-serif;
                         text-align: center;
                         justify-content: center;
-                        font-size: 7px;
-                        width: 75px;
+                        font-size: 10px;
+                        width: 110px;
+                        height: 15px;
+                        margin-bottom: 4px;
                     }
-                    div{
-                        width: 75px;
+                    .precios-contenedor{
                         display: flex;
                         flex-direction: row;
                         margin-bottom: 5px;
                         margin-top: 15px;
                         strong{
-                            font-size: 6px;
-                            margin: 2px;
+                            font-size: 9px;
+                            margin: 4px;
                             margin-top: 6px;
                         }
                         del{
-                            font-size: 6px;
-                            margin: 2px;
+                            font-size: 8px;
+                            margin: 4px;
                             margin-top: 6px;
                         }
                     }
@@ -1048,8 +1030,6 @@
             flex-wrap: wrap;
             margin-bottom: 30px;
             .imagenes-rebajas{
-                width: 103px;
-                height: auto;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -1061,11 +1041,11 @@
                     color: black;
                     text-align: center;
                     justify-content: center;
-                    width: 75px;
+                    width: 110px;
                     height: auto;
                     img{
-                        width: 75px;
-                        height: 75px;
+                        width: 110px;
+                        height: 110px;
                         text-align: center;
                         justify-content: center;
                     }
@@ -1073,24 +1053,25 @@
                         font-family: 'Lato', sans-serif;
                         text-align: center;
                         justify-content: center;
-                        font-size: 7px;
-                        width: 75px;
+                        font-size: 10px;
+                        width: 110px;
+                        height: 15px;
+                        margin-bottom: 4px;
+
                     }
-                    div{
-                        width: 75px;
+                    .precios-contenedor{
                         display: flex;
                         flex-direction: row;
                         margin-bottom: 5px;
                         margin-top: 15px;
-                        justify-content: center;
                         strong{
-                            font-size: 6px;
-                            margin: 2px;
+                            font-size: 9px;
+                            margin: 4px;
                             margin-top: 6px;
                         }
                         del{
-                            font-size: 6px;
-                            margin: 2px;
+                            font-size: 8px;
+                            margin: 4px;
                             margin-top: 6px;
                         }
                     }

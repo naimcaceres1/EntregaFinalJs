@@ -37,13 +37,17 @@ footer{
                             border: map-get($boton, border-boton);
                             color: map-get($boton, color-text);
                         }
+                        button:hover{
+                            background-color: black;
+                            color: white;
+                        }
                     }
                 }
             }
         }
     }
     .footer-contenedor{
-        width: auto;
+        width: 100%;
         display: grid;
         grid-template-columns: repeat (4, 25%);
         grid-template-areas:
@@ -103,11 +107,16 @@ footer{
                     align-items: center;
                     flex-direction: row;
                     flex-wrap: wrap;
+                    transition-duration: 0.7s;
+                    transition-delay: 0.2s;
                     a{
                         img{
-                            margin: 5px;
-                            width: 45px;
-                            height: 45px;
+                            margin: 6px;
+                            width: 50px;
+                            height: 50px;
+                        }
+                        img:hover{
+                            transform: scale(1.15);
                         }
                     }
                 }

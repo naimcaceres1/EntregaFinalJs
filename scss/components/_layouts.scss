@@ -23,12 +23,12 @@ main{
             margin-top: 35px;
             margin-bottom: 35px;
             width: 100%;
-            height: 370px;
+            height: 330px;
             a{
                 width: auto;
                 height: auto;
                 img{
-                    background-color: #ffffff;
+                    background-color: $color-secundario;
                     width: 140px;
                     height: 115px;
                 }
@@ -37,20 +37,20 @@ main{
     }
     .recomendados{
         width: 100%;
-        margin-bottom: 20px;
         h2{
             @extend %flex;
             width: 100%;
             height: 70px;
-            color: rgb(0, 0, 0);;
+            color: $color-primario;
             font-family: 'Lato', sans-serif;         
             font-size: 35px;
             font-weight: 700;
+            margin-bottom: 35px;
         }
         .recomendados-contenedor{
             width: 100%;
-            background-color: white;
-            color: black;
+            background-color: $color-secundario;
+            color: $color-primario;
             text-align: center;
             @include flex (flex, space-around, center);
             flex-wrap: wrap;
@@ -94,7 +94,7 @@ main{
     }
     .moda{
         width: 100%;
-        margin-top: 90px;
+        margin-top: 100px;
         div{
             width: 100%;
             margin-bottom: 30px;
@@ -113,14 +113,14 @@ main{
         .moda-contenedor{
             height: auto;
             div{
-                @include flex (flex, space-evenly, center);;
+                @include flex (flex, space-evenly, center);
                 flex-direction: column;
                 width: 215px;
                 a{
                     width: 215px;
                     text-align: center;
                     text-decoration: none;
-                    color: black;
+                    color: $color-primario;
                     img{
                         width: 215px;
                         height: 215px;
@@ -146,6 +146,10 @@ main{
         }
     }
     .disciplinas{
+        margin-bottom: 30px;
+        justify-content: center;
+        align-items: center;
+        height: auto;
         .disciplinas-contenedor{
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -155,18 +159,28 @@ main{
                 justify-self: center;
                 align-items: center;
                 padding: 15px;
+                transition: 0.9s;
+                transition-delay: 0.05s;
                 a{
                     gap: 10px;
                     justify-content: center;
                     align-items: center;
                     img{
                         object-fit: cover;
-                        padding: 10px;
+                        padding: 15px;
                         justify-self: center;
                         align-items: center;
-                        width: 550px;
+                        width: 570px;
                         height: 370px;
                     }
+                    img:hover{
+                        transform: scale(1.05);
+                        box-shadow: 10px 10px 16px -7px rgba(0,0,0,0.75);
+                        -webkit-box-shadow: 10px 10px 16px -7px rgba(0,0,0,0.75);
+                        -moz-box-shadow: 10px 10px 16px -7px rgba(0,0,0,0.75);
+                        padding: 0;
+                        margin-bottom: 0;
+                    }  
                 }
             }
         }
@@ -194,7 +208,7 @@ main{
                 li{
                     a{
                         text-decoration: none;
-                        color: black;
+                        color: $color-primario;
                         p{
                             font-size: 15px;
                             margin: 3px;
@@ -210,16 +224,14 @@ main{
         justify-content: center;
         flex-wrap: wrap;
         margin-bottom: 50px;
-        div{
-            width: 340px;
-            height: auto;
+        .productos{
             @extend %flex;
             flex-direction: column;
             margin: 12px;
             padding: 3px;
             a{
                 text-decoration: none;
-                color: black;
+                color: $color-primario;
                 text-align: center;
                 justify-content: center;
                 width: 270px;
@@ -235,23 +247,24 @@ main{
                     text-align: center;
                     justify-content: center;
                     font-family: 'Lato', sans-serif;
-                    font-size: 16px;
+                    font-size: 14px;
                     width: 270px;
                     height: 20px;
+                    margin-top: 7px;
                 }
-                div{
-                    width: 250px;
+                .precios-contenedor{
                     height: 20px;
                     display: flex;
                     flex-direction: row;
-                    margin-bottom: 5px;
+                    justify-content: center;
+                    margin-bottom: 10px;
                     strong{
-                        font-size: 15px;
+                        font-size: 13px;
                         margin: 3px;
                         margin-top: 10px;
                     }
                     del{
-                        font-size: 14px;
+                        font-size: 12px;
                         margin: 3px;
                         margin-top: 10px;
                     }
@@ -297,16 +310,14 @@ main{
         justify-content: center;
         flex-wrap: wrap;
         margin-bottom: 50px;
-        .indumentaria-productos{
-            width: 340px;
-            height: auto;
+        .productos{
             @extend %flex;
             flex-direction: column;
             margin: 12px;
             padding: 3px;
             a{
                 text-decoration: none;
-                color: black;
+                color: $color-primario;
                 text-align: center;
                 justify-content: center;
                 width: 270px;
@@ -321,24 +332,23 @@ main{
                     text-align: center;
                     justify-content: center;
                     font-family: 'Lato', sans-serif;
-                    font-size: 16px;
+                    font-size: 14px;
                     width: 270px;
                     height: 20px;
                     margin-top: 7px;
                 }
                 .precios-contenedor{
-                    width: 250px;
                     height: 20px;
-                    display: flex;
+                    @extend %flex;
                     flex-direction: row;
                     margin-bottom: 5px;
                     strong{
-                        font-size: 15px;
+                        font-size: 13px;
                         margin: 3px;
                         margin-top: 10px;
                     }
                     del{
-                        font-size: 14px;
+                        font-size: 12px;
                         margin: 3px;
                         margin-top: 10px;
                     }
@@ -368,7 +378,7 @@ main{
                 li{
                     a{
                         text-decoration: none;
-                        color: black;
+                        color: $color-primario;
                         p{
                             font-size: 15px;
                             margin: 3px;
@@ -379,22 +389,19 @@ main{
         }
     }
     .accesorios-contenedor{
-        width:100%;
+        width: 100%;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
         margin-bottom: 50px;
-        div{
-            width: 340px;
-            height: auto;
+        .productos{
             @extend %flex;
             flex-direction: column;
             margin: 12px;
             padding: 3px;
-            text-align: center;
             a{
                 text-decoration: none;
-                color: black;
+                color: $color-primario;
                 text-align: center;
                 justify-content: center;
                 width: 270px;
@@ -409,24 +416,24 @@ main{
                     text-align: center;
                     justify-content: center;
                     font-family: 'Lato', sans-serif;
-                    font-size: 16px;
+                    font-size: 15px;
                     width: auto;
                     height: 20px;
                     margin-top: 7px;
                 }
-                div{
-                    width: 250px;
+                .precios-contenedor{
                     height: 20px;
                     display: flex;
                     flex-direction: row;
+                    justify-content: center;
                     margin-bottom: 5px;
                     strong{
-                        font-size: 15px;
+                        font-size: 14px;
                         margin: 3px;
                         margin-top: 10px;
                     }
                     del{
-                        font-size: 14px;
+                        font-size: 13px;
                         margin: 3px;
                         margin-top: 10px;
                     }
@@ -473,14 +480,13 @@ main{
         flex-wrap: wrap;
         margin-bottom: 50px;
         .imagenes-rebajas{
-            width: 340px;
-            height: auto;
             @extend %flex;
+            flex-direction: column;
             margin: 12px;
             padding: 3px;
             a{
                 text-decoration: none;
-                color: black;
+                color: $color-primario;
                 text-align: center;
                 justify-content: center;
                 width: 270px;
@@ -490,33 +496,30 @@ main{
                     height: 220px;
                     text-align: center;
                     justify-content: center;
-                    margin-bottom: 10px;
-                    }
+                    } 
                 .producto-rebaja{
                     text-align: center;
                     justify-content: center;
-                    align-items: center;
                     font-family: 'Lato', sans-serif;
-                    font-size: 16px;
-                    width: 270px;
-                    height: 16px;
-                    margin-top: 15px;
+                    font-size: 15px;
+                    width: auto;
+                    height: 20px;
+                    margin-top: 7px;
                     }
-                div{
-                    width: 250px;
+                .precios-contenedor{
                     height: 20px;
                     display: flex;
                     flex-direction: row;
-                    margin-bottom: 5px;
-                    justify-content: center;                    
+                    justify-content: center;
+                    margin-bottom: 7px;               
                     strong{
-                        font-size: 15px;
-                        margin: 3px;
+                        font-size: 14px;
+                        margin: 5px;
                         margin-top: 10px;
                         }
                     del{
-                        font-size: 14px;
-                        margin: 3px;
+                        font-size: 13px;
+                        margin: 5px;
                         margin-top: 10px;
                         }
                     }
