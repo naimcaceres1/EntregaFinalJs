@@ -49,6 +49,11 @@ header{
                                 }
                         }
                     }
+                    li{
+                        a:hover{
+                            color: $color-terciario;
+                        }
+                    }   
                 form{
                     input{
                         font-size: 18px;

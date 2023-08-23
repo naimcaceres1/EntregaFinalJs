@@ -158,28 +158,25 @@ main{
             div{
                 justify-self: center;
                 align-items: center;
-                padding: 15px;
-                transition: 0.9s;
-                transition-delay: 0.05s;
+                padding: 25px;
                 a{
                     gap: 10px;
                     justify-content: center;
                     align-items: center;
                     img{
                         object-fit: cover;
-                        padding: 15px;
                         justify-self: center;
                         align-items: center;
                         width: 570px;
                         height: 370px;
+                        transition: 0.5s;
+                        transition-delay: 0.05s;
                     }
                     img:hover{
                         transform: scale(1.05);
                         box-shadow: 10px 10px 16px -7px rgba(0,0,0,0.75);
                         -webkit-box-shadow: 10px 10px 16px -7px rgba(0,0,0,0.75);
                         -moz-box-shadow: 10px 10px 16px -7px rgba(0,0,0,0.75);
-                        padding: 0;
-                        margin-bottom: 0;
                     }  
                 }
             }
