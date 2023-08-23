@@ -629,7 +629,6 @@
 }
 
 @media screen and (max-width:991px){
-    footer{
         .footer-contenedor{
             display: grid;
             grid-template-columns: repeat (2, 1fr);
@@ -656,7 +655,6 @@
             align-items: start;
             height: 150px;
         }
-    }
     .rebajas-pag{
         .rebajas-contenedor{
             .carousel-rebajas{

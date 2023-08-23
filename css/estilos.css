@@ -1063,12 +1063,12 @@ footer .footer-contenedor {
       justify-content: space-between; } }
 
 @media screen and (max-width: 991px) {
-  footer .footer-contenedor {
+  .footer-contenedor {
     display: grid;
     grid-template-columns: repeat 2, 1fr;
     grid-template-areas: "footer footer" "footer footer";
     margin-bottom: 0; }
-    footer .footer-contenedor div {
+    .footer-contenedor div {
       grid-area: "footer";
       display: flex;
       flex-direction: column;
@@ -1078,7 +1078,7 @@ footer .footer-contenedor {
       align-items: start;
       width: auto;
       height: 240px; }
-  footer .redes {
+  .redes {
     margin-top: 12px;
     justify-content: center;
     align-items: start;
