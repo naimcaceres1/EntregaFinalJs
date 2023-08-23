@@ -631,14 +631,12 @@
 @media screen and (max-width:991px){
     footer{
         .footer-contenedor{
-            width: 100%;
             display: grid;
             grid-template-columns: repeat (2, 1fr);
             grid-template-areas:
                 "footer footer"
                 "footer footer"
-            ;
-            margin: 10px;
+                ;
             margin-bottom: 0;
             div{
                 grid-area: "footer";
@@ -688,7 +686,7 @@
     .rebajas-pag{
         .rebajas-filtro{
             display: none;
-        }
+        }    
         .rebajas-contenedor{
             .carousel-rebajas{
                 width: 200px;
@@ -1212,14 +1210,12 @@
             }
         }
         .footer-contenedor{
-            width: 100%;
             display: grid;
             grid-template-columns: repeat (2, 1fr);
             grid-template-areas:
                 "footer footer"
                 "footer footer"
             ;
-            margin: 5px;
             margin-bottom: 0;
             div{
                 grid-area: "footer";
