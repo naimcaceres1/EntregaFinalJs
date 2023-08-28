@@ -309,10 +309,12 @@
             }
         }
         .disciplinas{
+            margin-bottom: 100px;
             .disciplinas-contenedor{
                 div{
                     width: 380px;
                     height: 240px;
+                    margin: 10px;
                     a{
                         display: flex;
                         justify-content: center;
@@ -327,6 +329,32 @@
                     }
                 }
             }
+        }
+    }
+    .contactos-pag{
+        width: 100%;
+        .contactos-formulario{
+            flex-wrap: wrap;
+            float: none;
+            width: 70%;
+            div{
+                width: 100%;
+                margin-left: 5px;
+                b{
+                    width: 100px;
+                    margin-left: 10px;
+                    font-size: 15px;
+                }
+                input{
+                    width: 50%;
+                    height: 30px;
+                    margin-left: 30px;
+                }
+            }
+        }
+        .contactos-info{
+            float: none;
+            width: 30%;
         }
     }
 }
@@ -569,7 +597,7 @@
                     a{
                         text-decoration: none;
                         color: black;
-                        justify-content: center;
+                        justify-content: space-around;
                         align-items: center;
                         height: 280px;
                         img{
@@ -604,7 +632,7 @@
         align-items: center;
         flex-wrap: wrap;
         div{
-            flex: 1 1 50%;
+            justify-content: space-around;
         }
         .footer-contenedor{
             div{
@@ -629,32 +657,7 @@
 }
 
 @media screen and (max-width:991px){
-        .footer-contenedor{
-            display: grid;
-            grid-template-columns: repeat (2, 1fr);
-            grid-template-areas:
-                "footer footer"
-                "footer footer"
-                ;
-            margin-bottom: 0;
-            div{
-                grid-area: "footer";
-                display: flex;
-                flex-direction: column;
-                padding: 5px;
-                margin: 10px;
-                justify-content: center;
-                align-items: start;
-                width: auto;
-                height: 240px;
-            }
-        }
-        .redes{
-            margin-top: 12px;
-            justify-content: center;
-            align-items: start;
-            height: 150px;
-        }
+
     .rebajas-pag{
         .rebajas-contenedor{
             .carousel-rebajas{
@@ -695,7 +698,7 @@
 }
 
 @media screen and (max-width:900px){
-    main{
+    .rebajas-pag{
         .rebajas-img {
             display: flex;
             justify-content: center;
@@ -714,6 +717,20 @@
                     display: none;
                     
                 }
+            }
+        }
+    }
+    .nosotros-pag{
+        .nosotros-contenedor{
+            display: flex;
+            flex-direction: column;
+            .nosotros-info{
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+            }
+            .nosotros-lista{
+                display: none;
             }
         }
     }
@@ -740,8 +757,67 @@
                 }
             }
         }
-    }    
+    }
+    .contactos-pag{
+        display: flex;
+        flex-direction: column;
+        .contactos-formulario{
+            width: 100%;
+            div{
+                b{
+                    margin: 5px;
+                    width: 150px;
+                    justify-content: center;
+                }
+                input{
+                    width: 400px;
+                    margin: 6px;
+                }
+                textarea{
+                    width: 400px;
+                    margin-left: 0;
+                    margin: 6px;
+                }
+                .enviar-contacto{
+                    margin-left: 170px;
+                }
+            }
+        }
+        .contactos-info{
+            width: 100%;
+            .contactos-info-contenedor{
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                margin-left: 40px;
+                h3{
+                    justify-content: center;
+                    strong{
+                        justify-content: center;
+                    }
+                }
+                div{
+                    p{
+                        
+                    }
+                }
+                div{
+                    address{
+                        p{
+                        }
+                    }
+                }
+                .contacto-email{
+                    a{
+                        p{
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
+
 
 @media screen and (max-width:800px) {
     main{
@@ -752,6 +828,48 @@
                         display:none;
                     }
                 } 
+            }
+        }
+    }
+}
+
+@media screen and (max-width:780px){
+    footer{
+        .footer-contenedor{
+            display: grid;
+            grid-template-columns: repeat (2, 1fr);
+            grid-template-areas:
+                "footer footer"
+                "footer footer"
+                ;
+            margin-bottom: 0;
+            div{
+                grid-area: "footer";
+                display: flex;
+                flex-direction: column;
+                padding: 5px;
+                margin: 10px;
+                justify-content: space-around;
+                align-items: start;
+                width: auto;
+                height: 240px;
+            }
+        }
+        .redes{
+            margin: 5px;
+            justify-content: center;
+            align-items: start;
+            height: 150px;
+            ul{
+                margin-top: 0;
+                li{
+                    a{
+                        img{
+                            width: 40px;
+                            height: 40px;
+                        }
+                    }
+                }
             }
         }
     }
@@ -804,7 +922,7 @@
                             align-items: center;
                             width: 320px;
                             height: 35px;
-                            input{
+                            .suscribite-footer{
                                 height: 30px;
                                 width: 300px;
                                 font-size: 14px;
@@ -1053,7 +1171,6 @@
                         width: 110px;
                         height: 15px;
                         margin-bottom: 4px;
-
                     }
                     .precios-contenedor{
                         display: flex;
@@ -1187,7 +1304,7 @@
                             align-items: center;
                             width: 250px;
                             height: 35px;
-                            input{
+                            .suscribite-footer{
                                 height: 30px;
                                 width: 170px;
                                 font-size: 14px;
@@ -1294,7 +1411,3 @@
         }
     }
 }
-
-
-
-

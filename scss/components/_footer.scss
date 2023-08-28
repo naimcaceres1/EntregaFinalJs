@@ -25,7 +25,7 @@ footer{
                         margin: 2px;
                         padding: 2px;
                         height: 45px;
-                        input{
+                        .suscribite-footer{
                             height: 45px;
                             width: 380px;
                         }
@@ -80,6 +80,9 @@ footer{
                         color:  $color-primario;
                         p{
                             font-size: 16px;
+                        }
+                        p:hover{
+                            color: $color-terciario;
                         }
                     }
                 }

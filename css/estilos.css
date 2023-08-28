@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500&family=Catamaran:wght@700&family=Lato:wght@300;400;700&family=Russo+One&family=Signika:wght@700&display=swap");
-header h2, main .recomendados h2, main .moda .moda-contenedor div a img, .calzado-pag .calzado-contenedor .productos, .indumentaria-pag .indumentaria-contenedor .productos, .indumentaria-pag .indumentaria-contenedor .productos a .precios-contenedor, .accesorios-pag .accesorios-contenedor .productos, .rebajas-pag .rebajas-contenedor .imagenes-rebajas, footer .suscripcion .suscripcion-mail {
+header h2, main .recomendados h2, main .moda .moda-contenedor div a img, .calzado-pag .calzado-contenedor .productos, .indumentaria-pag .indumentaria-contenedor .productos, .indumentaria-pag .indumentaria-contenedor .productos a .precios-contenedor, .accesorios-pag .accesorios-contenedor .productos, .rebajas-pag .rebajas-contenedor .imagenes-rebajas, .contactos-pag .contactos-formulario div, footer .suscripcion .suscripcion-mail {
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -209,7 +209,8 @@ main .disciplinas {
           width: 570px;
           height: 370px;
           transition: 0.5s;
-          transition-delay: 0.05s; }
+          transition-delay: 0.05s;
+          flex-wrap: wrap; }
         main .disciplinas .disciplinas-contenedor div a img:hover {
           transform: scale(1.05);
           box-shadow: 10px 10px 16px -7px rgba(0, 0, 0, 0.75);
@@ -486,6 +487,94 @@ main .disciplinas {
       width: 350px;
       height: 350px; }
 
+.nosotros-pag .nosotros-contenedor {
+  margin-top: 50px;
+  margin-bottom: 170px;
+  display: flex; }
+  .nosotros-pag .nosotros-contenedor .nosotros-info {
+    width: 75%; }
+    .nosotros-pag .nosotros-contenedor .nosotros-info h3 {
+      margin-left: 20px;
+      font-size: 35px;
+      font-family: 'Lato', sans-serif;
+      font-weight: 600; }
+    .nosotros-pag .nosotros-contenedor .nosotros-info p {
+      margin-left: 20px;
+      font-size: 20px;
+      font-family: 'Lato', sans-serif; }
+  .nosotros-pag .nosotros-contenedor .nosotros-lista {
+    width: 25%; }
+    .nosotros-pag .nosotros-contenedor .nosotros-lista ul {
+      margin-top: 50px;
+      margin-left: 40px; }
+      .nosotros-pag .nosotros-contenedor .nosotros-lista ul li {
+        list-style: circle; }
+        .nosotros-pag .nosotros-contenedor .nosotros-lista ul li a {
+          text-decoration: none; }
+          .nosotros-pag .nosotros-contenedor .nosotros-lista ul li a p {
+            color: black;
+            font-size: 20px;
+            font-family: 'Lato', sans-serif;
+            font-weight: 600; }
+          .nosotros-pag .nosotros-contenedor .nosotros-lista ul li a p:hover {
+            color: #FF2931; }
+
+.contactos-pag {
+  margin-top: 50px;
+  margin-bottom: 170px;
+  font-family: 'Lato', sans-serif;
+  display: flex; }
+  .contactos-pag .contactos-formulario {
+    width: 70%;
+    float: left; }
+    .contactos-pag .contactos-formulario div {
+      padding: 5px;
+      margin-left: -150px; }
+      .contactos-pag .contactos-formulario div b {
+        width: 170px;
+        margin-left: 30px;
+        font-size: 20px; }
+      .contactos-pag .contactos-formulario div input {
+        width: 50%;
+        height: 30px;
+        margin-left: 30px; }
+      .contactos-pag .contactos-formulario div .enviar-contacto {
+        width: 150px;
+        margin-left: 200px;
+        background-color: #FF2931;
+        border: 1px solid black;
+        color: black;
+        border-radius: 5px; }
+      .contactos-pag .contactos-formulario div textarea {
+        width: 50%;
+        margin-left: 30px; }
+      .contactos-pag .contactos-formulario div .enviar-contacto:hover {
+        color: white;
+        background-color: black; }
+  .contactos-pag .contactos-info {
+    width: 30%;
+    float: right;
+    margin-top: 10px;
+    margin-right: 40px; }
+    .contactos-pag .contactos-info div {
+      width: auto; }
+      .contactos-pag .contactos-info div h3 {
+        font-size: 17px;
+        font-family: 'Lato', sans-serif; }
+    .contactos-pag .contactos-info div p {
+      font-size: 15px;
+      color: #999999; }
+    .contactos-pag .contactos-info div address {
+      font-size: 15px; }
+    .contactos-pag .contactos-info .contacto-tel p {
+      color: black; }
+    .contactos-pag .contactos-info .contacto-email a {
+      text-decoration: none; }
+      .contactos-pag .contactos-info .contacto-email a p {
+        color: black; }
+    .contactos-pag .contactos-info .contacto-email a:hover p {
+      color: #FF2931; }
+
 footer .suscripcion {
   flex: 1 1 25%;
   margin: 10px; }
@@ -507,7 +596,7 @@ footer .suscripcion {
         margin: 2px;
         padding: 2px;
         height: 45px; }
-        footer .suscripcion .suscripcion-mail form ul li input {
+        footer .suscripcion .suscripcion-mail form ul li .suscribite-footer {
           height: 45px;
           width: 380px; }
         footer .suscripcion .suscripcion-mail form ul li button {
@@ -551,6 +640,8 @@ footer .footer-contenedor {
           color: black; }
           footer .footer-contenedor div ul li a p {
             font-size: 16px; }
+          footer .footer-contenedor div ul li a p:hover {
+            color: #FF2931; }
   footer .footer-contenedor .redes {
     display: flex;
     flex-wrap: wrap;
@@ -818,19 +909,42 @@ footer .footer-contenedor {
             margin-top: 0; }
       main .moda .moda-contenedor div:nth-child(4) {
         display: none; }
-  main .disciplinas .disciplinas-contenedor div {
-    width: 380px;
-    height: 240px; }
-    main .disciplinas .disciplinas-contenedor div a {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap; }
-      main .disciplinas .disciplinas-contenedor div a img {
+  main .disciplinas {
+    margin-bottom: 100px; }
+    main .disciplinas .disciplinas-contenedor div {
+      width: 380px;
+      height: 240px;
+      margin: 10px; }
+      main .disciplinas .disciplinas-contenedor div a {
         display: flex;
-        width: 380px;
-        height: 240px;
-        flex-wrap: wrap; } }
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap; }
+        main .disciplinas .disciplinas-contenedor div a img {
+          display: flex;
+          width: 380px;
+          height: 240px;
+          flex-wrap: wrap; }
+  .contactos-pag {
+    width: 100%; }
+    .contactos-pag .contactos-formulario {
+      flex-wrap: wrap;
+      float: none;
+      width: 70%; }
+      .contactos-pag .contactos-formulario div {
+        width: 100%;
+        margin-left: 5px; }
+        .contactos-pag .contactos-formulario div b {
+          width: 100px;
+          margin-left: 10px;
+          font-size: 15px; }
+        .contactos-pag .contactos-formulario div input {
+          width: 50%;
+          height: 30px;
+          margin-left: 30px; }
+    .contactos-pag .contactos-info {
+      float: none;
+      width: 30%; } }
 
 @media screen and (max-width: 1100px) {
   .calzado-pag .calzado-contenedor {
@@ -1025,7 +1139,7 @@ footer .footer-contenedor {
       main .recomendados .recomendados-contenedor div a {
         text-decoration: none;
         color: black;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
         height: 280px; }
         main .recomendados .recomendados-contenedor div a img {
@@ -1050,7 +1164,7 @@ footer .footer-contenedor {
     align-items: center;
     flex-wrap: wrap; }
     footer div {
-      flex: 1 1 50%; }
+      justify-content: space-around; }
     footer .footer-contenedor div {
       width: 100%; }
     footer .redes {
@@ -1063,26 +1177,6 @@ footer .footer-contenedor {
       justify-content: space-between; } }
 
 @media screen and (max-width: 991px) {
-  .footer-contenedor {
-    display: grid;
-    grid-template-columns: repeat 2, 1fr;
-    grid-template-areas: "footer footer" "footer footer";
-    margin-bottom: 0; }
-    .footer-contenedor div {
-      grid-area: "footer";
-      display: flex;
-      flex-direction: column;
-      padding: 5px;
-      margin: 10px;
-      justify-content: center;
-      align-items: start;
-      width: auto;
-      height: 240px; }
-  .redes {
-    margin-top: 12px;
-    justify-content: center;
-    align-items: start;
-    height: 150px; }
   .rebajas-pag .rebajas-contenedor .carousel-rebajas {
     width: 250px;
     height: 250px; } }
@@ -1101,19 +1195,28 @@ footer .footer-contenedor {
     height: 200px; } }
 
 @media screen and (max-width: 900px) {
-  main .rebajas-img {
+  .rebajas-pag .rebajas-img {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     width: auto;
     height: auto; }
-    main .rebajas-img a .nuevas-rebajas {
+    .rebajas-pag .rebajas-img a .nuevas-rebajas {
       display: flex;
       flex-wrap: wrap;
       width: 500px;
       height: 500px; }
-    main .rebajas-img a .rebajas-60 {
+    .rebajas-pag .rebajas-img a .rebajas-60 {
+      display: none; }
+  .nosotros-pag .nosotros-contenedor {
+    display: flex;
+    flex-direction: column; }
+    .nosotros-pag .nosotros-contenedor .nosotros-info {
+      width: 100%;
+      justify-content: center;
+      align-items: center; }
+    .nosotros-pag .nosotros-contenedor .nosotros-lista {
       display: none; } }
 
 @media screen and (max-width: 850px) {
@@ -1127,11 +1230,67 @@ footer .footer-contenedor {
       main .disciplinas .disciplinas-contenedor div a img {
         width: 340px;
         height: 210px;
-        padding: 5px; } }
+        padding: 5px; }
+  .contactos-pag {
+    display: flex;
+    flex-direction: column; }
+    .contactos-pag .contactos-formulario {
+      width: 100%; }
+      .contactos-pag .contactos-formulario div b {
+        margin: 5px;
+        width: 150px;
+        justify-content: center; }
+      .contactos-pag .contactos-formulario div input {
+        width: 400px;
+        margin: 6px; }
+      .contactos-pag .contactos-formulario div textarea {
+        width: 400px;
+        margin-left: 0;
+        margin: 6px; }
+      .contactos-pag .contactos-formulario div .enviar-contacto {
+        margin-left: 170px; }
+    .contactos-pag .contactos-info {
+      width: 100%; }
+      .contactos-pag .contactos-info .contactos-info-contenedor {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-left: 40px; }
+        .contactos-pag .contactos-info .contactos-info-contenedor h3 {
+          justify-content: center; }
+          .contactos-pag .contactos-info .contactos-info-contenedor h3 strong {
+            justify-content: center; } }
 
 @media screen and (max-width: 800px) {
   main .marcas div a .logo-converse {
     display: none; } }
+
+@media screen and (max-width: 780px) {
+  footer .footer-contenedor {
+    display: grid;
+    grid-template-columns: repeat 2, 1fr;
+    grid-template-areas: "footer footer" "footer footer";
+    margin-bottom: 0; }
+    footer .footer-contenedor div {
+      grid-area: "footer";
+      display: flex;
+      flex-direction: column;
+      padding: 5px;
+      margin: 10px;
+      justify-content: space-around;
+      align-items: start;
+      width: auto;
+      height: 240px; }
+  footer .redes {
+    margin: 5px;
+    justify-content: center;
+    align-items: start;
+    height: 150px; }
+    footer .redes ul {
+      margin-top: 0; }
+      footer .redes ul li a img {
+        width: 40px;
+        height: 40px; } }
 
 @media screen and (max-width: 750px) {
   main .rebajas-img a .rebajas-60 {
@@ -1165,7 +1324,7 @@ footer .footer-contenedor {
         align-items: center;
         width: 320px;
         height: 35px; }
-        footer .suscripcion .suscripcion-mail form ul li input {
+        footer .suscripcion .suscripcion-mail form ul li .suscribite-footer {
           height: 30px;
           width: 300px;
           font-size: 14px;
@@ -1452,7 +1611,7 @@ footer .footer-contenedor {
         align-items: center;
         width: 250px;
         height: 35px; }
-        footer .suscripcion .suscripcion-mail form ul li input {
+        footer .suscripcion .suscripcion-mail form ul li .suscribite-footer {
           height: 30px;
           width: 170px;
           font-size: 14px;

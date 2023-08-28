@@ -171,6 +171,7 @@ main{
                         height: 370px;
                         transition: 0.5s;
                         transition-delay: 0.05s;
+                        flex-wrap: wrap;
                     }
                     img:hover{
                         transform: scale(1.05);
@@ -529,5 +530,132 @@ main{
     }
 }
 
+.nosotros-pag{
+    .nosotros-contenedor{
+        margin-top: 50px;
+        margin-bottom: 170px;
+        display: flex;
+        .nosotros-info{
+            width: 75%;
+            h3{
+                margin-left: 20px;
+                font-size: 35px;
+                font-family: 'Lato', sans-serif;
+                font-weight: 600;
+            }
+            p{
+                margin-left: 20px;
+                font-size: 20px;
+                font-family: 'Lato', sans-serif;
+            }
+        }
+        .nosotros-lista{
+            width: 25%;
+            ul{
+                margin-top: 50px;
+                margin-left: 40px;
+                li{
+                    list-style: circle;
+                    a{
+                        text-decoration: none;
+                        p{
+                            color: $color-primario;
+                            font-size: 20px;
+                            font-family: 'Lato', sans-serif;
+                            font-weight: 600;
+                        }
+                        p:hover{
+                            color: $color-terciario;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
+.contactos-pag{
+    margin-top: 50px;
+    margin-bottom: 170px;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    .contactos-formulario{
+        width: 70%;
+        float: left;
+        div{
+            @extend %flex;
+            padding: 5px;
+            margin-left: -150px;
+            b{
+                width: 170px;
+                margin-left: 30px;
+                font-size: 20px;
+            }
+            input{
+                width: 50%;
+                height: 30px;
+                margin-left: 30px;
+            }
+            .enviar-contacto{
+                width: 150px;
+                margin-left: 200px;
+                background-color: map-get($boton, bg-boton);
+                border: map-get($boton, border-boton);
+                color: map-get($boton, color-text);
+                border-radius: map-get($boton, border-radius);
+            }
+            textarea{
+                width: 50%;
+                margin-left: 30px;
+            }
+            .enviar-contacto:hover{
+                color: white;
+                background-color: $color-primario;
+            }
+        }
+    }
+    .contactos-info{
+        width: 30%;
+        float: right;
+        margin-top: 10px;
+        margin-right: 40px;
+        div{
+            width: auto;
+            h3{
+                font-size: 17px;
+                font-family: 'Lato', sans-serif;
+            }
+        }
+        div{
+            p{
+                font-size: 15px;
+                color: #999999;
+            }
+        }
+        div{
+            address{
+                font-size: 15px;
+            }
+        }
+        .contacto-tel{
+            p{
+                color: $color-primario;
+            }
+        }
+        .contacto-email{
+            a{
+                text-decoration: none;
+                p{
+                    color: $color-primario;
+                }
+            }
+            a:hover{
+                p{
+                    color: $color-terciario;
+                }
+            }
+            
+        }
+    }
+}
 
