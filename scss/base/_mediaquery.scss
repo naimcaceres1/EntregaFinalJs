@@ -635,11 +635,10 @@
         align-items: center;
         flex-wrap: wrap;
         div{
-            flex: 1 1 50%;
-            justify-content: space-around;
+            width: 100%;
         }
         .footer-contenedor{
-            justify-content: space-around;
+            justify-content: space-evenly;
             div{
                 width: 100%;
             }
@@ -859,7 +858,7 @@
                 width: auto;
                 height: 240px;
                 h3{
-                    font-weight: 700;
+                    font-weight: 600;
                 }
             }
             .redes{
@@ -885,16 +884,14 @@
 @media screen and (max-width:750px) {
     main{
         .rebajas-img{
+            display: flex;
             justify-content: center;
             align-items: center;
             a{
-                justify-content: center;
-                align-items: center;
                 .rebajas-60{
                     display: none;
                 }
                 .nuevas-rebajas{
-
                     display: flex;
                     flex-wrap: wrap;
                     width: 400px;
@@ -968,6 +965,20 @@
                             font-size: 11px;
                         }
                     }
+                }
+            }
+        }
+    }
+    .nosotros-pag{
+        .nosotros-contenedor{
+            .nosotros-info{
+                h3{
+                    font-size: 25px;
+                    margin: 10px 7px 10px 7px;
+                }
+                p{
+                    font-size: 15px;
+                    margin: 10px 7px 10px 7px
                 }
             }
         }
@@ -1449,6 +1460,27 @@
                     justify-content: center;
                     align-items: start;
                     height: auto;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:400px) {
+    main{
+        .rebajas-img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            a{
+                .rebajas-60{
+                    display: none;
+                }
+                .nuevas-rebajas{
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 280px;
+                    height: 280px;
                 }
             }
         }

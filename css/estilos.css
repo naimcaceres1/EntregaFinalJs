@@ -629,7 +629,8 @@ footer .footer-contenedor {
     height: 280px; }
     footer .footer-contenedor div h3 {
       margin-left: 12px;
-      font-size: 20px; }
+      font-size: 20px;
+      font-weight: 600; }
     footer .footer-contenedor div ul {
       list-style: none;
       margin: 5px;
@@ -1167,10 +1168,9 @@ footer .footer-contenedor {
     align-items: center;
     flex-wrap: wrap; }
     footer div {
-      flex: 1 1 50%;
-      justify-content: space-around; }
+      width: 100%; }
     footer .footer-contenedor {
-      justify-content: space-around; }
+      justify-content: space-evenly; }
       footer .footer-contenedor div {
         width: 100%; }
       footer .footer-contenedor .redes {
@@ -1288,7 +1288,7 @@ footer .footer-contenedor {
       width: auto;
       height: 240px; }
       footer .footer-contenedor div h3 {
-        font-weight: 700; }
+        font-weight: 600; }
     footer .footer-contenedor .redes {
       margin-top: 50px;
       justify-content: center;
@@ -1300,18 +1300,16 @@ footer .footer-contenedor {
 
 @media screen and (max-width: 750px) {
   main .rebajas-img {
+    display: flex;
     justify-content: center;
     align-items: center; }
-    main .rebajas-img a {
-      justify-content: center;
-      align-items: center; }
-      main .rebajas-img a .rebajas-60 {
-        display: none; }
-      main .rebajas-img a .nuevas-rebajas {
-        display: flex;
-        flex-wrap: wrap;
-        width: 400px;
-        height: 400px; } }
+    main .rebajas-img a .rebajas-60 {
+      display: none; }
+    main .rebajas-img a .nuevas-rebajas {
+      display: flex;
+      flex-wrap: wrap;
+      width: 400px;
+      height: 400px; } }
 
 @media screen and (max-width: 700px) {
   footer .suscripcion {
@@ -1353,7 +1351,13 @@ footer .footer-contenedor {
     font-size: 17px; }
   footer .footer-contenedor ul li a p {
     font-family: 'Lato', sans-serif;
-    font-size: 11px; } }
+    font-size: 11px; }
+  .nosotros-pag .nosotros-contenedor .nosotros-info h3 {
+    font-size: 25px;
+    margin: 10px 7px 10px 7px; }
+  .nosotros-pag .nosotros-contenedor .nosotros-info p {
+    font-size: 15px;
+    margin: 10px 7px 10px 7px; } }
 
 @media screen and (max-width: 600px) {
   .calzado-pag .calzado-contenedor {
@@ -1718,6 +1722,19 @@ footer .footer-contenedor {
         justify-content: center;
         align-items: start;
         height: auto; } }
+
+@media screen and (max-width: 400px) {
+  main .rebajas-img {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    main .rebajas-img a .rebajas-60 {
+      display: none; }
+    main .rebajas-img a .nuevas-rebajas {
+      display: flex;
+      flex-wrap: wrap;
+      width: 280px;
+      height: 280px; } }
 
 @media screen and (max-width: 390px) {
   footer .footer-contenedor .redes h3 {
