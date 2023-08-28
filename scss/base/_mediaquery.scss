@@ -350,6 +350,9 @@
                     height: 30px;
                     margin-left: 30px;
                 }
+                .enviar-contacto{
+                    margin-left: 150px;
+                }
             }
         }
         .contactos-info{
@@ -632,15 +635,17 @@
         align-items: center;
         flex-wrap: wrap;
         div{
+            flex: 1 1 50%;
             justify-content: space-around;
         }
         .footer-contenedor{
+            justify-content: space-around;
             div{
                 width: 100%;
             }
-        }
-        .redes{
-            margin-top: 20px;
+            .redes{
+                margin-top: 20px;
+            }
         }
     }
 }
@@ -848,25 +853,27 @@
                 display: flex;
                 flex-direction: column;
                 padding: 5px;
-                margin: 10px;
+                margin: 20px;   
                 justify-content: space-around;
                 align-items: start;
                 width: auto;
                 height: 240px;
+                h3{
+                    font-weight: 700;
+                }
             }
-        }
-        .redes{
-            margin: 5px;
-            justify-content: center;
-            align-items: start;
-            height: 150px;
-            ul{
-                margin-top: 0;
-                li{
-                    a{
-                        img{
-                            width: 40px;
-                            height: 40px;
+            .redes{
+                margin-top: 50px;
+                justify-content: center;
+                align-items: center;
+                height: 150px;
+                ul{
+                    li{
+                        a{
+                            img{
+                                width: 40px;
+                                height: 40px;
+                            }
                         }
                     }
                 }
@@ -878,14 +885,19 @@
 @media screen and (max-width:750px) {
     main{
         .rebajas-img{
+            justify-content: center;
+            align-items: center;
             a{
+                justify-content: center;
+                align-items: center;
                 .rebajas-60{
                     display: none;
                 }
                 .nuevas-rebajas{
+
                     display: flex;
                     flex-wrap: wrap;
-                    width: 100%;
+                    width: 400px;
                     height: 400px;
                 }
             }
@@ -1192,6 +1204,47 @@
             }
         }
     }
+    .contactos-pag{
+        display: flex;
+        flex-direction: column;
+        .contactos-formulario{
+            margin-right: 0;
+            width: 100%;
+            div{
+                b{
+                    margin: 8px;
+                    width: 130px;
+                    justify-content: center;
+                }
+                input{
+                    width: 350px;
+                    margin: 8px;
+                }
+                textarea{
+                    width: 350px;
+                    margin: 8px;
+                }
+                .enviar-contacto{
+                    margin-left: 150px;
+                }
+            }
+        }
+        .contactos-info{
+            width: 100%;
+            .contactos-info-contenedor{
+                width: auto;
+                justify-content: center;
+                align-items: center;
+                margin-left: 20px;
+                h3{
+                    justify-content: center;
+                    strong{
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
 }
 
 
@@ -1271,7 +1324,34 @@
             }
         }
     }
+    .contactos-pag{
+        display: flex;
+        flex-direction: column;
+        .contactos-formulario{
+            margin-right: 0;
+            width: 100%;
+            div{
+                b{
+                    margin: 8px;
+                    width: 130px;
+                    justify-content: center;
+                }
+                input{
+                    width: 350px;
+                    margin: 8px;
+                }
+                textarea{
+                    width: 350px;
+                    margin: 8px;
+                }
+                .enviar-contacto{
+                    margin-left: 120px;
+                }
+            }
+        }
+    }
 }
+
 
 
 
@@ -1410,4 +1490,4 @@
             }
         }
     }
-}
+}   

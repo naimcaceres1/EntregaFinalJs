@@ -521,15 +521,14 @@ main .disciplinas {
 
 .contactos-pag {
   margin-top: 50px;
-  margin-bottom: 170px;
+  margin-bottom: 150px;
   font-family: 'Lato', sans-serif;
   display: flex; }
   .contactos-pag .contactos-formulario {
     width: 70%;
     float: left; }
     .contactos-pag .contactos-formulario div {
-      padding: 5px;
-      margin-left: -150px; }
+      padding: 5px; }
       .contactos-pag .contactos-formulario div b {
         width: 170px;
         margin-left: 30px;
@@ -537,17 +536,19 @@ main .disciplinas {
       .contactos-pag .contactos-formulario div input {
         width: 50%;
         height: 30px;
-        margin-left: 30px; }
+        margin-left: 30px;
+        border: 1px solid #999999; }
       .contactos-pag .contactos-formulario div .enviar-contacto {
         width: 150px;
-        margin-left: 200px;
+        margin-left: 225px;
         background-color: #FF2931;
         border: 1px solid black;
         color: black;
         border-radius: 5px; }
       .contactos-pag .contactos-formulario div textarea {
         width: 50%;
-        margin-left: 30px; }
+        margin-left: 30px;
+        border: 1px solid #999999; }
       .contactos-pag .contactos-formulario div .enviar-contacto:hover {
         color: white;
         background-color: black; }
@@ -942,6 +943,8 @@ footer .footer-contenedor {
           width: 50%;
           height: 30px;
           margin-left: 30px; }
+        .contactos-pag .contactos-formulario div .enviar-contacto {
+          margin-left: 150px; }
     .contactos-pag .contactos-info {
       float: none;
       width: 30%; } }
@@ -1164,11 +1167,14 @@ footer .footer-contenedor {
     align-items: center;
     flex-wrap: wrap; }
     footer div {
+      flex: 1 1 50%;
       justify-content: space-around; }
-    footer .footer-contenedor div {
-      width: 100%; }
-    footer .redes {
-      margin-top: 20px; } }
+    footer .footer-contenedor {
+      justify-content: space-around; }
+      footer .footer-contenedor div {
+        width: 100%; }
+      footer .footer-contenedor .redes {
+        margin-top: 20px; } }
 
 @media screen and (max-width: 1000px) {
   header h2 {
@@ -1276,30 +1282,36 @@ footer .footer-contenedor {
       display: flex;
       flex-direction: column;
       padding: 5px;
-      margin: 10px;
+      margin: 20px;
       justify-content: space-around;
       align-items: start;
       width: auto;
       height: 240px; }
-  footer .redes {
-    margin: 5px;
-    justify-content: center;
-    align-items: start;
-    height: 150px; }
-    footer .redes ul {
-      margin-top: 0; }
-      footer .redes ul li a img {
+      footer .footer-contenedor div h3 {
+        font-weight: 700; }
+    footer .footer-contenedor .redes {
+      margin-top: 50px;
+      justify-content: center;
+      align-items: center;
+      height: 150px; }
+      footer .footer-contenedor .redes ul li a img {
         width: 40px;
         height: 40px; } }
 
 @media screen and (max-width: 750px) {
-  main .rebajas-img a .rebajas-60 {
-    display: none; }
-  main .rebajas-img a .nuevas-rebajas {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 400px; } }
+  main .rebajas-img {
+    justify-content: center;
+    align-items: center; }
+    main .rebajas-img a {
+      justify-content: center;
+      align-items: center; }
+      main .rebajas-img a .rebajas-60 {
+        display: none; }
+      main .rebajas-img a .nuevas-rebajas {
+        display: flex;
+        flex-wrap: wrap;
+        width: 400px;
+        height: 400px; } }
 
 @media screen and (max-width: 700px) {
   footer .suscripcion {
@@ -1531,7 +1543,36 @@ footer .footer-contenedor {
           .rebajas-pag .rebajas-contenedor .imagenes-rebajas a .precios-contenedor del {
             font-size: 8px;
             margin: 4px;
-            margin-top: 6px; } }
+            margin-top: 6px; }
+  .contactos-pag {
+    display: flex;
+    flex-direction: column; }
+    .contactos-pag .contactos-formulario {
+      margin-right: 0;
+      width: 100%; }
+      .contactos-pag .contactos-formulario div b {
+        margin: 8px;
+        width: 130px;
+        justify-content: center; }
+      .contactos-pag .contactos-formulario div input {
+        width: 350px;
+        margin: 8px; }
+      .contactos-pag .contactos-formulario div textarea {
+        width: 350px;
+        margin: 8px; }
+      .contactos-pag .contactos-formulario div .enviar-contacto {
+        margin-left: 150px; }
+    .contactos-pag .contactos-info {
+      width: 100%; }
+      .contactos-pag .contactos-info .contactos-info-contenedor {
+        width: auto;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20px; }
+        .contactos-pag .contactos-info .contactos-info-contenedor h3 {
+          justify-content: center; }
+          .contactos-pag .contactos-info .contactos-info-contenedor h3 strong {
+            justify-content: center; } }
 
 @media screen and (max-width: 500px) {
   main .marcas div {
@@ -1586,7 +1627,25 @@ footer .footer-contenedor {
           align-items: center; }
     main .moda div h2 {
       font-size: 30px;
-      margin: 10px 10px 20px; } }
+      margin: 10px 10px 20px; }
+  .contactos-pag {
+    display: flex;
+    flex-direction: column; }
+    .contactos-pag .contactos-formulario {
+      margin-right: 0;
+      width: 100%; }
+      .contactos-pag .contactos-formulario div b {
+        margin: 8px;
+        width: 130px;
+        justify-content: center; }
+      .contactos-pag .contactos-formulario div input {
+        width: 350px;
+        margin: 8px; }
+      .contactos-pag .contactos-formulario div textarea {
+        width: 350px;
+        margin: 8px; }
+      .contactos-pag .contactos-formulario div .enviar-contacto {
+        margin-left: 120px; } }
 
 @media screen and (max-width: 480px) {
   footer .suscripcion {
