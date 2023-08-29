@@ -862,7 +862,8 @@
                 }
             }
             .redes{
-                margin-top: 50px;
+                margin: 0;
+                margin-top: 20px;
                 justify-content: center;
                 align-items: center;
                 height: 150px;
@@ -966,6 +967,9 @@
                         }
                     }
                 }
+            }
+            .redes{
+                margin-top: 20px;
             }
         }
     }
@@ -1423,6 +1427,7 @@
                 "footer footer"
             ;
             margin-bottom: 0;
+            margin-top: 20px;
             div{
                 grid-area: "footer";
                 display: flex;
@@ -1431,36 +1436,36 @@
                 align-items: start;
                 width: auto;
                 height: 220px;
-                font-size: 12px;
+                font-size: 13px;
                 gap: 3px;
-                margin-bottom: 4px;
+                margin: 0;
                 padding: 0;
                 h3{
                     font-family: 'Lato', sans-serif;
-                    font-size: 11px;
+                    font-size: 13px;
                     width: 100%;
                     height: auto;
-                    margin-bottom: 0;
+                    margin: 0;
+                    margin-left: 7px;
                 }
                 ul{
-                    padding: 2px;
-                    margin: 2px;
                     margin-top: 0;
+                    padding: 0;
+                    margin: 0;
                     li{
                         a{
                             p{
                                 margin: 7px;
-                                font-size: 11px;
+                                font-size: 12px;
                             }
                         }
                     }
                 }
-                .redes{
-                    margin-top: 12px;
-                    justify-content: center;
-                    align-items: start;
-                    height: auto;
-                }
+            }
+            .redes{
+                margin: 20px;
+                margin-top: 0;
+                height: 200px;
             }
         }
     }
@@ -1490,11 +1495,22 @@
 @media screen and (max-width:390px){
     footer{
         .footer-contenedor{
+            div{
+                grid-area: "footer";
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                align-items: start;
+                width: auto;
+                height: 240px;
+                font-size: 14px;
+                gap: 1px;
+                margin-bottom: 2px;
+                padding: 0;
+            }
             .redes{
                 h3{
-                    font-family: 'Lato', sans-serif;
-                    font-size: 11px;
-                    text-align: center;
+                    font-size: 13px;
                 }
                 ul{
                     li{
@@ -1505,19 +1521,6 @@
                             }
                         }
                     }
-                }
-                div{
-                    grid-area: "footer";
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    align-items: start;
-                    width: auto;
-                    height: 240px;
-                    font-size: 10px;
-                    gap: 1px;
-                    margin-bottom: 2px;
-                    padding: 0;
                 }
             }
         }
