@@ -768,6 +768,7 @@
         .contactos-formulario{
             width: 100%;
             div{
+                width: auto;
                 b{
                     margin: 5px;
                     width: 150px;
@@ -790,7 +791,7 @@
         .contactos-info{
             width: 100%;
             .contactos-info-contenedor{
-                width: 100%;
+                width: auto;
                 justify-content: center;
                 align-items: center;
                 margin-left: 40px;
@@ -798,23 +799,6 @@
                     justify-content: center;
                     strong{
                         justify-content: center;
-                    }
-                }
-                div{
-                    p{
-                        
-                    }
-                }
-                div{
-                    address{
-                        p{
-                        }
-                    }
-                }
-                .contacto-email{
-                    a{
-                        p{
-                        }
                     }
                 }
             }
@@ -932,7 +916,7 @@
                             align-items: center;
                             width: 320px;
                             height: 35px;
-                            .suscribite-footer{
+                            input{
                                 height: 30px;
                                 width: 300px;
                                 font-size: 14px;
@@ -1399,7 +1383,7 @@
                             align-items: center;
                             width: 250px;
                             height: 35px;
-                            .suscribite-footer{
+                            input{
                                 height: 30px;
                                 width: 170px;
                                 font-size: 14px;

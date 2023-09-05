@@ -212,6 +212,9 @@ main{
                             margin: 3px;
                         }
                     }
+                    a:hover{
+                        color: $color-terciario;
+                    }
                 }
             }
         }
@@ -298,6 +301,9 @@ main{
                             margin: 3px;
                         }
                     }
+                    a:hover{
+                        color: $color-terciario;
+                    }
                 }
             }
         }
@@ -381,6 +387,9 @@ main{
                             font-size: 15px;
                             margin: 3px;
                         }
+                    }
+                    a:hover{
+                        color: $color-terciario;
                     }
                 }
             }
@@ -467,6 +476,9 @@ main{
                             margin: 3px;
                         }
                     }
+                    a:hover{
+                        color: $color-terciario;
+                    }
                 }
             }
         }
@@ -489,6 +501,11 @@ main{
                 justify-content: center;
                 width: 270px;
                 height: auto;
+                .texto-rebajas{
+                    z-index: 10px;
+                    top: 5px;
+                    left: 10%;
+                }
                 img{
                     width: 220px;
                     height: 220px;

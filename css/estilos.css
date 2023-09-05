@@ -240,6 +240,8 @@ main .disciplinas {
           .calzado-pag .calzado-filtro div ul li a p {
             font-size: 15px;
             margin: 3px; }
+        .calzado-pag .calzado-filtro div ul li a:hover {
+          color: #FF2931; }
   .calzado-pag .calzado-contenedor {
     width: 100%;
     display: flex;
@@ -307,6 +309,8 @@ main .disciplinas {
           .indumentaria-pag .indumentaria-filtro div ul li a p {
             font-size: 15px;
             margin: 3px; }
+        .indumentaria-pag .indumentaria-filtro div ul li a:hover {
+          color: #FF2931; }
   .indumentaria-pag .indumentaria-contenedor {
     width: 100%;
     display: flex;
@@ -372,6 +376,8 @@ main .disciplinas {
           .accesorios-pag .accesorios-filtro div ul li a p {
             font-size: 15px;
             margin: 3px; }
+        .accesorios-pag .accesorios-filtro div ul li a:hover {
+          color: #FF2931; }
   .accesorios-pag .accesorios-contenedor {
     width: 100%;
     display: flex;
@@ -439,6 +445,8 @@ main .disciplinas {
           .rebajas-pag .rebajas-filtro div ul li a p {
             font-size: 15px;
             margin: 3px; }
+        .rebajas-pag .rebajas-filtro div ul li a:hover {
+          color: #FF2931; }
   .rebajas-pag .rebajas-contenedor {
     width: 100%;
     display: flex;
@@ -456,6 +464,10 @@ main .disciplinas {
         justify-content: center;
         width: 270px;
         height: auto; }
+        .rebajas-pag .rebajas-contenedor .imagenes-rebajas a .texto-rebajas {
+          z-index: 10px;
+          top: 5px;
+          left: 10%; }
         .rebajas-pag .rebajas-contenedor .imagenes-rebajas a img {
           width: 220px;
           height: 220px;
@@ -597,7 +609,7 @@ footer .suscripcion {
         margin: 2px;
         padding: 2px;
         height: 45px; }
-        footer .suscripcion .suscripcion-mail form ul li .suscribite-footer {
+        footer .suscripcion .suscripcion-mail form ul li input {
           height: 45px;
           width: 380px; }
         footer .suscripcion .suscripcion-mail form ul li button {
@@ -1242,23 +1254,25 @@ footer .footer-contenedor {
     flex-direction: column; }
     .contactos-pag .contactos-formulario {
       width: 100%; }
-      .contactos-pag .contactos-formulario div b {
-        margin: 5px;
-        width: 150px;
-        justify-content: center; }
-      .contactos-pag .contactos-formulario div input {
-        width: 400px;
-        margin: 6px; }
-      .contactos-pag .contactos-formulario div textarea {
-        width: 400px;
-        margin-left: 0;
-        margin: 6px; }
-      .contactos-pag .contactos-formulario div .enviar-contacto {
-        margin-left: 170px; }
+      .contactos-pag .contactos-formulario div {
+        width: auto; }
+        .contactos-pag .contactos-formulario div b {
+          margin: 5px;
+          width: 150px;
+          justify-content: center; }
+        .contactos-pag .contactos-formulario div input {
+          width: 400px;
+          margin: 6px; }
+        .contactos-pag .contactos-formulario div textarea {
+          width: 400px;
+          margin-left: 0;
+          margin: 6px; }
+        .contactos-pag .contactos-formulario div .enviar-contacto {
+          margin-left: 170px; }
     .contactos-pag .contactos-info {
       width: 100%; }
       .contactos-pag .contactos-info .contactos-info-contenedor {
-        width: 100%;
+        width: auto;
         justify-content: center;
         align-items: center;
         margin-left: 40px; }
@@ -1335,7 +1349,7 @@ footer .footer-contenedor {
         align-items: center;
         width: 320px;
         height: 35px; }
-        footer .suscripcion .suscripcion-mail form ul li .suscribite-footer {
+        footer .suscripcion .suscripcion-mail form ul li input {
           height: 30px;
           width: 300px;
           font-size: 14px;
@@ -1677,7 +1691,7 @@ footer .footer-contenedor {
         align-items: center;
         width: 250px;
         height: 35px; }
-        footer .suscripcion .suscripcion-mail form ul li .suscribite-footer {
+        footer .suscripcion .suscripcion-mail form ul li input {
           height: 30px;
           width: 170px;
           font-size: 14px;
