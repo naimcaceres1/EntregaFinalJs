@@ -140,6 +140,12 @@
                     justify-content: center;
                     width: 250px;
                     height: auto;
+                    .texto-rebajas{
+                        font-size: 9px;
+                        font-weight: 400;
+                        width: 40px;
+                        left: 45px;
+                    }
                     img{
                         width: 170px;
                         height: 170px;
@@ -548,6 +554,11 @@
                     justify-content: center;
                     width: 170px;
                     height: auto;
+                    .texto-rebajas{
+                        left: 25px;
+                        font-size: 8px;
+                        width: 35px;
+                    }
                     img{
                         width: 130px;
                         height: 130px;
@@ -658,10 +669,24 @@
             }
         }
     }
+    main{
+        .hombre-mujer{
+            div{
+                a{
+                    img{
+                        width: 320px;
+                        height: 320px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width:991px){
-
+    header{
+        position: relative;
+    }
     .rebajas-pag{
         .rebajas-contenedor{
             .carousel-rebajas{
@@ -728,10 +753,14 @@
         .nosotros-contenedor{
             display: flex;
             flex-direction: column;
+            align-items: center;
+            margin-bottom: 120px;
             .nosotros-info{
-                width: 100%;
+                width: 88%;
                 justify-content: center;
                 align-items: center;
+                text-align: center;
+                padding: 5px;
             }
             .nosotros-lista{
                 display: none;
@@ -753,9 +782,8 @@
                     a{
                         gap: 5px;
                         img{
-                            width: 340px;
-                            height: 210px;
-                            padding: 5px;
+                            width: 320px;
+                            height: 200px;
                         }
                     }
                 }
@@ -817,6 +845,11 @@
                     }
                 } 
             }
+        }
+    }
+    header{
+        h2{
+            font-size: 16px;
         }
     }
 }
@@ -888,6 +921,24 @@
 }
 
 @media screen and (max-width:700px){
+    main{
+        .hombre-mujer{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 100px;
+            div{
+                justify-content: center;
+                align-items: center;
+                margin: 15px;
+                a{
+                    img{
+                        width: 330px;
+                        height: 330px;
+                    }
+                }
+            }
+        }
+    }
     footer{
         .suscripcion{
             width: auto;
@@ -1168,6 +1219,12 @@
                     justify-content: center;
                     width: 110px;
                     height: auto;
+                    .texto-rebajas{
+                        left: 5px;
+                        font-size: 7px;
+                        font-weight: 300;
+                        width: 30px;
+                    }
                     img{
                         width: 110px;
                         height: 110px;
@@ -1267,6 +1324,22 @@
                 }
             }
         }
+        .recomendados{
+            .recomendados-contenedor{
+                div{
+                    a{
+                        .rebajas-recomendados{
+                            font-size: 10px;
+                            width: 45px;
+                        }
+                        img{
+                            width: 150px;
+                            height: 150px;
+                        }
+                    }
+                }
+            }
+        }
         .moda {
             margin-top: 20px;
             display: flex;
@@ -1319,6 +1392,16 @@
                 h2{
                     font-size: 30px;
                     margin: 10px 10px 20px;
+                }
+            }
+        }
+        .hombre-mujer{
+            div{
+                a{
+                    img{
+                        height: 280px;
+                        width: 280px;
+                    }
                 }
             }
         }
