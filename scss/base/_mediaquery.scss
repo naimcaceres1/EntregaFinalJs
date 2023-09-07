@@ -652,9 +652,13 @@
             justify-content: space-evenly;
             div{
                 width: 100%;
+                margin: 7px;
+                padding: 2px;
             }
             .redes{
+                margin: 7px;
                 margin-top: 20px;
+                padding: 2px;
             }
         }
     }
@@ -778,12 +782,22 @@
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
+                width: auto;
                 div{
+                    width: 360px;
+                    height: 240px;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 30px;
+                    margin: 10px;
+                    padding: 10px;
                     a{
+                        justify-content: center;
+                        align-items: center;
                         gap: 5px;
                         img{
-                            width: 320px;
-                            height: 200px;
+                            width: 340px;
+                            height: 220px;
                         }
                     }
                 }
@@ -912,8 +926,8 @@
                 .nuevas-rebajas{
                     display: flex;
                     flex-wrap: wrap;
-                    width: 400px;
-                    height: 400px;
+                    width: 375px;
+                    height: 375px;
                 }
             }
         }
@@ -1317,14 +1331,17 @@
                 flex-direction: column;
                 a{
                     img{
-                        width: 85px;
-                        height: 75px;
-                        margin: 12px;
+                        width: 83px;
+                        height: 72px;
+                        margin: 5px;
                     }
                 }
             }
         }
         .recomendados{
+            h2{
+                font-size: 22px;
+            }
             .recomendados-contenedor{
                 div{
                     a{
@@ -1556,6 +1573,23 @@
                 }
             }
         }
+        .disciplinas{
+            .disciplinas-contenedor{
+                div{
+                    width: 330px;
+                    height: 210px;
+                    margin-bottom: 20px;
+                    margin: 5px;
+                    padding: 5px;
+                    a{
+                        img{
+                            width: 320px;
+                            height: 200px;
+                        }
+                    }
+                }
+            }
+        }    
     }
 }
 

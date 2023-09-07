@@ -59,7 +59,7 @@ main{
                 margin-top: 10px;
                 a{
                     text-decoration: none;
-                    color: black;
+                    color: $color-primario;
                     text-align: center;
                     justify-content: center;
                     width: auto;
@@ -168,21 +168,23 @@ main{
             div{
                 justify-self: center;
                 align-items: center;
-                padding: 25px;
+                padding: 20px;
+                width: auto;
+                height: auto;
                 a{
-                    gap: 10px;
+                    gap: 8px;
                     justify-content: center;
                     align-items: center;
                     img{
                         object-fit: cover;
                         justify-self: center;
                         align-items: center;
-                        width: 570px;
-                        height: 370px;
+                        width: 550px;
+                        height: 350px;
                         transition: 0.5s;
                         transition-delay: 0.05s;
                         flex-wrap: wrap;
-                        border-radius: 5%;
+                        border-radius: 3%;
                     }
                     img:hover{
                         transform: scale(1.05);
@@ -209,7 +211,7 @@ main{
                     width: 370px;
                     height: 370px;
                     transition-duration: 1.5s;
-                    border-radius: 5%;
+                    border-radius: 3%;
                 }
                 img:hover{
                     transform: rotateY(360deg);
@@ -276,7 +278,7 @@ main{
                     height: 220px;
                     text-align: center;
                     justify-content: center;
-                    border-radius: 2%;
+                    border-radius: 3%;
                 
                 }
                 h3{
@@ -366,7 +368,7 @@ main{
                     height: 220px;
                     text-align: center;
                     justify-content: center;
-                    border-radius: 2%;
+                    border-radius: 3%;
                 }
                 h3{
                     text-align: center;
@@ -454,7 +456,7 @@ main{
                     height: 220px;
                     text-align: center;
                     justify-content: center;
-                    border-radius: 2%;
+                    border-radius: 3%;
                 }
                 h3{
                     text-align: center;
@@ -556,7 +558,7 @@ main{
                     text-align: center;
                     justify-content: center;
                     position: relative;
-                    border-radius: 2%;
+                    border-radius: 3%;
                     } 
                 .producto-rebaja{
                     text-align: center;

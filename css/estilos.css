@@ -206,21 +206,23 @@ main .disciplinas {
     main .disciplinas .disciplinas-contenedor div {
       justify-self: center;
       align-items: center;
-      padding: 25px; }
+      padding: 20px;
+      width: auto;
+      height: auto; }
       main .disciplinas .disciplinas-contenedor div a {
-        gap: 10px;
+        gap: 8px;
         justify-content: center;
         align-items: center; }
         main .disciplinas .disciplinas-contenedor div a img {
           object-fit: cover;
           justify-self: center;
           align-items: center;
-          width: 570px;
-          height: 370px;
+          width: 550px;
+          height: 350px;
           transition: 0.5s;
           transition-delay: 0.05s;
           flex-wrap: wrap;
-          border-radius: 5%; }
+          border-radius: 3%; }
         main .disciplinas .disciplinas-contenedor div a img:hover {
           transform: scale(1.05);
           box-shadow: 10px 10px 16px -7px rgba(0, 0, 0, 0.75);
@@ -241,7 +243,7 @@ main .hombre-mujer {
       width: 370px;
       height: 370px;
       transition-duration: 1.5s;
-      border-radius: 5%; }
+      border-radius: 3%; }
     main .hombre-mujer div a img:hover {
       transform: rotateY(360deg); }
 
@@ -292,7 +294,7 @@ main .hombre-mujer {
           height: 220px;
           text-align: center;
           justify-content: center;
-          border-radius: 2%; }
+          border-radius: 3%; }
         .calzado-pag .calzado-contenedor .productos a h3 {
           text-align: center;
           justify-content: center;
@@ -362,7 +364,7 @@ main .hombre-mujer {
           height: 220px;
           text-align: center;
           justify-content: center;
-          border-radius: 2%; }
+          border-radius: 3%; }
         .indumentaria-pag .indumentaria-contenedor .productos a h3 {
           text-align: center;
           justify-content: center;
@@ -430,7 +432,7 @@ main .hombre-mujer {
           height: 220px;
           text-align: center;
           justify-content: center;
-          border-radius: 2%; }
+          border-radius: 3%; }
         .accesorios-pag .accesorios-contenedor .productos a h3 {
           text-align: center;
           justify-content: center;
@@ -512,7 +514,7 @@ main .hombre-mujer {
           text-align: center;
           justify-content: center;
           position: relative;
-          border-radius: 2%; }
+          border-radius: 3%; }
         .rebajas-pag .rebajas-contenedor .imagenes-rebajas a .producto-rebaja {
           text-align: center;
           justify-content: center;
@@ -630,8 +632,10 @@ main .hombre-mujer {
 
 footer .suscripcion {
   flex: 1 1 25%;
-  margin: 10px; }
+  margin: 10px;
+  width: auto; }
   footer .suscripcion .suscripcion-titulo h2 {
+    width: auto;
     font-size: 24px;
     font-family: 'Lato', sans-serif;
     text-align: center;
@@ -1233,9 +1237,13 @@ footer .footer-contenedor {
     footer .footer-contenedor {
       justify-content: space-evenly; }
       footer .footer-contenedor div {
-        width: 100%; }
+        width: 100%;
+        margin: 7px;
+        padding: 2px; }
       footer .footer-contenedor .redes {
-        margin-top: 20px; } }
+        margin: 7px;
+        margin-top: 20px;
+        padding: 2px; } }
 
 @media screen and (max-width: 1000px) {
   header h2 {
@@ -1300,12 +1308,23 @@ footer .footer-contenedor {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; }
-    main .disciplinas .disciplinas-contenedor div a {
-      gap: 5px; }
-      main .disciplinas .disciplinas-contenedor div a img {
-        width: 320px;
-        height: 200px; }
+    flex-direction: column;
+    width: auto; }
+    main .disciplinas .disciplinas-contenedor div {
+      width: 360px;
+      height: 240px;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 30px;
+      margin: 10px;
+      padding: 10px; }
+      main .disciplinas .disciplinas-contenedor div a {
+        justify-content: center;
+        align-items: center;
+        gap: 5px; }
+        main .disciplinas .disciplinas-contenedor div a img {
+          width: 340px;
+          height: 220px; }
   .contactos-pag {
     display: flex;
     flex-direction: column; }
@@ -1382,8 +1401,8 @@ footer .footer-contenedor {
     main .rebajas-img a .nuevas-rebajas {
       display: flex;
       flex-wrap: wrap;
-      width: 400px;
-      height: 400px; } }
+      width: 375px;
+      height: 375px; } }
 
 @media screen and (max-width: 700px) {
   main .hombre-mujer {
@@ -1679,9 +1698,11 @@ footer .footer-contenedor {
     display: flex;
     flex-direction: column; }
     main .marcas div a img {
-      width: 85px;
-      height: 75px;
-      margin: 12px; }
+      width: 83px;
+      height: 72px;
+      margin: 5px; }
+  main .recomendados h2 {
+    font-size: 22px; }
   main .recomendados .recomendados-contenedor div a .rebajas-recomendados {
     font-size: 10px;
     width: 45px; }
@@ -1836,7 +1857,16 @@ footer .footer-contenedor {
       display: flex;
       flex-wrap: wrap;
       width: 280px;
-      height: 280px; } }
+      height: 280px; }
+  main .disciplinas .disciplinas-contenedor div {
+    width: 330px;
+    height: 210px;
+    margin-bottom: 20px;
+    margin: 5px;
+    padding: 5px; }
+    main .disciplinas .disciplinas-contenedor div a img {
+      width: 320px;
+      height: 200px; } }
 
 @media screen and (max-width: 390px) {
   footer .footer-contenedor div {
