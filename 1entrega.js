@@ -3,7 +3,7 @@ alert("Bienvenidos a El Rincon");
 let carrito = ``;
 let total = 0;
 
-function mostrarMenu() {
+function mostrarMenu(){
     do {
         let menu = Number(prompt(`
             Elija la opcion deseada
@@ -12,7 +12,7 @@ function mostrarMenu() {
             3. Salir
         `));
 
-        switch (menu) {
+        switch (menu){
             case 1:
                 verProductos();
                 mostrarMenu();
@@ -37,7 +37,7 @@ function mostrarMenu() {
 
 
 
-function verProductos() {
+function verProductos(){
     let productos = Number(prompt(`
         Productos Disponibles:
         1. Air Max 90 - UYU 7.990
@@ -46,7 +46,7 @@ function verProductos() {
         4. Volver al menú
     `))
 
-    switch (productos) {
+    switch (productos){
         case 1:
             alert(`Air Max 90 ha sido agrgado al carrito`);
             agregarCarrito("Air Max 90", 7990)
@@ -68,7 +68,7 @@ function verProductos() {
     }
 }
 
-function agregarCarrito(productos, precio) {
+function agregarCarrito(productos, precio){
     total = total + precio;
     return carrito += (`${productos} - UYU ${precio}
     
@@ -76,102 +76,19 @@ function agregarCarrito(productos, precio) {
 }
 
 
-function mostrarCarrito() {
-    if (carrito === "") {
+function mostrarCarrito(){
+    if (carrito === ""){
         alert(`El carrito está vacío.`);
-    } else {
-        const carritoInfo = (`Carrito de compras:\n${carrito}\nTotal: UYU ${total}`);
+    } else{
+        const carritoInfo = (`Carrito de compras:\n
+        ${carrito} \n
+        Total: UYU ${total}\n`);
         alert(carritoInfo);
     }
 }
 
 mostrarMenu()
 
-
-
-
-
-
-
-
-/* // Variables para el carrito y el total
-let carrito = "";
-let total = 0;
-
-// Función para mostrar el menú y obtener la elección del usuario
-function mostrarMenu() {
-    let opcion;
-
-    do {
-        opcion = parseInt(prompt(
-            "Menú:\n" +
-            "1. Ver Productos y Agregar al Carrito\n" +
-            "2. Ver Carrito\n" +
-            "3. Salir"
-        ));
-
-        if (!isNaN(opcion)) {
-            switch (opcion) {
-                case 1:
-                    verYAgregarProductos();
-                    break;
-                case 2:
-                    mostrarCarrito();
-                    break;
-                case 3:
-                    alert("Gracias por su visita. ¡Hasta luego!");
-                    break;
-                default:
-                    alert("Opción no válida. Por favor, elija una opción válida.");
-            }
-        } else {
-            alert("Opción no válida. Por favor, elija una opción válida.");
-        }
-    } while (opcion !== 3);
-}
-
-// Función para ver productos y agregar al carrito
-function verYAgregarProductos() {
-    let producto = prompt(
-        "Productos Disponibles:\n" +
-        "1. Producto A - $10.00\n" +
-        "2. Producto B - $15.00\n" +
-        "3. Producto C - $20.00\n" +
-        "4. Volver al Menú Principal"
-    );
-
-    if (producto === "4") {
-        return;
-    }
-
-    switch (producto) {
-        case "1":
-            agregarAlCarrito("Producto A", 10.00);
-            break;
-        case "2":
-            agregarAlCarrito("Producto B", 15.00);
-            break;
-        case "3":
-            agregarAlCarrito("Producto C", 20.00);
-            break;
-        default:
-            alert("Opción no válida. Por favor, elija una opción válida.");
-            verYAgregarProductos();
-    }
-}
-
-// Función para agregar un producto al carrito
-function agregarAlCarrito(producto, precio) {
-    carrito += `${producto} - $${precio}\n`;
-    total += precio;
-    alert(`${producto} ha sido agregado al carrito.`);
-}
-
-// Función para mostrar el contenido del carrito
-
-
-// Iniciar la aplicación mostrando el menú
-mostrarMenu(); */
 
 
 
