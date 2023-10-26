@@ -156,6 +156,12 @@ function agregarCarrito(producto) {
 function buscarProductos() {
     const opcionBusqueda = prompt(`Elija la opcion deseada:\n1. Buscar por marca\n2. Buscar por genero\n3. Buscar por disciplina\n4. Buscar por modelo\n5. Volver`);
 
+    if (opcionBusqueda !== "1" && opcionBusqueda !== "2" && opcionBusqueda !== "3" && opcionBusqueda !== "4" && opcionBusqueda !== "5") {
+        alert("Opción incorrecta. Elija una opción válida.");
+        buscarProductos();
+        return;
+    }
+
     const palabraClave = prompt("Ingrese una palabra clave para buscar productos:");
 
     const valorBusqueda = palabraClave.toLowerCase();
@@ -204,15 +210,15 @@ function buscarProductos() {
 
         if (respuesta <= productosEncontrados.length) {
             agregarCarrito(productosEncontrados[respuesta - 1]);
-            verMenu();
+            buscarProductos();
         } else if (respuesta == productosEncontrados.length + 1) {
-            verMenu();
+            buscarProductos();
         } else {
             alert("Elija una opción válida.");
         }
     } else {
         alert("No se encontraron productos que coincidan con la búsqueda.");
-        verMenu();
+        buscarProductos();
     }
 }
 
