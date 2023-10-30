@@ -103,40 +103,40 @@ let carrito = [];
 
 const productos = [
     {
-        marca: `Nike`, genero: `calzado`, disciplina: `running`, modelo: `Flex Experience Run 11`, precio: 4690,
+        marca: `Nike`, genero: `Calzado`, disciplina: `Running`, modelo: `Flex Experience Run 11`, precio: 4690,
     },
     {
-        marca: `Nike`, genero: `calzado`, disciplina: `sportwear`, modelo: `Jordan Retro 3 White Cement (Reimagined)`, precio: 12990,
+        marca: `Nike`, genero: `Calzado`, disciplina: `Sportwear`, modelo: `Jordan Retro 3 White Cement (Reimagined)`, precio: 12990,
     },
     {
-        marca: `Adidas`, genero: `calzado`, disciplina: `sportwear`, modelo: `Court Plataform`, precio: 3690,
+        marca: `Adidas`, genero: `Calzado`, disciplina: `Sportwear`, modelo: `Court Plataform`, precio: 3690,
     },
     {
-        marca: `Puma`, genero: `calzado`, disciplina: `sportwear`, modelo: `Smash 3.0`, precio: 3990,
+        marca: `Puma`, genero: `Calzado`, disciplina: `Sportwear`, modelo: `Smash 3.0`, precio: 3990,
     },
     {
-        marca: `Nike`, genero: `calzado`, disciplina: `futbol`, modelo: `Zoom Superfly 9 Academy`, precio: 5290,
+        marca: `Nike`, genero: `Calzado`, disciplina: `Futbol`, modelo: `Zoom Superfly 9 Academy`, precio: 5290,
     },
     {
-        marca: `Adidas`, genero: `indumentaria`, disciplina: `sportwear`, modelo: `remera Brand Love`, precio: 1990,
+        marca: `Adidas`, genero: `Indumentaria`, disciplina: `Sportwear`, modelo: `remera Brand Love`, precio: 1990,
     },
     {
-        marca: `Adidas`, genero: `indumentaria`, disciplina: `sportwear`, modelo: `Buzo Essential Brand Love`, precio: 5290,
+        marca: `Adidas`, genero: `Indumentaria`, disciplina: `Sportwear`, modelo: `Buzo Essential Brand Love`, precio: 5290,
     },
     {
-        marca: `Puma`, genero: `indumentraria`, disciplina: `training`, modelo: `Remera Uruguay Training`, precio: 2590,
+        marca: `Puma`, genero: `Indumentraria`, disciplina: `Training`, modelo: `Remera Uruguay Training`, precio: 2590,
     },
     {
-        marca: `Puma`, genero: `indumentaria`, disciplina: `training`, modelo: `W Calza Favorite Forever High Wasit`, precio: 2690,
+        marca: `Puma`, genero: `Indumentaria`, disciplina: `Training`, modelo: `W Calza Favorite Forever High Wasit`, precio: 2690,
     },
     {
-        marca: `Nike`, genero: `indumentaria`, disciplina: `sportwear`, modelo: `W Campera Club Hoodie Fz`, precio: 5290,
+        marca: `Nike`, genero: `Indumentaria`, disciplina: `Sportwear`, modelo: `W Campera Club Hoodie Fz`, precio: 5290,
     },
     {
-        marca: `Puma`, genero: `accesorios`, disciplina: `futbol`, modelo: `Pelota Orbita La Liga`, precio: 1690,
+        marca: `Puma`, genero: `Accesorios`, disciplina: `Futbol`, modelo: `Pelota Orbita La Liga`, precio: 1690,
     },
     {
-        marca: `Nike`, genero: `accesorios`, disciplina: `mochilas`, modelo: `Mochila Element`, precio: 1690,
+        marca: `Nike`, genero: `Accesorios`, disciplina: `Mochilas`, modelo: `Mochila Element`, precio: 1690,
     },
 ];
 
@@ -165,6 +165,56 @@ function buscarPorMarca() {
     }
 }
 
+function buscarPorGenero() {
+    const generos = [...new Set(productos.map(producto => producto.genero))];
+
+    let generosDisp = "Géneros disponibles:\n";
+    generosDisp += generos.map((genero, index) => `${index + 1}. ${genero}`).join('\n');
+    generosDisp += '\nElija el número del género que desea buscar:';
+    
+    const generoBuscado = Number(prompt(generosDisp));
+
+    if (generoBuscado >= 1 && generoBuscado <= generos.length) {
+        const generoElegido = generos[generoBuscado - 1];
+        const productosGenero = productos.filter(producto => producto.genero === generoElegido);
+        mostrarResultados(productosGenero);
+    } else {
+        alert("Opción no válida. Ingrese un número válido.");
+        buscarProductos();
+    }
+}
+
+function buscarPorDisciplina() {
+    const disciplinas = [...new Set(productos.map(producto => producto.disciplina))];
+
+    let disciplinasDisp = "Disciplinas disponibles:\n";
+    disciplinasDisp += disciplinas.map((disciplina, index) => `${index + 1}. ${disciplina}`).join('\n');
+    disciplinasDisp += '\nElija el número de la disciplina que desea buscar:';
+    
+    const disciplinaBuscada = Number(prompt(disciplinasDisp));
+
+    if (disciplinaBuscada >= 1 && disciplinaBuscada <= disciplinas.length) {
+        const disciplinaElegida = disciplinas[disciplinaBuscada - 1];
+        const productosDisciplina = productos.filter(producto => producto.disciplina === disciplinaElegida);
+        mostrarResultados(productosDisciplina);
+    } else {
+        alert("Opción no válida. Ingrese un número válido.");
+        buscarProductos();
+    }
+}
+
+function buscarPorModelo() {
+    const modeloBuscado = prompt("Ingrese el modelo que desea buscar:");
+
+    if (modeloBuscado) {
+        const productosModelo = productos.filter(producto => producto.modelo.toLowerCase().includes(modeloBuscado.toLowerCase()));
+        mostrarResultados(productosModelo);
+    } else {
+        alert("Debe ingresar un modelo válido.");
+        buscarProductos();
+    }
+}
+
 
 function buscarProductos() {
     let opcionBusqueda;
@@ -174,6 +224,15 @@ function buscarProductos() {
         switch (opcionBusqueda) {
             case "1":
                 buscarPorMarca();
+                break;
+            case "2":
+                buscarPorGenero();
+                break;
+            case "3":
+                buscarPorDisciplina();
+                break;
+            case "4":
+                buscarPorModelo();
                 break;
             case "5":
                 verMenu();
@@ -210,18 +269,67 @@ function mostrarResultados(productosEncontrados) {
     }
 }
 
-function verCarrito() {
-    if (carrito.length !== 0) {
-        let carritoInfo = "Los productos agregados al carrito de compras son:\n";
-        carrito.forEach((producto) => {
-            carritoInfo += `${producto.marca} ${producto.modelo} - Precio: ${producto.precio}\n`;
-        });
-        carritoInfo += `Total: UYU ${total}`;
-        alert(carritoInfo);
-    } else {
+
+function quitarDelCarrito() {
+    if (carrito.length === 0) {
         alert("El carrito está vacío.");
+        verMenu();
+        return;
+    }
+
+    let mensaje = "Productos en el carrito:\n";
+    carrito.forEach((producto, index) => {
+        mensaje += `${index + 1}. ${producto.marca} ${producto.modelo} - Precio: ${producto.precio}\n`;
+    });
+    mensaje += `${carrito.length + 1}. Volver`;
+
+    const respuesta = prompt(mensaje);
+
+    if (respuesta <= carrito.length) {
+        const productoQuitado = carrito.splice(respuesta - 1, 1)[0];
+        total -= productoQuitado.precio;
+        alert(`${productoQuitado.marca} ${productoQuitado.modelo} ha sido quitado del carrito.`);
+        quitarDelCarrito();
+    } else if (respuesta == carrito.length + 1) {
+        verMenu();
+    } else {
+        alert("Elija una opción válida.");
+        quitarDelCarrito();
     }
 }
+
+
+
+function verCarrito() {
+    if (carrito.length === 0) {
+        alert("El carrito está vacío.");
+        verMenu();
+        return;
+    }
+
+    let mensaje = "Productos en el carrito:\n";
+    carrito.forEach((producto, index) => {
+        mensaje += `${index + 1}. ${producto.marca} ${producto.modelo} - Precio: ${producto.precio}\n`;
+    });
+    mensaje += `${carrito.length + 1}. Quitar productos del Carrito\n${carrito.length + 2}. Volver`;
+
+    const respuesta = prompt(mensaje);
+
+    if (respuesta <= carrito.length) {
+        const productoQuitado = carrito.splice(respuesta - 1, 1)[0];
+        total -= productoQuitado.precio;
+        alert(`${productoQuitado.marca} ${productoQuitado.modelo} ha sido quitado del carrito.`);
+        verCarrito();
+    } else if (respuesta == carrito.length + 1) {
+        quitarDelCarrito();
+    } else if (respuesta == carrito.length + 2) {
+        verMenu();
+    } else {
+        alert("Elija una opción válida.");
+        verCarrito();
+    }
+}
+
 
 function verMenu() {
     let menu;
