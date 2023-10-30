@@ -273,6 +273,7 @@ function mostrarResultados(productosEncontrados) {
 
 
 function calcularPrecioTotal() {
+    total = 0;
     for (const producto of carrito) {
         total += producto.precio;
     }
