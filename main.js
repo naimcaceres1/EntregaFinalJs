@@ -96,6 +96,8 @@ mostrarMenu()
 
 //Segunda PreEntrega #2
 
+
+
 alert("Bienvenidos a El Rincon");
 
 let total = 0;
@@ -118,7 +120,7 @@ const productos = [
         marca: `Nike`, genero: `Calzado`, disciplina: `Futbol`, modelo: `Zoom Superfly 9 Academy`, precio: 5290,
     },
     {
-        marca: `Adidas`, genero: `Indumentaria`, disciplina: `Sportwear`, modelo: `remera Brand Love`, precio: 1990,
+        marca: `Adidas`, genero: `Indumentaria`, disciplina: `Sportwear`, modelo: `Remera Brand Love`, precio: 1990,
     },
     {
         marca: `Adidas`, genero: `Indumentaria`, disciplina: `Sportwear`, modelo: `Buzo Essential Brand Love`, precio: 5290,
@@ -270,6 +272,15 @@ function mostrarResultados(productosEncontrados) {
 }
 
 
+function calcularPrecioTotal() {
+    for (const producto of carrito) {
+        total += producto.precio;
+    }
+}
+
+
+
+
 function quitarDelCarrito() {
     if (carrito.length === 0) {
         alert("El carrito está vacío.");
@@ -311,24 +322,21 @@ function verCarrito() {
     carrito.forEach((producto, index) => {
         mensaje += `${index + 1}. ${producto.marca} ${producto.modelo} - Precio: ${producto.precio}\n`;
     });
-    mensaje += `${carrito.length + 1}. Quitar productos del Carrito\n${carrito.length + 2}. Volver`;
+
+    calcularPrecioTotal();
+
+    mensaje += `Precio total: UYU ${total}\n${carrito.length + 1}. Quitar productos del Carrito\n${carrito.length + 2}. Volver`;
 
     const respuesta = prompt(mensaje);
-
-    if (respuesta <= carrito.length) {
-        const productoQuitado = carrito.splice(respuesta - 1, 1)[0];
-        total -= productoQuitado.precio;
-        alert(`${productoQuitado.marca} ${productoQuitado.modelo} ha sido quitado del carrito.`);
-        verCarrito();
-    } else if (respuesta == carrito.length + 1) {
+    if (respuesta == carrito.length + 1) {
         quitarDelCarrito();
     } else if (respuesta == carrito.length + 2) {
         verMenu();
     } else {
-        alert("Elija una opción válida.");
+        alert(`Elija una opción correcta`);
         verCarrito();
     }
-}
+}  
 
 
 function verMenu() {
