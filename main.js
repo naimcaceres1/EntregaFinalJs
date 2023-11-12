@@ -89,15 +89,27 @@ function mostrarCarrito(){
 mostrarMenu()
 
 
- */
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+*/
 
 //Segunda PreEntrega #2
 
 
-
+/* 
 alert("Bienvenidos a El Rincon");
 
 let total = 0;
@@ -362,12 +374,170 @@ function verMenu() {
     alert("Muchas gracias por visitarnos, lo esperamos nuevamente.");
 }
 
-verMenu();
+verMenu(); */
 
 
 
 
 
 
+//Ejemplos  
+
+/* const productos = [
+    {id: 1, nombre: "camisa", precio: 1000},
+    {id: 2, nombre: "gorra", precio: 750},
+];
+
+localStorage.setItem("carrito", JSON.stringify(productos)); */
+/* 
+let eliminarBoton = document.getElementById("eliminarBoton");
+let carrito;
+let carritoStorage = localStorage.getItem("carrito");
+
+if (carritoStorage) {
+    carrito = JSON.parse(carritoStorage);
+} else {
+    carrito = [];
+
+    let div = document.createElement("div");
+    div.innerHTML = "No hay elementos en el carrito";
+
+    document.body.append(div);
+}
+
+carrito.forEach((item) => {
+    let div = document.createElement("div");
+    div.innerHTML = `
+    <h2>Id: ${item.id}</h2>
+    <p>Nombre: ${item.nombre}</p>
+    <b>$${item.precio}</b>
+    `;
+
+    document.body.append(div);
+});
+
+eliminarBoton.addEventListener("click", () => {
+    alert("Carrito eliminado");
+    localStorage.clear();
+    location.reload();
+});
+ */
+
+/* let cerrarSesionBoton = document.getElementById("cerrarSesionBoton");
+let usuario;
+let usuarioStorage = sessionStorage.getItem("usuario");
+
+if(usuarioStorage){
+    usuario = usuarioStorage;
+    alert(`Bienvenid@ nuevamente ${usuario}`);
+    }else{
+        usuario = prompt("Ingrese su usuario");
+        alert(`Bienvenid@ por primera vez ${usuario}`);
+        sessionStorage.setItem("usuario", usuario);
+    };
+
+cerrarSesionBoton.addEventListener("click", () => {
+    alert("Sesion cerrada");
+    sessionStorage.clear();
+    location.reload();
+});
+ */
 
 
+
+
+//Tercer PreEntrega #3
+
+let total = 0;
+let carrito = [];
+
+const productos = [
+    {
+        marca: `Adidas`, genero: `Calzado`, disciplina: `Sportwear`, modelo: `Court Plataform`, precio: 3690, imagen: `../img/adidas-court-platform-w-blancas-plateadas.png`,
+    },
+    {
+        marca: `Lacoste`, genero: `Calzado`, disciplina: `Tenis`, modelo: `AG-LT23 Ultra`, precio: 12400, imagen: `../img/lacoste-ag-lt23-blancas.png`
+    },
+    {
+        marca: `Nike`, genero: `Calzado`, disciplina: `Running`, modelo: `Flex Experience 11`, precio: 4690, imagen: `../img/nike-flex-experience-run-11-beige.png`
+    },
+    {
+        marca: `Nike`, genero: `Calzado`, disciplina: `Futbol`, modelo: `Phantom GX Pro FG`, precio: 7990, imagen: `../img/nike-phantom-gx-pro-fg-amarillos.png`
+    },
+    {
+        marca: `Converse`, genero: `Calzado`, disciplina: `Sportwear`, modelo: `Chuck Taylor All Star Hi`, precio: 3790, imagen: `../img/converse-chuck-taylor-all-star-hi-roajs.png`
+    },
+    {
+        marca: `Nike`, genero: `Calzado`, disciplina: `Sportwear`, modelo: `Court Vision Low`, precio: 4990, imagen: `../img/nike-court-vision-low-blanchas-swoosh-negro.png`
+    },
+    {
+        marca: `Nike`, genero: `Calzado`, disciplina: `Sportwear`, modelo: `Air Max SC`, precio: 5690, imagen: `../img/nike-air-max-sc-rosado.png`
+    },
+    {
+        marca: `Adidas`, genero: `Calzado`, disciplina: `Sportwear`, modelo: `Hoops 3.0`, precio: 4690, imagen: `../img/adidas-hoops-3-0-blancas.png`
+    },
+    {
+        marca: `Puma`, genero: `Calzado`, disciplina: `Sportwear`, modelo: `Smash 3.0`, precio: 3990, imagen: `../img/puma-smash-3-0-amarillas.png`
+    },
+    {
+        marca: `Nike`, genero: `Calzado`, disciplina: `Sportwear`, modelo: `Court Vision`, precio: 3790, imagen: `../img/nike-court-vision-low-negras-swoosh-blanco.png`
+    },
+    {
+        marca: `Converse`, genero: `Calzado`, disciplina: `Sportwear`, modelo: `Chuck Taylor`, precio: 7490, imagen: `../img/converse-chuck-taylor-all-star-ox-blancas.png`
+    },
+    {
+        marca: `Nike`, genero: `Calzado`, disciplina: `Futbol`, modelo: `Zoom Superfly 9 Academy XXV`, precio: 5290, imagen: `../img/nike-zoom-superfly-9-academy-xxv-jr-pleateadas-rosadas.png`
+    },
+
+];
+
+
+function agregarCarrito(producto) {
+    carrito.push({
+        marca: producto.marca,
+        modelo: producto.modelo,
+        precio: producto.precio,
+        imagen: producto.imagen,
+    });
+    total += producto.precio;
+    actualizarCarrito();
+}
+
+function quitarDelCarrito(index) {
+    const productoQuitado = carrito.splice(index, 1)[0];
+    total -= productoQuitado.precio;
+    actualizarCarrito();
+}
+
+function mostrarCarrito() {
+    document.getElementById("carritoContenedor").innerHTML = "";
+
+    carrito.forEach((producto, index) => {
+        const productoDiv = document.createElement("div");
+        productoDiv.innerHTML = `
+            <h3>${producto.marca} ${producto.modelo}</h3>
+            <img src="${producto.imagen}" alt="${producto.modelo}" class="imagen-carrito">
+            <p>Precio: UYU ${producto.precio}</p>
+            <button onclick="quitarDelCarrito(${index})">Quitar del carrito</button>
+        `;
+        document.getElementById("carritoContenedor").appendChild(productoDiv);
+    });
+
+    const totalDiv = document.createElement("div");
+    totalDiv.innerHTML = `<p>Total: UYU ${total}</p>`;
+    document.getElementById("carritoContenedor").appendChild(totalDiv);
+}
+
+function actualizarCarrito() {
+    mostrarCarrito();
+}
+
+document.querySelectorAll(".agregarCarrito").forEach(function (boton, index) {
+    boton.addEventListener("click", function () {
+        const productoSeleccionado = productos[index];
+        agregarCarrito(productoSeleccionado);
+    });
+});
+
+agregarCarrito(productos[1]);
+quitarDelCarrito(0);

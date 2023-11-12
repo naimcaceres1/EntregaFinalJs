@@ -317,6 +317,9 @@ main .hombre-mujer {
             font-size: 12px;
             margin: 3px;
             margin-top: 10px; }
+    .calzado-pag .calzado-contenedor #carritoContenedor .imagen-carrito {
+      width: 220px;
+      height: 220px; }
 
 .indumentaria-pag {
   display: flex;
@@ -670,8 +673,7 @@ footer .suscripcion {
 footer .footer-contenedor {
   display: grid;
   grid-template-columns: repeat 4, 25%;
-  grid-template-areas: "footer footer footer footer"
- "footer footer footer footer";
+  grid-template-areas: "footer footer footer footer" "footer footer footer footer";
   margin-bottom: 0;
   justify-content: space-around; }
   footer .footer-contenedor div {
@@ -1368,8 +1370,7 @@ footer .footer-contenedor {
   footer .footer-contenedor {
     display: grid;
     grid-template-columns: repeat 2, 1fr;
-    grid-template-areas: "footer footer"
- "footer footer";
+    grid-template-areas: "footer footer" "footer footer";
     margin-bottom: 0; }
     footer .footer-contenedor div {
       grid-area: "footer";
@@ -1814,8 +1815,7 @@ footer .footer-contenedor {
   footer .footer-contenedor {
     display: grid;
     grid-template-columns: repeat 2, 1fr;
-    grid-template-areas: "footer footer"
- "footer footer";
+    grid-template-areas: "footer footer" "footer footer";
     margin-bottom: 0;
     margin-top: 20px; }
     footer .footer-contenedor div {
