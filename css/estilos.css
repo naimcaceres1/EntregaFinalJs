@@ -317,9 +317,26 @@ main .hombre-mujer {
             font-size: 12px;
             margin: 3px;
             margin-top: 10px; }
+      .calzado-pag .calzado-contenedor .productos .agregarCarrito {
+        background-color: black;
+        color: white; }
+      .calzado-pag .calzado-contenedor .productos .agregarCarrito:hover {
+        background-color: gray; }
     .calzado-pag .calzado-contenedor #carritoContenedor .imagen-carrito {
       width: 220px;
       height: 220px; }
+    .calzado-pag .calzado-contenedor #carritoContenedor .quitarDelCarritoBtn {
+      background-color: black;
+      color: white;
+      border: 1px solid black; }
+    .calzado-pag .calzado-contenedor #carritoContenedor .quitarDelCarritoBtn:hover {
+      background-color: gray; }
+    .calzado-pag .calzado-contenedor #carritoContenedor .vaciarCarritoBtn {
+      color: black;
+      background-color: bisque;
+      border: 1px solid black; }
+    .calzado-pag .calzado-contenedor #carritoContenedor .vaciarCarritoBtn:hover {
+      background-color: #e5af5f; }
 
 .indumentaria-pag {
   display: flex;

@@ -1,0 +1,38 @@
+[
+    {
+        "marca": "Adidas", "genero": "Calzado", "disciplina": "Sportwear", "modelo": "Court Plataform", "precio": 3690, "imagen": "../img/adidas-court-platform-w-blancas-plateadas.png"
+    },
+    {
+        "marca": "Lacoste", "genero": "Calzado", "disciplina": "Tenis", "modelo": "AG-LT23 Ultra", "precio": 12400, "imagen": "../img/lacoste-ag-lt23-blancas.png"
+    },
+    {
+        "marca": "Nike", "genero": "Calzado", "disciplina": "Running", "modelo": "Flex Experience 11", "precio": 4690, "imagen": "../img/nike-flex-experience-run-11-beige.png"
+    },
+    {
+        "marca": "Nike", "genero": "Calzado", "disciplina": "Futbol", "modelo": "Phantom GX Pro FG", "precio": 7990, "imagen": "../img/nike-phantom-gx-pro-fg-amarillos.png"
+    },
+    {
+        "marca": "Converse", "genero": "Calzado", "disciplina": "Sportwear", "modelo": "Chuck Taylor All Star Hi", "precio": 3790, "imagen": "../img/converse-chuck-taylor-all-star-hi-roajs.png"
+    },
+    {
+        "marca": "Nike", "genero": "Calzado", "disciplina": "Sportwear", "modelo": "Court Vision Low", "precio": 4990, "imagen": "../img/nike-court-vision-low-blanchas-swoosh-negro.png"
+    },
+    {
+        "marca": "Nike", "genero": "Calzado", "disciplina": "Sportwear", "modelo": "Air Max SC", "precio": 5690, "imagen": "../img/nike-air-max-sc-rosado.png"
+    },
+    {
+        "marca": "Adidas", "genero": "Calzado", "disciplina": "Sportwear", "modelo": "Hoops 3.0", "precio": 4690, "imagen": "../img/adidas-hoops-3-0-blancas.png"
+    },
+    {
+        "marca": "Puma", "genero": "Calzado", "disciplina": "Sportwear", "modelo": "Smash 3.0", "precio": 3990, "imagen": "../img/puma-smash-3-0-amarillas.png"
+    },
+    {
+        "marca": "Nike", "genero": "Calzado", "disciplina": "Sportwear", "modelo": "Court Vision", "precio": 3790, "imagen": "../img/nike-court-vision-low-negras-swoosh-blanco.png"
+    },
+    {
+        "marca": "Converse", "genero": "Calzado", "disciplina": "Sportwear", "modelo": "Chuck Taylor", "precio": 7490, "imagen": "../img/converse-chuck-taylor-all-star-ox-blancas.png"
+    },
+    {
+        "marca": "Nike", "genero": "Calzado", "disciplina": "Futbol", "modelo": "Zoom Superfly 9 Academy XXV", "precio": 5290, "imagen": "../img/nike-zoom-superfly-9-academy-xxv-jr-pleateadas-rosadas.png"
+    }
+]

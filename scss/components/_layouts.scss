@@ -308,11 +308,34 @@ main{
                     }
                 }
             }
+            .agregarCarrito{
+                background-color: $color-primario;
+                color: $color-secundario;
+            }
+            .agregarCarrito:hover{
+                background-color: gray;
+            }
         }
         #carritoContenedor{
             .imagen-carrito{
                 width: 220px;
                 height: 220px;
+            }
+            .quitarDelCarritoBtn{
+                background-color: $color-primario;
+                color: $color-secundario;
+                border: map-get($boton, border-boton);
+            }
+            .quitarDelCarritoBtn:hover{
+                background-color: gray;
+            }
+            .vaciarCarritoBtn{
+                color: $color-primario;
+                background-color: bisque;
+                border: map-get($boton, border-boton);
+            }
+            .vaciarCarritoBtn:hover{
+                background-color:rgb(229, 175, 95);
             }
         }
     }

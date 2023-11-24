@@ -451,9 +451,10 @@ cerrarSesionBoton.addEventListener("click", () => {
 let total = 0;
 let carrito = [];
 
+
 const productos = [
     {
-        marca: `Adidas`, genero: `Calzado`, disciplina: `Sportwear`, modelo: `Court Plataform`, precio: 3690, imagen: `../img/adidas-court-platform-w-blancas-plateadas.png`,
+        marca: `Adidas`, genero: `Calzado`, disciplina: `Sportwear`, modelo: `Court Plataform`, precio: 3690, imagen: `../img/adidas-court-platform-w-blancas-plateadas.png`
     },
     {
         marca: `Lacoste`, genero: `Calzado`, disciplina: `Tenis`, modelo: `AG-LT23 Ultra`, precio: 12400, imagen: `../img/lacoste-ag-lt23-blancas.png`
@@ -492,59 +493,118 @@ const productos = [
 ];
 
 
-function agregarCarrito(producto) {
-    carrito.push({
-        marca: producto.marca,
-        modelo: producto.modelo,
-        precio: producto.precio,
-        imagen: producto.imagen,
-    });
-    total += producto.precio;
-    
-    if (carrito.length > 0) {
-        actualizarCarrito();
-    }
-}
+const agregarCarrito = (producto) => {
+    const { marca, modelo, precio, imagen } = producto;
+    carrito.push({ marca, modelo, precio, imagen });
+    total += precio;
+    Swal.fire({
+        title: "El producto ha sido agregado al carrito",
+        html: `
+            <div>
+                <p>${marca} ${modelo}</p>
+                <img src="${imagen}" alt="${modelo}" style="max-width: 100px; max-height: 100px;">
+            </div>
+        `
+    });    
+    actualizarCarrito();
+};
+
 
 function quitarDelCarrito(index) {
     if (carrito.length > 0) {
         const [productoQuitado] = carrito.splice(index, 1);
         total -= productoQuitado.precio;
+        Swal.fire("El producto ha sido eliminado el carrito");
         actualizarCarrito();
     }
-}
+};
 
-function mostrarCarrito() {
-    document.getElementById("carritoContenedor").innerHTML = "";
-
-    carrito.forEach((producto, index) => {
-        const productoDiv = document.createElement("div");
-        productoDiv.innerHTML = `
-            <h3>${producto.marca} ${producto.modelo}</h3>
-            <img src="${producto.imagen}" alt="${producto.modelo}" class="imagen-carrito">
-            <p>Precio: UYU ${producto.precio}</p>
-            <button onclick="quitarDelCarrito(${index})">Quitar del carrito</button>
-        `;
-        document.getElementById("carritoContenedor").appendChild(productoDiv);
-    });
-
-    if (carrito.length > 0) {        
-        const totalDiv = document.createElement("div");
-        totalDiv.innerHTML = `<p>Total: UYU ${total}</p>`;
-        document.getElementById("carritoContenedor").appendChild(totalDiv);
-    }
-}
 
 function actualizarCarrito() {
     mostrarCarrito();
-}
+    guardarCarrito();
+};
 
-document.querySelectorAll(".agregarCarrito").forEach(function (boton, index) {
-    boton.addEventListener("click", () => {
+
+const mostrarCarrito = () => {
+    const carritoContenedor = document.getElementById('carritoContenedor');
+    carritoContenedor.innerHTML = '';
+
+    const elementosCarrito = carrito.map(({ marca, modelo, precio, imagen }, index) => {
+        const productoDiv = document.createElement('div');
+        productoDiv.innerHTML = `
+        <h3>${marca} ${modelo}</h3>
+        <img src="${imagen}" alt="${modelo}" class="imagen-carrito">
+        <p>Precio: UYU ${precio}</p>
+        <button onclick="quitarDelCarrito(${index})" class="quitarDelCarritoBtn">Quitar del carrito</button>
+        `;
+        carritoContenedor.appendChild(productoDiv);
+        return productoDiv;
+    });
+
+    const vaciarCarritoBtn = document.getElementById('vaciarCarritoBtn');
+
+    if (carrito.length > 0) {
+        if (!vaciarCarritoBtn) {
+            const nuevoVaciarCarritoBtn = document.createElement('button');
+            nuevoVaciarCarritoBtn.textContent = 'Vaciar Carrito';
+            nuevoVaciarCarritoBtn.className = 'vaciarCarritoBtn';
+            nuevoVaciarCarritoBtn.addEventListener('click', vaciarCarrito);
+            carritoContenedor.appendChild(nuevoVaciarCarritoBtn);
+        }
+    } else {
+        vaciarCarritoBtn?.remove();
+    }
+
+    return elementosCarrito;
+};
+
+
+const vaciarCarrito = () => {
+    Swal.fire({
+        title: "Estas seguro que quieres vaciar tu carrito?",
+        text: "No podras revetirlo",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#3085d6",
+        cancelButtonColor: "#d33",
+        confirmButtonText: "Si, estoy seguro"
+    }).then((result) => {
+        if (result.isConfirmed) {
+            carrito = [];
+            total = 0;
+            mostrarCarrito();
+            localStorage.removeItem('carrito');
+            localStorage.removeItem('total');
+            Swal.fire({
+                title: "Vaciado!",
+                text: "Tu carrito esta vacio.",
+                icon: "success"
+            });
+        }
+    });
+
+};
+
+
+window.onload = function () {
+    if (localStorage.getItem('carrito')) {
+        carrito = JSON.parse(localStorage.getItem('carrito'));
+        total = parseInt(localStorage.getItem('total'));
+        actualizarCarrito();
+    } /* FUNCIONA PARA QUE CUANDO SE LEVANTE EL SITIO WEB, APAREZCAN LOS PRODUCTOS AGREGADOS AL CARRITO EN CASO DE TENERLOS */
+};
+
+
+function guardarCarrito() {
+    localStorage.setItem('carrito', JSON.stringify(carrito));
+    localStorage.setItem('total', total.toString());
+};
+
+document.querySelectorAll('.agregarCarrito').forEach(function (boton, index) {
+    boton.addEventListener('click', () => {
         const productoSeleccionado = productos[index];
         agregarCarrito(productoSeleccionado);
+        guardarCarrito();
     });
 });
-
-agregarCarrito(productos[1]);
-quitarDelCarrito(0);
