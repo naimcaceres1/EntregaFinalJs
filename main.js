@@ -531,8 +531,8 @@ function quitarDelCarrito(index) {
 function actualizarCarrito() {
     mostrarCarrito();
     guardarCarrito();
-};
 
+};
 
 const mostrarCarrito = () => {
     const carritoContenedor = document.getElementById('carritoContenedor');
@@ -555,11 +555,13 @@ const mostrarCarrito = () => {
         return productoDiv;
     });
 
-    const precioTotalDiv = document.createElement('div');
-    precioTotalDiv.innerHTML = `
-        <b>Precio total: UYU ${precioTotalCarrito}</b>
-    `;
-    carritoContenedor.appendChild(precioTotalDiv);
+    if (precioTotalCarrito > 0) {
+        const precioTotalDiv = document.createElement('div');
+        precioTotalDiv.innerHTML = `
+            <b>Precio total: UYU ${precioTotalCarrito}</b>
+        `;
+        carritoContenedor.appendChild(precioTotalDiv);
+    }
 
     const vaciarCarritoBtn = document.getElementById('vaciarCarritoBtn');
 
