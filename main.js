@@ -452,45 +452,50 @@ let total = 0;
 let carrito = [];
 
 
-const productos = [
-    {
-        marca: `Adidas`, genero: `Calzado`, disciplina: `Sportwear`, modelo: `Court Plataform`, precio: 3690, imagen: `../img/adidas-court-platform-w-blancas-plateadas.png`
-    },
-    {
-        marca: `Lacoste`, genero: `Calzado`, disciplina: `Tenis`, modelo: `AG-LT23 Ultra`, precio: 12400, imagen: `../img/lacoste-ag-lt23-blancas.png`
-    },
-    {
-        marca: `Nike`, genero: `Calzado`, disciplina: `Running`, modelo: `Flex Experience 11`, precio: 4690, imagen: `../img/nike-flex-experience-run-11-beige.png`
-    },
-    {
-        marca: `Nike`, genero: `Calzado`, disciplina: `Futbol`, modelo: `Phantom GX Pro FG`, precio: 7990, imagen: `../img/nike-phantom-gx-pro-fg-amarillos.png`
-    },
-    {
-        marca: `Converse`, genero: `Calzado`, disciplina: `Sportwear`, modelo: `Chuck Taylor All Star Hi`, precio: 3790, imagen: `../img/converse-chuck-taylor-all-star-hi-roajs.png`
-    },
-    {
-        marca: `Nike`, genero: `Calzado`, disciplina: `Sportwear`, modelo: `Court Vision Low`, precio: 4990, imagen: `../img/nike-court-vision-low-blanchas-swoosh-negro.png`
-    },
-    {
-        marca: `Nike`, genero: `Calzado`, disciplina: `Sportwear`, modelo: `Air Max SC`, precio: 5690, imagen: `../img/nike-air-max-sc-rosado.png`
-    },
-    {
-        marca: `Adidas`, genero: `Calzado`, disciplina: `Sportwear`, modelo: `Hoops 3.0`, precio: 4690, imagen: `../img/adidas-hoops-3-0-blancas.png`
-    },
-    {
-        marca: `Puma`, genero: `Calzado`, disciplina: `Sportwear`, modelo: `Smash 3.0`, precio: 3990, imagen: `../img/puma-smash-3-0-amarillas.png`
-    },
-    {
-        marca: `Nike`, genero: `Calzado`, disciplina: `Sportwear`, modelo: `Court Vision`, precio: 3790, imagen: `../img/nike-court-vision-low-negras-swoosh-blanco.png`
-    },
-    {
-        marca: `Converse`, genero: `Calzado`, disciplina: `Sportwear`, modelo: `Chuck Taylor`, precio: 7490, imagen: `../img/converse-chuck-taylor-all-star-ox-blancas.png`
-    },
-    {
-        marca: `Nike`, genero: `Calzado`, disciplina: `Futbol`, modelo: `Zoom Superfly 9 Academy XXV`, precio: 5290, imagen: `../img/nike-zoom-superfly-9-academy-xxv-jr-pleateadas-rosadas.png`
-    },
+function cargarProductos() {
+    return new Promise((resolve, reject) => {
+        fetch("../productos.json")
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('No se están cargando los productos correctamente');
+                }
+                return response.json();
+            })
+            .then(data => {
+                resolve(data);
+            })
+            .catch(error => {
+                reject(error);
+            });
+    });
+}
 
-];
+
+cargarProductos()
+    .then(productos => {
+        const botonesAgregarCarrito = document.querySelectorAll('.agregarCarrito');
+        
+        botonesAgregarCarrito.forEach((boton, index) => {
+            boton.addEventListener('click', () => {
+                const productoSeleccionado = productos[index];
+                agregarCarrito(productoSeleccionado);
+                guardarCarrito();
+            });
+        });
+    })
+    .catch(error => {
+        console.error(error);
+    });
+
+
+window.addEventListener('DOMContentLoaded', () => {
+    if (localStorage.getItem('carrito') && localStorage.getItem('total')) {
+        carrito = JSON.parse(localStorage.getItem('carrito'));
+        total = parseFloat(localStorage.getItem('total'));
+        mostrarCarrito();
+    }
+});
+
 
 
 const agregarCarrito = (producto) => {
@@ -555,44 +560,39 @@ const mostrarCarrito = () => {
     } else {
         vaciarCarritoBtn?.remove();
     }
-
     return elementosCarrito;
 };
 
 
 const vaciarCarrito = () => {
-    Swal.fire({
-        title: "Estas seguro que quieres vaciar tu carrito?",
-        text: "No podras revetirlo",
-        icon: "warning",
-        showCancelButton: true,
-        confirmButtonColor: "#3085d6",
-        cancelButtonColor: "#d33",
-        confirmButtonText: "Si, estoy seguro"
-    }).then((result) => {
-        if (result.isConfirmed) {
-            carrito = [];
-            total = 0;
-            mostrarCarrito();
-            localStorage.removeItem('carrito');
-            localStorage.removeItem('total');
-            Swal.fire({
-                title: "Vaciado!",
-                text: "Tu carrito esta vacio.",
-                icon: "success"
-            });
-        }
+    const vaciarPromesa = new Promise((resolve, reject) => {
+        Swal.fire({
+            title: "Estas seguro que quieres vaciar tu carrito?",
+            text: "No podras revertirlo",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Si, estoy seguro"
+        }).then((result) => {
+            if (result.isConfirmed) {
+                carrito = [];
+                total = 0;
+                mostrarCarrito();
+                localStorage.removeItem('carrito');
+                localStorage.removeItem('total');
+                Swal.fire({
+                    title: "Vaciado!",
+                    text: "Tu carrito esta vacio.",
+                    icon: "success"
+                });
+                resolve();
+            } else {
+                reject();
+            }
+        });
     });
-
-};
-
-
-window.onload = function () {
-    if (localStorage.getItem('carrito')) {
-        carrito = JSON.parse(localStorage.getItem('carrito'));
-        total = parseInt(localStorage.getItem('total'));
-        actualizarCarrito();
-    } /* FUNCIONA PARA QUE CUANDO SE LEVANTE EL SITIO WEB, APAREZCAN LOS PRODUCTOS AGREGADOS AL CARRITO EN CASO DE TENERLOS */
+    return vaciarPromesa;
 };
 
 
@@ -601,10 +601,3 @@ function guardarCarrito() {
     localStorage.setItem('total', total.toString());
 };
 
-document.querySelectorAll('.agregarCarrito').forEach(function (boton, index) {
-    boton.addEventListener('click', () => {
-        const productoSeleccionado = productos[index];
-        agregarCarrito(productoSeleccionado);
-        guardarCarrito();
-    });
-});

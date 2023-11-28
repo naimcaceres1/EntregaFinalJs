@@ -311,12 +311,22 @@ main{
             .agregarCarrito{
                 background-color: $color-primario;
                 color: $color-secundario;
+                border: map-get($boton, border-boton);
+                border-radius: 5px;
+                font-size: 13px;
+                padding: 3px;
             }
             .agregarCarrito:hover{
                 background-color: gray;
             }
         }
         #carritoContenedor{
+            margin-top: 20px;
+            justify-content: center;
+            text-align: center;
+            h3{
+                font-size: 20px;
+            }
             .imagen-carrito{
                 width: 220px;
                 height: 220px;
@@ -325,6 +335,8 @@ main{
                 background-color: $color-primario;
                 color: $color-secundario;
                 border: map-get($boton, border-boton);
+                border-radius: 5px;
+                padding: 3px;
             }
             .quitarDelCarritoBtn:hover{
                 background-color: gray;
@@ -333,6 +345,10 @@ main{
                 color: $color-primario;
                 background-color: bisque;
                 border: map-get($boton, border-boton);
+                border-color: rgba(0, 0, 0, 0.316);
+                border-radius: 5px;
+                margin-top: 5px;
+                padding: 3px;
             }
             .vaciarCarritoBtn:hover{
                 background-color:rgb(229, 175, 95);
