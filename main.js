@@ -502,15 +502,18 @@ const agregarCarrito = (producto) => {
     const { marca, modelo, precio, imagen } = producto;
     carrito.push({ marca, modelo, precio, imagen });
     total += precio;
+
     Swal.fire({
         title: "El producto ha sido agregado al carrito",
         html: `
             <div>
                 <p>${marca} ${modelo}</p>
                 <img src="${imagen}" alt="${modelo}" style="max-width: 100px; max-height: 100px;">
+                <p>Precio: UYU ${precio}</p>
             </div>
         `
-    });    
+    });
+
     actualizarCarrito();
 };
 
@@ -535,6 +538,8 @@ const mostrarCarrito = () => {
     const carritoContenedor = document.getElementById('carritoContenedor');
     carritoContenedor.innerHTML = '';
 
+    let precioTotalCarrito = 0;
+
     const elementosCarrito = carrito.map(({ marca, modelo, precio, imagen }, index) => {
         const productoDiv = document.createElement('div');
         productoDiv.innerHTML = `
@@ -544,8 +549,17 @@ const mostrarCarrito = () => {
         <button onclick="quitarDelCarrito(${index})" class="quitarDelCarritoBtn">Quitar del carrito</button>
         `;
         carritoContenedor.appendChild(productoDiv);
+
+        precioTotalCarrito += precio;
+
         return productoDiv;
     });
+
+    const precioTotalDiv = document.createElement('div');
+    precioTotalDiv.innerHTML = `
+        <b>Precio total: UYU ${precioTotalCarrito}</b>
+    `;
+    carritoContenedor.appendChild(precioTotalDiv);
 
     const vaciarCarritoBtn = document.getElementById('vaciarCarritoBtn');
 

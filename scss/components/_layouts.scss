@@ -322,6 +322,7 @@ main{
         }
         #carritoContenedor{
             margin-top: 20px;
+            margin-right: 150px;
             justify-content: center;
             text-align: center;
             h3{
@@ -341,6 +342,13 @@ main{
             .quitarDelCarritoBtn:hover{
                 background-color: gray;
             }
+            div{
+                margin: 20px;
+                b{
+                    margin: 20px;
+                    font-size: 20px;
+                }
+            }
             .vaciarCarritoBtn{
                 color: $color-primario;
                 background-color: bisque;
@@ -353,6 +361,7 @@ main{
             .vaciarCarritoBtn:hover{
                 background-color:rgb(229, 175, 95);
             }
+            
         }
     }
 }

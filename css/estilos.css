@@ -328,6 +328,7 @@ main .hombre-mujer {
         background-color: gray; }
     .calzado-pag .calzado-contenedor #carritoContenedor {
       margin-top: 20px;
+      margin-right: 150px;
       justify-content: center;
       text-align: center; }
       .calzado-pag .calzado-contenedor #carritoContenedor h3 {
@@ -343,6 +344,11 @@ main .hombre-mujer {
         padding: 3px; }
       .calzado-pag .calzado-contenedor #carritoContenedor .quitarDelCarritoBtn:hover {
         background-color: gray; }
+      .calzado-pag .calzado-contenedor #carritoContenedor div {
+        margin: 20px; }
+        .calzado-pag .calzado-contenedor #carritoContenedor div b {
+          margin: 20px;
+          font-size: 20px; }
       .calzado-pag .calzado-contenedor #carritoContenedor .vaciarCarritoBtn {
         color: black;
         background-color: bisque;
