@@ -595,35 +595,35 @@ const mostrarCarrito = () => {
 
 
 const vaciarCarrito = () => {
-    const vaciarPromesa = new Promise((resolve, reject) => {
-        Swal.fire({
-            title: "Estas seguro que quieres vaciar tu carrito?",
-            text: "No podras revertirlo",
-            icon: "warning",
-            showCancelButton: true,
-            confirmButtonColor: "#3085d6",
-            cancelButtonColor: "#d33",
-            confirmButtonText: "Si, estoy seguro"
-        }).then((result) => {
-            if (result.isConfirmed) {
-                carrito = [];
-                total = 0;
-                mostrarCarrito();
-                localStorage.removeItem('carrito');
-                localStorage.removeItem('total');
-                Swal.fire({
-                    title: "Vaciado!",
-                    text: "Tu carrito esta vacio.",
-                    icon: "success"
-                });
-                resolve();
-            } else {
-                reject();
-            }
-        });
+    Swal.fire({
+        title: "¿Estás seguro que quieres vaciar tu carrito?",
+        text: "No podrás revertirlo",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#3085d6",
+        cancelButtonColor: "#d33",
+        confirmButtonText: "Sí, estoy seguro"
+    }).then((result) => {
+        if (result.isConfirmed) {
+            carrito = [];
+            total = 0;
+            localStorage.removeItem('carrito');
+            localStorage.removeItem('total');
+
+            const carritoContenedor = document.getElementById('carritoContenedor');
+            carritoContenedor.innerHTML = '';
+            
+            Swal.fire({
+                title: "¡Carrito vaciado!",
+                text: "Tu carrito ha sido vaciado exitosamente.",
+                icon: "success"
+            });
+        }
+    }).catch((error) => {
+        console.error(error);
     });
-    return vaciarPromesa;
 };
+
 
 
 const confirmarCompra = () => {
@@ -637,16 +637,16 @@ const confirmarCompra = () => {
         confirmButtonText: "Sí, confirmar compra"
     }).then((result) => {
         if (result.isConfirmed) {
-            carrito = [];
-            total = 0;
-            mostrarCarrito();
-            localStorage.removeItem('carrito');
-            localStorage.removeItem('total');
-
             Swal.fire({
                 title: "¡Compra realizada!",
-                text: "Se ha procesado tu pago, muchas gracias por comprar en El Rincon. Te llegara un mail con tu recibo de pago correspondiente",
+                text: "Se ha procesado tu pago, muchas gracias por comprar en El Rincon. Te llegará un correo con tu recibo de pago correspondiente",
                 icon: "success"
+            }).then(() => {
+                carrito = [];
+                total = 0;
+                mostrarCarrito();
+                localStorage.removeItem('carrito');
+                localStorage.removeItem('total');
             });
         }
     });
