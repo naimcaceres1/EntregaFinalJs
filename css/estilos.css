@@ -356,9 +356,21 @@ main .hombre-mujer {
         border-color: rgba(0, 0, 0, 0.316);
         border-radius: 5px;
         margin-top: 5px;
-        padding: 3px; }
+        padding: 3px;
+        margin: 6px; }
       .calzado-pag .calzado-contenedor #carritoContenedor .vaciarCarritoBtn:hover {
         background-color: #e5af5f; }
+      .calzado-pag .calzado-contenedor #carritoContenedor .comprarBtn {
+        color: black;
+        background-color: #ccabeb;
+        border: 1px solid black;
+        border-color: rgba(0, 0, 0, 0.316);
+        border-radius: 5px;
+        margin-top: 5px;
+        padding: 3px;
+        margin: 6px; }
+      .calzado-pag .calzado-contenedor #carritoContenedor .comprarBtn:hover {
+        background-color: #b071ea; }
 
 .indumentaria-pag {
   display: flex;

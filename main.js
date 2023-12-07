@@ -564,7 +564,6 @@ const mostrarCarrito = () => {
     }
 
     const vaciarCarritoBtn = document.getElementById('vaciarCarritoBtn');
-
     if (carrito.length > 0) {
         if (!vaciarCarritoBtn) {
             const nuevoVaciarCarritoBtn = document.createElement('button');
@@ -576,6 +575,21 @@ const mostrarCarrito = () => {
     } else {
         vaciarCarritoBtn?.remove();
     }
+
+    if (carrito.length > 0){
+        const pagarBtn = document.createElement('button');
+        pagarBtn.textContent = 'Pagar';
+        pagarBtn.className = 'comprarBtn';
+        pagarBtn.addEventListener('click', () => {
+            confirmarCompra();
+        });
+        carritoContenedor.appendChild(pagarBtn);
+    }else{
+        pagarBtn?.remove();
+    }
+
+
+
     return elementosCarrito;
 };
 
@@ -610,6 +624,34 @@ const vaciarCarrito = () => {
     });
     return vaciarPromesa;
 };
+
+
+const confirmarCompra = () => {
+    Swal.fire({
+        title: "¿Estás seguro de querer realizar la compra?",
+        text: "Una vez confirmada, se procesará el pago",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#3085d6",
+        cancelButtonColor: "#d33",
+        confirmButtonText: "Sí, confirmar compra"
+    }).then((result) => {
+        if (result.isConfirmed) {
+            carrito = [];
+            total = 0;
+            mostrarCarrito();
+            localStorage.removeItem('carrito');
+            localStorage.removeItem('total');
+
+            Swal.fire({
+                title: "¡Compra realizada!",
+                text: "Se ha procesado tu pago, muchas gracias por comprar en El Rincon. Te llegara un mail con tu recibo de pago correspondiente",
+                icon: "success"
+            });
+        }
+    });
+};
+
 
 
 function guardarCarrito() {

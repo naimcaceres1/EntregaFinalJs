@@ -357,11 +357,24 @@ main{
                 border-radius: 5px;
                 margin-top: 5px;
                 padding: 3px;
+                margin: 6px
             }
             .vaciarCarritoBtn:hover{
                 background-color:rgb(229, 175, 95);
             }
-            
+            .comprarBtn{
+                color: $color-primario;
+                background-color: rgb(204, 171, 235);
+                border: map-get($boton, border-boton);
+                border-color: rgba(0, 0, 0, 0.316);
+                border-radius: 5px;
+                margin-top: 5px;
+                padding: 3px;
+                margin: 6px;
+            }
+            .comprarBtn:hover{
+                background-color: rgb(176, 113, 234);
+            }           
         }
     }
 }
