@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500&family=Catamaran:wght@700&family=Lato:wght@300;400;700&family=Russo+One&family=Signika:wght@700&display=swap");
-header h2, main .recomendados h2, main .moda .moda-contenedor div a img, .calzado-pag .calzado-contenedor .productos, .indumentaria-pag .indumentaria-contenedor .productos, .indumentaria-pag .indumentaria-contenedor .productos a .precios-contenedor, .accesorios-pag .accesorios-contenedor .productos, .rebajas-pag .rebajas-contenedor .imagenes-rebajas, .contactos-pag .contactos-formulario div, footer .suscripcion .suscripcion-mail {
+header h2, main .recomendados h2, main .moda .moda-contenedor div a img, .calzado-pag .productos, .indumentaria-pag .indumentaria-contenedor .productos, .indumentaria-pag .indumentaria-contenedor .productos a .precios-contenedor, .accesorios-pag .accesorios-contenedor .productos, .rebajas-pag .rebajas-contenedor .imagenes-rebajas, .contactos-pag .contactos-formulario div, footer .suscripcion .suscripcion-mail {
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -249,13 +249,14 @@ main .hombre-mujer {
 
 .calzado-pag {
   height: auto;
-  display: flex;
+  display: grid;
+  grid-template-columns: 20% 80%;
   width: 100%;
   margin-top: 50px; }
   .calzado-pag .calzado-filtro {
     display: flex;
     flex-direction: column;
-    width: 20%; }
+    width: 100%; }
     .calzado-pag .calzado-filtro div {
       width: 100%;
       margin-bottom: 30px; }
@@ -272,105 +273,101 @@ main .hombre-mujer {
             margin: 3px; }
         .calzado-pag .calzado-filtro div ul li a:hover {
           color: #FF2931; }
-  .calzado-pag .calzado-contenedor {
-    width: 100%;
+  .calzado-pag #contenedorProductos {
+    width: 100;
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    margin-bottom: 50px; }
-    .calzado-pag .calzado-contenedor .productos {
-      flex-direction: column;
-      margin: 12px;
-      padding: 3px; }
-      .calzado-pag .calzado-contenedor .productos a {
-        text-decoration: none;
-        color: black;
-        text-align: center;
-        justify-content: center;
-        width: 270px;
-        height: auto; }
-        .calzado-pag .calzado-contenedor .productos a img {
-          width: 220px;
-          height: 220px;
-          text-align: center;
-          justify-content: center;
-          border-radius: 3%; }
-        .calzado-pag .calzado-contenedor .productos a h3 {
-          text-align: center;
-          justify-content: center;
-          font-family: 'Lato', sans-serif;
-          font-size: 14px;
-          width: 270px;
-          height: 20px;
-          margin-top: 7px; }
-        .calzado-pag .calzado-contenedor .productos a .precios-contenedor {
-          height: 20px;
-          display: flex;
-          flex-direction: row;
-          justify-content: center;
-          margin-bottom: 10px; }
-          .calzado-pag .calzado-contenedor .productos a .precios-contenedor strong {
-            font-size: 13px;
-            margin: 3px;
-            margin-top: 10px; }
-          .calzado-pag .calzado-contenedor .productos a .precios-contenedor del {
-            font-size: 12px;
-            margin: 3px;
-            margin-top: 10px; }
-      .calzado-pag .calzado-contenedor .productos .agregarCarrito {
-        background-color: black;
-        color: white;
-        border: 1px solid black;
-        border-radius: 5px;
-        font-size: 13px;
-        padding: 3px; }
-      .calzado-pag .calzado-contenedor .productos .agregarCarrito:hover {
-        background-color: gray; }
-    .calzado-pag .calzado-contenedor #carritoContenedor {
-      margin-top: 20px;
-      margin-right: 150px;
-      justify-content: center;
+    justify-content: space-evenly;
+    gap: 20px; }
+  .calzado-pag .productos {
+    flex-direction: column;
+    margin: 12px;
+    padding: 3px;
+    width: 300px;
+    height: auto; }
+    .calzado-pag .productos a {
+      text-decoration: none;
+      color: black;
       text-align: center; }
-      .calzado-pag .calzado-contenedor #carritoContenedor h3 {
-        font-size: 20px; }
-      .calzado-pag .calzado-contenedor #carritoContenedor .imagen-carrito {
+      .calzado-pag .productos a img {
         width: 220px;
-        height: 220px; }
-      .calzado-pag .calzado-contenedor #carritoContenedor .quitarDelCarritoBtn {
-        background-color: black;
-        color: white;
-        border: 1px solid black;
-        border-radius: 5px;
-        padding: 3px; }
-      .calzado-pag .calzado-contenedor #carritoContenedor .quitarDelCarritoBtn:hover {
-        background-color: gray; }
-      .calzado-pag .calzado-contenedor #carritoContenedor div {
-        margin: 20px; }
-        .calzado-pag .calzado-contenedor #carritoContenedor div b {
-          margin: 20px;
-          font-size: 20px; }
-      .calzado-pag .calzado-contenedor #carritoContenedor .vaciarCarritoBtn {
-        color: black;
-        background-color: bisque;
-        border: 1px solid black;
-        border-color: rgba(0, 0, 0, 0.316);
-        border-radius: 5px;
-        margin-top: 5px;
-        padding: 3px;
-        margin: 6px; }
-      .calzado-pag .calzado-contenedor #carritoContenedor .vaciarCarritoBtn:hover {
-        background-color: #e5af5f; }
-      .calzado-pag .calzado-contenedor #carritoContenedor .comprarBtn {
-        color: black;
-        background-color: #ccabeb;
-        border: 1px solid black;
-        border-color: rgba(0, 0, 0, 0.316);
-        border-radius: 5px;
-        margin-top: 5px;
-        padding: 3px;
-        margin: 6px; }
-      .calzado-pag .calzado-contenedor #carritoContenedor .comprarBtn:hover {
-        background-color: #b071ea; }
+        height: 220px;
+        border-radius: 3%; }
+      .calzado-pag .productos a h3 {
+        text-align: center;
+        font-family: 'Lato', sans-serif;
+        font-size: 14px;
+        width: 270px;
+        height: 20px;
+        margin-top: 7px; }
+      .calzado-pag .productos a .precios-contenedor {
+        height: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 10px; }
+        .calzado-pag .productos a .precios-contenedor strong {
+          font-size: 13px;
+          margin: 3px;
+          margin-top: 10px; }
+        .calzado-pag .productos a .precios-contenedor del {
+          font-size: 12px;
+          margin: 3px;
+          margin-top: 10px; }
+    .calzado-pag .productos .agregarCarrito {
+      background-color: black;
+      color: white;
+      border: 1px solid black;
+      border-radius: 5px;
+      font-size: 13px;
+      padding: 3px; }
+    .calzado-pag .productos .agregarCarrito:hover {
+      background-color: gray; }
+  .calzado-pag #carritoContenedor {
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc; }
+  .calzado-pag h3 {
+    font-size: 20px; }
+  .calzado-pag .imagen-carrito {
+    width: 220px;
+    height: 220px; }
+  .calzado-pag .quitarDelCarritoBtn {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 3px; }
+  .calzado-pag .quitarDelCarritoBtn:hover {
+    background-color: gray; }
+  .calzado-pag div {
+    margin: 20px; }
+    .calzado-pag div b {
+      margin: 20px;
+      font-size: 20px; }
+  .calzado-pag .vaciarCarritoBtn {
+    color: black;
+    background-color: bisque;
+    border: 1px solid black;
+    border-color: rgba(0, 0, 0, 0.316);
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 3px;
+    margin: 6px; }
+  .calzado-pag .vaciarCarritoBtn:hover {
+    background-color: #e5af5f; }
+  .calzado-pag .comprarBtn {
+    color: black;
+    background-color: #ccabeb;
+    border: 1px solid black;
+    border-color: rgba(0, 0, 0, 0.316);
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 3px;
+    margin: 6px; }
+  .calzado-pag .comprarBtn:hover {
+    background-color: #b071ea; }
 
 .indumentaria-pag {
   display: flex;

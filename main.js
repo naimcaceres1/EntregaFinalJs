@@ -451,7 +451,6 @@ cerrarSesionBoton.addEventListener("click", () => {
 let total = 0;
 let carrito = [];
 
-
 function cargarProductos() {
     return new Promise((resolve, reject) => {
         fetch("../productos.json")
@@ -470,22 +469,44 @@ function cargarProductos() {
     });
 }
 
+document.addEventListener("DOMContentLoaded", () => {
+    cargarProductos()
+        .then(productos => {
+            const contenedorProductos = document.getElementById('contenedorProductos');
+            contenedorProductos.innerHTML = ''; // Limpiamos el contenedor
 
-cargarProductos()
-    .then(productos => {
-        const botonesAgregarCarrito = document.querySelectorAll('.agregarCarrito');
-        
-        botonesAgregarCarrito.forEach((boton, index) => {
-            boton.addEventListener('click', () => {
-                const productoSeleccionado = productos[index];
-                agregarCarrito(productoSeleccionado);
-                guardarCarrito();
+            productos.forEach(producto => {
+                const productoDiv = document.createElement('div');
+                productoDiv.classList.add('productos');
+                productoDiv.innerHTML = `
+                    <a href="">
+                        <img src="${producto.imagen}" alt="${producto.modelo}">
+                        <h3>${producto.marca} ${producto.modelo}</h3>
+                        <div class="precios-contenedor">
+                            <strong class="precio">
+                                <span class="precio-moneda">UYU</span>
+                                <span class="precio-monto">${producto.precio}</span>
+                            </strong>
+                        </div>
+                    </a>
+                    <button type="button" class="agregarCarrito">Agregar al carrito</button>
+                `;
+                contenedorProductos.appendChild(productoDiv);
+
+                const botonesAgregarCarrito = productoDiv.querySelectorAll('.agregarCarrito');
+                botonesAgregarCarrito.forEach(boton => {
+                    boton.addEventListener('click', () => {
+                        agregarCarrito(producto);
+                        guardarCarrito();
+                    });
+                });
             });
+        })
+        .catch(error => {
+            console.error(error);
         });
-    })
-    .catch(error => {
-        console.error(error);
-    });
+});
+
 
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -589,9 +610,9 @@ const mostrarCarrito = () => {
     }
 
 
-
     return elementosCarrito;
 };
+
 
 
 const vaciarCarrito = () => {
